@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgres on Sysadminium</title><link>https://alexsem88.github.io/my_hugo_site/docs/databases/postgresql/</link><description>Recent content in Postgres on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://alexsem88.github.io/my_hugo_site/docs/databases/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Статистика работы PostgreSQL</title><link>https://alexsem88.github.io/my_hugo_site/docs/databases/postgresql/statistika_raboty_postgresql/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://alexsem88.github.io/my_hugo_site/docs/databases/postgresql/statistika_raboty_postgresql/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;В этой статье разберем системные представления, с помощью которых можно смотреть на эту статистику.&lt;/p&gt;
+&lt;p&gt;Статистика PostgreSQL включается конфигурационными параметрами в файле &lt;strong&gt;postgresql.conf&lt;/strong&gt;, например:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;track_counts&lt;/strong&gt; — обращения к таблицам и индексам. Этот параметр включен по умолчанию.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;track_io_timing&lt;/strong&gt; — статистика операций ввода/вывода. Этот параметр выключен по умолчанию, в результате нужно включать. Но следует учитывать что включение этого параметра может замедлить сервер;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;track_functions&lt;/strong&gt; — статистика вызовов функций и времени их выполнения. Этот параметр, тоже выключен по умолчанию. Если мы захотим включить его, то можем указать следующие значения:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pl&lt;/strong&gt; — включает отслеживание функций только на процедурном языке,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;all&lt;/strong&gt; — включает отслеживание функций на всех языках, например SQL и C.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Каждый &lt;strong&gt;backend&lt;/strong&gt; процесс собирает статистику в процессе своей работы. Затем эта статистика отправляется процессу &lt;strong&gt;stats collector&lt;/strong&gt;, который собирает статистику со всех &lt;strong&gt;backend&lt;/strong&gt; процессов. Раз в полсекунды, статистика сбрасывается в каталог &lt;strong&gt;$PGDATA/pg_stat_tmp&lt;/strong&gt;, этот период (500мс) можно изменить только при компиляции. В результате эту статистику можно посмотреть с помощью представлений и функций.&lt;/p&gt;</description></item></channel></rss>

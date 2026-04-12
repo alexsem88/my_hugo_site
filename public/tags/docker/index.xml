@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Sysadminium</title><link>https://alexsem88.github.io/my_hugo_site/tags/docker/</link><description>Recent content in Docker on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alexsem88.github.io/my_hugo_site/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка Taiga в Docker</title><link>https://alexsem88.github.io/my_hugo_site/docs/linux/linux_servers/project_management/taiga/installing-taiga-in-docker/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://alexsem88.github.io/my_hugo_site/docs/linux/linux_servers/project_management/taiga/installing-taiga-in-docker/</guid><description>&lt;h2 id="что-такое-taiga"&gt;Что такое Taiga&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Taiga&lt;/strong&gt; — это бесплатный open-source инструмент для управления проектами, разработанный специально для agile-команд. Он сочетает мощный функционал (бэклог, спринты, канбан-доски, трекер задач, wiki, отчёты) с интуитивно понятным интерфейсом.&lt;/p&gt;
+&lt;p&gt;У Taiga есть облачная платная версия, но самохостинг — полностью бесплатный. При самостоятельном развёртывании вы получаете:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Полный контроль над данными и инфраструктурой.&lt;/li&gt;
+&lt;li&gt;Все функции без ограничений платных тарифов.&lt;/li&gt;
+&lt;li&gt;Возможность кастомизации под процессы вашей команды.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Сайты:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://taiga.io/"&gt;официальный сайт&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.taiga.io/t/taiga-30min-setup/170"&gt;официальная инструкция по разворачиванию на своём сервере&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;После настройки сервера вы сможете:&lt;/p&gt;</description></item></channel></rss>
