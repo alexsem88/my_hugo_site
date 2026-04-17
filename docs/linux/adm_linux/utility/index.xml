@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Полезные утилиты on Sysadminium</title><link>http://hugo.test.com/docs/linux/adm_linux/utility/</link><description>Recent content in Полезные утилиты on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://hugo.test.com/docs/linux/adm_linux/utility/index.xml" rel="self" type="application/rss+xml"/><item><title>Утилита hping3 в linux</title><link>http://hugo.test.com/docs/linux/adm_linux/utility/hping3_utility/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>http://hugo.test.com/docs/linux/adm_linux/utility/hping3_utility/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Утилита &lt;strong&gt;hping3&lt;/strong&gt; — это сетевой инструмент, способный отправлять пакеты TCP/IP и отображать целевые ответы, как это делает программа ping с ICMP.&lt;/p&gt;
+&lt;p&gt;Эта утилита умеет обрабатывать фрагментацию, отправлять пакеты с произвольными данными и флагами, менять размеры пакетов, и даже может использоваться для передачи файлов. С помощью этой утилиты вы можете выполнять, например, следующие действия:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;проверять правила брандмауэра;&lt;/li&gt;
+&lt;li&gt;сканировать порты хоста в сети;&lt;/li&gt;
+&lt;li&gt;тестировать производительность сети с использованием различных протоколов;&lt;/li&gt;
+&lt;li&gt;передавать файлы в обход брандмауэра;&lt;/li&gt;
+&lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
+&lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item></channel></rss>
