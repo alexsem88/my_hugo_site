@@ -29,7 +29,53 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Транспортный протокол TCP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Bash скрипт получения числа открытых файлов пользователя</title><link>https://blog.sysadminium.ru/docs/linux/cli_bash/bash-script-openfiles/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/cli_bash/bash-script-openfiles/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Узнать сколько открытых файлов у определённого пользователя бывает необходимо для отладки службы, работающей под определённым пользователем.&lt;/p&gt;
+&lt;p&gt;В качестве параметра скрипту необходимо передать &lt;strong&gt;имя&lt;/strong&gt; или &lt;strong&gt;uid&lt;/strong&gt; пользователя. Скрипт будем использовать следующими способами:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;./openfiles.sh -h&lt;/code&gt; — показать справку;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;./openfiles.sh &amp;lt;имя_или_uid&amp;gt;&lt;/code&gt; — показать число открытых файлов linux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="текст-скрипта"&gt;Текст скрипта&lt;/h2&gt;
+&lt;p&gt;Вот сам скрипт:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash
+
+case &amp;#34;$1&amp;#34; in
+-h)
+echo -e &amp;#34;Скрипт покажет открытые файлы для выбранного пользователя.
+Опции:
+ -h показать эту справку.
+Примеры выполнения:
+./files2.sh &amp;lt;username&amp;gt;
+./files2.sh &amp;lt;uid&amp;gt;&amp;#34;
+;;
+
+*)
+if [[ &amp;#34;$#&amp;#34; -eq 1 ]];
+then
+ id &amp;#34;$1&amp;#34; &amp;gt;/dev/null 2&amp;gt;&amp;amp;1
+ if [[ $? -ne 0 ]]; then
+ echo &amp;#39;Пользователь не найден!&amp;#39;
+ exit 1
+ fi
+ for pid in `ps -u &amp;#34;$1&amp;#34; -o pid,comm | grep -v PID | awk &amp;#39;{print $1}&amp;#39;`
+ do
+ open_files=`ls -l /proc/$pid/fd | grep &amp;#34;anon_inode&amp;#34; | wc -l`
+ echo &amp;#34;Открытых файлов для pid $pid: $open_files&amp;#34;
+ done
+else
+ echo -e &amp;#34;Забыли указать имя или id пользователя!
+Или ввели больше одного параметра.
+Для справки выполните $0 -h&amp;#34;
+fi
+;;
+
+esac
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если скрипт получит параметр &lt;code&gt;-h&lt;/code&gt;, то с помощью &lt;code&gt;echo&lt;/code&gt; просто выведет справку.&lt;/p&gt;</description></item><item><title>Транспортный протокол UDP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/udp/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/udp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации. Информация передаётся маленькими частями — сетевыми пакетами. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
+&lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
+&lt;h2 id="особенности-udp"&gt;Особенности UDP&lt;/h2&gt;
+&lt;p&gt;Протокол &lt;strong&gt;UDP&lt;/strong&gt; находится на 4 уровне &lt;a href="https://sysadminium.ru/osi-and-tcp-ip-network-models/"&gt;модели OSI&lt;/a&gt;. В отличии от &lt;strong&gt;TCP&lt;/strong&gt; этот протокол не обнаруживает ошибки передачи пакетов, что уменьшает служебную информацию и облегчает передачу данных.&lt;/p&gt;</description></item><item><title>Транспортный протокол TCP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации, то есть это правила или договорённости о передачи информации по сети. Информация передаётся маленькими частями, в протоколе TCP эти части называются &lt;strong&gt;сетевыми пакетами&lt;/strong&gt;. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
 &lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
 &lt;p&gt;Спецификация протокола TCP доступна &lt;a href="https://www.rfc-editor.org/rfc/rfc793"&gt;здесь&lt;/a&gt;.&lt;/p&gt;
