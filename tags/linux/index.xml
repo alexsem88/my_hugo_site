@@ -39,7 +39,15 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Процесс установки Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</link><pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</guid><description>&lt;h2 id="получение-установочных-образов-debian"&gt;Получение установочных образов Debian&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Процесс установки Ubuntu 24.04 LTS</title><link>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</guid><description>&lt;h2 id="получение-установочных-образов-ubuntu"&gt;Получение установочных образов Ubuntu&lt;/h2&gt;
+&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://ubuntu.com/download/server"&gt;отсюда&lt;/a&gt;. В отличии от Debian можно скачать только тяжеловесные образы для:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Desktop&lt;/strong&gt; — система с графической средой Gnome.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt; — система без графической среды, которую предпочтительнее использовать для сервера.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260427164619.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Дополнительно стоит отметить, что Ubuntu вы сможете установить только на архитектуру AMD64.&lt;/p&gt;
+&lt;p&gt;После скачивания установочного образа (ubuntu-24.04.1-live-server-amd64), записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"&gt;rufus&lt;/a&gt; или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Процесс установки Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</link><pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</guid><description>&lt;h2 id="получение-установочных-образов-debian"&gt;Получение установочных образов Debian&lt;/h2&gt;
 &lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"&gt;отсюда&lt;/a&gt;. Вам нужно скачать файл &lt;strong&gt;«debian-12.8.0-amd64-netinst.iso»&lt;/strong&gt;, это самый лёгкий установочный образ, который во время установки всё скачает из интернета.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260427161412.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Так как на рисунке выше вы видите и другие образы для установки дистрибутива, давайте расскажу про них:&lt;/p&gt;
