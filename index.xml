@@ -57,7 +57,24 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Работа с сервером используя ssh</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/linux-using_ssh/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/linux-using_ssh/</guid><description>&lt;h2 id="подготовка-к-подключению"&gt;Подготовка к подключению&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
+&lt;p&gt;В дистрибутивах Linux нет привычных для пользователя Windows дисков, например диск &lt;code&gt;C:\&lt;/code&gt; или &lt;code&gt;D:\&lt;/code&gt;. Вместо этого в Linux существует единое дерево каталогов с корневым каталогом &lt;code&gt;/&lt;/code&gt;, который называют &amp;ldquo;root (&lt;em&gt;корень&lt;/em&gt;)&amp;rdquo;. Получается примерно такая древовидная структура каталогов:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/
+/каталог_1
+/каталог_1/подкаталог_1
+/каталог_1/подкаталог_2
+/каталог_1/подкаталог_2/подкаталог_1
+/каталог_1/подкаталог_3
+/каталог_2
+/каталог_2/подкаталог_1
+/каталог_2/подкаталог_2
+/каталог_2/подкаталог_3/подкаталог_1/подкаталог_1
+/каталог_2/подкаталог_3/подкаталог_1
+/каталог_3
+/каталог_3/подкаталог_1
+/каталог_3/подкаталог_2
+/каталог_3/подкаталог_3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При этом могут использоваться разные физические диски или разделы на дисках. Схематически это можно представить таким образом:&lt;/p&gt;</description></item><item><title>Работа с сервером используя ssh</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/linux-using_ssh/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/linux-using_ssh/</guid><description>&lt;h2 id="подготовка-к-подключению"&gt;Подготовка к подключению&lt;/h2&gt;
 &lt;p&gt;Подключаемся мы по сети, для этого нам нужно знать ip адрес нашего сервера. Посмотреть его можно с помощью команды:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# ip addr show
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Перед подключением убедимся, что на вашем сервере установлен и работает SSH сервер. Сделаем это с помощью пакетного менеджера dpkg:&lt;/p&gt;
