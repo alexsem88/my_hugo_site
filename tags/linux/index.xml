@@ -60,11 +60,4 @@ alex
 &lt;h2 id="установка-и-начало-использования"&gt;Установка и начало использования&lt;/h2&gt;
 &lt;p&gt;Установить эту утилиту в &lt;strong&gt;debian&lt;/strong&gt; или &lt;strong&gt;ubuntu&lt;/strong&gt; можно из стандартных репозиториев, например так:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install tcpdump
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Кстати, для работы с этой утилитой требуются админские права.&lt;/p&gt;</description></item><item><title>SSH Port forwarding</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh_port_forwarding/</link><pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh_port_forwarding/</guid><description>&lt;h2 id="особенности"&gt;Особенности&lt;/h2&gt;
-&lt;p&gt;Типичным сценарием использования SSH Port forwarding является доступ к внутренним ресурсам компании, которые находятся за NAT, без использования проброса портов на шлюзе и без использования VPN. Например:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;доступ к серверу удалённых рабочих столов (RDP);&lt;/li&gt;
-&lt;li&gt;подключение к удалённым базам данным (Redis, PostgreSQL), или серверам (Proxmox VE);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;SSH Port forwarding&lt;/strong&gt; также можно использовать как резервный канал связи при падении VPN.&lt;/p&gt;
-&lt;p&gt;Поскольку SSH шифрует весь трафик, его можно безопасно использовать даже в публичных точках доступа (кафе, аэропорты, отели). Для авторизации предпочтительнее использовать &lt;strong&gt;SSH-Ключи&lt;/strong&gt;, а не пароли: это надёжнее и удобнее. Подробнее: &lt;a href="https://sysadminium.ru/ssh-keys-on-linux/"&gt;Используем ssh ключи на Linux&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Кстати, для работы с этой утилитой требуются админские права.&lt;/p&gt;</description></item></channel></rss>
