@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Буферный кэш и журнал WAL в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/bufernyj_kesh_i_zhurnal_wal_v_postgresql/</link><pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/bufernyj_kesh_i_zhurnal_wal_v_postgresql/</guid><description>&lt;h2 id="устройство-буферного-кэша"&gt;Устройство буферного кэша&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Схемы и шаблоны в СУБД PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/shemy_i_shablony_postgresql/</link><pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/shemy_i_shablony_postgresql/</guid><description>&lt;h2 id="базы-данных-и-шаблоны"&gt;Базы данных и шаблоны&lt;/h2&gt;
+&lt;p&gt;Когда мы создаём новые кластер командой &lt;code&gt;initdb&lt;/code&gt; у нас создается 3 одинаковые базы данных:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;postgres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;template0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;template1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ psql
+Timing is on.
+psql (13.3)
+Type &amp;#34;help&amp;#34; for help.
+
+postgres@postgres=# \l
+ List of databases
+ Name | Owner | Encoding | Collate | Ctype | Access privileges
+-----------+----------+----------+-------------+-------------+-----------------------
+ postgres | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 |
+ template0 | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 | =c/postgres +
+ | | | | | postgres=CTc/postgres
+ template1 | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 | =c/postgres +
+ | | | | | postgres=CTc/postgres
+(3 rows)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;База &lt;code&gt;postgres&lt;/code&gt; используется, чтобы по умолчанию к ней подключаться. Принципиально она не нужна, но есть приложения которым она может понадобится, поэтому лучше её не удалять.&lt;/p&gt;</description></item><item><title>Буферный кэш и журнал WAL в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/bufernyj_kesh_i_zhurnal_wal_v_postgresql/</link><pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/bufernyj_kesh_i_zhurnal_wal_v_postgresql/</guid><description>&lt;h2 id="устройство-буферного-кэша"&gt;Устройство буферного кэша&lt;/h2&gt;
 &lt;p&gt;Кэш нужен чтобы читать востребованные данные ни с диска а с более быстрой оперативной памяти. Предварительно данные приходится загружать с диска в буферных кэш оперативной памяти.&lt;/p&gt;
 &lt;p&gt;В общей памяти отводится определённый кусок памяти под массив буферов. В каждом буфере хранится одна страница памяти. Страница памяти это &lt;strong&gt;8 КБ&lt;/strong&gt;. Когда мы собираем PostgreSQL из исходных кодов мы можем изменить размер этой страницы. А после сборки это изменить уже не получится.&lt;/p&gt;</description></item><item><title>Изоляция и многоверсионность в Postgresql</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/</link><pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/</guid><description>&lt;h2 id="многоверсионность"&gt;Многоверсионность&lt;/h2&gt;
 &lt;p&gt;Представим следующие ситуации на сервере баз данных:&lt;/p&gt;

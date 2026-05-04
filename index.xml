@@ -63,7 +63,29 @@ alex
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Файловые системы поддерживаемые Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</link><pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</guid><description>&lt;h2 id="что-такое-файловая-система"&gt;Что такое файловая система&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Схемы и шаблоны в СУБД PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/shemy_i_shablony_postgresql/</link><pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/shemy_i_shablony_postgresql/</guid><description>&lt;h2 id="базы-данных-и-шаблоны"&gt;Базы данных и шаблоны&lt;/h2&gt;
+&lt;p&gt;Когда мы создаём новые кластер командой &lt;code&gt;initdb&lt;/code&gt; у нас создается 3 одинаковые базы данных:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;postgres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;template0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;template1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ psql
+Timing is on.
+psql (13.3)
+Type &amp;#34;help&amp;#34; for help.
+
+postgres@postgres=# \l
+ List of databases
+ Name | Owner | Encoding | Collate | Ctype | Access privileges
+-----------+----------+----------+-------------+-------------+-----------------------
+ postgres | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 |
+ template0 | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 | =c/postgres +
+ | | | | | postgres=CTc/postgres
+ template1 | postgres | UTF8 | ru_RU.UTF-8 | ru_RU.UTF-8 | =c/postgres +
+ | | | | | postgres=CTc/postgres
+(3 rows)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;База &lt;code&gt;postgres&lt;/code&gt; используется, чтобы по умолчанию к ней подключаться. Принципиально она не нужна, но есть приложения которым она может понадобится, поэтому лучше её не удалять.&lt;/p&gt;</description></item><item><title>Файловые системы поддерживаемые Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</link><pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</guid><description>&lt;h2 id="что-такое-файловая-система"&gt;Что такое файловая система&lt;/h2&gt;
 &lt;p&gt;Полезные данные, такие как файлы и каталоги, напрямую на диск не записываются. Между разделом диска и файлами существует прослойка в виде &lt;strong&gt;файловой системы&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Файловая система&lt;/strong&gt; — это средство, которое определяет различные правила работы с файлами, например:&lt;/p&gt;
 &lt;ul&gt;
