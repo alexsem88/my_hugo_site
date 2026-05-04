@@ -29,7 +29,16 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Перемещение по каталогам linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</guid><description>&lt;h2 id="текущий-или-рабочий-каталога"&gt;Текущий или рабочий каталога&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Файловые системы поддерживаемые Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</link><pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/fajlovye_sistemy_podderzhivaemye_linux/</guid><description>&lt;h2 id="что-такое-файловая-система"&gt;Что такое файловая система&lt;/h2&gt;
+&lt;p&gt;Полезные данные, такие как файлы и каталоги, напрямую на диск не записываются. Между разделом диска и файлами существует прослойка в виде &lt;strong&gt;файловой системы&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Файловая система&lt;/strong&gt; — это средство, которое определяет различные правила работы с файлами, например:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;как данные будут располагаться на диске;&lt;/li&gt;
+&lt;li&gt;как будет происходить запись, поиск, чтение или удаление файлов;&lt;/li&gt;
+&lt;li&gt;какие метаданные будут использоваться;&lt;/li&gt;
+&lt;li&gt;как обезопасить файлы от порчи (например при некорректном выключении компьютера);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Метаданные&lt;/strong&gt; — это данные о данных, например файл содержит какие-то данные, а метаданные это:&lt;/p&gt;</description></item><item><title>Перемещение по каталогам linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</guid><description>&lt;h2 id="текущий-или-рабочий-каталога"&gt;Текущий или рабочий каталога&lt;/h2&gt;
 &lt;p&gt;Все команды на этом уроке можно выполнять и на Ubuntu 22.04 и на Debian 11, при этом поведение будем одинаковым!&lt;/p&gt;
 &lt;p&gt;Первым делом нужно понять в каком каталоге вы находитесь, для этого есть команда &lt;code&gt;pwd&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;alex@deb:~$ pwd
