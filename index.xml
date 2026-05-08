@@ -73,7 +73,26 @@ alex
 &lt;li&gt;&lt;code&gt;VACUUM;&lt;/code&gt; — базу данных;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;$ vacuumdb&lt;/code&gt; — обёртка для использования в ОС.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Процедура &lt;code&gt;VACUUM&lt;/code&gt; выполняется параллельно с другими транзакциями. При этом частый запуск нагружает систему, редкий запуск приводит к росту размера файлов. Подробнее почитать про очистку PostgreSQL можно &lt;a href="https://postgrespro.ru/docs/postgresql/13/routine-vacuuming"&gt;тут&lt;/a&gt;. Мы уже встречались с понятием &lt;strong&gt;VACUUM&lt;/strong&gt; в статье &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/"&gt;Изоляция и многоверсионность в Postgresql&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Журнал PostgreSQL. Настройка и анализ</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Процедура &lt;code&gt;VACUUM&lt;/code&gt; выполняется параллельно с другими транзакциями. При этом частый запуск нагружает систему, редкий запуск приводит к росту размера файлов. Подробнее почитать про очистку PostgreSQL можно &lt;a href="https://postgrespro.ru/docs/postgresql/13/routine-vacuuming"&gt;тут&lt;/a&gt;. Мы уже встречались с понятием &lt;strong&gt;VACUUM&lt;/strong&gt; в статье &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/"&gt;Изоляция и многоверсионность в Postgresql&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Разрастание таблиц и индексов в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</guid><description>&lt;h2 id="подключаем-расширение-pgstattuple"&gt;Подключаем расширение pgstattuple&lt;/h2&gt;
+&lt;p&gt;В начале скомпилируем расширение &lt;a href="https://postgrespro.ru/docs/postgresql/13/pgstattuple"&gt;pgstattuple&lt;/a&gt;, которое поможет понять сколько в базе данных полезной информации, а сколько служебной или неактуальной. Для этого перейдем в каталог с исходниками и выполним:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ exit
+выход
+
+root@s-pg13:~# cd ~/pg/postgresql-13.3/contrib/pgstattuple/
+root@s-pg13:~/pg/postgresql-13.3/contrib/pgstattuple# make
+root@s-pg13:~/pg/postgresql-13.3/contrib/pgstattuple# make install
+root@s-pg13:~/pg/postgresql-13.3/contrib/pgstattuple# su - postgres
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Затем подключим расширение в самой базе данных с помощью команды &lt;code&gt;CREATE EXTENSION&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ psql
+Timing is on.
+psql (13.3)
+Type &amp;#34;help&amp;#34; for help.
+
+postgres@postgres=# CREATE EXTENSION pgstattuple;
+CREATE EXTENSION
+Time: 45,688 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="проводим-тестирование"&gt;Проводим тестирование&lt;/h2&gt;
+&lt;p&gt;Создадим табличку &lt;code&gt;bloat&lt;/code&gt; и наполним её данными. После чего сделаем для этой таблицы индекс:&lt;/p&gt;</description></item><item><title>Журнал PostgreSQL. Настройка и анализ</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;При запуске &lt;strong&gt;PostgreSQL&lt;/strong&gt;, мы можем указать файл журнала: &lt;code&gt;pg_ctl start -l /home/postgres/logfile&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;В этот журнал PostgreSQL записывает некоторые из своих действий. Настраивая журналирование мы можем задать:&lt;/p&gt;
 &lt;ul&gt;
