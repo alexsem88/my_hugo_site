@@ -63,7 +63,15 @@ alex
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Журнал PostgreSQL. Настройка и анализ</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Процедура очистки VACUUM в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</guid><description>&lt;h2 id="варианты-запуска-очистки"&gt;Варианты запуска очистки&lt;/h2&gt;
+&lt;p&gt;Процесс &lt;strong&gt;VACUUM&lt;/strong&gt; чистит таблицы, обновляет статистику и обновляет карты видимости и свободного пространства. А также борется с переполнением счетчика транзакций.&lt;/p&gt;
+&lt;p&gt;Очищать таблицы или базы данных от ненужных версий строк можно с помощью следующих команд:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VACUUM таблица;&lt;/code&gt; — очищает таблицу;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VACUUM;&lt;/code&gt; — базу данных;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ vacuumdb&lt;/code&gt; — обёртка для использования в ОС.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Процедура &lt;code&gt;VACUUM&lt;/code&gt; выполняется параллельно с другими транзакциями. При этом частый запуск нагружает систему, редкий запуск приводит к росту размера файлов. Подробнее почитать про очистку PostgreSQL можно &lt;a href="https://postgrespro.ru/docs/postgresql/13/routine-vacuuming"&gt;тут&lt;/a&gt;. Мы уже встречались с понятием &lt;strong&gt;VACUUM&lt;/strong&gt; в статье &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/"&gt;Изоляция и многоверсионность в Postgresql&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Журнал PostgreSQL. Настройка и анализ</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/log_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;При запуске &lt;strong&gt;PostgreSQL&lt;/strong&gt;, мы можем указать файл журнала: &lt;code&gt;pg_ctl start -l /home/postgres/logfile&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;В этот журнал PostgreSQL записывает некоторые из своих действий. Настраивая журналирование мы можем задать:&lt;/p&gt;
 &lt;ul&gt;
