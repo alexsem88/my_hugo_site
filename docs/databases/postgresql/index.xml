@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgres on Sysadminium</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/</link><description>Recent content in Postgres on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/databases/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Резервирование PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/rezervirovanie_postgresql/</link><pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/rezervirovanie_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgres on Sysadminium</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/</link><description>Recent content in Postgres on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/databases/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Репликация в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/replikaciya_postgresql/</link><pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/replikaciya_postgresql/</guid><description>&lt;h2 id="задачи-и-виды-репликации"&gt;Задачи и виды репликации&lt;/h2&gt;
+&lt;p&gt;Репликация PostgreSQL решает две задачи:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;отказоустойчивость&lt;/strong&gt; — если сломается один из серверов, клиенты могут продолжить работать на резервном;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;масштабируемость&lt;/strong&gt; — резервный сервер принимает запросы на чтение, так что некоторую нагрузку можно возложить на него.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Репликация на серверах PostgreSQL бывает двух видов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Физическая&lt;/strong&gt; — основной сервер передает поток wal записей на сервер репликации. Требования следующие:
+&lt;ul&gt;
+&lt;li&gt;одинаковые версии PostgreSQL;&lt;/li&gt;
+&lt;li&gt;одинаковые ОС;&lt;/li&gt;
+&lt;li&gt;возможна репликация только всего кластера.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Логическая&lt;/strong&gt; — поставщик публикует свои изменения, а подписчик получает и применяет эти изменения у себя. Особенности следующие:
+&lt;ul&gt;
+&lt;li&gt;оба сервера могут быть и поставщиком и подписчиком, но на разные объекты. Например на в одном кластере опубликована одна табличка, а на другом — другая, и эти кластера подписаны друг на друга (на эти таблички). Это позволяет использовать двухсторонний обмен;&lt;/li&gt;
+&lt;li&gt;репликация возможна между разными ОС;&lt;/li&gt;
+&lt;li&gt;возможна выборочная репликация отдельных объектов кластера.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="физическая-репликация-postgresql"&gt;Физическая репликация PostgreSQL&lt;/h2&gt;
+&lt;p&gt;Алгоритм создания такой репликации следующий:&lt;/p&gt;</description></item><item><title>Резервирование PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/rezervirovanie_postgresql/</link><pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/rezervirovanie_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Существует &lt;strong&gt;логическое&lt;/strong&gt; и &lt;strong&gt;физическое&lt;/strong&gt; резервирование PostgreSQL. Первый тип сохраняет SQL команды выполнив которые можно восстановить объекты, например создать базу данных, наполнить её таблицами, заполнить таблицы данными и тому подобное. А второй тип резервирует сами данные, то есть сохраняет каталог PGDATA.&lt;/p&gt;
 &lt;h2 id="логическое-резервирование-postgresql"&gt;Логическое резервирование PostgreSQL&lt;/h2&gt;
 &lt;p&gt;Недостаток логического копирования — невысокая скорость. При этом логическую копию можно загрузить в более новую версию сервера postgres. Или выгрузить базу с сервера на Windows и загрузить её на Linux. Также логическое резервное копирование позволяет сохранять не только базы, но и отдельно таблички или весь кластер.&lt;/p&gt;</description></item><item><title>Методы аутентификации в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/metody_autentifikacii_postgresql/</link><pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/metody_autentifikacii_postgresql/</guid><description>&lt;h2 id="процесс-подключения"&gt;Процесс подключения&lt;/h2&gt;
