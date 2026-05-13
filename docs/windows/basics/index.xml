@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Основы Windows on Sysadminium</title><link>https://blog.sysadminium.ru/docs/windows/basics/</link><description>Recent content in Основы Windows on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/windows/basics/index.xml" rel="self" type="application/rss+xml"/><item><title>Процессы, потоки и задания Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</guid><description>&lt;h2 id="процессы"&gt;Процессы&lt;/h2&gt;
+&lt;p&gt;Процесс стоит воспринимать как контейнер с набором ресурсов для выполнения программы. То есть запускаем мы программу, для неё выделяется часть ресурсов компьютера и эта программа работает с этими ресурсами.&lt;/p&gt;
+&lt;p&gt;Процессы нужны операционной системе для многозадачности, так как программы работают в своих процессах и не мешают друг другу, при этом по очереди обрабатываются процессором.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows процессы состоят из следующего&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Закрытое виртуальное адресное пространство, то есть выделенная для процесса часть оперативной памяти, которая называется виртуальной.&lt;/li&gt;
+&lt;li&gt;Исполняемая программа выполняя свой код, помещает его в виртуальную память.&lt;/li&gt;
+&lt;li&gt;Список открытых дескрипторов. Процесс может открывать или создавать объекты, например файлы или другие процессы. Эти объекты нумеруются, и их номера называют дескрипторами. Ссылаться на объект по дескриптору быстрее, чем по имени.&lt;/li&gt;
+&lt;li&gt;Контекст безопасности. Сюда входит пользователь процесса, группа, привилегии, сеанс и другое.&lt;/li&gt;
+&lt;li&gt;Идентификатор процесса, то есть его уникальный номер.&lt;/li&gt;
+&lt;li&gt;Программный поток (как минимум один или несколько). Чтобы процесс хоть что-то делал, в нем должен существовать программный поток. Если потока нет, значит что-то пошло не так, возможно процесс не смог корректно завершиться, или стартовать.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;У процессов есть еще очень много свойств которые вы можете посмотреть в «&lt;strong&gt;Диспетчере задач&lt;/strong&gt;» или «&lt;strong&gt;Process Explorer&lt;/strong&gt;«.&lt;/p&gt;</description></item></channel></rss>
