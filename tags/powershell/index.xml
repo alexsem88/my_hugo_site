@@ -1,8 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Powershell on Sysadminium</title><link>http://hugo.test.com/tags/powershell/</link><description>Recent content in Powershell on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://hugo.test.com/tags/powershell/index.xml" rel="self" type="application/rss+xml"/><item><title>PowerShell переменные</title><link>http://hugo.test.com/docs/windows/powershell/powershell_peremennye/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>http://hugo.test.com/docs/windows/powershell/powershell_peremennye/</guid><description>&lt;h2 id="powershell-переменные-и-их-особенности"&gt;PowerShell переменные и их особенности&lt;/h2&gt;
-&lt;p&gt;Переменные в PowerShell, как и всё остальное — это объекты. Эту особенность тоже разберём в этой статье, но чуть ниже. Другой особенностью переменных PowerShell является то, что тип переменной зависит от её значения, например:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$foo = 1&lt;/code&gt; — число;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$foo = 'one'&lt;/code&gt; — строка;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$foo = $true&lt;/code&gt; — логическая переменная.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Стоит усвоить что типы переменных в PowerShell — динамические, то есть зависят от значения переменной.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Powershell on Sysadminium</title><link>https://blog.sysadminium.ru/tags/powershell/</link><description>Recent content in Powershell on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/powershell/index.xml" rel="self" type="application/rss+xml"/><item><title>PowerShell использование команд DOS</title><link>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_ispolzovanie_komand_dos/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_ispolzovanie_komand_dos/</guid><description>&lt;h2 id="популярные-команды-dos"&gt;Популярные команды DOS&lt;/h2&gt;
+&lt;p&gt;С помощью команды &lt;code&gt;cd&lt;/code&gt; можете перейти в другую директорию, а с помощью &lt;code&gt;dir&lt;/code&gt; посмотреть содержимое этой директории:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;PS C:\Windows\System32&amp;gt; cd C:\Windows\
+PS C:\Windows&amp;gt; dir
+ Каталог: C:\Windows
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d----- 13.10.2020 11:21 addins
+d----- 14.10.2020 8:01 appcompat
+d----- 11.06.2021 17:52 apppatch
+d----- 01.07.2021 9:26 AppReadiness
+d-r--- 15.04.2021 21:05 assembly
+d----- 11.06.2021 17:52 bcastdvr
+d----- 13.10.2020 11:16 Boot
+***сократил вывод***
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item></channel></rss>

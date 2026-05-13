@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Коммандная строка и PowerShell on Sysadminium</title><link>https://blog.sysadminium.ru/docs/windows/cmd_powershell/</link><description>Recent content in Коммандная строка и PowerShell on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/windows/cmd_powershell/index.xml" rel="self" type="application/rss+xml"/><item><title>PowerShell использование команд DOS</title><link>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_ispolzovanie_komand_dos/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_ispolzovanie_komand_dos/</guid><description>&lt;h2 id="популярные-команды-dos"&gt;Популярные команды DOS&lt;/h2&gt;
+&lt;p&gt;С помощью команды &lt;code&gt;cd&lt;/code&gt; можете перейти в другую директорию, а с помощью &lt;code&gt;dir&lt;/code&gt; посмотреть содержимое этой директории:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;PS C:\Windows\System32&amp;gt; cd C:\Windows\
+PS C:\Windows&amp;gt; dir
+ Каталог: C:\Windows
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d----- 13.10.2020 11:21 addins
+d----- 14.10.2020 8:01 appcompat
+d----- 11.06.2021 17:52 apppatch
+d----- 01.07.2021 9:26 AppReadiness
+d-r--- 15.04.2021 21:05 assembly
+d----- 11.06.2021 17:52 bcastdvr
+d----- 13.10.2020 11:16 Boot
+***сократил вывод***
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item></channel></rss>
