@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Sysadminium</title><link>https://blog.sysadminium.ru/tags/linux/</link><description>Recent content in Linux on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 16 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
-&lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"&gt;Пользователи в Linux&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Пользователи в Linux
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Список всех групп в системе хранится в файле &lt;code&gt;/etc/group&lt;/code&gt;. В следующем примере я использую команду &lt;code&gt;head&lt;/code&gt;, чтобы вывести 10 первых строк этого файла:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ head /etc/group
 
@@ -14,10 +19,24 @@ lp:x:7:
 mail:x:8:
 news:x:9:
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
-&lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"&gt;Стандартные права доступа в Linux&lt;/a&gt;. Но может возникнуть ситуация, что к файлу с правами: &lt;code&gt;rw-r--r-- user1 user1&lt;/code&gt;, нужно дать доступ пользователю &lt;code&gt;admin&lt;/code&gt; с правами &lt;code&gt;rw-&lt;/code&gt;, и пользователю &lt;code&gt;user2&lt;/code&gt; c правами &lt;code&gt;r--&lt;/code&gt;. Стандартная система прав здесь не поможет. Для решения подобной задачи применяют &lt;strong&gt;ACL&lt;/strong&gt; (&lt;em&gt;Access Control List / списки контроля доступа&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;ACL бывает 2-х типов:&lt;/p&gt;</description></item><item><title>Стандартные права доступа в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</guid><description>&lt;h2 id="права-доступа-к-файлам"&gt;Права доступа к файлам&lt;/h2&gt;
+&lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Стандартные права доступа в Linux
+&lt;/a&gt;
+. Но может возникнуть ситуация, что к файлу с правами: &lt;code&gt;rw-r--r-- user1 user1&lt;/code&gt;, нужно дать доступ пользователю &lt;code&gt;admin&lt;/code&gt; с правами &lt;code&gt;rw-&lt;/code&gt;, и пользователю &lt;code&gt;user2&lt;/code&gt; c правами &lt;code&gt;r--&lt;/code&gt;. Стандартная система прав здесь не поможет. Для решения подобной задачи применяют &lt;strong&gt;ACL&lt;/strong&gt; (&lt;em&gt;Access Control List / списки контроля доступа&lt;/em&gt;).&lt;/p&gt;</description></item><item><title>Стандартные права доступа в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</guid><description>&lt;h2 id="права-доступа-к-файлам"&gt;Права доступа к файлам&lt;/h2&gt;
 &lt;p&gt;Операционные системы на основе ядра &lt;strong&gt;Linux&lt;/strong&gt; — многопользовательские, и у разных пользователей разные права. Например, один пользователь может читать и создавать одни файлы, а второй может делать тоже самое но с другими файлами, ну а третий пользователь сможет проделать это и с первыми и со вторыми файлами. Помимо чтения и редактирования файлов, их возможно запускать, если это файлы программ или скрипты.&lt;/p&gt;
-&lt;p&gt;Права назначаются для владельца файла, группы владельцев и всех остальных. Рекомендую ознакомится со статьями &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"&gt;Пользователи в Linux&lt;/a&gt; и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/"&gt;Группы пользователей в Linux&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
+&lt;p&gt;Права назначаются для владельца файла, группы владельцев и всех остальных. Рекомендую ознакомится со статьями &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Пользователи в Linux
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Группы пользователей в Linux
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sudo&lt;/strong&gt; — важнейшая утилита Linux, позволяющая выполнять команды с правами администратора. По умолчанию она установлена не во всех дистрибутивах. И если она не установлена, то установить её можно из стандартных репозиториев, например:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;

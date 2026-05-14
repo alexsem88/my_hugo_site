@@ -1,9 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>О системе Ubuntu</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
-&lt;p&gt;Основателем этой системы является &lt;a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%82%D1%82%D0%BB%D0%B2%D0%BE%D1%80%D1%82,_%D0%9C%D0%B0%D1%80%D0%BA"&gt;Марк Шаттлворт&lt;/a&gt;. Он был фанатом проекта &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/about_debian/"&gt;Debian&lt;/a&gt;, но некоторые вещи ему всё же не нравились. Он даже пытался стать лидером Debian, но все же решил создать свою систему. В итоге, в 2004 году, он собрал команду программистов и начал создавать &lt;strong&gt;Ubuntu&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 13 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Политика конфиденциальности</title><link>https://blog.sysadminium.ru/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/privacy/</guid><description>&lt;p&gt;Привет! Рад, что вы заглянули на мой сайт. Хочу коротко и честно рассказать о том, как здесь всё устроено с приватностью.&lt;/p&gt;
+&lt;h2 id="-что-я-о-вас-собираю"&gt;📦 Что я о вас собираю&lt;/h2&gt;
+&lt;p&gt;Ничего, совсем. 🙅‍&lt;/p&gt;
+&lt;p&gt;Этот сайт — просто набор статических страничкек. Здесь нет:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;форм, куда можно что-то ввести и отправить, в том числе и комментариев;&lt;/li&gt;
+&lt;li&gt;систем аналитики (ни Яндекс.Метрики, ни Google Analytics);&lt;/li&gt;
+&lt;li&gt;cookie-файлов, которые «запоминают» ваши действия.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>PowerShell для начинающих администраторов: команды, справка и примеры</title><link>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_for_administrators/</link><pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_for_administrators/</guid><description>&lt;h2 id="основные-типы-команд-в-powershell"&gt;Основные типы команд в PowerShell&lt;/h2&gt;
+&lt;p&gt;Чаще всего вы будете сталкиваться со следующими типами команд:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alias&lt;/strong&gt; — у команды &lt;strong&gt;PowerShell&lt;/strong&gt; может быть псевдоним, выполняя который вы на самом деле выполните эту команду. Про псевдонимы у меня есть другая &lt;a href="https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_ispolzovanie_komand_dos/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ статья
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function&lt;/strong&gt; — функции написаны на &lt;strong&gt;PowerShell&lt;/strong&gt;, есть встроенные функции, но вы можете создавать и свои.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cmdlet&lt;/strong&gt; — встроенные команды &lt;strong&gt;PowerShell&lt;/strong&gt;, обычно реализованные на &lt;strong&gt;.NET&lt;/strong&gt; (чаще всего на &lt;strong&gt;C#&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Получить список команд можно с помощью командлета &lt;code&gt;Get-Command&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>О системе Ubuntu</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
+&lt;p&gt;Основателем этой системы является &lt;a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%82%D1%82%D0%BB%D0%B2%D0%BE%D1%80%D1%82,_%D0%9C%D0%B0%D1%80%D0%BA"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Марк Шаттлворт
+&lt;/a&gt;
+. Он был фанатом проекта &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/about_debian/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Debian
+&lt;/a&gt;
+, но некоторые вещи ему всё же не нравились. Он даже пытался стать лидером Debian, но все же решил создать свою систему. В итоге, в 2004 году, он собрал команду программистов и начал создавать &lt;strong&gt;Ubuntu&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260427110310.png" alt=""&gt;
 &lt;em&gt;Марк Шаттлворт&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Название &lt;strong&gt;&amp;ldquo;Ubuntu&amp;rdquo;&lt;/strong&gt; — переводится с некоторых южноафриканских языков, как &lt;strong&gt;&amp;ldquo;человечность по отношению к другим&amp;rdquo;&lt;/strong&gt; или &lt;strong&gt;&amp;ldquo;я есть, потому-что мы есть&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Кстати, в 2002 году, Марк успел слетать на МКС в качестве космического туриста. Сделал он это вместе с экипажем российского космического корабля &lt;strong&gt;&amp;ldquo;Союз ТМ-34&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>О системе Debian</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</link><pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
+&lt;p&gt;Название &lt;strong&gt;&amp;ldquo;Ubuntu&amp;rdquo;&lt;/strong&gt; — переводится с некоторых южноафриканских языков, как &lt;strong&gt;&amp;ldquo;человечность по отношению к другим&amp;rdquo;&lt;/strong&gt; или &lt;strong&gt;&amp;ldquo;я есть, потому-что мы есть&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>О системе Debian</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</link><pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
 &lt;p&gt;В &lt;strong&gt;1991&lt;/strong&gt; году появился &lt;strong&gt;Linux&lt;/strong&gt; — это было ядро операционной системы. А уже к февралю 1992 году &lt;strong&gt;Овен Бланк&lt;/strong&gt; написал для Linux ряд утилит и подобие установщика. Можно считать это первым дистрибутивом Linux.&lt;/p&gt;
 &lt;p&gt;Разработка &lt;strong&gt;Debian&lt;/strong&gt; началась в &lt;strong&gt;1993&lt;/strong&gt; году, когда &lt;strong&gt;Ян Мердок&lt;/strong&gt; заявил о намерении создать собственный дистрибутив. Название &lt;strong&gt;Debian&lt;/strong&gt; производное из имени будущей жены основателя дистрибутива &lt;strong&gt;Дебры&lt;/strong&gt; и имени самого &lt;strong&gt;Яна&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260425211707.png" alt=""&gt;
@@ -13,21 +43,32 @@
 &lt;p&gt;Вы можете использовать n8n как облачный сервис, или развернуть на своём сервере бесплатно (по лицензии fair-code) — ниже покажу, как.&lt;/p&gt;
 &lt;p&gt;Полезные сылки:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://n8n.io/"&gt;Официальный сайт&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.n8n.io/"&gt;Документация&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Официальный сайт
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Документация
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ GitHub
+&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;
-&lt;p&gt;Примеры популярных нод:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Manual Trigger&lt;/strong&gt; — запускает воркфлоу вручную по нажатию кнопки.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Schedule Trigger&lt;/strong&gt; — выполняет действия по расписанию (например, каждый час).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HTTP Request&lt;/strong&gt; — делает запросы к сторонним API (погода, курсы валют, CRM и т.д.).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit Fields&lt;/strong&gt; — редактирует данные: оставляет нужные поля, переименовывает, вычисляет.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Telegram&lt;/strong&gt; — отправляет сообщения, принимает команды, работает с файлами.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Интеграций очень много: базы данных, GitHub/GitLab, почта, Google Drive, Slack, Jira, Notion и многие другие.&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
-&lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"&gt;Пользователи в Linux&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
+&lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Пользователи в Linux
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Список всех групп в системе хранится в файле &lt;code&gt;/etc/group&lt;/code&gt;. В следующем примере я использую команду &lt;code&gt;head&lt;/code&gt;, чтобы вывести 10 первых строк этого файла:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ head /etc/group
 
@@ -42,10 +83,24 @@ lp:x:7:
 mail:x:8:
 news:x:9:
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
-&lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"&gt;Стандартные права доступа в Linux&lt;/a&gt;. Но может возникнуть ситуация, что к файлу с правами: &lt;code&gt;rw-r--r-- user1 user1&lt;/code&gt;, нужно дать доступ пользователю &lt;code&gt;admin&lt;/code&gt; с правами &lt;code&gt;rw-&lt;/code&gt;, и пользователю &lt;code&gt;user2&lt;/code&gt; c правами &lt;code&gt;r--&lt;/code&gt;. Стандартная система прав здесь не поможет. Для решения подобной задачи применяют &lt;strong&gt;ACL&lt;/strong&gt; (&lt;em&gt;Access Control List / списки контроля доступа&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;ACL бывает 2-х типов:&lt;/p&gt;</description></item><item><title>Стандартные права доступа в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</guid><description>&lt;h2 id="права-доступа-к-файлам"&gt;Права доступа к файлам&lt;/h2&gt;
+&lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Стандартные права доступа в Linux
+&lt;/a&gt;
+. Но может возникнуть ситуация, что к файлу с правами: &lt;code&gt;rw-r--r-- user1 user1&lt;/code&gt;, нужно дать доступ пользователю &lt;code&gt;admin&lt;/code&gt; с правами &lt;code&gt;rw-&lt;/code&gt;, и пользователю &lt;code&gt;user2&lt;/code&gt; c правами &lt;code&gt;r--&lt;/code&gt;. Стандартная система прав здесь не поможет. Для решения подобной задачи применяют &lt;strong&gt;ACL&lt;/strong&gt; (&lt;em&gt;Access Control List / списки контроля доступа&lt;/em&gt;).&lt;/p&gt;</description></item><item><title>Стандартные права доступа в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/</guid><description>&lt;h2 id="права-доступа-к-файлам"&gt;Права доступа к файлам&lt;/h2&gt;
 &lt;p&gt;Операционные системы на основе ядра &lt;strong&gt;Linux&lt;/strong&gt; — многопользовательские, и у разных пользователей разные права. Например, один пользователь может читать и создавать одни файлы, а второй может делать тоже самое но с другими файлами, ну а третий пользователь сможет проделать это и с первыми и со вторыми файлами. Помимо чтения и редактирования файлов, их возможно запускать, если это файлы программ или скрипты.&lt;/p&gt;
-&lt;p&gt;Права назначаются для владельца файла, группы владельцев и всех остальных. Рекомендую ознакомится со статьями &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"&gt;Пользователи в Linux&lt;/a&gt; и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/"&gt;Группы пользователей в Linux&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
+&lt;p&gt;Права назначаются для владельца файла, группы владельцев и всех остальных. Рекомендую ознакомится со статьями &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Пользователи в Linux
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Группы пользователей в Linux
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sudo&lt;/strong&gt; — важнейшая утилита Linux, позволяющая выполнять команды с правами администратора. По умолчанию она установлена не во всех дистрибутивах. И если она не установлена, то установить её можно из стандартных репозиториев, например:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;
@@ -58,7 +113,12 @@ news:x:9:
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Windows Server 2019. Установка</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</guid><description>&lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Windows Server 2019&lt;/strong&gt; — это платный продукт, поэтому его следует купить или использовать пробную версию, которую можно скачать перейдя по &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-server-2019"&gt;ссылке&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows Server 2019&lt;/strong&gt; — это платный продукт, поэтому его следует купить или использовать пробную версию, которую можно скачать перейдя по &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-server-2019"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ссылке
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Вначале вам, как обычно, нужно загрузиться используя установочный образ. После начала установки начнется загрузка файлов, а затем вы увидите экран выбора языка. Выбираем ваш язык и нажимаем кнопку &lt;strong&gt;&amp;ldquo;Далее&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
@@ -126,7 +186,17 @@ d----- 13.10.2020 11:16 Boot
 &lt;/ul&gt;
 &lt;p&gt;Настройки по умолчанию используется метод аутентификации &lt;strong&gt;trast&lt;/strong&gt;, который позволяет подключаться без аутентификации любым локальным пользователям.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260512165309.png" alt="Метод аутентификации trast"&gt;&lt;/p&gt;</description></item><item><title>Политики защиты строк (RLS) в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/politiki_zashchity_strok_rls_postgresql/</link><pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/politiki_zashchity_strok_rls_postgresql/</guid><description>&lt;h2 id="что-такое-политики-защиты-строк"&gt;Что такое политики защиты строк&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/privilegii_postgresql/"&gt;Привилегии&lt;/a&gt; для ролей определяют доступ к целым табличкам, или к столбцам. Идея защиты строк состоит в том, чтобы разграничивать доступы к разным строчкам. В документации про этот механизм можете почитать &lt;a href="https://postgrespro.ru/docs/postgresql/13/ddl-rowsecurity"&gt;тут&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/privilegii_postgresql/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Привилегии
+&lt;/a&gt;
+ для ролей определяют доступ к целым табличкам, или к столбцам. Идея защиты строк состоит в том, чтобы разграничивать доступы к разным строчкам. В документации про этот механизм можете почитать &lt;a href="https://postgrespro.ru/docs/postgresql/13/ddl-rowsecurity"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ тут
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Пишется специальное логическое выражение и вычисляется для каждой строки. Если такое выражение истинно, то мы видим строку, а в противном случае не видим. Такое выражение называют &lt;strong&gt;предикатом&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Один предикат&lt;/strong&gt; применяется для существующих строк и используется командами:&lt;/p&gt;</description></item><item><title>Привилегии в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/privilegii_postgresql/</link><pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/privilegii_postgresql/</guid><description>&lt;h2 id="привилегий-для-разных-объектов"&gt;Привилегий для разных объектов&lt;/h2&gt;
 &lt;p&gt;Каждый вид объектов имеет разный набор привилегий, таблицы например имеют самый большой набор:&lt;/p&gt;
@@ -165,7 +235,12 @@ d----- 13.10.2020 11:16 Boot
 &lt;pre tabindex="0"&gt;&lt;code&gt;CREATE ROLE &amp;lt;роль&amp;gt; [WITH] &amp;lt;атрибуты через запятую&amp;gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если при создании роли не указать атрибуты, то роль получит запрещающие атрибуты (&lt;strong&gt;NOLOGIN&lt;/strong&gt;, &lt;strong&gt;NOSUPERUSER&lt;/strong&gt;) автоматом.&lt;/p&gt;</description></item><item><title>Мониторинг индексов в PostgreSQL и их перестроение</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/monitoring_indeksov_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/monitoring_indeksov_postgresql/</guid><description>&lt;h2 id="поиск-неиспользуемых-индексов"&gt;Поиск неиспользуемых индексов&lt;/h2&gt;
 &lt;p&gt;Иногда случается, что в базе данных некоторые индексы не нужны. То есть при создании базы сделали лишние или пересекающиеся индексы, а они на самом деле не используются. Лишние индексы занимают место, а также добавляют накладные расходы. Как только вы меняете таблицу, вам нужно обновить все индексы в ней. Поэтому мониторинг индексов необходим в PostgreSQL.&lt;/p&gt;
-&lt;p&gt;В представлении &lt;a href="https://postgrespro.ru/docs/postgresql/13/monitoring-stats#MONITORING-PG-STAT-ALL-INDEXES-VIEW"&gt;pg_stat_all_indexes&lt;/a&gt; в поле &lt;code&gt;idx.scan&lt;/code&gt; вы можете увидеть количество обращений к индексу. Если там ноль, значит индекс не используется и возможно его следует удалить. Но следует точно понимать что вы делаете, и перепроверить все перед удалением таких индексов.&lt;/p&gt;</description></item><item><title>Процедура очистки VACUUM в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</guid><description>&lt;h2 id="варианты-запуска-очистки"&gt;Варианты запуска очистки&lt;/h2&gt;
+&lt;p&gt;В представлении &lt;a href="https://postgrespro.ru/docs/postgresql/13/monitoring-stats#MONITORING-PG-STAT-ALL-INDEXES-VIEW"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ pg_stat_all_indexes
+&lt;/a&gt;
+ в поле &lt;code&gt;idx.scan&lt;/code&gt; вы можете увидеть количество обращений к индексу. Если там ноль, значит индекс не используется и возможно его следует удалить. Но следует точно понимать что вы делаете, и перепроверить все перед удалением таких индексов.&lt;/p&gt;</description></item><item><title>Процедура очистки VACUUM в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/vacuum_postgresql/</guid><description>&lt;h2 id="варианты-запуска-очистки"&gt;Варианты запуска очистки&lt;/h2&gt;
 &lt;p&gt;Процесс &lt;strong&gt;VACUUM&lt;/strong&gt; чистит таблицы, обновляет статистику и обновляет карты видимости и свободного пространства. А также борется с переполнением счетчика транзакций.&lt;/p&gt;
 &lt;p&gt;Очищать таблицы или базы данных от ненужных версий строк можно с помощью следующих команд:&lt;/p&gt;
 &lt;ul&gt;
@@ -173,8 +248,23 @@ d----- 13.10.2020 11:16 Boot
 &lt;li&gt;&lt;code&gt;VACUUM;&lt;/code&gt; — базу данных;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;$ vacuumdb&lt;/code&gt; — обёртка для использования в ОС.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Процедура &lt;code&gt;VACUUM&lt;/code&gt; выполняется параллельно с другими транзакциями. При этом частый запуск нагружает систему, редкий запуск приводит к росту размера файлов. Подробнее почитать про очистку PostgreSQL можно &lt;a href="https://postgrespro.ru/docs/postgresql/13/routine-vacuuming"&gt;тут&lt;/a&gt;. Мы уже встречались с понятием &lt;strong&gt;VACUUM&lt;/strong&gt; в статье &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/"&gt;Изоляция и многоверсионность в Postgresql&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Разрастание таблиц и индексов в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</guid><description>&lt;h2 id="подключаем-расширение-pgstattuple"&gt;Подключаем расширение pgstattuple&lt;/h2&gt;
-&lt;p&gt;В начале скомпилируем расширение &lt;a href="https://postgrespro.ru/docs/postgresql/13/pgstattuple"&gt;pgstattuple&lt;/a&gt;, которое поможет понять сколько в базе данных полезной информации, а сколько служебной или неактуальной. Для этого перейдем в каталог с исходниками и выполним:&lt;/p&gt;
+&lt;p&gt;Процедура &lt;code&gt;VACUUM&lt;/code&gt; выполняется параллельно с другими транзакциями. При этом частый запуск нагружает систему, редкий запуск приводит к росту размера файлов. Подробнее почитать про очистку PostgreSQL можно &lt;a href="https://postgrespro.ru/docs/postgresql/13/routine-vacuuming"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ тут
+&lt;/a&gt;
+. Мы уже встречались с понятием &lt;strong&gt;VACUUM&lt;/strong&gt; в статье &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/izolyaciya_i_mnogoversionnost_v_postgresql/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Изоляция и многоверсионность в Postgresql
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Разрастание таблиц и индексов в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</link><pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/razrastanie_tablic_i_indeksov_postgresql/</guid><description>&lt;h2 id="подключаем-расширение-pgstattuple"&gt;Подключаем расширение pgstattuple&lt;/h2&gt;
+&lt;p&gt;В начале скомпилируем расширение &lt;a href="https://postgrespro.ru/docs/postgresql/13/pgstattuple"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ pgstattuple
+&lt;/a&gt;
+, которое поможет понять сколько в базе данных полезной информации, а сколько служебной или неактуальной. Для этого перейдем в каталог с исходниками и выполним:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ exit
 выход
 
@@ -203,10 +293,20 @@ Time: 45,688 ms
 &lt;p&gt;Если сейчас заглянуть в журнал и посмотреть последние строчки в которых есть слово FATAL, то можно увидеть следующее:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;postgres@s-pg13:~$ grep FATAL /home/postgres/logfile | tail
 2021-06-28 16:49:47.333 MSK [15360] FATAL: terminating connection due to administrator command
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;FATAL: terminating connection due to administrator command&lt;/strong&gt; — это завершение процесса с помощью функции &lt;code&gt;pg_terminate_backend(pid)&lt;/code&gt;. Это мы проделывали на &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/"&gt;прошлом уроке&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Текущие активности в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;FATAL: terminating connection due to administrator command&lt;/strong&gt; — это завершение процесса с помощью функции &lt;code&gt;pg_terminate_backend(pid)&lt;/code&gt;. Это мы проделывали на &lt;a href="https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ прошлом уроке
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Текущие активности в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/</link><pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/tekushchie_aktivnosti_v_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Что в этой статье будет рассмотрено:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Вы можете посмотреть на текущие активности сервера PostgreSQL с помощью представления &lt;a href="https://postgrespro.ru/docs/postgrespro/13/monitoring-stats#MONITORING-PG-STAT-ACTIVITY-VIEW"&gt;pg_stat_activity&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Вы можете посмотреть на текущие активности сервера PostgreSQL с помощью представления &lt;a href="https://postgrespro.ru/docs/postgrespro/13/monitoring-stats#MONITORING-PG-STAT-ACTIVITY-VIEW"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ pg_stat_activity
+&lt;/a&gt;
+.&lt;/li&gt;
 &lt;li&gt;Чтобы завершить один из обслуживающих процессов нужно использовать функцию &lt;code&gt;pg_terminate_backend(&amp;lt;pid&amp;gt;)&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Вы можете, с помощью функции &lt;code&gt;pg_blocking_pids(&amp;lt;pid&amp;gt;)&lt;/code&gt;, посмотреть кого ожидает процесс с этим &lt;strong&gt;pid&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -229,7 +329,12 @@ Time: 45,688 ms
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Каждый &lt;strong&gt;backend&lt;/strong&gt; процесс собирает статистику в процессе своей работы. Затем эта статистика отправляется процессу &lt;strong&gt;stats collector&lt;/strong&gt;, который собирает статистику со всех &lt;strong&gt;backend&lt;/strong&gt; процессов. Раз в полсекунды, статистика сбрасывается в каталог &lt;strong&gt;$PGDATA/pg_stat_tmp&lt;/strong&gt;, этот период (500мс) можно изменить только при компиляции. В результате эту статистику можно посмотреть с помощью представлений и функций.&lt;/p&gt;</description></item><item><title>Слои данных и TOAST таблицы в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/sloi_dannyh_i_toast_tablicy_postgresql/</link><pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/sloi_dannyh_i_toast_tablicy_postgresql/</guid><description>&lt;h2 id="слои"&gt;Слои&lt;/h2&gt;
-&lt;p&gt;Подробнее про физическое хранение базы данных можете почитать &lt;a href="https://postgrespro.ru/docs/postgresql/13/storage"&gt;тут&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Подробнее про физическое хранение базы данных можете почитать &lt;a href="https://postgrespro.ru/docs/postgresql/13/storage"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ тут
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Каждый файл занимает &lt;strong&gt;не больше 1 GB&lt;/strong&gt; и &lt;strong&gt;кратен 8 KB&lt;/strong&gt;. Поэтому если таблица больше 1 GB, то она хранится в нескольких файлах. &lt;strong&gt;Файлы состоят из 8 KB страниц&lt;/strong&gt;, которые в случае необходимости &lt;strong&gt;помещаются в буферный кэш&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Существуют следующие слои:&lt;/p&gt;
 &lt;ul&gt;
@@ -240,7 +345,12 @@ Time: 45,688 ms
 &lt;/ul&gt;
 &lt;h2 id="работа-с-большими-строками-toast"&gt;Работа с большими строками (TOAST)&lt;/h2&gt;
 &lt;p&gt;В PostgreSQL &lt;strong&gt;одна строка&lt;/strong&gt; &lt;strong&gt;должна&lt;/strong&gt; помещаться в одну страницу, то есть &lt;strong&gt;не быть больше 8 КБ&lt;/strong&gt;. Чтобы поместить большую строку у PostgreSQL есть следующие стратегии:&lt;/p&gt;</description></item><item><title>Табличные пространства в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/databases/postgresql/tablichnye_prostranstva_postgresql/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/databases/postgresql/tablichnye_prostranstva_postgresql/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
-&lt;p&gt;Вы можете почитать про табличные пространства в &lt;a href="https://postgrespro.ru/docs/postgresql/13/manage-ag-tablespaces"&gt;документации&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Вы можете почитать про табличные пространства в &lt;a href="https://postgrespro.ru/docs/postgresql/13/manage-ag-tablespaces"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ документации
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;При инициализации кластера создаются 2 табличных пространства:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;pg_default&lt;/code&gt; — табличное пространство по умолчанию, находится в каталоге &lt;code&gt;$PGDATA/base&lt;/code&gt;;&lt;/li&gt;
@@ -296,7 +406,12 @@ postgres@postgres=# \l
 &lt;p&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; эта сервер который обслуживает базы данных &lt;strong&gt;SQl&lt;/strong&gt;. К нему подключаются клиенты и с помощью &lt;strong&gt;SQL запросов&lt;/strong&gt; работают с этими базами. Клиентские приложения могут быть расположены на сервере приложений или прямо на компьютере пользователя.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260503145206.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Клиент — это какое-то приложение, например &lt;strong&gt;psql&lt;/strong&gt;. Клиент с сервером общается по определённому протоколу. Протокол у &lt;strong&gt;PostgreSQL&lt;/strong&gt; открытый, но для каждого приложения его не нужно реализовывать. Обычно используют стандартные библиотеки и драйверы. Основная библиотека это &lt;strong&gt;libpq&lt;/strong&gt;, её использует &lt;strong&gt;psql&lt;/strong&gt; и все штатные утилиты &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Для многих языков программирования есть свои библиотеки, которые основаны на &lt;strong&gt;libpq&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Настройка сети Windows Server 2019</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</guid><description>&lt;h2 id="настройка-сети-на-windows-server-2019"&gt;Настройка сети на Windows Server 2019&lt;/h2&gt;
-&lt;p&gt;Ранее я уже писал о том &lt;a href="https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/"&gt;как установить Windows Server 2019&lt;/a&gt;. После установки обычно первым делом устанавливают вне необходимые драйвера, которые зависят от используемого железа или способа виртуализации. А вторым шагом настраивают сеть.&lt;/p&gt;
+&lt;p&gt;Ранее я уже писал о том &lt;a href="https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ как установить Windows Server 2019
+&lt;/a&gt;
+. После установки обычно первым делом устанавливают вне необходимые драйвера, которые зависят от используемого железа или способа виртуализации. А вторым шагом настраивают сеть.&lt;/p&gt;
 &lt;p&gt;На сервере обычно используется статический IP адрес. Но, по умолчанию, после установки системы сетевые интерфейсы пытаются получить IP адреса по &lt;strong&gt;dhcp&lt;/strong&gt;. Сейчас я покажу как установить статический IP адрес на сетевой интерфейс вашего Windows сервера.&lt;/p&gt;</description></item><item><title>Перемещение по каталогам linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/peremeshchenie_po_katalogam_linux/</guid><description>&lt;h2 id="текущий-или-рабочий-каталога"&gt;Текущий или рабочий каталога&lt;/h2&gt;
 &lt;p&gt;Все команды на этом уроке можно выполнять и на Ubuntu 22.04 и на Debian 11, при этом поведение будем одинаковым!&lt;/p&gt;
 &lt;p&gt;Первым делом нужно понять в каком каталоге вы находитесь, для этого есть команда &lt;code&gt;pwd&lt;/code&gt;:&lt;/p&gt;
@@ -305,13 +420,27 @@ postgres@postgres=# \l
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из вывода ясно что вы находитесь в каталоге &lt;strong&gt;/home/alex&lt;/strong&gt;, это домашний каталог пользователя &lt;strong&gt;alex&lt;/strong&gt;. Тот каталог в котором вы находитесь называют текущим или рабочим каталогом.&lt;/p&gt;
 &lt;h2 id="перемещение-по-каталогам"&gt;Перемещение по каталогам&lt;/h2&gt;
 &lt;p&gt;Перемещаться по каталогам в Linux не сложно, и для этого используют команду — &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Процесс установки Devuan</title><link>https://blog.sysadminium.ru/docs/linux/distr/devuan_install/</link><pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/devuan_install/</guid><description>&lt;h2 id="получение-установочного-образа-devuan"&gt;Получение установочного образа Devuan&lt;/h2&gt;
-&lt;p&gt;Вы можете получить установочный iso образ с &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/"&gt;этого сайта&lt;/a&gt;. Я покажу в этой статье установку серверной версии &lt;strong&gt;Devuan 4 chimaera&lt;/strong&gt;, без графического окружения, для этого я скачиваю &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/devuan_chimaera_4.0.0_amd64_server.iso"&gt;devuan_chimaera_4.0.0_amd64_server.iso&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Установка Devuan 4 chimaera очень похожа на &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/debian_install/"&gt;установку Debian&lt;/a&gt;, хотя по сути установщик то один и тот же!&lt;/p&gt;
+&lt;p&gt;Вы можете получить установочный iso образ с &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этого сайта
+&lt;/a&gt;
+. Я покажу в этой статье установку серверной версии &lt;strong&gt;Devuan 4 chimaera&lt;/strong&gt;, без графического окружения, для этого я скачиваю &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/devuan_chimaera_4.0.0_amd64_server.iso"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ devuan_chimaera_4.0.0_amd64_server.iso
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Установка Devuan 4 chimaera очень похожа на &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/debian_install/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ установку Debian
+&lt;/a&gt;
+, хотя по сути установщик то один и тот же!&lt;/p&gt;
 &lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
 &lt;p&gt;После загрузки с установочного образа мы видим следующее окно:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429153421.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Нажимаем кнопку &lt;strong&gt;Install&lt;/strong&gt; для установки!&lt;/p&gt;
-&lt;p&gt;Дальше все как в Debian. Устанавливаем язык, раскладку клавиатуры и способ переключения раскладки:&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
+&lt;p&gt;Нажимаем кнопку &lt;strong&gt;Install&lt;/strong&gt; для установки!&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/basics/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
 &lt;p&gt;В дистрибутивах Linux нет привычных для пользователя Windows дисков, например диск &lt;code&gt;C:\&lt;/code&gt; или &lt;code&gt;D:\&lt;/code&gt;. Вместо этого в Linux существует единое дерево каталогов с корневым каталогом &lt;code&gt;/&lt;/code&gt;, который называют &amp;ldquo;root (&lt;em&gt;корень&lt;/em&gt;)&amp;rdquo;. Получается примерно такая древовидная структура каталогов:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/
 /каталог_1
@@ -337,22 +466,42 @@ Status: install ok installed
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если у вас он не установлен, то установите его:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install openssh-server
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Проверим что служба сервера запущена:&lt;/p&gt;</description></item><item><title>Процесс установки Ubuntu 24.04 LTS</title><link>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</guid><description>&lt;h2 id="получение-установочных-образов-ubuntu"&gt;Получение установочных образов Ubuntu&lt;/h2&gt;
-&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://ubuntu.com/download/server"&gt;отсюда&lt;/a&gt;. В отличии от Debian можно скачать только тяжеловесные образы для:&lt;/p&gt;
+&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://ubuntu.com/download/server"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ отсюда
+&lt;/a&gt;
+. В отличии от Debian можно скачать только тяжеловесные образы для:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Desktop&lt;/strong&gt; — система с графической средой Gnome.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt; — система без графической среды, которую предпочтительнее использовать для сервера.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260427164619.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Дополнительно стоит отметить, что Ubuntu вы сможете установить только на архитектуру AMD64.&lt;/p&gt;
-&lt;p&gt;После скачивания установочного образа (ubuntu-24.04.1-live-server-amd64), записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"&gt;rufus&lt;/a&gt; или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Процесс установки Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</link><pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</guid><description>&lt;h2 id="получение-установочных-образов-debian"&gt;Получение установочных образов Debian&lt;/h2&gt;
-&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"&gt;отсюда&lt;/a&gt;. Вам нужно скачать файл &lt;strong&gt;«debian-12.8.0-amd64-netinst.iso»&lt;/strong&gt;, это самый лёгкий установочный образ, который во время установки всё скачает из интернета.&lt;/p&gt;
+&lt;p&gt;После скачивания установочного образа (ubuntu-24.04.1-live-server-amd64), записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ rufus
+&lt;/a&gt;
+ или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Процесс установки Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</link><pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</guid><description>&lt;h2 id="получение-установочных-образов-debian"&gt;Получение установочных образов Debian&lt;/h2&gt;
+&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ отсюда
+&lt;/a&gt;
+. Вам нужно скачать файл &lt;strong&gt;«debian-12.8.0-amd64-netinst.iso»&lt;/strong&gt;, это самый лёгкий установочный образ, который во время установки всё скачает из интернета.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260427161412.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Так как на рисунке выше вы видите и другие образы для установки дистрибутива, давайте расскажу про них:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Debian-edu&lt;/strong&gt; — используется для организации компьютерных классов на базе бездисковых рабочих станций и тонких клиентов, потому здесь есть много предустановленных программ для образования.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Debian-mac&lt;/strong&gt; — это специальная версия образа, предназначенная только для старых 64-разрядных компьютеров Intel Macintosh.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;После скачивания установочного образа, записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"&gt;rufus&lt;/a&gt; или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Сервер hasplm для клиентских ключей 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-server-1c/hasp_lm-usb_redirector-ubuntu/</link><pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-server-1c/hasp_lm-usb_redirector-ubuntu/</guid><description>&lt;p&gt;Чтобы 1С увидела ваш многопользовательский usb ключ в одной сети с вами должен находится сервер лицензирования hasplm.&lt;/p&gt;
+&lt;p&gt;После скачивания установочного образа, записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ rufus
+&lt;/a&gt;
+ или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Сервер hasplm для клиентских ключей 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-server-1c/hasp_lm-usb_redirector-ubuntu/</link><pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-server-1c/hasp_lm-usb_redirector-ubuntu/</guid><description>&lt;p&gt;Чтобы 1С увидела ваш многопользовательский usb ключ в одной сети с вами должен находится сервер лицензирования hasplm.&lt;/p&gt;
 &lt;p&gt;Зачем может понадобится пробрасывать usb ключ по сети? Ну допустим у вас сервер 1С или сервер лицензирования в датацентре, а ключ в датацентр вы везти не хотите. Или, например, у вас несколько виртуальных серверов лицензирования, которые могут перемещаться по разным хостам в рамках одного кластера виртуализации и нужно обеспечить перемещение ключей 1С вслед за виртуальными машинами.&lt;/p&gt;</description></item><item><title>Bash скрипт получения числа открытых файлов пользователя</title><link>https://blog.sysadminium.ru/docs/linux/cli_bash/bash-script-openfiles/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/cli_bash/bash-script-openfiles/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Узнать сколько открытых файлов у определённого пользователя бывает необходимо для отладки службы, работающей под определённым пользователем.&lt;/p&gt;
 &lt;p&gt;В качестве параметра скрипту необходимо передать &lt;strong&gt;имя&lt;/strong&gt; или &lt;strong&gt;uid&lt;/strong&gt; пользователя. Скрипт будем использовать следующими способами:&lt;/p&gt;
@@ -399,11 +548,26 @@ esac
 &lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации. Информация передаётся маленькими частями — сетевыми пакетами. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
 &lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
 &lt;h2 id="особенности-udp"&gt;Особенности UDP&lt;/h2&gt;
-&lt;p&gt;Протокол &lt;strong&gt;UDP&lt;/strong&gt; находится на 4 уровне &lt;a href="https://sysadminium.ru/osi-and-tcp-ip-network-models/"&gt;модели OSI&lt;/a&gt;. В отличии от &lt;strong&gt;TCP&lt;/strong&gt; этот протокол не обнаруживает ошибки передачи пакетов, что уменьшает служебную информацию и облегчает передачу данных.&lt;/p&gt;</description></item><item><title>Транспортный протокол TCP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
+&lt;p&gt;Протокол &lt;strong&gt;UDP&lt;/strong&gt; находится на 4 уровне &lt;a href="https://sysadminium.ru/osi-and-tcp-ip-network-models/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ модели OSI
+&lt;/a&gt;
+. В отличии от &lt;strong&gt;TCP&lt;/strong&gt; этот протокол не обнаруживает ошибки передачи пакетов, что уменьшает служебную информацию и облегчает передачу данных.&lt;/p&gt;</description></item><item><title>Транспортный протокол TCP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/tcp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации, то есть это правила или договорённости о передачи информации по сети. Информация передаётся маленькими частями, в протоколе TCP эти части называются &lt;strong&gt;сетевыми пакетами&lt;/strong&gt;. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
 &lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
-&lt;p&gt;Спецификация протокола TCP доступна &lt;a href="https://www.rfc-editor.org/rfc/rfc793"&gt;здесь&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Кстати, про UDP я тоже писал - &lt;a href="https://sysadminium.ru/udp/"&gt;Транспортный протокол UDP&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Утилита tcpdump для анализа сети</title><link>https://blog.sysadminium.ru/docs/linux/utilities/tcpdump/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/utilities/tcpdump/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Спецификация протокола TCP доступна &lt;a href="https://www.rfc-editor.org/rfc/rfc793"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Кстати, про UDP я тоже писал - &lt;a href="https://sysadminium.ru/udp/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Транспортный протокол UDP
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Утилита tcpdump для анализа сети</title><link>https://blog.sysadminium.ru/docs/linux/utilities/tcpdump/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/utilities/tcpdump/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;tcpdump&lt;/strong&gt; — это консольная утилита для захвата и анализа сетевого трафика. Она позволяет просматривать пакеты, проходящие через сетевой интерфейс, и фильтровать их по различным критериям (IP-адрес, порт, протокол и др.). Используется для диагностики сетевых проблем, мониторинга и отладки сетевых приложений.&lt;/p&gt;
 &lt;h2 id="установка-и-начало-использования"&gt;Установка и начало использования&lt;/h2&gt;
 &lt;p&gt;Установить эту утилиту в &lt;strong&gt;debian&lt;/strong&gt; или &lt;strong&gt;ubuntu&lt;/strong&gt; можно из стандартных репозиториев, например так:&lt;/p&gt;
@@ -415,4 +579,9 @@ esac
 &lt;li&gt;подключение к удалённым базам данным (Redis, PostgreSQL), или серверам (Proxmox VE);&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;SSH Port forwarding&lt;/strong&gt; также можно использовать как резервный канал связи при падении VPN.&lt;/p&gt;
-&lt;p&gt;Поскольку SSH шифрует весь трафик, его можно безопасно использовать даже в публичных точках доступа (кафе, аэропорты, отели). Для авторизации предпочтительнее использовать &lt;strong&gt;SSH-Ключи&lt;/strong&gt;, а не пароли: это надёжнее и удобнее. Подробнее: &lt;a href="https://sysadminium.ru/ssh-keys-on-linux/"&gt;Используем ssh ключи на Linux&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Поскольку SSH шифрует весь трафик, его можно безопасно использовать даже в публичных точках доступа (кафе, аэропорты, отели). Для авторизации предпочтительнее использовать &lt;strong&gt;SSH-Ключи&lt;/strong&gt;, а не пароли: это надёжнее и удобнее. Подробнее: &lt;a href="https://sysadminium.ru/ssh-keys-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Используем ssh ключи на Linux
+&lt;/a&gt;
+.&lt;/p&gt;</description></item></channel></rss>

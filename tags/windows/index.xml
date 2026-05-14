@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Sysadminium</title><link>https://blog.sysadminium.ru/tags/windows/</link><description>Recent content in Windows on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Server 2019. Установка</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</guid><description>&lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Windows Server 2019&lt;/strong&gt; — это платный продукт, поэтому его следует купить или использовать пробную версию, которую можно скачать перейдя по &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-server-2019"&gt;ссылке&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows Server 2019&lt;/strong&gt; — это платный продукт, поэтому его следует купить или использовать пробную версию, которую можно скачать перейдя по &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-server-2019"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ссылке
+&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;Вначале вам, как обычно, нужно загрузиться используя установочный образ. После начала установки начнется загрузка файлов, а затем вы увидите экран выбора языка. Выбираем ваш язык и нажимаем кнопку &lt;strong&gt;&amp;ldquo;Далее&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
@@ -17,5 +22,10 @@
 &lt;li&gt;Программный поток (как минимум один или несколько). Чтобы процесс хоть что-то делал, в нем должен существовать программный поток. Если потока нет, значит что-то пошло не так, возможно процесс не смог корректно завершиться, или стартовать.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;У процессов есть еще очень много свойств которые вы можете посмотреть в «&lt;strong&gt;Диспетчере задач&lt;/strong&gt;» или «&lt;strong&gt;Process Explorer&lt;/strong&gt;«.&lt;/p&gt;</description></item><item><title>Настройка сети Windows Server 2019</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</guid><description>&lt;h2 id="настройка-сети-на-windows-server-2019"&gt;Настройка сети на Windows Server 2019&lt;/h2&gt;
-&lt;p&gt;Ранее я уже писал о том &lt;a href="https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/"&gt;как установить Windows Server 2019&lt;/a&gt;. После установки обычно первым делом устанавливают вне необходимые драйвера, которые зависят от используемого железа или способа виртуализации. А вторым шагом настраивают сеть.&lt;/p&gt;
+&lt;p&gt;Ранее я уже писал о том &lt;a href="https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ как установить Windows Server 2019
+&lt;/a&gt;
+. После установки обычно первым делом устанавливают вне необходимые драйвера, которые зависят от используемого железа или способа виртуализации. А вторым шагом настраивают сеть.&lt;/p&gt;
 &lt;p&gt;На сервере обычно используется статический IP адрес. Но, по умолчанию, после установки системы сетевые интерфейсы пытаются получить IP адреса по &lt;strong&gt;dhcp&lt;/strong&gt;. Сейчас я покажу как установить статический IP адрес на сетевой интерфейс вашего Windows сервера.&lt;/p&gt;</description></item></channel></rss>

@@ -3,17 +3,23 @@
 &lt;p&gt;Вы можете использовать n8n как облачный сервис, или развернуть на своём сервере бесплатно (по лицензии fair-code) — ниже покажу, как.&lt;/p&gt;
 &lt;p&gt;Полезные сылки:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://n8n.io/"&gt;Официальный сайт&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.n8n.io/"&gt;Документация&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Официальный сайт
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Документация
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ GitHub
+&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;
-&lt;p&gt;Примеры популярных нод:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Manual Trigger&lt;/strong&gt; — запускает воркфлоу вручную по нажатию кнопки.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Schedule Trigger&lt;/strong&gt; — выполняет действия по расписанию (например, каждый час).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HTTP Request&lt;/strong&gt; — делает запросы к сторонним API (погода, курсы валют, CRM и т.д.).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit Fields&lt;/strong&gt; — редактирует данные: оставляет нужные поля, переименовывает, вычисляет.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Telegram&lt;/strong&gt; — отправляет сообщения, принимает команды, работает с файлами.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Интеграций очень много: базы данных, GitHub/GitLab, почта, Google Drive, Slack, Jira, Notion и многие другие.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;</description></item></channel></rss>

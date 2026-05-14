@@ -13,4 +13,9 @@ Status: install ok installed
 &lt;li&gt;подключение к удалённым базам данным (Redis, PostgreSQL), или серверам (Proxmox VE);&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;SSH Port forwarding&lt;/strong&gt; также можно использовать как резервный канал связи при падении VPN.&lt;/p&gt;
-&lt;p&gt;Поскольку SSH шифрует весь трафик, его можно безопасно использовать даже в публичных точках доступа (кафе, аэропорты, отели). Для авторизации предпочтительнее использовать &lt;strong&gt;SSH-Ключи&lt;/strong&gt;, а не пароли: это надёжнее и удобнее. Подробнее: &lt;a href="https://sysadminium.ru/ssh-keys-on-linux/"&gt;Используем ssh ключи на Linux&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Поскольку SSH шифрует весь трафик, его можно безопасно использовать даже в публичных точках доступа (кафе, аэропорты, отели). Для авторизации предпочтительнее использовать &lt;strong&gt;SSH-Ключи&lt;/strong&gt;, а не пароли: это надёжнее и удобнее. Подробнее: &lt;a href="https://sysadminium.ru/ssh-keys-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Используем ssh ключи на Linux
+&lt;/a&gt;
+.&lt;/p&gt;</description></item></channel></rss>
