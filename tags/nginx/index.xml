@@ -15,4 +15,7 @@
 &lt;li&gt;интерпретатор языка &lt;strong&gt;PHP&lt;/strong&gt;;&lt;/li&gt;
 &lt;li&gt;сервер баз данных &lt;strong&gt;MariaDB&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Все команды в статье выполняются от пользователя с правами &lt;strong&gt;sudo&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Все команды в статье выполняются от пользователя с правами &lt;strong&gt;sudo&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Nginx. Reverse Proxy</title><link>https://blog.sysadminium.ru/docs/web/nginx-reverse-proxy/</link><pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/nginx-reverse-proxy/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;Иногда бывает нужно чтобы различные &lt;strong&gt;url запросы&lt;/strong&gt; обрабатывались на разных серверах, но первоначально приходили на один сервер. Например, вы пробросили порт на своем роутере на один веб-сервер в вашей внутренней сети. Но хотите чтобы каталог &lt;strong&gt;/xxx&lt;/strong&gt; открывался на втором веб-сервере, а &lt;strong&gt;/yyy&lt;/strong&gt; открывался на третьем, и не хотите пробрасывать порты на каждый web-сервер. Получается вот такая схема:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260518134411.png" alt="Nginx — Reverse Proxy"&gt;&lt;/p&gt;
+&lt;p&gt;То что мы хотим сделать из сервера &lt;strong&gt;web1&lt;/strong&gt;, называется &lt;strong&gt;reverse proxy&lt;/strong&gt; (обратный прокси).&lt;/p&gt;</description></item></channel></rss>
