@@ -1,8 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Веб-сервисы on Sysadminium</title><link>https://blog.sysadminium.ru/docs/web/</link><description>Recent content in Веб-сервисы on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка двух экземпляров WordPress на Apache 2</title><link>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_apache/</link><pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_apache/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Веб-сервисы on Sysadminium</title><link>https://blog.sysadminium.ru/docs/web/</link><description>Recent content in Веб-сервисы on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка двух экземпляров WordPress на Nginx</title><link>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Перед разворачиванием боевого &lt;strong&gt;WordPress&lt;/strong&gt;, хочется с ним познакомится поближе. Для этого его можно развернуть у себя на виртуалке или на физическом сервере. В этой статье я показываю, как можно установить 2 экземпляра &lt;strong&gt;WordPress&lt;/strong&gt; на одном сервере &lt;strong&gt;Debian 13&lt;/strong&gt;. Например, на первом можно изучать создание Интернет Магазина, а на втором создание Личного Блога. По аналогии вы можете создать третий и четвертый экземпляр.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; для своей работы требует:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;веб сервер (&lt;strong&gt;Apache 2&lt;/strong&gt; или &lt;strong&gt;Nginx&lt;/strong&gt;), в этой статье мы будем использовать &lt;strong&gt;Nginx&lt;/strong&gt;;
+&lt;ul&gt;
+&lt;li&gt;дли использования &lt;strong&gt;Apache 2&lt;/strong&gt; у меня есть отдельная &lt;a href="https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_apache/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ статья
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;интерпретатор языка &lt;strong&gt;PHP&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;сервер баз данных &lt;strong&gt;MariaDB&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Все команды в статье выполняются от пользователя с правами &lt;strong&gt;sudo&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Установка двух экземпляров WordPress на Apache 2</title><link>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_apache/</link><pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_apache/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Перед разворачиванием боевого &lt;strong&gt;WordPress&lt;/strong&gt;, хочется с ним познакомится поближе. Для этого его можно развернуть у себя на виртуалке или на физическом сервере. В этой статье я показываю, как можно установить 2 экземпляра &lt;strong&gt;WordPress&lt;/strong&gt; на одном сервере &lt;strong&gt;Debian 13&lt;/strong&gt;. Например, на первом можно изучать создание Интернет Магазина, а на втором создание Личного Блога. По аналогии вы можете создать третий и четвертый экземпляр.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; для своей работы требует:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;веб сервер (&lt;strong&gt;Apache 2&lt;/strong&gt; или &lt;strong&gt;Nginx&lt;/strong&gt;), в этой статье мы будем использовать &lt;strong&gt;Apache 2&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;веб сервер (&lt;strong&gt;Apache 2&lt;/strong&gt; или &lt;strong&gt;Nginx&lt;/strong&gt;), в этой статье мы будем использовать &lt;strong&gt;Apache 2&lt;/strong&gt;;
+&lt;ul&gt;
+&lt;li&gt;дли использования &lt;strong&gt;Nginx&lt;/strong&gt; у меня есть отдельная &lt;a href="https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ статья
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;интерпретатор языка &lt;strong&gt;PHP&lt;/strong&gt;;&lt;/li&gt;
 &lt;li&gt;сервер баз данных &lt;strong&gt;MariaDB&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
