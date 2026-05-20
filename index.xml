@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Политика конфиденциальности</title><link>https://blog.sysadminium.ru/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/privacy/</guid><description>&lt;p&gt;Привет! Рад, что вы заглянули на мой сайт. Хочу коротко и честно рассказать о том, как здесь всё устроено с приватностью.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Политика конфиденциальности</title><link>https://blog.sysadminium.ru/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/privacy/</guid><description>&lt;p&gt;Привет! Рад, что вы заглянули на мой сайт. Хочу коротко и честно рассказать о том, как здесь всё устроено с приватностью.&lt;/p&gt;
 &lt;h2 id="-что-я-о-вас-собираю"&gt;📦 Что я о вас собираю&lt;/h2&gt;
 &lt;p&gt;Ничего, совсем. 🙅‍&lt;/p&gt;
 &lt;p&gt;Этот сайт — просто набор статических страничкек. Здесь нет:&lt;/p&gt;
@@ -7,7 +7,20 @@
 &lt;li&gt;систем аналитики (ни Яндекс.Метрики, ни Google Analytics);&lt;/li&gt;
 &lt;li&gt;cookie-файлов, которые «запоминают» ваши действия.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>Установка двух экземпляров WordPress на Nginx</title><link>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>Fwknop - современный port knocking для Linux</title><link>https://blog.sysadminium.ru/docs/linux/security/fwknop/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/security/fwknop/</guid><description>&lt;h2 id="описание-fwknop"&gt;Описание Fwknop&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; (&lt;em&gt;FireWall KNock OPerator&lt;/em&gt;) - это инструмент для динамического управления правилами брандмауэра на основе криптографической аутентификации. Он позволяет реализовать &lt;strong&gt;SPA&lt;/strong&gt; (&lt;em&gt;Single Packet Authorization&lt;/em&gt;) - авторизацию с помощью одного пакета.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; позволяет полностью скрыть порты приложений от сканеров и ботов. Порт необходимого сервиса открывается только после получения корректного SPA пакета. SPA пакет содержит зашифрованное сообщение с временной меткой и HMAC-подписью.&lt;/p&gt;
+&lt;p&gt;Схема работы следующая:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Клиент 
+| 
+| SPA пакет (UDP 62201) 
+v 
+fwknopd 
+| 
+| nft add element ... 
+v 
+Открытие SSH (или другого приложения) на некоторое время (только для этого клиента)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="Pasted_image_20260520115536.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Установка двух экземпляров WordPress на Nginx</title><link>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</link><pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/web/installing_two_wordpress_instances_on_nginx/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Перед разворачиванием боевого &lt;strong&gt;WordPress&lt;/strong&gt;, хочется с ним познакомится поближе. Для этого его можно развернуть у себя на виртуалке или на физическом сервере. В этой статье я показываю, как можно установить 2 экземпляра &lt;strong&gt;WordPress&lt;/strong&gt; на одном сервере &lt;strong&gt;Debian 13&lt;/strong&gt;. Например, на первом можно изучать создание Интернет Магазина, а на втором создание Личного Блога. По аналогии вы можете создать третий и четвертый экземпляр.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;WordPress&lt;/strong&gt; для своей работы требует:&lt;/p&gt;
 &lt;ul&gt;
