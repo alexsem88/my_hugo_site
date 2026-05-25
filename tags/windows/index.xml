@@ -9,7 +9,29 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Планирование потоков Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/planirovanie_potokov_windows/</link><pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/planirovanie_potokov_windows/</guid><description>&lt;h2 id="планирование-потоков-в-системе"&gt;Планирование потоков в системе&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Драйверы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</link><pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</guid><description>&lt;h2 id="драйверы"&gt;Драйверы&lt;/h2&gt;
+&lt;p&gt;Все привыкли что драйверы это прослойка между оборудованием и операционной системой. И отчасти это верно. Но они могут и не относится к физическому устройству, например есть драйвер файловой системы.&lt;/p&gt;
+&lt;p&gt;Драйверы представляют собой файлы &lt;strong&gt;.sys&lt;/strong&gt; и обеспечивают интерфейс между &lt;strong&gt;вводом/выводом&lt;/strong&gt; и соответствующим оборудованием или модулем ядра. Драйверы в основном написаны на языке &lt;strong&gt;C&lt;/strong&gt; или &lt;strong&gt;C++&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Можно выделить следующие типы драйверов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Драйвера физических устройств&lt;/strong&gt;. Они необходимы для работы обычных устройств. Например принтеров, сканеров и другого оборудования.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Фильтры файловой системы&lt;/strong&gt;. Необходимы, например, для создания программных RAID или шифрования дисков.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://docs.microsoft.com/ru-ru/windows/win32/fileio/network-redirectors"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Сетевые перенаправители
+&lt;/a&gt;
+&lt;/strong&gt;. Это драйверы файловой системы, которые передают запросы по сети на другую машину. В качестве клиента в сетевой операции ввода/вывода отправляет запросы на сервер и обрабатывает ответы. Как сервер получает запросы ввода/вывода и обрабатывает их. Таким образом они позволяют приложению получать доступ к ресурсам на удаленных серверах и управлять ими, как если бы они находились на локальном компьютере.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Драйвера потоков.&lt;/strong&gt; Необходимы для поддержки сетевых протоколов, например TCP/IP.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Потоковые драйвера-фильтры ядра&lt;/strong&gt;. Они могут объединятся в цепочки для обработки потоков данных. Например для записи или воспроизведения аудио и видио.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Программные драйвера.&lt;/strong&gt; Модули ядра, работающие только в режиме ядра. Например многие программы из &lt;strong&gt;&lt;a href="https://docs.microsoft.com/en-us/sysinternals/downloads/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Sysinternals
+&lt;/a&gt;
+&lt;/strong&gt; (Process Explorer, Process Monitor) устанавливают, а затем используют такие модули.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Еще можно разделить их на работающие в &lt;strong&gt;пользовательском режиме&lt;/strong&gt; и в &lt;strong&gt;режиме ядра&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Планирование потоков Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/planirovanie_potokov_windows/</link><pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/planirovanie_potokov_windows/</guid><description>&lt;h2 id="планирование-потоков-в-системе"&gt;Планирование потоков в системе&lt;/h2&gt;
 &lt;p&gt;В Windows всегда выполняется хотя бы один поток с самым высоким приоритетом. Если в системе много ядер, то Windows делит все ядра на группы по 64 ядра. Каждому процессу даётся доступ к определённой группе ядер. Следовательно потоки этих процессов могут видеть только свою группу ядер.&lt;/p&gt;
 &lt;p&gt;Поток выполняется на процессоре определённое время, затем уступает место другому потоку. Кстати, максимальное время на которое поток может занять процессор называется &lt;strong&gt;квантом&lt;/strong&gt;. Причем время кванта можно настроить, выбрав короткие или длинные кванты. Как это сделать, я покажу ниже в этой статье, так что читайте дальше.&lt;/p&gt;</description></item><item><title>Процессы, потоки и задания Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</guid><description>&lt;h2 id="процессы"&gt;Процессы&lt;/h2&gt;
 &lt;p&gt;Процесс стоит воспринимать как контейнер с набором ресурсов для выполнения программы. То есть запускаем мы программу, для неё выделяется часть ресурсов компьютера и эта программа работает с этими ресурсами.&lt;/p&gt;
