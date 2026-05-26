@@ -9,7 +9,16 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Драйверы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</link><pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</guid><description>&lt;h2 id="драйверы"&gt;Драйверы&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Основные системные файлы</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-system-files/</link><pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-system-files/</guid><description>&lt;h2 id="системные-файлы"&gt;Системные файлы&lt;/h2&gt;
+&lt;p&gt;Весь код операционной системы располагается в нескольких бинарных файлов, которые мы рассмотрим в этой статье. Все системные файлы находятся в каталоге &lt;code&gt;%systemroot%\System32&lt;/code&gt;. Это очень важные файлы, а это значит, что без них система не сможет выполнять свои функции.&lt;/p&gt;
+&lt;p&gt;Следует помнить что удаление или порча любого из указанных файлов может повредить вашу систему!&lt;/p&gt;
+&lt;h2 id="список-файлов"&gt;Список файлов&lt;/h2&gt;
+&lt;p&gt;В самом главном файле «&lt;a href="https://ru.wikipedia.org/wiki/Ntoskrnl.exe"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Ntoskrnl.exe
+&lt;/a&gt;
+» находится &lt;strong&gt;код ядра&lt;/strong&gt; и всех компонентов &lt;strong&gt;исполнительной системы&lt;/strong&gt;. Да, ядро и исполнительная система находятся в одном файле, но логически их разделяют.&lt;/p&gt;</description></item><item><title>Драйверы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</link><pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-drivers/</guid><description>&lt;h2 id="драйверы"&gt;Драйверы&lt;/h2&gt;
 &lt;p&gt;Все привыкли что драйверы это прослойка между оборудованием и операционной системой. И отчасти это верно. Но они могут и не относится к физическому устройству, например есть драйвер файловой системы.&lt;/p&gt;
 &lt;p&gt;Драйверы представляют собой файлы &lt;strong&gt;.sys&lt;/strong&gt; и обеспечивают интерфейс между &lt;strong&gt;вводом/выводом&lt;/strong&gt; и соответствующим оборудованием или модулем ядра. Драйверы в основном написаны на языке &lt;strong&gt;C&lt;/strong&gt; или &lt;strong&gt;C++&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Можно выделить следующие типы драйверов:&lt;/p&gt;
