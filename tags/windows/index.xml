@@ -9,7 +9,16 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Системные процессы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-system-processes/</link><pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-system-processes/</guid><description>&lt;h2 id="системные-процессы"&gt;Системные процессы&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Службы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-services/</link><pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-services/</guid><description>&lt;h2 id="основная-информация"&gt;Основная информация&lt;/h2&gt;
+&lt;p&gt;Из статьи &lt;a href="https://blog.sysadminium.ru/docs/windows/basics/windows-system-processes/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ &amp;ldquo;Системные процессы Windows&amp;rdquo;
+&lt;/a&gt;
+ вы должны помнить что за запуск и остановку служб отвечает системный процесс &lt;code&gt;Services.exe&lt;/code&gt; — диспетчер служб. Именно он запускает дочерние процессы &lt;code&gt;Svhost.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Почти все системные службы запускаются одним и тем же исполняемым файлом — &lt;code&gt;svhost.exe&lt;/code&gt;. Но при запуске этому файлу передаются разные параметры командной строки, и для каждой службы они будут разными. Это видно на следующем изображении:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260526120006.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Параметры вызова исполняемого файла &lt;code&gt;svhost.exe&lt;/code&gt; для конкретной службы определяется значением из реестра. Ключ реестра при этом следующий — &lt;code&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\имя_службы&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Системные процессы Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-system-processes/</link><pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-system-processes/</guid><description>&lt;h2 id="системные-процессы"&gt;Системные процессы&lt;/h2&gt;
 &lt;h3 id="idle"&gt;Idle&lt;/h3&gt;
 &lt;p&gt;Этот процесс служит для учета времени бездействия процессора. Другими словами, пока процессор бездействует, он обслуживает потоки этого процесса.&lt;/p&gt;
 &lt;p&gt;Процесс &lt;strong&gt;Idle&lt;/strong&gt; всегда имеет идентификатор 0. Он содержит по одному потоку на каждое ядро. При этом каждый поток работает на отдельном ядре.&lt;/p&gt;
