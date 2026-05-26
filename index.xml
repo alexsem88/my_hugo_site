@@ -186,7 +186,22 @@ alex
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>PnP диспетчер</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-pnp-dispatcher/</link><pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-pnp-dispatcher/</guid><description>&lt;h2 id="pnp-диспетчер"&gt;&lt;strong&gt;PnP-диспетчер&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Диспетчер электропитания</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</guid><description>&lt;h2 id="режимы-эл-питания"&gt;Режимы эл. питания&lt;/h2&gt;
+&lt;p&gt;Управлению питанием требуется аппаратная поддержка, отвечающая требованиям &lt;a href="https://ru.wikipedia.org/wiki/ACPI"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ACPI
+&lt;/a&gt;
+ (Advansed Configuration and Power Interface). Этот стандарт определяет шесть уровней энергопотребления:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;S0&lt;/strong&gt; — максимальное;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S1&lt;/strong&gt; — режим экономии;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S2&lt;/strong&gt; — режим сна при котором процессор работает;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S3&lt;/strong&gt; — режим сна при котором процессор отключается;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S4&lt;/strong&gt; — режим гибернации. Ток подается только на кнопку включения, система может запуститься с помощью файла гибернации. При запуске используется программа &lt;strong&gt;Winresume.exe&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S5&lt;/strong&gt; — система выключена.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Из состояний &lt;strong&gt;S1-S3&lt;/strong&gt;, в случае необходимости, система может быстро перейти в состояние &lt;strong&gt;S0&lt;/strong&gt;. Но для перехода из режима &lt;strong&gt;S4&lt;/strong&gt; на это требуется больше времени.&lt;/p&gt;</description></item><item><title>PnP диспетчер</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-pnp-dispatcher/</link><pubDate>Wed, 29 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-pnp-dispatcher/</guid><description>&lt;h2 id="pnp-диспетчер"&gt;&lt;strong&gt;PnP-диспетчер&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;PnP-диспетчер&lt;/strong&gt; является основным компонентом Windows, который позволяет распознавать подключаемое оборудование и производить с ним некоторые действия.&lt;/p&gt;
 &lt;p&gt;Поддержка технологии PnP основывается на промышленных стандартах подключаемых к шинам устройств. Например в стандарте USB заложен способ самоидентификации устройств подключенных к шине USB.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PnP-диспетчер&lt;/strong&gt; реализует следующие возможности:&lt;/p&gt;
