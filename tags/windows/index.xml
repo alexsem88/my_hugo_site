@@ -9,7 +9,23 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Диспетчер электропитания</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</guid><description>&lt;h2 id="режимы-эл-питания"&gt;Режимы эл. питания&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Идентификаторы безопасности SID</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-sid/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-sid/</guid><description>&lt;h2 id="идентификаторы-безопасности"&gt;Идентификаторы безопасности&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Идентификаторы безопасности&lt;/strong&gt; — это уникальные номера пользователей, групп, доменов, служб и компьютеров. То есть у тех объектов, которые могут получать доступ к другим объектам, таким как: файлы, драйверы, разделы дисков, реестр.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SID&lt;/strong&gt; представляет собой число переменной длины, которое состоит из:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;номера версии идентификатора;&lt;/li&gt;
+&lt;li&gt;идентификатора полномочий, который показывает максимальный уровень полномочий. Для группы «&lt;strong&gt;Все&lt;/strong&gt;» равно 1. Для конкретной учетной записи или группы равно 5;&lt;/li&gt;
+&lt;li&gt;несколько чисел подчиненных полномочий;&lt;/li&gt;
+&lt;li&gt;значения &lt;strong&gt;RID&lt;/strong&gt;, которое гарантирует уникальность.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;SID&lt;/strong&gt; всегда начинается с &lt;strong&gt;&amp;ldquo;S&amp;rdquo;&lt;/strong&gt;, например: &lt;code&gt;S-1-5-21-1463437245-1224812800-863842198-1128&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Системные компоненты безопасности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</guid><description>&lt;h2 id="монитор-безопасности-srm"&gt;Монитор безопасности (SRM)&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-security-reference-monitor"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ SRM (Security reference monitor)
+&lt;/a&gt;
+ находится в исполняющей системе &lt;code&gt;ntoskrnl.exe&lt;/code&gt;, это значит, что он работает в режиме ядра. Коротко говоря, этот монитор отвечает за проверку того, может ли один объект получить доступ к другому объекту.&lt;/p&gt;
+&lt;p&gt;А также этот монитор использует специальный драйвер &lt;code&gt;Ksecdd.sys&lt;/code&gt; который работает в режиме ядра. Именно он реализует систему вызовов &lt;strong&gt;ALPC&lt;/strong&gt;, которая используется для обмена между &lt;strong&gt;CRM&lt;/strong&gt; (режим ядра) и &lt;strong&gt;LSASS&lt;/strong&gt; (пользовательский режим).&lt;/p&gt;</description></item><item><title>Диспетчер электропитания</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-power-manager/</guid><description>&lt;h2 id="режимы-эл-питания"&gt;Режимы эл. питания&lt;/h2&gt;
 &lt;p&gt;Управлению питанием требуется аппаратная поддержка, отвечающая требованиям &lt;a href="https://ru.wikipedia.org/wiki/ACPI"
  
  target="_blank" rel="noopener noreferrer"&gt;
