@@ -195,7 +195,72 @@ alex
 &lt;li&gt;несколько чисел подчиненных полномочий;&lt;/li&gt;
 &lt;li&gt;значения &lt;strong&gt;RID&lt;/strong&gt;, которое гарантирует уникальность.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;SID&lt;/strong&gt; всегда начинается с &lt;strong&gt;&amp;ldquo;S&amp;rdquo;&lt;/strong&gt;, например: &lt;code&gt;S-1-5-21-1463437245-1224812800-863842198-1128&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Системные компоненты безопасности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</guid><description>&lt;h2 id="монитор-безопасности-srm"&gt;Монитор безопасности (SRM)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;SID&lt;/strong&gt; всегда начинается с &lt;strong&gt;&amp;ldquo;S&amp;rdquo;&lt;/strong&gt;, например: &lt;code&gt;S-1-5-21-1463437245-1224812800-863842198-1128&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Маркеры доступа</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-access-token/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-access-token/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Маркер доступа&lt;/strong&gt; — это специальный объект, который описывает, какими правами обладает процесс или поток. Маркер доступа включает в себя идентификатор пользователя и его привилегии, связанные с процессом или потоком. Когда пользователь входит в систему, система аутентифицирует его, например запрашивает пароль. Если пароль верный, то система создает маркер доступа. Вследствие чего, каждый процесс, выполняемый от имени этого пользователя, имеет копию этого маркера доступа.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Маркеры доступа&lt;/strong&gt; затем используются монитором безопасности &lt;strong&gt;SRM&lt;/strong&gt; (про него было &lt;a href="https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ написано здесь
+&lt;/a&gt;
+). Основываясь на маркерах доступа монитор решает какие объекты и к чему имеют доступ.&lt;/p&gt;</description></item><item><title>Уровни целостности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-integrity-level/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-integrity-level/</guid><description>&lt;h2 id="основы"&gt;Основы&lt;/h2&gt;
+&lt;p&gt;Допустим пользователь запустил две программы, так как они запущенны от одного и того-же пользователя, то и права у них должны быть одинаковыми. Но это не всегда так. Отличаться такие процессы могут уровнями целостности, всего их в системе шесть.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Уровень&lt;/th&gt;
+ &lt;th&gt;Название&lt;/th&gt;
+ &lt;th&gt;Описание&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;0&lt;/td&gt;
+ &lt;td&gt;Ненадежный&lt;/td&gt;
+ &lt;td&gt;Используется процессами, запущенными группой &lt;strong&gt;Anonymous&lt;/strong&gt;. При этом блокируются большинство доступов по записи.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Низкий (Low / AppContainers)&lt;/td&gt;
+ &lt;td&gt;На этом уровне работают &lt;strong&gt;UWP-программы&lt;/strong&gt; и &lt;strong&gt;защищенный режим Internet Explorer&lt;/strong&gt;. Блокируется доступ по записи к большинству объектов системы, таких как файлы и разделы реестра.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Средний (Medium)&lt;/td&gt;
+ &lt;td&gt;Используется обычными приложениями, запущенными при включенной системе UAC.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Высокий (High)&lt;/td&gt;
+ &lt;td&gt;Используется приложениями, запущенными через повышение уровня полномочий при включенной системе UAC. Или обычными приложениями при выключенной системе UAC и при наличии у пользователя прав администратора.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;Системный (System)&lt;/td&gt;
+ &lt;td&gt;На этом уровне работают службы и другие приложения системного уровня (&lt;strong&gt;Wininit&lt;/strong&gt;, &lt;strong&gt;Winlogon&lt;/strong&gt;, &lt;strong&gt;Smss&lt;/strong&gt; и т. д.);&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;Защищенный (Protected)&lt;/td&gt;
+ &lt;td&gt;В настоящее время этот уровень не используется. Может устанавливаться только из режима ядра.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Распространяется уровень целостности в соответствии со следующими правилами:&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Процесс обычно наследует уровень целостности своего родителя.&lt;/li&gt;
+&lt;li&gt;Если исполняемый файл имеет один уровень целостности, и какой-то процесс запускает этот файл, то создается новый процесс с наименьшим уровнем целостности или файла, или родительского процесса. То есть родительский процесс может создать дочерний процесс с меньшим уровнем целостности.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
+&lt;p&gt;Посмотреть уровни целостности на которых работают процессы можно используя &lt;a href="https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Process Explorer
+&lt;/a&gt;
+. Например, запустите &lt;strong&gt;Microsoft Edge&lt;/strong&gt; и &lt;strong&gt;Calc.exe&lt;/strong&gt; (в Windows 10) — это приложения UWP. Затем откройте окно командной строки от имени администратора и откройте в обычном режиме программу Блокнот (notepad.exe).&lt;/p&gt;</description></item><item><title>Системные компоненты безопасности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</guid><description>&lt;h2 id="монитор-безопасности-srm"&gt;Монитор безопасности (SRM)&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-security-reference-monitor"
  
  target="_blank" rel="noopener noreferrer"&gt;
