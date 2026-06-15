@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Файловые системы on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/</link><description>Recent content in Файловые системы on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/index.xml" rel="self" type="application/rss+xml"/><item><title>Файловые системы поддерживаемые Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/fajlovye_sistemy_podderzhivaemye_linux/</link><pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/fajlovye_sistemy_podderzhivaemye_linux/</guid><description>&lt;h2 id="что-такое-файловая-система"&gt;Что такое файловая система&lt;/h2&gt;
+&lt;p&gt;Полезные данные, такие как файлы и каталоги, напрямую на диск не записываются. Между разделом диска и файлами существует прослойка в виде &lt;strong&gt;файловой системы&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Файловая система&lt;/strong&gt; — это средство, которое определяет различные правила работы с файлами, например:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;как данные будут располагаться на диске;&lt;/li&gt;
+&lt;li&gt;как будет происходить запись, поиск, чтение или удаление файлов;&lt;/li&gt;
+&lt;li&gt;какие метаданные будут использоваться;&lt;/li&gt;
+&lt;li&gt;как обезопасить файлы от порчи (например при некорректном выключении компьютера);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Метаданные&lt;/strong&gt; — это данные о данных, например файл содержит какие-то данные, а метаданные это:&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
+&lt;p&gt;В дистрибутивах Linux нет привычных для пользователя Windows дисков, например диск &lt;code&gt;C:\&lt;/code&gt; или &lt;code&gt;D:\&lt;/code&gt;. Вместо этого в Linux существует единое дерево каталогов с корневым каталогом &lt;code&gt;/&lt;/code&gt;, который называют &amp;ldquo;root (&lt;em&gt;корень&lt;/em&gt;)&amp;rdquo;. Получается примерно такая древовидная структура каталогов:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/
+/каталог_1
+/каталог_1/подкаталог_1
+/каталог_1/подкаталог_2
+/каталог_1/подкаталог_2/подкаталог_1
+/каталог_1/подкаталог_3
+/каталог_2
+/каталог_2/подкаталог_1
+/каталог_2/подкаталог_2
+/каталог_2/подкаталог_3/подкаталог_1/подкаталог_1
+/каталог_2/подкаталог_3/подкаталог_1
+/каталог_3
+/каталог_3/подкаталог_1
+/каталог_3/подкаталог_2
+/каталог_3/подкаталог_3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При этом могут использоваться разные физические диски или разделы на дисках. Схематически это можно представить таким образом:&lt;/p&gt;</description></item></channel></rss>
