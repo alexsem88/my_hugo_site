@@ -7,7 +7,7 @@
 &lt;li&gt;систем аналитики (ни Яндекс.Метрики, ни Google Analytics);&lt;/li&gt;
 &lt;li&gt;cookie-файлов, которые «запоминают» ваши действия.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>Частые ошибки 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors-cache-links-extensions/</link><pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors-cache-links-extensions/</guid><description>&lt;h2 id="вступление"&gt;Вступление&lt;/h2&gt;
+&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>Частые ошибки 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</link><pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</guid><description>&lt;h2 id="вступление"&gt;Вступление&lt;/h2&gt;
 &lt;p&gt;В работе с 1С пользователи и администраторы регулярно сталкиваются с типовыми ошибками. Многие из них решаются довольно быстро, если понимать причину проблемы. В этой статье рассмотрим несколько распространённых ошибок 1С и способы их устранения.&lt;/p&gt;
 &lt;h2 id="очистка-клиентского-кэша-1с"&gt;Очистка клиентского кэша 1С&lt;/h2&gt;
 &lt;p&gt;Когда вы работаете с базой 1С в клиент-серверном варианте, то можете использовать толстый или тонкий клиент.&lt;/p&gt;
