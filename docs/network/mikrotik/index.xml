@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MikroTik on Sysadminium</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/</link><description>Recent content in MikroTik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/network/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>MikroTik Bonding</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik_bonding/</link><pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik_bonding/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MikroTik on Sysadminium</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/</link><description>Recent content in MikroTik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 23 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/network/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>MikroTik. SSH Клиент</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</link><pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</guid><description>&lt;h2 id="подключение-и-отключение"&gt;Подключение и отключение&lt;/h2&gt;
+&lt;p&gt;Для подключения из одного MikroTik к другому можно использовать протокол ssh. Делается это с помощью встроенного ssh клиента «&lt;strong&gt;/system ssh»&lt;/strong&gt;. Вот пример:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/system ssh user=admin address=172.21.0.12
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После выполнения этой команды, у вас будет запрошен пароль от пользователя admin на удаленном роутере. И после ввода пароля вы подключитесь к нему.&lt;/p&gt;
+&lt;p&gt;Чтобы отключиться от удаленного роутера используйте команду:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;:quit
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="выполнение-команд-и-скриптов"&gt;Выполнение команд и скриптов&lt;/h2&gt;
+&lt;p&gt;Для того чтобы подключиться к удалённому Mikrotik, выполнить команду и отключиться от него, можно использовать такую конструкцию: : &lt;strong&gt;/system ssh user= &lt;strong&gt;&amp;lt;пользователь&amp;gt;&lt;/strong&gt; address= &lt;strong&gt;&amp;lt;ip-адрес&amp;gt;&lt;/strong&gt; command=»&amp;lt;команда&amp;gt;»&lt;/strong&gt;. Например так:&lt;/p&gt;</description></item><item><title>MikroTik. Основы написания скриптов</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-scripting-basics/</link><pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-scripting-basics/</guid><description>&lt;h2 id="документация-и-примеры"&gt;Документация и примеры&lt;/h2&gt;
+&lt;p&gt;Описание синтаксиса и примеров вы можете смотреть на следующих страницах:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Описание синтаксиса и небольшие примеры
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting-examples"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Различные примеры скриптов
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting_Tips_and_Tricks"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Советы и приемы создания скриптов
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="хранилище-скриптов"&gt;Хранилище скриптов&lt;/h2&gt;
+&lt;p&gt;В RouterOS есть специальное хранилище для скриптов — &lt;strong&gt;/system/script&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260616111751.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Хоть и возможно писать скрипты в окошке &lt;strong&gt;Source&lt;/strong&gt;, но это совсем не удобно. А удобно для редактирования скриптов использовать терминал.&lt;/p&gt;
+&lt;p&gt;Для создания скрипта используется вот такая команда:&lt;/p&gt;</description></item><item><title>MikroTik Bonding</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik_bonding/</link><pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik_bonding/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Bonding&lt;/strong&gt; — это технология, которая позволяет объединять несколько физических интерфейсов в один виртуальный. В зависимости от режима бондинга эта технология может расширить пропускную способность канала используя балансировку трафика, или усилить отказоустойчивость за счет резервирования линков.&lt;/p&gt;
 &lt;p&gt;Про &lt;strong&gt;Bonding интерфейсы&lt;/strong&gt; документацию на английском языке вы можете почитать &lt;a href="https://help.mikrotik.com/docs/display/ROS/Bonding"
  

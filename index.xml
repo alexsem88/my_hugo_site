@@ -197,7 +197,40 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>MikroTik. SSH Клиент</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</link><pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</guid><description>&lt;h2 id="подключение-и-отключение"&gt;Подключение и отключение&lt;/h2&gt;
+&lt;p&gt;Для подключения из одного MikroTik к другому можно использовать протокол ssh. Делается это с помощью встроенного ssh клиента «&lt;strong&gt;/system ssh»&lt;/strong&gt;. Вот пример:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/system ssh user=admin address=172.21.0.12
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После выполнения этой команды, у вас будет запрошен пароль от пользователя admin на удаленном роутере. И после ввода пароля вы подключитесь к нему.&lt;/p&gt;
+&lt;p&gt;Чтобы отключиться от удаленного роутера используйте команду:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;:quit
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="выполнение-команд-и-скриптов"&gt;Выполнение команд и скриптов&lt;/h2&gt;
+&lt;p&gt;Для того чтобы подключиться к удалённому Mikrotik, выполнить команду и отключиться от него, можно использовать такую конструкцию: : &lt;strong&gt;/system ssh user= &lt;strong&gt;&amp;lt;пользователь&amp;gt;&lt;/strong&gt; address= &lt;strong&gt;&amp;lt;ip-адрес&amp;gt;&lt;/strong&gt; command=»&amp;lt;команда&amp;gt;»&lt;/strong&gt;. Например так:&lt;/p&gt;</description></item><item><title>MikroTik. Основы написания скриптов</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-scripting-basics/</link><pubDate>Mon, 22 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-scripting-basics/</guid><description>&lt;h2 id="документация-и-примеры"&gt;Документация и примеры&lt;/h2&gt;
+&lt;p&gt;Описание синтаксиса и примеров вы можете смотреть на следующих страницах:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Описание синтаксиса и небольшие примеры
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting-examples"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Различные примеры скриптов
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.mikrotik.com/wiki/Manual:Scripting_Tips_and_Tricks"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Советы и приемы создания скриптов
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="хранилище-скриптов"&gt;Хранилище скриптов&lt;/h2&gt;
+&lt;p&gt;В RouterOS есть специальное хранилище для скриптов — &lt;strong&gt;/system/script&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260616111751.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Хоть и возможно писать скрипты в окошке &lt;strong&gt;Source&lt;/strong&gt;, но это совсем не удобно. А удобно для редактирования скриптов использовать терминал.&lt;/p&gt;
+&lt;p&gt;Для создания скрипта используется вот такая команда:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Multi boot&lt;/strong&gt; (множественная загрузка) — это когда вы можете на одном компьютере загружать разные операционные системы. Чаще всего это Windows и различные Linux системы. &lt;strong&gt;Dual boot&lt;/strong&gt; (двойная загрузка) — это вариант &lt;strong&gt;Multi boot&lt;/strong&gt;, если используется всего 2 системы.&lt;/p&gt;
 &lt;p&gt;Причины использования dual boot:&lt;/p&gt;
 &lt;ul&gt;
