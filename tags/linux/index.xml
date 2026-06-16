@@ -72,7 +72,15 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Загрузчик GRUB 2</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</guid><description>&lt;h2 id="grub-2"&gt;GRUB 2&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Multi boot&lt;/strong&gt; (множественная загрузка) — это когда вы можете на одном компьютере загружать разные операционные системы. Чаще всего это Windows и различные Linux системы. &lt;strong&gt;Dual boot&lt;/strong&gt; (двойная загрузка) — это вариант &lt;strong&gt;Multi boot&lt;/strong&gt;, если используется всего 2 системы.&lt;/p&gt;
+&lt;p&gt;Причины использования dual boot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Вы работаете на Windows, но хотите попробовать Linux.&lt;/li&gt;
+&lt;li&gt;Для одних операция вы используете Linux, а для других Windows, например - для работы Linux, для игр Windows.&lt;/li&gt;
+&lt;li&gt;У вас дома один компьютер. Вы предпочитаете работать в Linux, а другие члены вашей семьи используют Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Минусы двойной загрузки:&lt;/p&gt;</description></item><item><title>Загрузчик GRUB 2</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</guid><description>&lt;h2 id="grub-2"&gt;GRUB 2&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;GRUB 2&lt;/strong&gt; (GRand Unified Bootloader / большой единый загрузчик) — это кроссплатформенный загрузчик операционных систем.&lt;/p&gt;
 &lt;p&gt;При старте системы, когда запускается &lt;strong&gt;GRUB 2&lt;/strong&gt; вы видите следующее меню:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260613220331.png" alt=""&gt;&lt;/p&gt;
