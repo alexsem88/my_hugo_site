@@ -72,7 +72,14 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
+&lt;p&gt;Все примеры я буду показывать на Debian 11, так как на Ubuntu 22.04 все выполняется аналогично. Вообще в Linux работа в терминале на любых системах практически одинакова. Поэтому создание, редактирование и чтение файлов можно продемонстрировать на любой системе.&lt;/p&gt;
+&lt;p&gt;Для создания текстового файла служит команда &lt;code&gt;touch&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ touch file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;С помощью команды &lt;code&gt;ls&lt;/code&gt; можно посмотреть какие файлы есть в каталоге:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ ls
+file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;У команды &lt;code&gt;ls&lt;/code&gt; есть дополнительные опции:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Multi boot&lt;/strong&gt; (множественная загрузка) — это когда вы можете на одном компьютере загружать разные операционные системы. Чаще всего это Windows и различные Linux системы. &lt;strong&gt;Dual boot&lt;/strong&gt; (двойная загрузка) — это вариант &lt;strong&gt;Multi boot&lt;/strong&gt;, если используется всего 2 системы.&lt;/p&gt;
 &lt;p&gt;Причины использования dual boot:&lt;/p&gt;
 &lt;ul&gt;

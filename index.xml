@@ -197,7 +197,29 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>MikroTik. SSH Клиент</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</link><pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</guid><description>&lt;h2 id="подключение-и-отключение"&gt;Подключение и отключение&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>MikroTik. Алгоритмы обслуживания очередей</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-queueing-algorithms/</link><pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-queueing-algorithms/</guid><description>&lt;h2 id="алгоритмы-работы-очередей"&gt;Алгоритмы работы очередей&lt;/h2&gt;
+&lt;p&gt;Очереди из ip пакетов в сетях могут обрабатываться по разному. Для обслуживания очередей придумали разные алгоритмы, которые мы рассмотрим в этой статье.&lt;/p&gt;
+&lt;h3 id="алгоритмы-очередей-на-основе-fifo"&gt;Алгоритмы очередей на основе FIFO&lt;/h3&gt;
+&lt;p&gt;Самый простой алгоритм прохождения очереди называется &lt;strong&gt;FIFO&lt;/strong&gt; (first in, first out / первый пришёл, первый вышел). Первый пакет пришедший в очередь будет обработан первым. В MikroTik используются несколько алгоритмов, которые основаны на FIFO.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bfifo&lt;/strong&gt; и &lt;strong&gt;pfifo&lt;/strong&gt; – эти алгоритмы обслуживания очередей основаны на &lt;strong&gt;fifo.&lt;/strong&gt; Они различаются только тем, что максимальный размер очереди &lt;strong&gt;bfifo&lt;/strong&gt; измеряется в байтах, а &lt;strong&gt;pfifo&lt;/strong&gt; в пакетах. Если очередь переполнится, то пакеты не смогут попасть в очередь и будут отброшены.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260617112617.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>MikroTik. Очереди в компьютерных сетях</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/queues-in-computer-networks/</link><pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/queues-in-computer-networks/</guid><description>&lt;h2 id="очереди-в-сетях"&gt;Очереди в сетях&lt;/h2&gt;
+&lt;p&gt;Данные в IP сетях передаются пакетами. Например через ваш роутер в интернет выходят три компьютера и один телефон.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;На первом компьютере закачивается какой-то файл, он делится на пакеты, которые через маршрутизатор летят на компьютер.&lt;/li&gt;
+&lt;li&gt;На втором общаются по скайпу, при этом возникает голосовой и видео-трафик, который тоже делится на пакеты и передаётся через маршрутизатор и интернет второму собеседнику. И от собеседника обратно.&lt;/li&gt;
+&lt;li&gt;А на третьем в онлайн кинотеатре смотрят фильм. Файл фильма также делится на пакеты и эти пакеты через маршрутизатор попадают на компьютер.&lt;/li&gt;
+&lt;li&gt;Ещё к роутеру подключен IP телефон, который через интернет подключается к серверу телефонии.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ко всем компьютерам и к телефону летят IP пакеты из интернета, тоже самое происходит и в обратном направлении (от компьютеров и телефона в интернет). И все эти пакеты попадая на роутер встают в очередь и уже по очереди обрабатываются. Очереди в сетях имеют фиксированную длину, поэтому если трафика становится слишком много и очередь переполняется, то некоторые пакеты не могут попасть в очередь и отбрасываются.&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
+&lt;p&gt;Все примеры я буду показывать на Debian 11, так как на Ubuntu 22.04 все выполняется аналогично. Вообще в Linux работа в терминале на любых системах практически одинакова. Поэтому создание, редактирование и чтение файлов можно продемонстрировать на любой системе.&lt;/p&gt;
+&lt;p&gt;Для создания текстового файла служит команда &lt;code&gt;touch&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ touch file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;С помощью команды &lt;code&gt;ls&lt;/code&gt; можно посмотреть какие файлы есть в каталоге:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ ls
+file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;У команды &lt;code&gt;ls&lt;/code&gt; есть дополнительные опции:&lt;/p&gt;</description></item><item><title>MikroTik. SSH Клиент</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</link><pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ssh-client/</guid><description>&lt;h2 id="подключение-и-отключение"&gt;Подключение и отключение&lt;/h2&gt;
 &lt;p&gt;Для подключения из одного MikroTik к другому можно использовать протокол ssh. Делается это с помощью встроенного ssh клиента «&lt;strong&gt;/system ssh»&lt;/strong&gt;. Вот пример:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/system ssh user=admin address=172.21.0.12
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После выполнения этой команды, у вас будет запрошен пароль от пользователя admin на удаленном роутере. И после ввода пароля вы подключитесь к нему.&lt;/p&gt;
