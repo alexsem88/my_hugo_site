@@ -72,7 +72,18 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Перемещение копирование и удаление файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/moving-copying-deleting-files/</link><pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/moving-copying-deleting-files/</guid><description>&lt;h2 id="создание-файлов-и-каталогов"&gt;Создание файлов и каталогов&lt;/h2&gt;
+&lt;p&gt;Создадим 1 файл, и 2 каталога. Для создания файла используем уже знакомую команду &lt;code&gt;touch&lt;/code&gt;, для создания каталога нужно использовать команду &lt;code&gt;mkdir&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ mkdir dir1
+$ mkdir dir2
+$ touch file1.txt
+
+$ ls -l
+итого 8
+drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir1
+drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir2
+-rw-r--r-- 1 alex alex 0 дек 21 12:55 file1.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если нужно сделать некий путь из каталогов, то есть создать каталог, в нем еще один каталог и так далее, то для команды &lt;code&gt;mkdir&lt;/code&gt; нужно использовать опцию &lt;code&gt;-p&lt;/code&gt;, например:&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
 &lt;p&gt;Все примеры я буду показывать на Debian 11, так как на Ubuntu 22.04 все выполняется аналогично. Вообще в Linux работа в терминале на любых системах практически одинакова. Поэтому создание, редактирование и чтение файлов можно продемонстрировать на любой системе.&lt;/p&gt;
 &lt;p&gt;Для создания текстового файла служит команда &lt;code&gt;touch&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ touch file.txt
