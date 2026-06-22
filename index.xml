@@ -197,7 +197,20 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Ссылки в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</link><pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Proxmoxer. Работа с Proxmox API используя Python</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</link><pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</guid><description>&lt;h2 id="подготовка-к-работе"&gt;Подготовка к работе&lt;/h2&gt;
+&lt;p&gt;Для того чтобы подключиться к своему &lt;strong&gt;Proxmox VE&lt;/strong&gt; кластеру, я на нём же создаю специальный контейнер для управления. Использую я &lt;strong&gt;Devuan&lt;/strong&gt;, чтобы он занимал как можно меньше памяти. Кластер &lt;strong&gt;Proxmox VE&lt;/strong&gt; у меня версии 6.4.&lt;/p&gt;
+&lt;p&gt;О том, что такое &lt;strong&gt;Proxmox VE&lt;/strong&gt; и как его установить, я писал в этой &lt;a href="https://sysadminium.ru/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ статье
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Создание самого контейнера на Proxmox VE я описывать не буду. Просто выберите шаблон для контейнера &lt;strong&gt;devuan-3.0-standard_3.0_amd64.tar.gz&lt;/strong&gt;. Систему Devuan и её установку я описывал в &lt;a href="https://sysadminium.ru/installing_devuan_3_beowulf/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Ссылки в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</link><pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;Для начала вспомним про хранение файлов. Файлы и каталоги на жестком диске хранятся в виде набора блоков. Информация о файле (метаданные), например время создания файла, хранится в индексном дескрипторе — &lt;strong&gt;inode&lt;/strong&gt;. &lt;strong&gt;Номер inode&lt;/strong&gt; является уникальным на файловой системе и связывается с определенным набором блоков. А &lt;strong&gt;имя файла&lt;/strong&gt; это всего лишь понятное для человека наименование которое относится к определенному &lt;strong&gt;inode&lt;/strong&gt;. А &lt;strong&gt;каталог&lt;/strong&gt; — это тоже файл, но особого типа, в котором содержится список имен файлов или других каталогов и указатели на &lt;strong&gt;inode&lt;/strong&gt; для этих файлов. Об этом подробнее я писал - &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/file-types-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
