@@ -197,7 +197,25 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Фоновые задания на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/background-tasks-on-mikrotik/</link><pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/background-tasks-on-mikrotik/</guid><description>&lt;h2 id="пример-работы-фонового-задания"&gt;Пример работы фонового задания&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Типы файлов в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/file-types-linux/</link><pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/file-types-linux/</guid><description>&lt;h2 id="файлы-и-их-индексные-дескрипторы-inode"&gt;Файлы и их индексные дескрипторы (inode)&lt;/h2&gt;
+&lt;p&gt;Каждый файл содержит какие-то данные, но где храниться информация о самом файле? Такую информацию называют &lt;strong&gt;метаданными&lt;/strong&gt;. Метаданные хранятся в &lt;strong&gt;файловых дескрипторах&lt;/strong&gt;, которые называют &lt;strong&gt;inod&lt;/strong&gt;. Разные типы файловых систем работают с метаданными по разному, например &lt;strong&gt;ext4&lt;/strong&gt; выделяет некоторое место в начале раздела для хранения индексных дескрипторов. У каждого индексного дескриптора есть свой уникальный номер.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260622155353.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Индексный дескриптор хранит следующую информацию:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;свой номер;&lt;/li&gt;
+&lt;li&gt;тип файла;&lt;/li&gt;
+&lt;li&gt;владельца файла и права доступа к нему;&lt;/li&gt;
+&lt;li&gt;время:
+&lt;ul&gt;
+&lt;li&gt;создания файла (&lt;strong&gt;crtime&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;доступа к файлу, его ещё называют временем касания (&lt;strong&gt;atime&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;последнего изменения файла (&lt;strong&gt;mtime&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;последнего изменения метаданных файла (например изменили права доступа к файлу) (&lt;strong&gt;ctime&lt;/strong&gt;:);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;физическое расположение блоков данных на диске.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Чтобы увидеть номера индексных дескрипторов к команде &lt;code&gt;ls&lt;/code&gt; добавляют опцию &lt;code&gt;-i&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Фоновые задания на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/background-tasks-on-mikrotik/</link><pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/background-tasks-on-mikrotik/</guid><description>&lt;h2 id="пример-работы-фонового-задания"&gt;Пример работы фонового задания&lt;/h2&gt;
 &lt;p&gt;Фоновые задания на &lt;strong&gt;MikroTik&lt;/strong&gt;, а точнее в операционной системе &lt;strong&gt;RouterOS&lt;/strong&gt; — это такие задания, которые не связаны с работой сети и при этом выполняются в фоне. В этой статье я на практике покажу как увидеть фоновые задания или запустить их.&lt;/p&gt;
 &lt;p&gt;Во-первых, откройте два окна в WinBox: &lt;strong&gt;File List&lt;/strong&gt; (&lt;em&gt;Files&lt;/em&gt;) и &lt;strong&gt;Script List&lt;/strong&gt; (&lt;em&gt;System / Scripts&lt;/em&gt;):&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260620211122.png" alt=""&gt;&lt;/p&gt;
