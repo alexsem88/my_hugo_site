@@ -11,7 +11,56 @@ fwknopd
 | nft add element ... 
 v 
 Открытие SSH (или другого приложения) на некоторое время (только для этого клиента)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="Pasted_image_20260520115536.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Настройка сети на Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="Pasted_image_20260520115536.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Настройка сети на Ubuntu</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-ubuntu/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-ubuntu/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Здесь
+&lt;/a&gt;
+ я писал про настройку сети на &lt;strong&gt;Debian 11&lt;/strong&gt;, а в этой статье разберём всё тоже самое но для &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Посмотреть на доступные сетевые интерфейсы мы точно также можем с помощью утилиты &lt;code&gt;lshw&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
+ *-network:0
+ description: Ethernet controller
+ product: Virtio network device
+ vendor: Red Hat, Inc.
+ physical id: 12
+ bus info: pci@0000:00:12.0
+ version: 00
+ width: 64 bits
+ clock: 33MHz
+ capabilities: msix bus_master cap_list rom
+ configuration: driver=virtio-pci latency=0
+ resources: irq:11 ioport:e0e0(size=32) memory:fea93000-fea93fff memory:fe40c000-fe40ffff memory:fea00000-fea3ffff
+ *-virtio3
+ description: Ethernet interface
+ physical id: 0
+ bus info: virtio@3
+ logical name: ens18
+ serial: 02:6e:f0:fb:d4:71
+ capabilities: ethernet physical
+ configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=172.28.90.34 link=yes multicast=yes
+ *-network:1
+ description: Ethernet controller
+ product: Virtio network device
+ vendor: Red Hat, Inc.
+ physical id: 13
+ bus info: pci@0000:00:13.0
+ version: 00
+ width: 64 bits
+ clock: 33MHz
+ capabilities: msix bus_master cap_list rom
+ configuration: driver=virtio-pci latency=0
+ resources: irq:10 ioport:e100(size=32) memory:fea94000-fea94fff memory:fe410000-fe413fff memory:fea40000-fea7ffff
+ *-virtio4
+ description: Ethernet interface
+ physical id: 0
+ bus info: virtio@4
+ logical name: ens19
+ serial: 82:dd:88:27:00:a5
+ capabilities: ethernet physical
+ configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 link=yes multicast=yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В этом примере у меня два сетевых интерфейса: &lt;strong&gt;ens18&lt;/strong&gt; (02:6e:f0:fb:d4:71) и &lt;strong&gt;ens19&lt;/strong&gt; (82:dd:88:27:00:a5). При этом ip адрес назначен только на &lt;strong&gt;ens18&lt;/strong&gt; (172.28.90.34).&lt;/p&gt;</description></item><item><title>Настройка сети на Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
 &lt;p&gt;В этой статье будем использовать утилиту sudo для административных действий.&lt;/p&gt;
 &lt;p&gt;Определить какие интерфейсы есть у вашего сервера поможет утилита &lt;strong&gt;lshw&lt;/strong&gt;. Но её предварительно нужно установить:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install lshw
