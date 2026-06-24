@@ -197,7 +197,36 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Proxmoxer. Работа с Proxmox API используя Python</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</link><pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</guid><description>&lt;h2 id="подготовка-к-работе"&gt;Подготовка к работе&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Настройка сети на Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
+&lt;p&gt;В этой статье будем использовать утилиту sudo для административных действий.&lt;/p&gt;
+&lt;p&gt;Определить какие интерфейсы есть у вашего сервера поможет утилита &lt;strong&gt;lshw&lt;/strong&gt;. Но её предварительно нужно установить:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install lshw
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта утилита предназначена для определения железа вашего сервера. Например, с её помощью можно посмотреть какой на сервере процессор или оперативная память. Сейчас нам нужно получить информацию по сетевым интерфейсам, для этого используя параметр &lt;code&gt;-С network&lt;/code&gt; :&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
+ *-network
+ description: Ethernet controller
+ product: Virtio network device
+ vendor: Red Hat, Inc.
+ physical id: 12
+ bus info: pci@0000:00:12.0
+ version: 00
+ width: 64 bits
+ clock: 33MHz
+ capabilities: msix bus_master cap_list rom
+ configuration: driver=virtio-pci latency=0
+ resources: irq:11 ioport:e0a0(size=32) memory:fea52000-fea52fff memory:fe408000-fe40bfff memory:fea00000-fea3ffff
+ *-virtio2
+ description: Ethernet interface
+ physical id: 0
+ bus info: virtio@2
+ logical name: ens18
+ serial: 2a:75:9e:4d:1d:fa
+ capabilities: ethernet physical
+ configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=192.168.0.30 link=yes multicast=yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из этого вывода вы можете получить следующую информацию:&lt;/p&gt;</description></item><item><title>Резервирование роутеров Mikrotik с помощью VRRP</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-router-backup-with-vrrp/</link><pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-router-backup-with-vrrp/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;h3 id="описание-протокола"&gt;Описание протокола&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;VRRP протокол&lt;/strong&gt; позволяет объединить несколько маршрутизаторов в одну группу и этой группе назначить один общий ip-адрес. Этот ip-адрес и будет использоваться как шлюз для локальной сети. При этом, общий ip-адрес будет назначен виртуальному интерфейсу на всех маршрутизаторах в одной группе. Но этот виртуальный интерфейс будет работать только на одном маршрутизаторе, а на всех остальных он перейдет в резервное состояние.&lt;/p&gt;
+&lt;p&gt;В настоящее время, роутеры MikroTik, позволяют используют две версии VRRP: вторую и третью. Третья версия отличается от второй возможностью указать меньшее время периода отправки служебных сообщений и поддержкой IPv6. А меньшее время периода отправки служебных сообщений, означает более быстрое реагирование при поломки основного маршрутизатора и переключение на резервный.&lt;/p&gt;</description></item><item><title>Proxmoxer. Работа с Proxmox API используя Python</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</link><pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</guid><description>&lt;h2 id="подготовка-к-работе"&gt;Подготовка к работе&lt;/h2&gt;
 &lt;p&gt;Для того чтобы подключиться к своему &lt;strong&gt;Proxmox VE&lt;/strong&gt; кластеру, я на нём же создаю специальный контейнер для управления. Использую я &lt;strong&gt;Devuan&lt;/strong&gt;, чтобы он занимал как можно меньше памяти. Кластер &lt;strong&gt;Proxmox VE&lt;/strong&gt; у меня версии 6.4.&lt;/p&gt;
 &lt;p&gt;О том, что такое &lt;strong&gt;Proxmox VE&lt;/strong&gt; и как его установить, я писал в этой &lt;a href="https://sysadminium.ru/installing-proxmox-ve-zfs/"
  

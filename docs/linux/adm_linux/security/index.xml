@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firewall и сетевая безопасность on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/</link><description>Recent content in Firewall и сетевая безопасность on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Fwknop - современный port knocking для Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</guid><description>&lt;h2 id="описание-fwknop"&gt;Описание Fwknop&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firewall, сеть и безопасность on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/</link><description>Recent content in Firewall, сеть и безопасность on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Fwknop - современный port knocking для Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</guid><description>&lt;h2 id="описание-fwknop"&gt;Описание Fwknop&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; (&lt;em&gt;FireWall KNock OPerator&lt;/em&gt;) - это инструмент для динамического управления правилами брандмауэра на основе криптографической аутентификации. Он позволяет реализовать &lt;strong&gt;SPA&lt;/strong&gt; (&lt;em&gt;Single Packet Authorization&lt;/em&gt;) - авторизацию с помощью одного пакета.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; позволяет полностью скрыть порты приложений от сканеров и ботов. Порт необходимого сервиса открывается только после получения корректного SPA пакета. SPA пакет содержит зашифрованное сообщение с временной меткой и HMAC-подписью.&lt;/p&gt;
 &lt;p&gt;Схема работы следующая:&lt;/p&gt;
@@ -11,4 +11,30 @@ fwknopd
 | nft add element ... 
 v 
 Открытие SSH (или другого приложения) на некоторое время (только для этого клиента)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="Pasted_image_20260520115536.png" alt=""&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src="Pasted_image_20260520115536.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Настройка сети на Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
+&lt;p&gt;В этой статье будем использовать утилиту sudo для административных действий.&lt;/p&gt;
+&lt;p&gt;Определить какие интерфейсы есть у вашего сервера поможет утилита &lt;strong&gt;lshw&lt;/strong&gt;. Но её предварительно нужно установить:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install lshw
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта утилита предназначена для определения железа вашего сервера. Например, с её помощью можно посмотреть какой на сервере процессор или оперативная память. Сейчас нам нужно получить информацию по сетевым интерфейсам, для этого используя параметр &lt;code&gt;-С network&lt;/code&gt; :&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
+ *-network
+ description: Ethernet controller
+ product: Virtio network device
+ vendor: Red Hat, Inc.
+ physical id: 12
+ bus info: pci@0000:00:12.0
+ version: 00
+ width: 64 bits
+ clock: 33MHz
+ capabilities: msix bus_master cap_list rom
+ configuration: driver=virtio-pci latency=0
+ resources: irq:11 ioport:e0a0(size=32) memory:fea52000-fea52fff memory:fe408000-fe40bfff memory:fea00000-fea3ffff
+ *-virtio2
+ description: Ethernet interface
+ physical id: 0
+ bus info: virtio@2
+ logical name: ens18
+ serial: 2a:75:9e:4d:1d:fa
+ capabilities: ethernet physical
+ configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=192.168.0.30 link=yes multicast=yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из этого вывода вы можете получить следующую информацию:&lt;/p&gt;</description></item></channel></rss>
