@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxmoxer. Работа с Proxmox API используя Python</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</link><pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/proxmox/proxmoxer-proxmox-api-python/</guid><description>&lt;h2 id="подготовка-к-работе"&gt;Подготовка к работе&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Кеширующее зеркало репозитория для python — DevPi</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/devpi/devpi-python-pypi-mirror/</link><pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/devpi/devpi-python-pypi-mirror/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;Когда вам нужно установить дополнительный модуль для &lt;strong&gt;python&lt;/strong&gt;, вы обычно выполняете команду &lt;code&gt;pip install &amp;lt;имя модуля&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pip&lt;/strong&gt; — это установщик пакетов для python. Он их скачивает из определённого репозитория и устанавливает.&lt;/p&gt;
+&lt;p&gt;Репозитории для &lt;strong&gt;python&lt;/strong&gt; называют &lt;strong&gt;индексами&lt;/strong&gt; и по умолчанию &lt;strong&gt;pip&lt;/strong&gt; использует индекс &lt;strong&gt;&lt;a href="https://pypi.org/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ PyPI
+&lt;/a&gt;
+&lt;/strong&gt; (&lt;strong&gt;Py&lt;/strong&gt;thon &lt;strong&gt;P&lt;/strong&gt;ackage &lt;strong&gt;I&lt;/strong&gt;ndex). Но для &lt;strong&gt;pip&lt;/strong&gt; можно указать и другой индекс.&lt;/p&gt;
+&lt;p&gt;В этой статье мы познакомимся с инструментом &lt;strong&gt;DevPI&lt;/strong&gt; (&lt;a href="https://github.com/devpi/devpi"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github
+&lt;/a&gt;
+), который позволяет создать свой индекс (&lt;strong&gt;root/pypi&lt;/strong&gt;), который синхронизован с индексом &lt;strong&gt;PyPI&lt;/strong&gt;. Документация по этому инструменту доступна &lt;a href="https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Proxmoxer. Работа с Proxmox API используя Python</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox/proxmoxer-proxmox-api-python/</link><pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox/proxmoxer-proxmox-api-python/</guid><description>&lt;h2 id="подготовка-к-работе"&gt;Подготовка к работе&lt;/h2&gt;
 &lt;p&gt;Для того чтобы подключиться к своему &lt;strong&gt;Proxmox VE&lt;/strong&gt; кластеру, я на нём же создаю специальный контейнер для управления. Использую я &lt;strong&gt;Devuan&lt;/strong&gt;, чтобы он занимал как можно меньше памяти. Кластер &lt;strong&gt;Proxmox VE&lt;/strong&gt; у меня версии 6.4.&lt;/p&gt;
 &lt;p&gt;О том, что такое &lt;strong&gt;Proxmox VE&lt;/strong&gt; и как его установить, я писал в этой &lt;a href="https://sysadminium.ru/installing-proxmox-ve-zfs/"
  
