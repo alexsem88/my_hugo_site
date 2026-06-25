@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Автоматизация и интеграция on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/</link><description>Recent content in Автоматизация и интеграция on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate/><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Автоматизация и интеграция on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/</link><description>Recent content in Автоматизация и интеграция on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/index.xml" rel="self" type="application/rss+xml"/><item><title>Первое знакомство с n8n</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</guid><description>&lt;h2 id="что-такое-n8n"&gt;Что такое n8n&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;n8n&lt;/strong&gt; — это инструмент для автоматизации рабочих процессов (workflow automation). Представлен как визуальный конструктор, доступный через веб-интерфейс.&lt;/p&gt;
+&lt;p&gt;Вы можете использовать n8n как облачный сервис, или развернуть на своём сервере бесплатно (по лицензии fair-code) — ниже покажу, как.&lt;/p&gt;
+&lt;p&gt;Полезные сылки:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Официальный сайт
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.n8n.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Документация
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ GitHub
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;</description></item></channel></rss>
