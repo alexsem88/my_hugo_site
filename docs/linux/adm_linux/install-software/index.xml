@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Установка ПО на Linux on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/</link><description>Recent content in Установка ПО на Linux on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 25 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/index.xml" rel="self" type="application/rss+xml"/><item><title>Пакетные менеджеры apt и apt-get</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/</link><pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/</guid><description>&lt;h2 id="пакетные-менеджеры-apt"&gt;Пакетные менеджеры apt&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Установка ПО на Linux on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/</link><description>Recent content in Установка ПО на Linux on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/index.xml" rel="self" type="application/rss+xml"/><item><title>Пакетный менеджер dpkg</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</link><pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</guid><description>&lt;h2 id="что-умеет-dpkg"&gt;Что умеет dpkg&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;strong&gt;apt&lt;/strong&gt; (&lt;strong&gt;apt-get&lt;/strong&gt;) - &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. В &lt;strong&gt;Debian&lt;/strong&gt; и &lt;strong&gt;Ubuntu&lt;/strong&gt; также есть пакетный менеджер &lt;a href="https://ru.wikipedia.org/wiki/Dpkg"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ dpkg
+&lt;/a&gt;
+. Он не работает с репозиториями и не может скачать оттуда зависимости, зато он может:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;установить локально доступный (скачанный) &lt;strong&gt;deb пакет&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;удалить приложение,&lt;/li&gt;
+&lt;li&gt;показать список установленных приложений,&lt;/li&gt;
+&lt;li&gt;показать информацию об установленном приложении,&lt;/li&gt;
+&lt;li&gt;показать информацию о скаченном &lt;strong&gt;deb пакете&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Если при установки пакет запросит зависимости, то &lt;strong&gt;dpkg&lt;/strong&gt; не сможет установить пакет и мы получим ошибку. Для того чтобы исправить эту ошибку мы можем выполнить уже знакомую по предыдущему уроку команду &lt;strong&gt;apt -f install.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Пакетные менеджеры apt и apt-get</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/</link><pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/</guid><description>&lt;h2 id="пакетные-менеджеры-apt"&gt;Пакетные менеджеры apt&lt;/h2&gt;
 &lt;p&gt;На этом уроке мы рассмотрим следующие пакетные менеджеры:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;apt-get&lt;/strong&gt; — используется для установки, удаления, обновления пакетов;&lt;/li&gt;

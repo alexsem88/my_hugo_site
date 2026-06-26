@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ospf on Sysadminium</title><link>https://blog.sysadminium.ru/tags/ospf/</link><description>Recent content in Ospf on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 10 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/ospf/index.xml" rel="self" type="application/rss+xml"/><item><title>MIkrotik. OSPF на примере 4 роутеров</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ospf/</link><pubDate>Fri, 10 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-ospf/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Протокол &lt;strong&gt;OSPF&lt;/strong&gt; (Open Shortest Path First) — это протокол динамической маршрутизации, который ищет кратчайший путь (маршрут) используя &lt;a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%94%D0%B5%D0%B9%D0%BA%D1%81%D1%82%D1%80%D1%8B"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ алгоритм Дейкстры
+&lt;/a&gt;
+. Перед тем, как начать обмен маршрутной информацией между роутерами, им необходимо установить соседские отношения. Для этого между роутерами должна быть IP связность.&lt;/p&gt;
+&lt;p&gt;OSPF — это масштабируемый протокол и если нужно объединить много роутеров в одну автономную систему эти роутеры можно поделить на зоны (Area). Но в статье это не рассматривается.&lt;/p&gt;</description></item></channel></rss>
