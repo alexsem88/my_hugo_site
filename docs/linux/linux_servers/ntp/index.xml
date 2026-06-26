@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Сервера времени on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/ntp/</link><description>Recent content in Сервера времени on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/ntp/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка сервера времени Chrony на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/ntp/install-chrony-debian/</link><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/ntp/install-chrony-debian/</guid><description>&lt;h2 id="клиент-синхронизации-времени-на-systemd"&gt;Клиент синхронизации времени на SystemD&lt;/h2&gt;
+&lt;p&gt;В системах базирующихся на &lt;strong&gt;SystemD&lt;/strong&gt; клиентом синхронизации времени, по умолчанию, выступает служба &lt;strong&gt;systemd-timesyncd&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo systemctl status systemd-timesyncd
+● systemd-timesyncd.service - Network Time Synchronization
+ Loaded: loaded (/lib/systemd/system/systemd-timesyncd.service; enabled; vendor preset: enabled)
+ Active: active (running) since Thu 2022-05-05 12:05:00 MSK; 2s ago
+ Docs: man:systemd-timesyncd.service(8)
+ Main PID: 60424 (systemd-timesyn)
+ Status: &amp;#34;Initial synchronization to time server 91.189.94.4:123 (ntp.ubuntu.com).&amp;#34;
+ Tasks: 2 (limit: 2274)
+ Memory: 1.4M
+ CGroup: /system.slice/systemd-timesyncd.service
+ └─60424 /lib/systemd/systemd-timesyncd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта служба использует конфиг &lt;strong&gt;/etc/systemd/timesyncd.conf&lt;/strong&gt;, именно в нём прописаны NTP сервера с которыми сервер синхронизирует своё время.&lt;/p&gt;</description></item></channel></rss>
