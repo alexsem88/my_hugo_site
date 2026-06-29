@@ -72,7 +72,28 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Дата, время и часовой пояс в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</link><pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</guid><description>&lt;h2 id="текущее-время-в-системе-linux"&gt;Текущее время в системе Linux&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Генерация пароля в терминале Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</guid><description>&lt;h2 id="используем-devurandom"&gt;Используем /dev/urandom&lt;/h2&gt;
+&lt;p&gt;При чтении устройство &lt;strong&gt;/dev/urandom&lt;/strong&gt; возвращает бесконечный набор случайных байтов. Этот вывод можно отфильтровать с помощью утилиты &lt;strong&gt;tr&lt;/strong&gt;. Затем, вывод передать команде &lt;strong&gt;xargs&lt;/strong&gt; которая, по умолчанию выполняет команду &lt;strong&gt;echo&lt;/strong&gt; и ей передается всё, что было прочитано из стандартного ввода. А с помощью утилиты &lt;strong&gt;head&lt;/strong&gt; можно указать необходимое количество символов в пароле.&lt;/p&gt;
+&lt;p&gt;То есть сгенерировать пароль в Linux поможет следующая команда:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ tr -dc A-Za-z0-9_ &amp;lt; /dev/urandom | head -c 10 | xargs
+AurTdatFbw
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Вы можете сделать bash функцию и записать её в ваш &lt;strong&gt;.bashrc&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
+&lt;p&gt;В &lt;strong&gt;SystemD&lt;/strong&gt; все сервисы которые можно запускать или останавливать описываются в специальных юнитах &lt;strong&gt;service&lt;/strong&gt;. Это значит, что в таких юнитах описывается вся информация, которая поможет запустить сервис (службу).&lt;/p&gt;
+&lt;p&gt;Наверно юниты SystemD следовало изучать после изучения процессов. И скорее всего в будущем я поменяю очерёдность в оглавлении. Но сейчас я постарался описать службы (юниты типа service) с минимальным объяснением процессов.&lt;/p&gt;
+&lt;p&gt;Как вам известно, юниты — это обычные файлы. В юнитах типа &lt;strong&gt;service&lt;/strong&gt; описывается способ запуска исполняемых файлов (бинарных или скриптов).&lt;/p&gt;</description></item><item><title>Система инициализации systemd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</guid><description>&lt;h2 id="что-такое-система-инициализации"&gt;Что такое система инициализации&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Система инициализации&lt;/strong&gt; — это система в Linux, которая подготавливает к работе операционную систему. Система инициализации запускается ядром как первый процесс в операционной системе. И уже затем, этот первый процесс, запускает все остальные процессы. Также при выключении система инициализации занимается остановкой всех процессов.&lt;/p&gt;
+&lt;p&gt;Алгоритм загрузки операционной системы я описывал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/linux-boot-algorithm/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Систем инициализации много, первой такой системой была &lt;strong&gt;SysV&lt;/strong&gt;, потом для &lt;strong&gt;Ubuntu&lt;/strong&gt; написали &lt;strong&gt;Upstart&lt;/strong&gt;. Но сейчас система инициализации &lt;a href="https://github.com/systemd/systemd"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ SystemD
+&lt;/a&gt;
+ становится системой инициализации по умолчанию во многих популярных дистрибутивах Linux. В том числе и в &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt;, и в &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Дата, время и часовой пояс в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</link><pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</guid><description>&lt;h2 id="текущее-время-в-системе-linux"&gt;Текущее время в системе Linux&lt;/h2&gt;
 &lt;p&gt;Чтобы посмотреть текущее время на вашем сервере linux воспользуйтесь командой &lt;strong&gt;date&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ date
 Ср 13 июл 2022 13:40:27 UTC

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systemd on Sysadminium</title><link>https://blog.sysadminium.ru/tags/systemd/</link><description>Recent content in Systemd on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/systemd/index.xml" rel="self" type="application/rss+xml"/><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
+&lt;p&gt;В &lt;strong&gt;SystemD&lt;/strong&gt; все сервисы которые можно запускать или останавливать описываются в специальных юнитах &lt;strong&gt;service&lt;/strong&gt;. Это значит, что в таких юнитах описывается вся информация, которая поможет запустить сервис (службу).&lt;/p&gt;
+&lt;p&gt;Наверно юниты SystemD следовало изучать после изучения процессов. И скорее всего в будущем я поменяю очерёдность в оглавлении. Но сейчас я постарался описать службы (юниты типа service) с минимальным объяснением процессов.&lt;/p&gt;
+&lt;p&gt;Как вам известно, юниты — это обычные файлы. В юнитах типа &lt;strong&gt;service&lt;/strong&gt; описывается способ запуска исполняемых файлов (бинарных или скриптов).&lt;/p&gt;</description></item><item><title>Система инициализации systemd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</guid><description>&lt;h2 id="что-такое-система-инициализации"&gt;Что такое система инициализации&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Система инициализации&lt;/strong&gt; — это система в Linux, которая подготавливает к работе операционную систему. Система инициализации запускается ядром как первый процесс в операционной системе. И уже затем, этот первый процесс, запускает все остальные процессы. Также при выключении система инициализации занимается остановкой всех процессов.&lt;/p&gt;
+&lt;p&gt;Алгоритм загрузки операционной системы я описывал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/linux-boot-algorithm/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Систем инициализации много, первой такой системой была &lt;strong&gt;SysV&lt;/strong&gt;, потом для &lt;strong&gt;Ubuntu&lt;/strong&gt; написали &lt;strong&gt;Upstart&lt;/strong&gt;. Но сейчас система инициализации &lt;a href="https://github.com/systemd/systemd"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ SystemD
+&lt;/a&gt;
+ становится системой инициализации по умолчанию во многих популярных дистрибутивах Linux. В том числе и в &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt;, и в &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
