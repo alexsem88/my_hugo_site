@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Routing on Sysadminium</title><link>https://blog.sysadminium.ru/tags/routing/</link><description>Recent content in Routing on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/routing/index.xml" rel="self" type="application/rss+xml"/><item><title>Рекурсивная маршрутизация на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</guid><description>&lt;h2 id="обычная-маршрутизация"&gt;Обычная маршрутизация&lt;/h2&gt;
+&lt;p&gt;Для начала разберёмся с обычной маршрутизацией. Когда вы настраиваете роутер для выхода в интернет, вы должны настроить 3 параметра:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ip-адрес для локальной сети, например 192.168.0.1/24 на ether2;&lt;/li&gt;
+&lt;li&gt;ip-адрес для выхода в интернет, например 91.204.125.35/29 на ether1;&lt;/li&gt;
+&lt;li&gt;ip-адрес шлюза провайдера, например 91.204.125.33.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260629112654.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Конечно это не всё, но для разбора темы про маршрутизацию достаточно.&lt;/p&gt;
+&lt;p&gt;Маршрут &lt;code&gt;0.0.0.0/0 &amp;gt; 91.204.125.33&lt;/code&gt; — означает что все неизвестные сети (0.0.0.0/0) должны идти на ip адрес 91.204.125.33. А известными сетями для роутера будут 91.204.125.35/29 — её обслуживает интерфейс ether1, и 192.168.0.1/24 — она находится за ether2.&lt;/p&gt;</description></item></channel></rss>

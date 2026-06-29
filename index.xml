@@ -197,7 +197,37 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Пакетный менеджер dpkg</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</link><pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</guid><description>&lt;h2 id="что-умеет-dpkg"&gt;Что умеет dpkg&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Рекурсивная маршрутизация на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</guid><description>&lt;h2 id="обычная-маршрутизация"&gt;Обычная маршрутизация&lt;/h2&gt;
+&lt;p&gt;Для начала разберёмся с обычной маршрутизацией. Когда вы настраиваете роутер для выхода в интернет, вы должны настроить 3 параметра:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ip-адрес для локальной сети, например 192.168.0.1/24 на ether2;&lt;/li&gt;
+&lt;li&gt;ip-адрес для выхода в интернет, например 91.204.125.35/29 на ether1;&lt;/li&gt;
+&lt;li&gt;ip-адрес шлюза провайдера, например 91.204.125.33.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260629112654.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Конечно это не всё, но для разбора темы про маршрутизацию достаточно.&lt;/p&gt;
+&lt;p&gt;Маршрут &lt;code&gt;0.0.0.0/0 &amp;gt; 91.204.125.33&lt;/code&gt; — означает что все неизвестные сети (0.0.0.0/0) должны идти на ip адрес 91.204.125.33. А известными сетями для роутера будут 91.204.125.35/29 — её обслуживает интерфейс ether1, и 192.168.0.1/24 — она находится за ether2.&lt;/p&gt;</description></item><item><title>Сервер хранилища конфигураций 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
+&lt;p&gt;1С позволяет работать с одной конфигурацией группе разработчиков используя, так называемое, &lt;strong&gt;хранилище конфигураций&lt;/strong&gt;. В качестве такого хранилища может выступать обычная сетевая папка, доступная каждому программисту. Именно конфигуратор подключается к хранилищу, и он должен иметь туда файловый доступ.&lt;/p&gt;
+&lt;p&gt;Про работу с хранилищем конфигураций вы можете почитать на &lt;a href="https://its.1c.ru/db/v8320doc#bookmark:dev:TI000001091"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ сайте ИТС
+&lt;/a&gt;
+, если у вас есть туда доступ.&lt;/p&gt;
+&lt;p&gt;У удалённых сотрудников обычно нет доступа со своего рабочего мета к этой сетевой папке. И можно использовать два варианта решения этой проблемы:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Официальные снапшоты репозиториев &lt;strong&gt;Debian&lt;/strong&gt; доступны по адресу: &lt;a href="https://snapshot.debian.org/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://snapshot.debian.org/
+&lt;/a&gt;
+. Про обычные репозитории для Debian и Ubuntu я писал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/repositories/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Здесь можно выбрать определённый архив и определённую временную метку. Используя эту информацию можно настроить свой &lt;strong&gt;sources.list&lt;/strong&gt;, чтобы обновлять сервер до определённого момента времени. Я это использовал, чтобы обновить множество серверов на Debian, до одинаковых версий пакетов.&lt;/p&gt;
+&lt;p&gt;И думаю, что программистам возможность просматривать исходный код для любой даты может быть очень полезна в поисках проблем. Например стало известно что после определённой даты пользователи столкнулись с проблемой, программист может посмотреть код программы до этой даты и после, чтобы найти что было изменено.&lt;/p&gt;</description></item><item><title>Пакетный менеджер dpkg</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</link><pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</guid><description>&lt;h2 id="что-умеет-dpkg"&gt;Что умеет dpkg&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;strong&gt;apt&lt;/strong&gt; (&lt;strong&gt;apt-get&lt;/strong&gt;) - &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/"
  
  target="_blank" rel="noopener noreferrer"&gt;
