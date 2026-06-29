@@ -72,7 +72,35 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Дата, время и часовой пояс в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</link><pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/date-time-linux/</guid><description>&lt;h2 id="текущее-время-в-системе-linux"&gt;Текущее время в системе Linux&lt;/h2&gt;
+&lt;p&gt;Чтобы посмотреть текущее время на вашем сервере linux воспользуйтесь командой &lt;strong&gt;date&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ date
+Ср 13 июл 2022 13:40:27 UTC
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В выводе мы видим не только дату и время, но также и часовой пояс. Сейчас вместо часового пояса используется UTC.&lt;/p&gt;
+&lt;p&gt;Также можно использовать другую команду — &lt;strong&gt;timedatectl&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ timedatectl
+ Local time: Ср 2022-07-20 07:56:41 UTC
+ Universal time: Ср 2022-07-20 07:56:41 UTC
+ RTC time: Ср 2022-07-20 07:56:41
+ Time zone: UTC (UTC, +0000)
+System clock synchronized: yes
+ NTP service: active
+ RTC in local TZ: no
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Без опций покажет текущее время, часовой пояс, а также другую информацию связанную с синхронизацией времени. Например в примере выше видно что время успешно синхронизуется (&lt;strong&gt;System clock synchronized: yes&lt;/strong&gt;) и синхронизация настроена (&lt;strong&gt;NTP service: active&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;С помощью этой же утилиты (&lt;strong&gt;timedatectl&lt;/strong&gt;) мы будем настраивать часовой пояс и следить за синхронизацией времени.&lt;/p&gt;</description></item><item><title>Региональные настройки (locale) в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/locale-linux/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/locale-linux/</guid><description>&lt;h2 id="locale-в-linux"&gt;Locale в linux&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Locale&lt;/strong&gt; (локаль) — это региональные настройки операционной системы.&lt;/p&gt;
+&lt;p&gt;Каждая &lt;strong&gt;GNU/Linux&lt;/strong&gt; система поставляется с конкретными региональными настройками. Эти настройки влияют на язык:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;интерфейса,&lt;/li&gt;
+&lt;li&gt;сообщений об ошибках;&lt;/li&gt;
+&lt;li&gt;справочной информации;&lt;/li&gt;
+&lt;li&gt;вывода консольных утилит.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Но &lt;strong&gt;locale&lt;/strong&gt; влияет не только на язык. Дополнительно это влияет на формат чисел, даты и времени, денежной валюты и другого.&lt;/p&gt;
+&lt;h2 id="определение-текущей-locale-в-системе"&gt;Определение текущей locale в системе&lt;/h2&gt;
+&lt;p&gt;Во-первых давайте определим с какими региональными настройками вы работаете в данный момент. Другими словами, какая locale сейчас используется в вашей linux системе. Для этого нужно выполнить команду &lt;strong&gt;locale&lt;/strong&gt; без дополнительных параметров:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Официальные снапшоты репозиториев &lt;strong&gt;Debian&lt;/strong&gt; доступны по адресу: &lt;a href="https://snapshot.debian.org/"
  
  target="_blank" rel="noopener noreferrer"&gt;
