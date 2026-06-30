@@ -72,7 +72,38 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Генерация пароля в терминале Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</guid><description>&lt;h2 id="используем-devurandom"&gt;Используем /dev/urandom&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
+&lt;p&gt;Итак, мы уже познакомились с юнитами SystemD — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ service
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ target
+&lt;/a&gt;
+. Сейчас познакомимся с ещё одним типом юнитов — с таймерами (&lt;strong&gt;timer&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Таймеры позволяют по расписанию запускать службы. Это можно использовать как замену &lt;strong&gt;cron&lt;/strong&gt;. Чтобы лучше понять, как работают таймеры проделаем следующее:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Создадим скрипт;&lt;/li&gt;
+&lt;li&gt;Создадим сервис, который будет запускать этот скрипт;&lt;/li&gt;
+&lt;li&gt;Создадим таймер, который будет запускать сервис по определённому расписанию.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="создаём-скрипт"&gt;Создаём скрипт&lt;/h3&gt;
+&lt;p&gt;Скрипт, который я создаю (timer.sh), просто записывает текущее время в файл (date.log):&lt;/p&gt;</description></item><item><title>SystemD - Таргеты (target)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/</link><pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/</guid><description>&lt;h2 id="юниты-systemd-типа-target"&gt;Юниты SystemD типа target&lt;/h2&gt;
+&lt;p&gt;Ранее, мы узнали что &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ система инициализации SystemD
+&lt;/a&gt;
+ состоит из юнитов. А также мы познакомились с &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ юнитом типа service
+&lt;/a&gt;
+. Теперь узнаем про другой тип юнитов SystemD — про &lt;strong&gt;target&lt;/strong&gt;. Таргеты позволяют объединить различные юниты в группу. Например, можно создать &lt;strong&gt;target&lt;/strong&gt; который будет запускать сразу несколько служб.&lt;/p&gt;
+&lt;p&gt;В отличие от сервисов, этот тип юнитов имеют только 2 блока — &lt;code&gt;[Unit]&lt;/code&gt; и &lt;code&gt;[Install]&lt;/code&gt;. Отдельного блока &lt;code&gt;[target]&lt;/code&gt; не существует.&lt;/p&gt;</description></item><item><title>Генерация пароля в терминале Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</guid><description>&lt;h2 id="используем-devurandom"&gt;Используем /dev/urandom&lt;/h2&gt;
 &lt;p&gt;При чтении устройство &lt;strong&gt;/dev/urandom&lt;/strong&gt; возвращает бесконечный набор случайных байтов. Этот вывод можно отфильтровать с помощью утилиты &lt;strong&gt;tr&lt;/strong&gt;. Затем, вывод передать команде &lt;strong&gt;xargs&lt;/strong&gt; которая, по умолчанию выполняет команду &lt;strong&gt;echo&lt;/strong&gt; и ей передается всё, что было прочитано из стандартного ввода. А с помощью утилиты &lt;strong&gt;head&lt;/strong&gt; можно указать необходимое количество символов в пароле.&lt;/p&gt;
 &lt;p&gt;То есть сгенерировать пароль в Linux поможет следующая команда:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ tr -dc A-Za-z0-9_ &amp;lt; /dev/urandom | head -c 10 | xargs

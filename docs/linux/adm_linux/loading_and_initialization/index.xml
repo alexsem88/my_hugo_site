@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Загрузка и инициализация on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/</link><description>Recent content in Загрузка и инициализация on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/index.xml" rel="self" type="application/rss+xml"/><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Загрузка и инициализация on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/</link><description>Recent content in Загрузка и инициализация on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 12 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/index.xml" rel="self" type="application/rss+xml"/><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
+&lt;p&gt;Итак, мы уже познакомились с юнитами SystemD — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ service
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ target
+&lt;/a&gt;
+. Сейчас познакомимся с ещё одним типом юнитов — с таймерами (&lt;strong&gt;timer&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Таймеры позволяют по расписанию запускать службы. Это можно использовать как замену &lt;strong&gt;cron&lt;/strong&gt;. Чтобы лучше понять, как работают таймеры проделаем следующее:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Создадим скрипт;&lt;/li&gt;
+&lt;li&gt;Создадим сервис, который будет запускать этот скрипт;&lt;/li&gt;
+&lt;li&gt;Создадим таймер, который будет запускать сервис по определённому расписанию.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="создаём-скрипт"&gt;Создаём скрипт&lt;/h3&gt;
+&lt;p&gt;Скрипт, который я создаю (timer.sh), просто записывает текущее время в файл (date.log):&lt;/p&gt;</description></item><item><title>SystemD - Таргеты (target)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/</link><pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/</guid><description>&lt;h2 id="юниты-systemd-типа-target"&gt;Юниты SystemD типа target&lt;/h2&gt;
+&lt;p&gt;Ранее, мы узнали что &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ система инициализации SystemD
+&lt;/a&gt;
+ состоит из юнитов. А также мы познакомились с &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ юнитом типа service
+&lt;/a&gt;
+. Теперь узнаем про другой тип юнитов SystemD — про &lt;strong&gt;target&lt;/strong&gt;. Таргеты позволяют объединить различные юниты в группу. Например, можно создать &lt;strong&gt;target&lt;/strong&gt; который будет запускать сразу несколько служб.&lt;/p&gt;
+&lt;p&gt;В отличие от сервисов, этот тип юнитов имеют только 2 блока — &lt;code&gt;[Unit]&lt;/code&gt; и &lt;code&gt;[Install]&lt;/code&gt;. Отдельного блока &lt;code&gt;[target]&lt;/code&gt; не существует.&lt;/p&gt;</description></item><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
 &lt;p&gt;В &lt;strong&gt;SystemD&lt;/strong&gt; все сервисы которые можно запускать или останавливать описываются в специальных юнитах &lt;strong&gt;service&lt;/strong&gt;. Это значит, что в таких юнитах описывается вся информация, которая поможет запустить сервис (службу).&lt;/p&gt;
 &lt;p&gt;Наверно юниты SystemD следовало изучать после изучения процессов. И скорее всего в будущем я поменяю очерёдность в оглавлении. Но сейчас я постарался описать службы (юниты типа service) с минимальным объяснением процессов.&lt;/p&gt;
 &lt;p&gt;Как вам известно, юниты — это обычные файлы. В юнитах типа &lt;strong&gt;service&lt;/strong&gt; описывается способ запуска исполняемых файлов (бинарных или скриптов).&lt;/p&gt;</description></item><item><title>Система инициализации systemd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</guid><description>&lt;h2 id="что-такое-система-инициализации"&gt;Что такое система инициализации&lt;/h2&gt;
