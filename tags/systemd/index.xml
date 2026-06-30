@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systemd on Sysadminium</title><link>https://blog.sysadminium.ru/tags/systemd/</link><description>Recent content in Systemd on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 12 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/systemd/index.xml" rel="self" type="application/rss+xml"/><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systemd on Sysadminium</title><link>https://blog.sysadminium.ru/tags/systemd/</link><description>Recent content in Systemd on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/systemd/index.xml" rel="self" type="application/rss+xml"/><item><title>Команды SystemD</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В прошлых статьях по &lt;strong&gt;SystemD&lt;/strong&gt; я рассказывал про юниты разных типов, а именно &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ службы
+&lt;/a&gt;
+, &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ таргеты
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ таймеры
+&lt;/a&gt;
+. А в этой пробегусь по утилитам, которые входят в систему &lt;strong&gt;SystemD&lt;/strong&gt;, рассмотрим следующие команды:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl&lt;/code&gt; — управляет юнитами, запускает их, останавливает, показывает конфигурацию и делает многое другое,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systemd-analyze&lt;/code&gt; — показывает необходимое для загрузки время,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timedatectl&lt;/code&gt; — управляет временем на компьютере,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hostnamectl&lt;/code&gt; — управляет именем компьютера,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;localectl&lt;/code&gt; — управляет региональными настройками, &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;loginctl&lt;/code&gt; — управляет сессиями и пользователями,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;journalctl&lt;/code&gt; — позволяет просматривать системный жунрал.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="команда-systemctl"&gt;Команда systemctl&lt;/h2&gt;
+&lt;p&gt;Напомню основные подкоманды для &lt;code&gt;systemctl&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
 &lt;p&gt;Итак, мы уже познакомились с юнитами SystemD — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
  
  target="_blank" rel="noopener noreferrer"&gt;
