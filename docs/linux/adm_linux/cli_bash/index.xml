@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CLI / Bash on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/</link><description>Recent content in CLI / Bash on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Команды SystemD</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CLI / Bash on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/</link><description>Recent content in CLI / Bash on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 13 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Перенаправление потоков ввода вывода</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</link><pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</guid><description>&lt;h2 id="стандартные-потоки"&gt;Стандартные потоки&lt;/h2&gt;
+&lt;p&gt;Когда вы выполняете какую-нибудь команду и это действие выводит что-то на экран терминала. То этот вывод может идти по разным потокам:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;вывод информации &lt;strong&gt;(stdout)&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;вывод ошибок &lt;strong&gt;(stderr)&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Оба эти потока, по умолчанию, привязаны к терминалу, поэтому весь вывод вы видите на экране терминала. Например, попробуем найти что-нибудь в каталоге &lt;strong&gt;/home&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ find /home/ -name alex
+find: ‘/home/dima’: Отказано в доступе
+find: ‘/home/lena’: Отказано в доступе
+/home/alex
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Вывод этой команды попал на экран терминала, при этом ошибки шли через &lt;strong&gt;stderr&lt;/strong&gt; а нормальный вывод через &lt;strong&gt;stdout&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Кроме этого существует стандартный поток ввода &lt;strong&gt;(stdin)&lt;/strong&gt;. Он также привязан к терминалу, но к клавиатуре терминала. Получается, когда мы вводим что-нибудь в окне терминала, то мы используем &lt;strong&gt;(stdin)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Команды SystemD</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;В прошлых статьях по &lt;strong&gt;SystemD&lt;/strong&gt; я рассказывал про юниты разных типов, а именно &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
  
  target="_blank" rel="noopener noreferrer"&gt;

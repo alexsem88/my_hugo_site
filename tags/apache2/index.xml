@@ -15,4 +15,10 @@
 &lt;li&gt;интерпретатор языка &lt;strong&gt;PHP&lt;/strong&gt;;&lt;/li&gt;
 &lt;li&gt;сервер баз данных &lt;strong&gt;MariaDB&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Все команды в статье выполняются от пользователя с правами &lt;strong&gt;sudo&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Все команды в статье выполняются от пользователя с правами &lt;strong&gt;sudo&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Свой центр сертификации - openssl</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/ca-tls/certificate-authority-openssl/</link><pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/ca-tls/certificate-authority-openssl/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Причины использовать само-подписанные ssl-сертификаты:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;При работе с тестовыми веб-серверами.&lt;/strong&gt; Когда вам требуется протокол https. Удобно иметь свой центр сертификации и для каждого тестового сайта выпускать сертификаты.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;При работе с внутренними web-серверами.&lt;/strong&gt; Например у компании есть внутренний сайт, доступный только из внутренней сети. Здесь также необходимо использовать https. Так как доступ к сайту есть у ограниченного числа сотрудников, то на их устройства можно добавить свой корневой ssl-сертификат. И эти устройства начнут доверять внутреннему сайту компании.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На этом скриншоте, браузер не доверяет сайту, но если нажать на кнопку &lt;strong&gt;Дополнительные&lt;/strong&gt;, то вы всё равно сможете перейти на сайт:&lt;/p&gt;</description></item></channel></rss>
