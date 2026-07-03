@@ -197,7 +197,39 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Перенаправление потоков ввода вывода</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</link><pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</guid><description>&lt;h2 id="стандартные-потоки"&gt;Стандартные потоки&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита top</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/top-utility/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/top-utility/</guid><description>&lt;h2 id="утилита-top"&gt;Утилита top&lt;/h2&gt;
+&lt;p&gt;Утилита &lt;code&gt;top&lt;/code&gt; — это консольный диспетчер задач. Она показывает общую информацию о системе и информацию о каждом процессе. Это интерактивная утилита, то есть она постоянно обновляет данные и с ней можно взаимодействовать с помощью горячих клавиш.&lt;/p&gt;
+&lt;p&gt;Пример работы утилиты:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260703164306.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Показанную информацию можно разбить на две части:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Сверху&lt;/strong&gt; — общая информация о системе.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Снизу&lt;/strong&gt; — информация по каждому процессу.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="общая-информация-о-системе"&gt;Общая информация о системе&lt;/h2&gt;
+&lt;p&gt;На первой строке показаны: текущее время, uptime, количество активных пользователей, load average.&lt;/p&gt;</description></item><item><title>Команда ps</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/ps-utility/</link><pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/ps-utility/</guid><description>&lt;h2 id="команда-ps"&gt;Команда ps&lt;/h2&gt;
+&lt;p&gt;Команда &lt;code&gt;ps&lt;/code&gt; используется для получения списка процессов в системе Linux со всеми их метриками и свойствами. Она показывает срез информации на данный момент времени. То есть некоторые свойства процесса могут изменяться со временем. Например, используемая оперативная память может вырасти или уменьшится. А команда &lt;code&gt;ps&lt;/code&gt; покажет занимаемую память процессом в данный момент.&lt;/p&gt;
+&lt;p&gt;Если вызвать &lt;code&gt;ps&lt;/code&gt; без аргументов то увидим процессы своего пользователя привязанные к текущему терминалу (TTY):&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ ps
+ PID TTY TIME CMD
+ 19104 pts/0 00:00:00 bash
+ 19113 pts/0 00:00:00 ps
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы посмотреть все процессы в системе используют опции &lt;code&gt;ax&lt;/code&gt;, я добавил &lt;code&gt;head&lt;/code&gt; чтобы вывести первые 10 процессов, так как их много:&lt;/p&gt;</description></item><item><title>Процессы в системе Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</link><pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</guid><description>&lt;h2 id="что-такое-процесс"&gt;Что такое процесс&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Процесс&lt;/strong&gt; — это среда выполнения для работы экземпляра программы. Например, есть какая-то программа и при её запуске, для неё создается процесс. Этот процесс наделяется некоторыми свойствами, ему выделяется часть оперативной памяти и присваивается уникальный идентификатор. Программа работает в рамках этого процесса.&lt;/p&gt;
+&lt;p&gt;Процессор обрабатывает эти процессы не одновременно. Он очень быстро переключается с одного процесса на другой, за счет чего возникает ощущение многозадачности.&lt;/p&gt;
+&lt;p&gt;С процессом связан целый ряд атрибутов, которые расширяют или ограничивают его возможности. В течение жизни процесс может находится в разных состояниях.&lt;/p&gt;</description></item><item><title>Объединение команд в одной строке</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</link><pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</guid><description>&lt;h2 id="результат-выполнения-команды"&gt;Результат выполнения команды&lt;/h2&gt;
+&lt;p&gt;При выполнении команды запускается процесс, он получает какие-то данные из &lt;strong&gt;stdin&lt;/strong&gt;, что-то делает и выводит результат в &lt;strong&gt;stdout,&lt;/strong&gt; а если что-то пошло не так, то выводит ошибку в &lt;strong&gt;stderr&lt;/strong&gt;. Об этом я писал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Но при выполнении команды происходит кое-что ещё. Когда команда выполняется то результат её выполнения записывается в особую переменную — &lt;code&gt;?&lt;/code&gt;. Результат выполнения может быть:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Успешным&lt;/strong&gt;. Тогда в переменную запишется &lt;code&gt;0&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Не успешным&lt;/strong&gt;, то есть при выполнении были ошибки. Тогда в переменную запишется не ноль, а какое-нибудь другое число. Это число зависит от ошибки.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Посмотреть значение этой переменной можно с помощью команды &lt;code&gt;echo&lt;/code&gt;. Символ &lt;code&gt;$&lt;/code&gt; перед именем переменной означает то что нам нужно вывести значение переменной, а не её имя:&lt;/p&gt;</description></item><item><title>Перенаправление потоков ввода вывода</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</link><pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</guid><description>&lt;h2 id="стандартные-потоки"&gt;Стандартные потоки&lt;/h2&gt;
 &lt;p&gt;Когда вы выполняете какую-нибудь команду и это действие выводит что-то на экран терминала. То этот вывод может идти по разным потокам:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;вывод информации &lt;strong&gt;(stdout)&lt;/strong&gt;;&lt;/li&gt;
