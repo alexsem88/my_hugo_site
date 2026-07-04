@@ -72,7 +72,22 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита top</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/</guid><description>&lt;h2 id="утилита-top"&gt;Утилита top&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита htop</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</link><pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</guid><description>&lt;h2 id="утилита-htop"&gt;Утилита htop&lt;/h2&gt;
+&lt;p&gt;Утилита &lt;code&gt;htop&lt;/code&gt; — это консольный диспетчер задач. Он похож на утилиту &lt;code&gt;top&lt;/code&gt;, которую мы рассмотрели в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+. Устанавливается &lt;code&gt;htop&lt;/code&gt; из стандартных репозиториев, например так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install htop
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Пример работы утилиты:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260704214516.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Показанную информацию можно разбить на две части:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Сверху&lt;/strong&gt; — общая информация о системе.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Снизу&lt;/strong&gt; — информация по каждому процессу. При этом здесь есть две вкладки: первая это нагрузка на процессор и память, а вторая — нагрузка на дисковую подсистему.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;С помощью клавиши &lt;code&gt;Tab&lt;/code&gt; вы можете переключаться между вкладками &lt;code&gt;Main&lt;/code&gt; и &lt;code&gt;I/O&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Утилита top</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/</link><pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/</guid><description>&lt;h2 id="утилита-top"&gt;Утилита top&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;code&gt;top&lt;/code&gt; — это консольный диспетчер задач. Она показывает общую информацию о системе и информацию о каждом процессе. Это интерактивная утилита, то есть она постоянно обновляет данные и с ней можно взаимодействовать с помощью горячих клавиш.&lt;/p&gt;
 &lt;p&gt;Пример работы утилиты:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260703164306.png" alt=""&gt;&lt;/p&gt;
