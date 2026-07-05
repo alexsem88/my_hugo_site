@@ -197,7 +197,26 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита htop</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</link><pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</guid><description>&lt;h2 id="утилита-htop"&gt;Утилита htop&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита netstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</link><pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Эта утилита используется для вывода информации о сетевых подключениях. Также она может показать таблицы маршрутизации, статистику по интерфейсам и другое. Эта утилита считается устаревшей и была заменена на утилиту &lt;code&gt;ss&lt;/code&gt;, которую я рассмотрю в следующей статье. Получить справку об этой утилите можно &lt;a href="https://man7.org/linux/man-pages/man8/netstat.8.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Утилита &lt;code&gt;netstat&lt;/code&gt; входит в пакет &lt;code&gt;net-tools&lt;/code&gt;. В этот же пакет также включены следующие инструменты: &lt;code&gt;arp&lt;/code&gt;, &lt;code&gt;ifconfig&lt;/code&gt;, &lt;code&gt;rarp&lt;/code&gt;, &lt;code&gt;nameif&lt;/code&gt; и &lt;code&gt;route&lt;/code&gt;. Все они считаются устаревшими, но иногда используются по привычке. И так, чтобы установить &lt;code&gt;net-tools&lt;/code&gt; выполните:&lt;/p&gt;</description></item><item><title>Текст в речь с помощью Festival в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/text-to-speech-festival/</link><pubDate>Fri, 07 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/text-to-speech-festival/</guid><description>&lt;h2 id="о-программе"&gt;О программе&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Festival&lt;/strong&gt; — это система преобразования текста в речь. Помимо простого преобразования текста в речь, его можно использовать в интерактивном командном режиме для тестирования и разработки различных аспектов технологии синтеза речи.&lt;/p&gt;
+&lt;p&gt;Фестиваль имеет два основных режима: командный и интерактивный.&lt;/p&gt;
+&lt;p&gt;У программы довольно много недостатков:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;неприятный голос;&lt;/li&gt;
+&lt;li&gt;в некоторых словах проглатываются определённые звуки;&lt;/li&gt;
+&lt;li&gt;если в тексте встречается некая последовательность символов, то может вылететь с ошибкой.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Но небольшие полезности можно заставить её проделывать. В конце статьи я покажу небольшой скрипт, который будет проговаривать текущую дату.&lt;/p&gt;</description></item><item><title>Load average в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/load-average/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/load-average/</guid><description>&lt;h2 id="что-такое-load-average"&gt;Что такое Load Average&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Load Average&lt;/strong&gt; (&lt;strong&gt;LA&lt;/strong&gt;) — это показатель, который показывает среднюю нагрузку на сервер за определённый период времени. Чем его значение ниже, тем ниже нагрузка на сервер. В системах Linux этот показатель автоматически рассчитывается за 1, 5 и 15 минут ядром системы.&lt;/p&gt;
+&lt;p&gt;Под средней нагрузкой на сервер понимают суммарную нагрузку процессами на центральный процессор и подсистему ввода/вывода за определённый промежуток времени.&lt;/p&gt;
+&lt;p&gt;Этот показатель может сказать нам, когда наш сервер хорошо нагружен, совсем не нагружен или нагружен слишком сильно. Также, смотря на него можно понять, растёт ли нагрузка, снижается, или остаётся без изменений.&lt;/p&gt;</description></item><item><title>Утилита htop</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</link><pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/</guid><description>&lt;h2 id="утилита-htop"&gt;Утилита htop&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;code&gt;htop&lt;/code&gt; — это консольный диспетчер задач. Он похож на утилиту &lt;code&gt;top&lt;/code&gt;, которую мы рассмотрели в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/"
  
  target="_blank" rel="noopener noreferrer"&gt;
