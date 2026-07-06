@@ -9,7 +9,33 @@
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита netstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</link><pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита iotop и ionice</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Мы уже разбирали некоторые утилиты для мониторинга за процессами. Например, рассмотрели утилиты: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ top
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/htop/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ htop
+&lt;/a&gt;
+. Утилита &lt;strong&gt;htop&lt;/strong&gt;, кстати, тоже умеет определять нагрузку на диск определённым процессом. Но рассматриваемая здесь утилита &lt;strong&gt;iotop&lt;/strong&gt;, была написана специально для этой задачи.&lt;/p&gt;
+&lt;p&gt;Она не предустановлена в системах &lt;strong&gt;Debian&lt;/strong&gt; и &lt;strong&gt;Ubuntu&lt;/strong&gt;. Поэтому вначале её нужно установить:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install iotop
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="работа-с-iotop"&gt;Работа с iotop&lt;/h2&gt;
+&lt;p&gt;Утилита &lt;code&gt;iotop&lt;/code&gt; запускается только с админскими правами, поэтому для её запуска я использую &lt;code&gt;sudo&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Утилиты df, du и ncdu</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/df-du-ncdu/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/df-du-ncdu/</guid><description>&lt;h2 id="за-что-отвечают-эти-команды"&gt;За что отвечают эти команды&lt;/h2&gt;
+&lt;p&gt;Команда &lt;code&gt;df&lt;/code&gt; позволяет определить занятое место на диске. С помощью команды &lt;code&gt;du&lt;/code&gt; можно посмотреть размер файлов. А утилита &lt;code&gt;ncdu&lt;/code&gt; позволяет быстро определить, что занимает больше всего места на диске. Так как все эти команды используются для определения занимаемого места на диске, то я решил их объединить в одну статью.&lt;/p&gt;
+&lt;h2 id="команда-df"&gt;Команда df&lt;/h2&gt;
+&lt;p&gt;Первая команда, которой нужно воспользоваться, чтобы быстро получить информацию о занятом месте на диске — это команда &lt;code&gt;df&lt;/code&gt;. Её удобно использовать с опцией &lt;code&gt;-h&lt;/code&gt;, чтобы смотреть информацию в удобном для человека виде:&lt;/p&gt;</description></item><item><title>Утилита ss</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ss/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ss/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Эта утилита используется для вывода информации о сетевых подключениях. Она может отображать информацию, аналогичную &lt;code&gt;netstat&lt;/code&gt;, которую мы рассмотрели в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ прошлой статье
+&lt;/a&gt;
+. Но &lt;code&gt;ss&lt;/code&gt; может показать больше информации чем другие инструменты.&lt;/p&gt;
+&lt;p&gt;Ещё одним преимуществом этой утилиты, является то, что она уже предустановлена и в &lt;strong&gt;Debian&lt;/strong&gt; и в &lt;strong&gt;Ubuntu&lt;/strong&gt;. И вам не нужно ставить пакет с устаревшими инструментами (это я про &lt;code&gt;net-tools&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Если мы выполним &lt;code&gt;ss&lt;/code&gt; без дополнительных опций, то увидим только активные соединения (TCP и сокеты).&lt;/p&gt;</description></item><item><title>Утилита netstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</link><pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Эта утилита используется для вывода информации о сетевых подключениях. Также она может показать таблицы маршрутизации, статистику по интерфейсам и другое. Эта утилита считается устаревшей и была заменена на утилиту &lt;code&gt;ss&lt;/code&gt;, которую я рассмотрю в следующей статье. Получить справку об этой утилите можно &lt;a href="https://man7.org/linux/man-pages/man8/netstat.8.html"
  
  target="_blank" rel="noopener noreferrer"&gt;
