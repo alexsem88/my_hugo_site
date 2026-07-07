@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Sysadminium</title><link>https://blog.sysadminium.ru/tags/linux/</link><description>Recent content in Linux on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Fwknop - современный port knocking для Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</guid><description>&lt;h2 id="описание-fwknop"&gt;Описание Fwknop&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Sysadminium</title><link>https://blog.sysadminium.ru/tags/linux/</link><description>Recent content in Linux on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux и оперативная память</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/linux-ram/</link><pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/linux-ram/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
+&lt;p&gt;Оперативная память, с которой работает система Linux, организована в виде страниц. &lt;strong&gt;Страница&lt;/strong&gt; — это минимальная единица памяти, с которой происходит работа. По размеру страницы делятся на:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;стандартная&lt;/strong&gt; - 4KB;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HugePages&lt;/strong&gt; - обычно 2 MB на архитектуре x86-64.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Помимо страниц память делится на зоны:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DMA&lt;/strong&gt; — содержит первые 16 МБ физической памяти.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DMA32&lt;/strong&gt; — содержит первые 4 GB и существует только на 64-разрядных системах. Но это не означает, что первые 4 ГБ принадлежат только DMA32.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Normal&lt;/strong&gt; — вся остальная память.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Зоны &lt;strong&gt;DMA&lt;/strong&gt; и &lt;strong&gt;DMA32&lt;/strong&gt; содержат страницы, которые совместимы с режимом &lt;strong&gt;DMA&lt;/strong&gt;. &lt;strong&gt;Режим DMA&lt;/strong&gt; (&lt;a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B9_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF_%D0%BA_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ direct memory access
+&lt;/a&gt;
+) — это прямой доступ к памяти со стороны периферийного устройства без участия процессора. Если оборудование работает с памятью в режиме DMA, то оно занимает память из этой зоны и не может брать страницы из зоны Normal.&lt;/p&gt;</description></item><item><title>Fwknop - современный port knocking для Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/fwknop/</guid><description>&lt;h2 id="описание-fwknop"&gt;Описание Fwknop&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; (&lt;em&gt;FireWall KNock OPerator&lt;/em&gt;) - это инструмент для динамического управления правилами брандмауэра на основе криптографической аутентификации. Он позволяет реализовать &lt;strong&gt;SPA&lt;/strong&gt; (&lt;em&gt;Single Packet Authorization&lt;/em&gt;) - авторизацию с помощью одного пакета.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fwknop&lt;/strong&gt; позволяет полностью скрыть порты приложений от сканеров и ботов. Порт необходимого сервиса открывается только после получения корректного SPA пакета. SPA пакет содержит зашифрованное сообщение с временной меткой и HMAC-подписью.&lt;/p&gt;
 &lt;p&gt;Схема работы следующая:&lt;/p&gt;
