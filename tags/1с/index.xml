@@ -6,7 +6,18 @@
 &lt;li&gt;&lt;strong&gt;Толстый клиент&lt;/strong&gt; выполняет большую часть вычислений на клиентской стороне.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Тонкий клиент&lt;/strong&gt; большую часть вычислений выполняет на сервере, а клиенту в основном передаёт интерфейс и результаты обработки.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Тонкий клиент сохраняет на компьютере клиента некоторую информацию - кэш. Он нужен для ускорения работы и облегчения нагрузки на сеть.&lt;/p&gt;</description></item><item><title>Сервер хранилища конфигураций 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
+&lt;p&gt;Тонкий клиент сохраняет на компьютере клиента некоторую информацию - кэш. Он нужен для ускорения работы и облегчения нагрузки на сеть.&lt;/p&gt;</description></item><item><title>Отправка почты из 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/sending-mail-1c/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/sending-mail-1c/</guid><description>&lt;h2 id="пароль-для-сторонних-приложений"&gt;Пароль для сторонних приложений&lt;/h2&gt;
+&lt;p&gt;В настоящее время, чтобы использовать сторонние приложения для доступа к почте требуется специальный пароль. Это не тот пароль с помощью которого вы авторизуетесь на сайте &lt;a href="https://mail.ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ mail.ru
+&lt;/a&gt;
+ или &lt;a href="https://ya.ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ya.ru
+&lt;/a&gt;
+. Это другой пароль, который требуется сторонним приложениям. Например, почтовым клиентам, или клиентам файловых хранилищ. Для отправки почты из 1С также требуется этот пароль. В этой статье я покажу как создать такой пароль на примере &lt;strong&gt;mail.ru&lt;/strong&gt;. Но на &lt;strong&gt;ya.ru&lt;/strong&gt; всё делается аналогично.&lt;/p&gt;</description></item><item><title>Сервер хранилища конфигураций 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
 &lt;p&gt;1С позволяет работать с одной конфигурацией группе разработчиков используя, так называемое, &lt;strong&gt;хранилище конфигураций&lt;/strong&gt;. В качестве такого хранилища может выступать обычная сетевая папка, доступная каждому программисту. Именно конфигуратор подключается к хранилищу, и он должен иметь туда файловый доступ.&lt;/p&gt;
 &lt;p&gt;Про работу с хранилищем конфигураций вы можете почитать на &lt;a href="https://its.1c.ru/db/v8320doc#bookmark:dev:TI000001091"
  

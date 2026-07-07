@@ -9,7 +9,22 @@
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита iotop и ionice</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита fio</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/fio/</link><pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/fio/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Утилита fio&lt;/strong&gt; позволяет выполнять нагрузочное тестирование дисковой подсистемы. Для этого она создаёт потоки или процессы, которые в свою очередь нагружают дисковую подсистему операциями ввода/вывода.&lt;/p&gt;
+&lt;p&gt;Так как эта утилита не предустановлена в систему, её нужно вначале установить. В &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt; и в &lt;strong&gt;Debian 11&lt;/strong&gt; вы можете установить эту утилиту из стандартных репозиториев:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install fio
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Типичное использование &lt;strong&gt;fio&lt;/strong&gt; выглядит следующем образом:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo fio &amp;lt;файл задания&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Файл задания&lt;/strong&gt; — это описание теста, который утилита должна выполнить.&lt;/p&gt;</description></item><item><title>Утилита iostat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iostat/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iostat/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Утилита &lt;a href="https://man7.org/linux/man-pages/man1/iostat.1.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ iostat
+&lt;/a&gt;
+ используется для мониторинга нагрузки на дисковую подсистему. Она создает отчеты, первый отчет генерируется статистикой с момента загрузки системы и до выполнения команды. Каждый последующий отчет охватывает время с момента предыдущего отчета. Отчет состоит из статистики по CPU, и статистики для каждого диска или раздела. Эта утилита входит в пакет &lt;strong&gt;sysstat&lt;/strong&gt;, который вначале нужно установить:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install sysstat
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="работа-с-iostat"&gt;Работа с iostat&lt;/h2&gt;
+&lt;p&gt;Если выполнить эту команду без дополнительных опций, то вы увидите 1 отчет:&lt;/p&gt;</description></item><item><title>Утилита iotop и ionice</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Мы уже разбирали некоторые утилиты для мониторинга за процессами. Например, рассмотрели утилиты: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/"
  
  target="_blank" rel="noopener noreferrer"&gt;
