@@ -96,7 +96,54 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита vmstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</guid><description>&lt;h2 id="утилитаvmstat"&gt;Утилита vmstat&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Ядро Linux и модули ядра</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</link><pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</guid><description>&lt;h2 id="ядро-операционной-системы"&gt;Ядро операционной системы&lt;/h2&gt;
+&lt;p&gt;В операционной системе процессы работают в режиме ядра или пользовательском режиме. Режим ядра дает больше прав и в этом режиме работают: само ядро и некоторые подсистемы.&lt;/p&gt;
+&lt;p&gt;Ядро является самой главной частью операционной системы, выполняющая ключевые функции:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;связь с оборудованием и предоставление ресурсов компьютера всем процессам в системе;&lt;/li&gt;
+&lt;li&gt;управление процессами.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В зависимости от типа ядра, у него могут быть и другие функции. Либо эти функции могут быть вынесены из ядра, но работать в режиме ядра. Или могут быть совсем вынесены в пользовательский режим.&lt;/p&gt;</description></item><item><title>Получение информации о железе в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</guid><description>&lt;h2 id="информация-о-центральном-процессоре"&gt;Информация о центральном процессоре&lt;/h2&gt;
+&lt;h3 id="файл-proccpuinfo"&gt;Файл /proc/cpuinfo&lt;/h3&gt;
+&lt;p&gt;Посмотреть информацию о центральном процессоре можно в файле &lt;strong&gt;/proc/cpuinfo&lt;/strong&gt;, например:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# cat /proc/cpuinfo 
+
+*** Вывод обрезан ***
+
+processor : 7
+vendor_id : GenuineIntel
+cpu family : 6
+model : 58
+model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz
+stepping : 9
+microcode : 0x12
+cpu MHz : 3044.420
+cache size : 8192 KB
+physical id : 0
+siblings : 8
+core id : 3
+cpu cores : 4
+apicid : 7
+initial apicid : 7
+fpu : yes
+fpu_exception : yes
+cpuid level : 13
+wp : yes
+flags : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts
+bugs : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips : 6799.95
+clflush size : 64
+cache_alignment : 64
+address sizes : 36 bits physical, 48 bits virtual
+power management:
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Видим информацию по каждому ядру - у меня их 8, отсчет начинается с нуля, последнее (&lt;code&gt;processor : 7&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Модель процессора (&lt;code&gt;model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="утилита-lscpu"&gt;Утилита lscpu&lt;/h3&gt;
+&lt;p&gt;Также вы можете использовать утилиту &lt;strong&gt;lscpu&lt;/strong&gt;, которая получает информацию из уже рассмотренного файла &lt;code&gt;/proc/cpuinfo&lt;/code&gt; и файловой системы &lt;strong&gt;sysfs&lt;/strong&gt;. Эта команда выводит информацию об архитектуре ЦП, например:&lt;/p&gt;</description></item><item><title>Лимиты на inotify</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/inotify-limits/</link><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/inotify-limits/</guid><description>&lt;h2 id="подсистемаinotify"&gt;Подсистема inotify&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Подсистема inotify&lt;/strong&gt; — позволяет получать уведомления о событиях, связанных с файлами и каталогами файловой системы. То есть, если нам нужно следить за изменениями в каком-то каталоге, мы создаем &lt;strong&gt;экземпляр (instances)&lt;/strong&gt; &lt;strong&gt;inotify&lt;/strong&gt; в ядре и начинаем следить за каталог. В случае если какой-нибудь файл в этом каталоге изменится или удалится, то мы получим уведомление.&lt;/p&gt;
+&lt;p&gt;Всё это мы проделываем не вручную. Это проделывают приложения, которые умеют использовать &lt;strong&gt;inotify&lt;/strong&gt;. Но иногда, приложение хочет создать новые экземпляр &lt;strong&gt;inotify&lt;/strong&gt;, но упирается в лимит. Поэтому иногда нужно лимиты inotify поднимать.&lt;/p&gt;</description></item><item><title>Утилита vmstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</guid><description>&lt;h2 id="утилитаvmstat"&gt;Утилита vmstat&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;vmstat&lt;/strong&gt; поможет вам увидеть статистику использования виртуальной памяти и другую информацию. Получить справку по этой утилите можно &lt;a href="https://man7.org/linux/man-pages/man8/vmstat.8.html"
  
  target="_blank" rel="noopener noreferrer"&gt;

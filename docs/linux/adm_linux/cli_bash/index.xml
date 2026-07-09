@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CLI / Bash on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/</link><description>Recent content in CLI / Bash on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Объединение команд в одной строке</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</link><pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</guid><description>&lt;h2 id="результат-выполнения-команды"&gt;Результат выполнения команды&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CLI / Bash on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/</link><description>Recent content in CLI / Bash on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Получение информации о железе в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</guid><description>&lt;h2 id="информация-о-центральном-процессоре"&gt;Информация о центральном процессоре&lt;/h2&gt;
+&lt;h3 id="файл-proccpuinfo"&gt;Файл /proc/cpuinfo&lt;/h3&gt;
+&lt;p&gt;Посмотреть информацию о центральном процессоре можно в файле &lt;strong&gt;/proc/cpuinfo&lt;/strong&gt;, например:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# cat /proc/cpuinfo 
+
+*** Вывод обрезан ***
+
+processor : 7
+vendor_id : GenuineIntel
+cpu family : 6
+model : 58
+model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz
+stepping : 9
+microcode : 0x12
+cpu MHz : 3044.420
+cache size : 8192 KB
+physical id : 0
+siblings : 8
+core id : 3
+cpu cores : 4
+apicid : 7
+initial apicid : 7
+fpu : yes
+fpu_exception : yes
+cpuid level : 13
+wp : yes
+flags : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts
+bugs : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips : 6799.95
+clflush size : 64
+cache_alignment : 64
+address sizes : 36 bits physical, 48 bits virtual
+power management:
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Видим информацию по каждому ядру - у меня их 8, отсчет начинается с нуля, последнее (&lt;code&gt;processor : 7&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Модель процессора (&lt;code&gt;model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="утилита-lscpu"&gt;Утилита lscpu&lt;/h3&gt;
+&lt;p&gt;Также вы можете использовать утилиту &lt;strong&gt;lscpu&lt;/strong&gt;, которая получает информацию из уже рассмотренного файла &lt;code&gt;/proc/cpuinfo&lt;/code&gt; и файловой системы &lt;strong&gt;sysfs&lt;/strong&gt;. Эта команда выводит информацию об архитектуре ЦП, например:&lt;/p&gt;</description></item><item><title>Объединение команд в одной строке</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</link><pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</guid><description>&lt;h2 id="результат-выполнения-команды"&gt;Результат выполнения команды&lt;/h2&gt;
 &lt;p&gt;При выполнении команды запускается процесс, он получает какие-то данные из &lt;strong&gt;stdin&lt;/strong&gt;, что-то делает и выводит результат в &lt;strong&gt;stdout,&lt;/strong&gt; а если что-то пошло не так, то выводит ошибку в &lt;strong&gt;stderr&lt;/strong&gt;. Об этом я писал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/"
  
  target="_blank" rel="noopener noreferrer"&gt;
