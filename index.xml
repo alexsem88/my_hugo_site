@@ -221,7 +221,29 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Интерпретатор Python</title><link>https://blog.sysadminium.ru/docs/programming/python-interpreter/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-interpreter/</guid><description>&lt;h2 id="компилируемые-и-интерпретируемые-языки-программирования"&gt;Компилируемые и интерпретируемые языки программирования&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Мониторинг MikroTik с помощью Zabbix</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/monitoring-mikrotik-zabbix/</link><pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/monitoring-mikrotik-zabbix/</guid><description>&lt;h2 id="настройка-mikrotik"&gt;Настройка MikroTik&lt;/h2&gt;
+&lt;h3 id="настройка-snmp"&gt;Настройка SNMP&lt;/h3&gt;
+&lt;p&gt;Открываем &lt;strong&gt;IP / SNMP&lt;/strong&gt; и включаем его. Записываем контактную информацию в поля: &lt;strong&gt;Сontact info&lt;/strong&gt; и &lt;strong&gt;Location&lt;/strong&gt; (это просто текст, здесь вы может написать произвольную информацию). Затем изменяем &lt;strong&gt;Trap Version&lt;/strong&gt; на &lt;strong&gt;2&lt;/strong&gt;. Удаляем &lt;strong&gt;Trap Generator&lt;/strong&gt; (поле должно быть пустым, для этого нужно нажать на стрелочку вверх).&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260709164942.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;В этом же окне нажимаем кнопку &lt;strong&gt;Communities&lt;/strong&gt;. И в открывшемся окне настраиваем &lt;strong&gt;Public SNMP Communites&lt;/strong&gt;. А в поле &lt;strong&gt;addresses&lt;/strong&gt; впишем ip-адрес сервера &lt;strong&gt;Zabbix&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Установка Python 3 на Windows</title><link>https://blog.sysadminium.ru/docs/programming/installing-python-windows/</link><pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/installing-python-windows/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
+&lt;p&gt;Для выполнения кода на языке Python 3 нужен интерпретатор. В системах Linux он обычно предустановлен, так как некоторая часть системы написана на этом языке. Например в Debian 11 установлен Python 3.9, а в Ubuntu 22.04 установлен Python 3.10:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;alex@deb-11:~$ python3 --version
+Python 3.9.2
+
+alex@ubu-22:~$ python3 --version
+Python 3.10.6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Кстати, я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/python-interpreter/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ интерпретатор Python
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;А вот в системе Windows его нужно установить. Скачивается он с &lt;a href="https://www.python.org/downloads/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этого сайта
+&lt;/a&gt;
+. Можно скачать последнюю версию, на момент написания этой статьи — это версия &lt;strong&gt;3.11.1&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Интерпретатор Python</title><link>https://blog.sysadminium.ru/docs/programming/python-interpreter/</link><pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-interpreter/</guid><description>&lt;h2 id="компилируемые-и-интерпретируемые-языки-программирования"&gt;Компилируемые и интерпретируемые языки программирования&lt;/h2&gt;
 &lt;p&gt;Любые языки программирования высокого уровня ближе к человеческому, чем к машинному языку. И код, написанный на таких языках программирования нужно перевести в понятный для компьютера язык (машинный язык). Такими переводчиками с человеческого языка на машинный язык стали &lt;strong&gt;компиляторы&lt;/strong&gt; и &lt;strong&gt;интерпретаторы&lt;/strong&gt;. Поэтому все высокоуровневые языки программирования делятся на &lt;strong&gt;компилируемые&lt;/strong&gt; и &lt;strong&gt;интерпретируемые&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Если язык программирования &lt;strong&gt;компилируемый&lt;/strong&gt;, например &lt;strong&gt;С&lt;/strong&gt;. То написав код программы, вы должны вначале этот код &lt;strong&gt;скомпилировать&lt;/strong&gt;, то есть целиком перевести на машинный язык. Далее, полученный бинарный файл можно будет выполнять. Такие, бинарные файлы, &lt;strong&gt;платформа-зависимы&lt;/strong&gt;, то есть для разных операционных систем или типов процессоров нужно отдельно компилировать высокоуровневый код. Зато бинарные файлы очень быстрые, ведь в них записан машинный код, который выполняется напрямую процессором.&lt;/p&gt;</description></item><item><title>Оптимизация PostgreSQL для 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/postgresql-optimization-1c/</link><pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/postgresql-optimization-1c/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Для оптимизации &lt;strong&gt;PostgreSLQ&lt;/strong&gt; нужно отредактировать некоторые параметры его работы. Редактировать можно основной конфиг (&lt;strong&gt;postgresql.conf&lt;/strong&gt;), который для 14 версии находится в этом каталоге — &lt;strong&gt;/etc/postgresql/14/main/&lt;/strong&gt;. Хотя в некоторых случаях конфиг может быть и в другом месте.&lt;/p&gt;
