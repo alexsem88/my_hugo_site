@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MikroTik on Sysadminium</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/</link><description>Recent content in MikroTik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/network/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>Рекурсивная маршрутизация на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</guid><description>&lt;h2 id="обычная-маршрутизация"&gt;Обычная маршрутизация&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MikroTik on Sysadminium</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/</link><description>Recent content in MikroTik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/network/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>MikroTik SSTP — соединение двух офисов</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/sstp-office-to-office/</link><pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/sstp-office-to-office/</guid><description>&lt;h2 id="схема-сети"&gt;Схема сети&lt;/h2&gt;
+&lt;p&gt;Будем реализовывать следующую схему:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710115123.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;В каждом офисе есть роутер MikroTik, дающий доступ в интернет.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Первый роутер:
+&lt;ul&gt;
+&lt;li&gt;внутренний IP — 192.168.0.1&lt;/li&gt;
+&lt;li&gt;обслуживает локальную сеть 192.168.0.0/24&lt;/li&gt;
+&lt;li&gt;внешний IP — 91.205.152.36&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Второй роутер:
+&lt;ul&gt;
+&lt;li&gt;внутренний IP — 192.168.1.1&lt;/li&gt;
+&lt;li&gt;обслуживает локальную сеть 192.168.1.0/24&lt;/li&gt;
+&lt;li&gt;внешний IP — 93.203.117.48&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Нам нужно соединить оба роутера MikroTik с помощью VPN соединения SSTP. Дополнительно нужно настроить маршрутизацию и фаервол, чтобы компьютеры из одного офиса могли достучаться до компьютеров в другом офисе.&lt;/p&gt;</description></item><item><title>Рекурсивная маршрутизация на MikroTik</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/recursive-routing-mikrotik/</guid><description>&lt;h2 id="обычная-маршрутизация"&gt;Обычная маршрутизация&lt;/h2&gt;
 &lt;p&gt;Для начала разберёмся с обычной маршрутизацией. Когда вы настраиваете роутер для выхода в интернет, вы должны настроить 3 параметра:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ip-адрес для локальной сети, например 192.168.0.1/24 на ether2;&lt;/li&gt;
