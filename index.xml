@@ -221,7 +221,35 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Кортеж&lt;/strong&gt; — это неизменяемый список, то есть это последовательность объектов, которую нельзя изменить (можно лишь создать новый кортеж).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;my_tuple = (1, 2, &amp;#39;три&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, ‘три’)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа и строки.&lt;/p&gt;</description></item><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Список&lt;/strong&gt; — это &lt;strong&gt;изменяемая последовательность объектов&lt;/strong&gt;, причём в одном списке можно хранить объекты разных типов.&lt;/p&gt;
+&lt;p&gt;Списки в Python 3 записываются в квадратных скобках, например так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;my_list = [1, 2, 3, 4, &amp;#39;пять&amp;#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали список &lt;code&gt;[1, 2, 3, 4, 'пять']&lt;/code&gt; и связали его с переменной &lt;strong&gt;my_list&lt;/strong&gt;. Как видите, наш список хранит и числа и строки. Но Python определяет тип объектов во время выполнения, а не при их объявлении в коде. Поэтому, если например, мы захотим из каждого элемента списка отнять 1, а там окажется строка, то ошибка появится во время выполнения, а не во время компиляции.&lt;/p&gt;</description></item><item><title>Python 3. Строки</title><link>https://blog.sysadminium.ru/docs/programming/python3-strings/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-strings/</guid><description>&lt;h2 id="свойства-строк"&gt;Свойства строк&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Строка&lt;/strong&gt; — это &lt;strong&gt;неизменяемая последовательность символов&lt;/strong&gt;, которая используется для хранения текстовой информации.&lt;/p&gt;
+&lt;p&gt;Строки в Python 3 записываются в одинарных или двойных кавычках, например так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;my_str = &amp;#39;Привет Мир!&amp;#39;
+my_str = &amp;#34;Привет Мир!&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше, мы создали переменную &lt;strong&gt;my_str&lt;/strong&gt; и привязали её к объекту &lt;strong&gt;‘Привет Мир!’&lt;/strong&gt;. Это объект класса &lt;strong&gt;‘str’&lt;/strong&gt;, и у этого объекта есть идентификатор (&lt;strong&gt;id&lt;/strong&gt;). Ещё одним свойством строки является её длина.&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
 &lt;h3 id="bluescreenview"&gt;BlueScreenView&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;BlueScreenView&lt;/strong&gt; — это бесплатная утилита от NirSoft. Показывает список всех файлов дампа памяти, созданных при BSOD. Предоставляет информацию о коде ошибки, драйверах или модулях, которые могли вызвать сбой.&lt;/p&gt;
 &lt;p&gt;Внешний вид:&lt;/p&gt;
