@@ -221,7 +221,33 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Сетевые модели OSI И TCP/IP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</link><pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</guid><description>&lt;h2 id="модель-osi"&gt;Модель OSI&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
+&lt;h3 id="bluescreenview"&gt;BlueScreenView&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;BlueScreenView&lt;/strong&gt; — это бесплатная утилита от NirSoft. Показывает список всех файлов дампа памяти, созданных при BSOD. Предоставляет информацию о коде ошибки, драйверах или модулях, которые могли вызвать сбой.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130759.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Скачать можно здесь &lt;a href="https://www.nirsoft.net/utils/blue_screen_view.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ nirsoft.net
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="исследование-работы-сети"&gt;Исследование работы сети&lt;/h2&gt;
+&lt;h3 id="advanced-ip-scanner"&gt;Advanced IP Scanner &lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Advanced IP Scanner&lt;/strong&gt; – это простая в использовании утилита для анализа локальных сетей.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130817.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Сканируя сеть эта утилита собирает информацию об IP и MAC адресах. По mac адресу пытается определить производителя. Также утилита может определить некоторые сервисы запущенные на хостах:&lt;/p&gt;</description></item><item><title>Python 3. Последовательности и множества</title><link>https://blog.sysadminium.ru/docs/programming/sequences-sets/</link><pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/sequences-sets/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье поговорим о следующих типах данных:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Строки&lt;/strong&gt; — это неизменяемые последовательности символов (текстовые последовательности). Изменить строку не получится, можно лишь создать новую строку. Символы в строке проиндексированы слева на право, а индексация начинается с нуля. Обычно строки применяются для хранения текстовой информации.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Списки&lt;/strong&gt; — это изменяемые последовательности объектов. Списки позволяют хранить разнородные объекты, например в одном списке могут находиться и числа и строки. Списки допускают вложенность, так в списке может быть другой список, или любой другой объект для хранения множества объектов. Объекты в списке проиндексированы, так же как символы в строках.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; — это неизменяемые списки. То есть это что-то среднее между строкой и списком. Вместо символов кортеж хранит объекты, как список. Но изменить кортеж нельзя, как строку. Изменяя кортеж вы получити новый кортеж.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Словари&lt;/strong&gt; — это не упорядоченные объекты, которые хранятся в виде «ключ — значение». В принципе, если делать ключи от 0 и прибавлять 1 к каждому новому ключу, то получится обычный список, просто индексация будет выполнена вручную. Здесь также поддерживается вложенность, как в списках и кортежах.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Множества&lt;/strong&gt; — неупорядоченная и изменяемая коллекция объектов без дубликатов. То есть мы можем хранить в множестве разные объекты, но они будут не упорядочены (не проиндексированы). Но два одинаковых объекта в множестве не хранятся. Даже в больших множествах операция поиска выполняется очень быстро.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="создание-перечисленных-объектов"&gt;Создание перечисленных объектов&lt;/h2&gt;
+&lt;p&gt;Строки:&lt;/p&gt;</description></item><item><title>Сетевые модели OSI И TCP/IP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</link><pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</guid><description>&lt;h2 id="модель-osi"&gt;Модель OSI&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;OSI&lt;/strong&gt; (&lt;em&gt;Open System Interconnection&lt;/em&gt;) — это эталонная модель сетевых взаимодействий. Эта модель весь процесс передачи данных делит на 7 частей, другими словами на 7 уровней. Каждый уровень отвечает за определённые задачи, но не говорит, как эти задачи решать. Это позволяет разработчикам создавать новые протоколы или технологии, которые работают на определённом уровне (решают определённые задачи) и не задумываться о других задачах. Другие задачи решаются на других уровнях, на которых работают другие протоколы и технологии.&lt;/p&gt;</description></item><item><title>Защита Wi-Fi (WEP, WPA, WPA2, WPA3)</title><link>https://blog.sysadminium.ru/docs/network/network-theory/wifi-protection/</link><pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/wifi-protection/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Wi-Fi это беспроводная сеть, в которой данные передаются с помощью радиоволн. Радиоволны вместе с данными могут быть легко перехвачены и прочитаны. Поэтому с самого возникновения Wi-Fi сетей данные по радиоволнам передавались в зашифрованном виде. Шифрование использовали симметричное, так как оно быстрее и требует меньших вычислительных ресурсов чем ассиметричное.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260710120347.png" alt=""&gt;&lt;/p&gt;

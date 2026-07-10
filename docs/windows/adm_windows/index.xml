@@ -9,7 +9,23 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Настройка сети Windows Server 2019</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</guid><description>&lt;h2 id="настройка-сети-на-windows-server-2019"&gt;Настройка сети на Windows Server 2019&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
+&lt;h3 id="bluescreenview"&gt;BlueScreenView&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;BlueScreenView&lt;/strong&gt; — это бесплатная утилита от NirSoft. Показывает список всех файлов дампа памяти, созданных при BSOD. Предоставляет информацию о коде ошибки, драйверах или модулях, которые могли вызвать сбой.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130759.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Скачать можно здесь &lt;a href="https://www.nirsoft.net/utils/blue_screen_view.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ nirsoft.net
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="исследование-работы-сети"&gt;Исследование работы сети&lt;/h2&gt;
+&lt;h3 id="advanced-ip-scanner"&gt;Advanced IP Scanner &lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Advanced IP Scanner&lt;/strong&gt; – это простая в использовании утилита для анализа локальных сетей.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130817.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Сканируя сеть эта утилита собирает информацию об IP и MAC адресах. По mac адресу пытается определить производителя. Также утилита может определить некоторые сервисы запущенные на хостах:&lt;/p&gt;</description></item><item><title>Настройка сети Windows Server 2019</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/nastrojka_seti_windows_server/</guid><description>&lt;h2 id="настройка-сети-на-windows-server-2019"&gt;Настройка сети на Windows Server 2019&lt;/h2&gt;
 &lt;p&gt;Ранее я уже писал о том &lt;a href="https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/"
  
  target="_blank" rel="noopener noreferrer"&gt;

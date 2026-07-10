@@ -9,7 +9,23 @@
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>AppLocker</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-applocker/</link><pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-applocker/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
+&lt;h3 id="bluescreenview"&gt;BlueScreenView&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;BlueScreenView&lt;/strong&gt; — это бесплатная утилита от NirSoft. Показывает список всех файлов дампа памяти, созданных при BSOD. Предоставляет информацию о коде ошибки, драйверах или модулях, которые могли вызвать сбой.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130759.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Скачать можно здесь &lt;a href="https://www.nirsoft.net/utils/blue_screen_view.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ nirsoft.net
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="исследование-работы-сети"&gt;Исследование работы сети&lt;/h2&gt;
+&lt;h3 id="advanced-ip-scanner"&gt;Advanced IP Scanner &lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Advanced IP Scanner&lt;/strong&gt; – это простая в использовании утилита для анализа локальных сетей.&lt;/p&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260710130817.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Сканируя сеть эта утилита собирает информацию об IP и MAC адресах. По mac адресу пытается определить производителя. Также утилита может определить некоторые сервисы запущенные на хостах:&lt;/p&gt;</description></item><item><title>AppLocker</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-applocker/</link><pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-applocker/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;Механизм &lt;strong&gt;AppLocker&lt;/strong&gt; впервые появился в &lt;strong&gt;Windows 8.1&lt;/strong&gt; и &lt;strong&gt;Windows Server 2012&lt;/strong&gt; и позволил:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;блокировать запуск приложений;&lt;/li&gt;
