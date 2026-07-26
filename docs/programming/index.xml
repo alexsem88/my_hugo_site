@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Множество&lt;/strong&gt; — это неупорядоченная совокупность объектов, в которой не может быть дубликатов. Множество можно изменять, добавляя и удаляя из него объекты.&lt;/p&gt;
+&lt;p&gt;Объявить множество можно с помощью фигурных скобок, но в отличии от словарей не нужно указывать ключи. Создание множества и получение некоторых свойств множества показаны ниже:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;### Код
+my_set = {1, 2, 3, 4, 5} # создание множества
+print(type(my_set)) # тип
+print(len(my_set)) # длина
+print(my_set)
+
+### Исполнение
+&amp;lt;class &amp;#39;set&amp;#39;&amp;gt;
+5
+{1, 2, 3, 4, 5}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как множество не упорядочены, то: обращение по индексу, срезы, конкатенация и повторение — здесь не работают.&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
  target="_blank" rel="noopener noreferrer"&gt;
