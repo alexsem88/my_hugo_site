@@ -221,7 +221,39 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Прикладной протокол DHCP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/dhcp-protocol/</link><pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/dhcp-protocol/</guid><description>&lt;h2 id="описание-протокола"&gt;Описание протокола&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DHCP&lt;/strong&gt; (&lt;em&gt;Dynamic Host Configuration Protocol&lt;/em&gt;) — протокол, который служит для назначения IP-адресов сетевым устройствам.&lt;/p&gt;
+&lt;p&gt;Этот протокол находится на &lt;strong&gt;прикладном уровне&lt;/strong&gt; моделях &lt;a href="https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ &lt;strong&gt;OSI&lt;/strong&gt; и &lt;strong&gt;TCP/IP&lt;/strong&gt;
+&lt;/a&gt;
+, а в качестве транспортного протокола используется — &lt;a href="https://blog.sysadminium.ru/docs/network/network-theory/udp/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ UDP
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Это &lt;strong&gt;клиент-серверный&lt;/strong&gt; протокол. При этом клиент использует &lt;strong&gt;UDP порт 68&lt;/strong&gt;, а сервер слушает &lt;strong&gt;UDP порт&lt;/strong&gt; &lt;strong&gt;67&lt;/strong&gt;. В процессе обмена информацией клиент получает от сервера IP адрес, а также может запросить некоторую другую информацию для настройки сети.&lt;/p&gt;</description></item><item><title>Python 3. Арифметические операции</title><link>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</link><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</guid><description>&lt;h2 id="числовые-типы-данных"&gt;Числовые типы данных&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; — позволяет создавать три разных типа числовых объектов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;int&lt;/strong&gt; — целое, положительное или отрицательное число. В Python нет ограничений на длину целых чисел, то есть целые числа могут быть очень большими. Пример целого числа — 5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;float&lt;/strong&gt; — число с плавающей точкой. Это число уже имеет ограничение оно не может быть больше чем 2 в степени 1024. Пример такого числа — 1.5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;complex&lt;/strong&gt; — комплексное число. Про них можете почитать отдельно, например в &lt;a href="http://www.mathprofi.ru/kompleksnye_chisla_dlya_chainikov.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+. Пример комплексного числа 2 + 2j.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;a = 5
+b = 1.5
+c = 2 + 2j
+print(type(a)) # &amp;lt;class &amp;#39;int&amp;#39;&amp;gt;
+print(type(b)) # &amp;lt;class &amp;#39;float&amp;#39;&amp;gt;
+print(type(c)) # &amp;lt;class &amp;#39;complex&amp;#39;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="арифметические-операции"&gt;Арифметические операции&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; поддерживает следующие операции:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Файлы&lt;/strong&gt; — это основной тип данных в Python 3, так же как и строки, списки, числа и так далее. Создать &lt;strong&gt;объект файл&lt;/strong&gt; можно с помощью функци &lt;code&gt;open()&lt;/code&gt;. Файлы предоставляют &lt;strong&gt;методы&lt;/strong&gt; для решения распределённых задач, в основном это &lt;strong&gt;ввод&lt;/strong&gt; в файл, или &lt;strong&gt;вывод&lt;/strong&gt; из него.&lt;/p&gt;
 &lt;p&gt;Файл содержит строки. Файлы буферизируются и поддерживают позиционирование. Метод &lt;code&gt;close()&lt;/code&gt;, который закрывает файл, часто необязателен, файл автоматически закрывается при сборке мусора.&lt;/p&gt;</description></item><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
