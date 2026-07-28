@@ -149,7 +149,51 @@ v
 &lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
+&lt;p&gt;В &lt;strong&gt;n8n&lt;/strong&gt; всё строится на «нодах» — блоках, которые вы добавляете на холст, настраиваете и связываете в цепочки.&lt;/p&gt;</description></item><item><title>Установка Taiga в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/project-management/installing-taiga-docker/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/project-management/installing-taiga-docker/</guid><description>&lt;h2 id="что-такое-taiga"&gt;Что такое Taiga&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Taiga&lt;/strong&gt; — это бесплатный open-source инструмент для управления проектами, разработанный специально для agile-команд. Он сочетает мощный функционал (бэклог, спринты, канбан-доски, трекер задач, wiki, отчёты) с интуитивно понятным интерфейсом.&lt;/p&gt;
+&lt;p&gt;У Taiga есть облачная платная версия, но самохостинг — полностью бесплатный. При самостоятельном развёртывании вы получаете:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Полный контроль над данными и инфраструктурой.&lt;/li&gt;
+&lt;li&gt;Все функции без ограничений платных тарифов.&lt;/li&gt;
+&lt;li&gt;Возможность кастомизации под процессы вашей команды.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Сайты:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://taiga.io/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ официальный сайт
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.taiga.io/t/taiga-30min-setup/170"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ официальная инструкция по разворачиванию на своём сервере
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;После настройки сервера вы сможете:&lt;/p&gt;</description></item><item><title>Установка Vaultwarden в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/passwords-and-secrets/installing-vaultwarden-docker/</link><pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/passwords-and-secrets/installing-vaultwarden-docker/</guid><description>&lt;h2 id="установка-vaultwarden"&gt;Установка Vaultwarden&lt;/h2&gt;
+&lt;p&gt;У вас в системе уже должен быть установлен &lt;strong&gt;Docker&lt;/strong&gt; и &lt;strong&gt;Docker compose&lt;/strong&gt;, как это устанавливается я описывал в статьях:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://sysadminium.ru/docker-getting-started-installation-concepts/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ &lt;em&gt;Первое знакомство с Docker — установка и базовые понятия&lt;/em&gt;
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href="https://sysadminium.ru/docker-compose-installation-and-usage/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Docker Compose — установка и базовое использование
+&lt;/a&gt;
+&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Во-первых, создадим каталог для нашего проекта:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ mkdir -p vaultwarden/data &amp;amp;&amp;amp; \
+ cd vaultwarden &amp;amp;&amp;amp; \
+ chmod 700 data &amp;amp;&amp;amp; \
+ sudo chown root:root data/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
 &lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
