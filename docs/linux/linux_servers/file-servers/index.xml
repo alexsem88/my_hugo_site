@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Файловые сервера on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/</link><description>Recent content in Файловые сервера on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка и настройка FTPS сервера — vsftpd</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/ftps-server/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/ftps-server/</guid><description>&lt;h2 id="реализуемая-схема"&gt;Реализуемая схема&lt;/h2&gt;
+&lt;p&gt;В этой статье я покажу процесс подготовки FTPS сервера на Linux, при этом каждый пользователь будет видеть только свой каталог.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260728105358.png" alt=""&gt;&lt;/p&gt;
+&lt;h2 id="установка-и-настройка-ftp-сервера"&gt;Установка и настройка FTP сервера&lt;/h2&gt;
+&lt;p&gt;Я буду использовать &lt;strong&gt;Very&lt;/strong&gt; &lt;strong&gt;Secure&lt;/strong&gt; &lt;strong&gt;FTP&lt;/strong&gt; &lt;strong&gt;Daemon&lt;/strong&gt; (&lt;strong&gt;vsftpd&lt;/strong&gt;), устанавливаем пакет:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; \
+ sudo apt install vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Перед настройками сервера, сделаем резервную копию конфига:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo mv /etc/vsftpd.conf \
+ /etc/vsftpd.conf.orig
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Отредактируем конфиг:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo nano /etc/vsftpd.conf
+
+# connection
+listen=YES
+listen_ipv6=NO
+pasv_enable=YES
+pasv_min_port=40000
+pasv_max_port=50000
+idle_session_timeout=600
+data_connection_timeout=120
+
+# authorization
+anonymous_enable=NO
+local_enable=YES
+pam_service_name=vsftpd
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+
+# chroot
+write_enable=YES
+local_umask=077
+chroot_local_user=YES
+user_sub_token=$USER
+local_root=/home/$USER/files
+allow_writeable_chroot=YES
+
+# logging
+xferlog_enable=YES
+xferlog_std_format=YES
+xferlog_file=/var/log/vsftpd.log
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После настройки перезапустим службу:&lt;/p&gt;</description></item></channel></rss>

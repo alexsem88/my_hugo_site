@@ -193,7 +193,52 @@ v
  cd vaultwarden &amp;amp;&amp;amp; \
  chmod 700 data &amp;amp;&amp;amp; \
  sudo chown root:root data/
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Управление процессами Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/process-management/</link><pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/process-management/</guid><description>&lt;h2 id="сигналы"&gt;Сигналы&lt;/h2&gt;
+&lt;h3 id="что-такое-сигналы"&gt;Что такое сигналы&lt;/h3&gt;
+&lt;p&gt;Все примеры в данной статье были сделаны в системе &lt;strong&gt;Debian 13&lt;/strong&gt;, в других системах вывод может немного отличаться. Но работать всё должно похожим образом.&lt;/p&gt;
+&lt;p&gt;Сигналы нужны для асинхронного оповещения процессов о разнообразных событиях в системе. Это могут быть события оборудования или события других процессов. Работа сигналов очень похожа на прерывания. То есть, если процесс получает сигнал, то он прерывает свою обычную работу, обрабатывает сигнал, а затем продолжает работать.&lt;/p&gt;</description></item><item><title>Установка и настройка FTPS сервера — vsftpd</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/ftps-server/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/ftps-server/</guid><description>&lt;h2 id="реализуемая-схема"&gt;Реализуемая схема&lt;/h2&gt;
+&lt;p&gt;В этой статье я покажу процесс подготовки FTPS сервера на Linux, при этом каждый пользователь будет видеть только свой каталог.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260728105358.png" alt=""&gt;&lt;/p&gt;
+&lt;h2 id="установка-и-настройка-ftp-сервера"&gt;Установка и настройка FTP сервера&lt;/h2&gt;
+&lt;p&gt;Я буду использовать &lt;strong&gt;Very&lt;/strong&gt; &lt;strong&gt;Secure&lt;/strong&gt; &lt;strong&gt;FTP&lt;/strong&gt; &lt;strong&gt;Daemon&lt;/strong&gt; (&lt;strong&gt;vsftpd&lt;/strong&gt;), устанавливаем пакет:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; \
+ sudo apt install vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Перед настройками сервера, сделаем резервную копию конфига:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo mv /etc/vsftpd.conf \
+ /etc/vsftpd.conf.orig
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Отредактируем конфиг:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo nano /etc/vsftpd.conf
+
+# connection
+listen=YES
+listen_ipv6=NO
+pasv_enable=YES
+pasv_min_port=40000
+pasv_max_port=50000
+idle_session_timeout=600
+data_connection_timeout=120
+
+# authorization
+anonymous_enable=NO
+local_enable=YES
+pam_service_name=vsftpd
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+
+# chroot
+write_enable=YES
+local_umask=077
+chroot_local_user=YES
+user_sub_token=$USER
+local_root=/home/$USER/files
+allow_writeable_chroot=YES
+
+# logging
+xferlog_enable=YES
+xferlog_std_format=YES
+xferlog_file=/var/log/vsftpd.log
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После настройки перезапустим службу:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
 &lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
