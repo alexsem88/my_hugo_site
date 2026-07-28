@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nfs on Sysadminium</title><link>https://blog.sysadminium.ru/tags/nfs/</link><description>Recent content in Nfs on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/nfs/index.xml" rel="self" type="application/rss+xml"/><item><title>NFS на Linux</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nfs-linux/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nfs-linux/</guid><description>&lt;h2 id="что-такое-nfs"&gt;Что такое NFS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NFS&lt;/strong&gt; &lt;em&gt;(Network File System)&lt;/em&gt; — это сетевая файловая система с открытым исходным кодом для Linux, реализующая одноимённый протокол. Она позволяет Linux-серверу предоставлять общий доступ к файлам и директориям для клиентов по сети. Наиболее часто используется в среде Linux и Unix-подобных систем, тогда как для подключения из Windows требуется установка отдельного NFS-клиента. Продукт распространяется под лицензией &lt;strong&gt;GPL&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;На серверной стороне устанавливается пакет — &lt;strong&gt;nfs-kernel-server&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Для монтирования, на клиентской стороне устанавливается — &lt;strong&gt;nfs-common&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NFS&lt;/strong&gt; чаще всего используют для организации общего доступа к файлам &lt;strong&gt;в однородных Linux-средах&lt;/strong&gt;, где важны высокая &lt;strong&gt;производительность&lt;/strong&gt;, прозрачность прав доступа (UID/GID) и интеграция на уровне ядра. В отличие от &lt;strong&gt;Samba&lt;/strong&gt;, &lt;strong&gt;NFS&lt;/strong&gt; не предоставляет встроенных механизмов аутентификации пользователей и гибкого маппинга прав. NFS полагается на совпадение идентификаторов пользователей (UID/GID) на клиенте и сервере. Поэтому &lt;strong&gt;Samba&lt;/strong&gt; остаётся предпочтительным выбором &lt;strong&gt;для гетерогенных сетей&lt;/strong&gt; с клиентами &lt;strong&gt;Windows&lt;/strong&gt; &lt;a href="https://sysadminium.ru/samba-standalone-server/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Samba – отдельный файловый сервер
+&lt;/a&gt;
+, интеграции с &lt;strong&gt;Active Directory&lt;/strong&gt; &lt;a href="https://sysadminium.ru/samba-into-a-domain/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Ввод Samba в домен
+&lt;/a&gt;
+ и сценариев, где требуется тонкая настройка доступа через конфигурацию шары.&lt;/p&gt;</description></item></channel></rss>

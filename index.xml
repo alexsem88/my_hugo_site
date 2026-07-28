@@ -238,7 +238,31 @@ allow_writeable_chroot=YES
 xferlog_enable=YES
 xferlog_std_format=YES
 xferlog_file=/var/log/vsftpd.log
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После настройки перезапустим службу:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После настройки перезапустим службу:&lt;/p&gt;</description></item><item><title>NFS на Linux</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nfs-linux/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nfs-linux/</guid><description>&lt;h2 id="что-такое-nfs"&gt;Что такое NFS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NFS&lt;/strong&gt; &lt;em&gt;(Network File System)&lt;/em&gt; — это сетевая файловая система с открытым исходным кодом для Linux, реализующая одноимённый протокол. Она позволяет Linux-серверу предоставлять общий доступ к файлам и директориям для клиентов по сети. Наиболее часто используется в среде Linux и Unix-подобных систем, тогда как для подключения из Windows требуется установка отдельного NFS-клиента. Продукт распространяется под лицензией &lt;strong&gt;GPL&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;На серверной стороне устанавливается пакет — &lt;strong&gt;nfs-kernel-server&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Для монтирования, на клиентской стороне устанавливается — &lt;strong&gt;nfs-common&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NFS&lt;/strong&gt; чаще всего используют для организации общего доступа к файлам &lt;strong&gt;в однородных Linux-средах&lt;/strong&gt;, где важны высокая &lt;strong&gt;производительность&lt;/strong&gt;, прозрачность прав доступа (UID/GID) и интеграция на уровне ядра. В отличие от &lt;strong&gt;Samba&lt;/strong&gt;, &lt;strong&gt;NFS&lt;/strong&gt; не предоставляет встроенных механизмов аутентификации пользователей и гибкого маппинга прав. NFS полагается на совпадение идентификаторов пользователей (UID/GID) на клиенте и сервере. Поэтому &lt;strong&gt;Samba&lt;/strong&gt; остаётся предпочтительным выбором &lt;strong&gt;для гетерогенных сетей&lt;/strong&gt; с клиентами &lt;strong&gt;Windows&lt;/strong&gt; &lt;a href="https://sysadminium.ru/samba-standalone-server/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Samba – отдельный файловый сервер
+&lt;/a&gt;
+, интеграции с &lt;strong&gt;Active Directory&lt;/strong&gt; &lt;a href="https://sysadminium.ru/samba-into-a-domain/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Ввод Samba в домен
+&lt;/a&gt;
+ и сценариев, где требуется тонкая настройка доступа через конфигурацию шары.&lt;/p&gt;</description></item><item><title>Samba – отдельный файловый сервер</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-standalone-server/</link><pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-standalone-server/</guid><description>&lt;h2 id="что-такое-samba"&gt;Что такое samba&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Samba&lt;/strong&gt; — это пакет программ с открытым исходным кодом для &lt;strong&gt;Linux&lt;/strong&gt;, реализующий протокол &lt;strong&gt;SMB/CIFS&lt;/strong&gt;. Он позволяет &lt;strong&gt;Linux-серверу&lt;/strong&gt; создавать &lt;strong&gt;общие папки&lt;/strong&gt; и &lt;strong&gt;принтеры&lt;/strong&gt; для клиентов &lt;strong&gt;Windows&lt;/strong&gt;, &lt;strong&gt;Linux&lt;/strong&gt;, &lt;strong&gt;macOS&lt;/strong&gt; и других ОС. Проект выпущен под лицензией &lt;strong&gt;GPL&lt;/strong&gt; и является участником организации &lt;a href="https://ru.wikipedia.org/wiki/Software_Freedom_Conservancy"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Software Freedom Conservancy
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
 &lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
