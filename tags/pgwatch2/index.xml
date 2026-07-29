@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pgwatch2 on Sysadminium</title><link>https://blog.sysadminium.ru/tags/pgwatch2/</link><description>Recent content in Pgwatch2 on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/pgwatch2/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;PGWatch2&lt;/strong&gt; — это специальная система мониторинга предназначенная исключительно для баз данных &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Она поддерживает мониторинг практически всех показателей для &lt;strong&gt;PostgreSQL&lt;/strong&gt;, начиная с версии &lt;strong&gt;с 9.0 и выше&lt;/strong&gt;. В основе решения лежит демон сборки метрик, написанный на Go.&lt;/p&gt;
+&lt;p&gt;Документацию по &lt;strong&gt;PGWatch2&lt;/strong&gt; можете найти &lt;a href="https://pgwatch2.readthedocs.io/en/latest/index.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+ или на &lt;a href="https://github.com/cybertec-postgresql/pgwatch2/tree/master/docs"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Существует 2 разных способа разворачивания &lt;strong&gt;PGWatch2&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;push&lt;/strong&gt; — сборщик метрик ставиться на сервер с PostgreSQL, базы которого мы хотим мониторить. Этот сборщик собирает метрики и передаёт их в базу хранения метрик, которая может находиться на этом же или на отдельном сервере.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; — сборщик метрик устанавливается на сервере мониторинга. В этом случае сборщик метрик подключается по сети к наблюдаемым базам и забирает метрики к себе в локальную базу хранения метрик.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В этой статье мы будем настраивать &lt;strong&gt;PGWatch2&lt;/strong&gt; по методу &lt;strong&gt;pull&lt;/strong&gt; на операционную систему &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>

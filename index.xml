@@ -334,7 +334,44 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Python 3. Модули</title><link>https://blog.sysadminium.ru/docs/programming/python3-module/</link><pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-module/</guid><description>&lt;h2 id="что-такое-модули-в-python"&gt;Что такое модули в Python&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Python 3. Классы и ООП</title><link>https://blog.sysadminium.ru/docs/programming/python3-classes/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-classes/</guid><description>&lt;h2 id="классы-и-объекты-в-python-3"&gt;Классы и объекты в Python 3&lt;/h2&gt;
+&lt;p&gt;На &lt;strong&gt;Python 3&lt;/strong&gt; можно писать код в стиле &lt;strong&gt;ООП&lt;/strong&gt;. То есть создавать свои классы и объекты (экземпляры классов), а затем использовать эти объекты для решения той или иной задачи.&lt;/p&gt;
+&lt;p&gt;Новый класс создаётся с помощью ключевого слова &lt;strong&gt;class&lt;/strong&gt;, затем пишется название класса и ставится знак двоеточия/Ниже пишутся переменные и методы класса.&lt;/p&gt;
+&lt;p&gt;Вот пример класса &lt;strong&gt;Human&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;class Human:
+ #переменная класса
+ passport_age = 14
+
+ # конструктор
+ def __init__(self, height, weight, sex, age):
+ self.height = height
+ self.weight = weight
+ self.sex = sex
+ self.age = age
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;passport_age&lt;/code&gt; — это переменная класса. Она относится именно к классу, а не к создаваемым объектам. То есть каждый объект класса будет находить значение этой переменной, но изменить её не сможет.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__init__&lt;/code&gt; — это специальный метод, который позволяет инициализировать объект класса при создании. То есть, создавая объект, мы должны в скобках указать его свойства (&lt;code&gt;height&lt;/code&gt;, &lt;code&gt;weight&lt;/code&gt;, &lt;code&gt;sex&lt;/code&gt;, &lt;code&gt;age&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;self&lt;/code&gt; — это ссылка на создаваемый объект класса.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Чтобы стало понятнее, разберу процесс создания экземпляров класса:&lt;/p&gt;</description></item><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;PGWatch2&lt;/strong&gt; — это специальная система мониторинга предназначенная исключительно для баз данных &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Она поддерживает мониторинг практически всех показателей для &lt;strong&gt;PostgreSQL&lt;/strong&gt;, начиная с версии &lt;strong&gt;с 9.0 и выше&lt;/strong&gt;. В основе решения лежит демон сборки метрик, написанный на Go.&lt;/p&gt;
+&lt;p&gt;Документацию по &lt;strong&gt;PGWatch2&lt;/strong&gt; можете найти &lt;a href="https://pgwatch2.readthedocs.io/en/latest/index.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+ или на &lt;a href="https://github.com/cybertec-postgresql/pgwatch2/tree/master/docs"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Существует 2 разных способа разворачивания &lt;strong&gt;PGWatch2&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;push&lt;/strong&gt; — сборщик метрик ставиться на сервер с PostgreSQL, базы которого мы хотим мониторить. Этот сборщик собирает метрики и передаёт их в базу хранения метрик, которая может находиться на этом же или на отдельном сервере.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; — сборщик метрик устанавливается на сервере мониторинга. В этом случае сборщик метрик подключается по сети к наблюдаемым базам и забирает метрики к себе в локальную базу хранения метрик.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В этой статье мы будем настраивать &lt;strong&gt;PGWatch2&lt;/strong&gt; по методу &lt;strong&gt;pull&lt;/strong&gt; на операционную систему &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Python 3. Модули</title><link>https://blog.sysadminium.ru/docs/programming/python3-module/</link><pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-module/</guid><description>&lt;h2 id="что-такое-модули-в-python"&gt;Что такое модули в Python&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Модулем в Python 3&lt;/strong&gt; является любой файл с кодом. Модули можно импортировать в другие модули, это решает следующие задачи:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Модуль можно использовать многократно. Например, вы можете написать свой модуль, который будете применять для написания других программ. Или вы можете использовать чужие модули Python, чтобы не реализовывать функциональность, которую уже реализовали другие программисты.&lt;/li&gt;
