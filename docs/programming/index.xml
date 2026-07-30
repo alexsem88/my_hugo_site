@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Классы и ООП</title><link>https://blog.sysadminium.ru/docs/programming/python3-classes/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-classes/</guid><description>&lt;h2 id="классы-и-объекты-в-python-3"&gt;Классы и объекты в Python 3&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Исключения</title><link>https://blog.sysadminium.ru/docs/programming/python3-exceptions/</link><pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-exceptions/</guid><description>&lt;h2 id="исключения-exceptions"&gt;Исключения (exceptions)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Исключения в программировании&lt;/strong&gt; — это какая-то нетипичная ситуация (ошибка), которая приводит к завершению работы программы. Python 3 умеет обрабатывать исключения, поэтому программа не просто завершает свою работу, но и пишет сообщение о том, какая ошибка произошла.&lt;/p&gt;
+&lt;p&gt;Исключения можно обрабатывать, например можно заставить программу работать дальше и не завершаться аварийно.&lt;/p&gt;
+&lt;p&gt;Вот несколько примеров, когда срабатывает исключение.&lt;/p&gt;
+&lt;p&gt;Деление на ноль:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;res = (10 / 0)
+
+### Результат выполнения
+Traceback (most recent call last):
+ File &amp;#34;unit-6-2.py&amp;#34;, line 18, in &amp;lt;module&amp;gt;
+ res = (10 / 0)
+ ~~~^~~
+ZeroDivisionError: division by zero
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Обращение к несуществующему индексу:&lt;/p&gt;</description></item><item><title>Python 3. Классы и ООП</title><link>https://blog.sysadminium.ru/docs/programming/python3-classes/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-classes/</guid><description>&lt;h2 id="классы-и-объекты-в-python-3"&gt;Классы и объекты в Python 3&lt;/h2&gt;
 &lt;p&gt;На &lt;strong&gt;Python 3&lt;/strong&gt; можно писать код в стиле &lt;strong&gt;ООП&lt;/strong&gt;. То есть создавать свои классы и объекты (экземпляры классов), а затем использовать эти объекты для решения той или иной задачи.&lt;/p&gt;
 &lt;p&gt;Новый класс создаётся с помощью ключевого слова &lt;strong&gt;class&lt;/strong&gt;, затем пишется название класса и ставится знак двоеточия/Ниже пишутся переменные и методы класса.&lt;/p&gt;
 &lt;p&gt;Вот пример класса &lt;strong&gt;Human&lt;/strong&gt;:&lt;/p&gt;
