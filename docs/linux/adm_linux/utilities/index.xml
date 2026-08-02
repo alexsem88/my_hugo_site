@@ -9,7 +9,21 @@
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита vmstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</guid><description>&lt;h2 id="утилитаvmstat"&gt;Утилита vmstat&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Данная утилита доступна на &lt;a href="https://github.com/tsl0922/ttyd"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github.com
+&lt;/a&gt;
+. Она позволяет запустить выполнение любой утилиты командной строки в браузере.&lt;/p&gt;
+&lt;p&gt;Примеры использования:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Может быть удобно, запустить &lt;strong&gt;top&lt;/strong&gt;, &lt;strong&gt;htop&lt;/strong&gt;, или что-то подобное в браузере. В отдельной вкладке браузера вы всегда сможете посмотреть нагруженность вашего сервера.&lt;/li&gt;
+&lt;li&gt;Можно запустить экземпляр &lt;strong&gt;bash&lt;/strong&gt; и работать в командной строке сервера в браузере. Это может быть удобно, если вы по какой-то причине не можете использовать &lt;strong&gt;ssh&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;И простые команды, которые при выполнении дают какой-то вывод и завершаются, можно запустить с помощью этой утилиты. Это могут быть такие команды как: &lt;strong&gt;ls&lt;/strong&gt;, &lt;strong&gt;df&lt;/strong&gt;, &lt;strong&gt;du&lt;/strong&gt; и тому подобное. При этом, как только вы обновляете страничку, на сервере выполняется данная утилита и результат выводится в браузере.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
+&lt;p&gt;Данная утилита состоит из одного бинарника, который можно скачать:&lt;/p&gt;</description></item><item><title>Утилита vmstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/vmstat/</guid><description>&lt;h2 id="утилитаvmstat"&gt;Утилита vmstat&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;vmstat&lt;/strong&gt; поможет вам увидеть статистику использования виртуальной памяти и другую информацию. Получить справку по этой утилите можно &lt;a href="https://man7.org/linux/man-pages/man8/vmstat.8.html"
  
  target="_blank" rel="noopener noreferrer"&gt;

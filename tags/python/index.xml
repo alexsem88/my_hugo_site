@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Синхронизация потоков</title><link>https://blog.sysadminium.ru/docs/programming/python3-thread-synchronization/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-thread-synchronization/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 08 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Многопроцессорность</title><link>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</link><pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</guid><description>&lt;h2 id="многопроцессорность-в-python-3"&gt;Многопроцессорность в Python 3&lt;/h2&gt;
+&lt;p&gt;Процесс — это своеобразный контейнер в рамках которого выполняется код запущенной программы. Этот контейнер содержит какое-то количество оперативной памяти. В одном процессе должен работать как минимум один поток. Или потоков может быть несколько. Про многопоточность на Python 3 я писал:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/programming/python3-threading/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Python 3. Многопоточность
+&lt;/a&gt;
+ &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/programming/python3-thread-synchronization/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Python 3. Синхронизация потоков
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Но одно приложение может работать сразу в нескольких процессах. В каждом из этих процессах будет работать один или несколько потоков. Многопроцессорность в Python 3 обеспечивается модулем &lt;strong&gt;multiprocessing&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Python 3. Синхронизация потоков</title><link>https://blog.sysadminium.ru/docs/programming/python3-thread-synchronization/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-thread-synchronization/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Синхронизация потоков Python 3 нужна в разных случаях, например:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Потоки должны ожидать какого-то события, и в случае его наступления выполнять работу дальше.&lt;/li&gt;

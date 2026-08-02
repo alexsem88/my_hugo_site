@@ -99,7 +99,21 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Ядро Linux и модули ядра</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</link><pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</guid><description>&lt;h2 id="ядро-операционной-системы"&gt;Ядро операционной системы&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Данная утилита доступна на &lt;a href="https://github.com/tsl0922/ttyd"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github.com
+&lt;/a&gt;
+. Она позволяет запустить выполнение любой утилиты командной строки в браузере.&lt;/p&gt;
+&lt;p&gt;Примеры использования:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Может быть удобно, запустить &lt;strong&gt;top&lt;/strong&gt;, &lt;strong&gt;htop&lt;/strong&gt;, или что-то подобное в браузере. В отдельной вкладке браузера вы всегда сможете посмотреть нагруженность вашего сервера.&lt;/li&gt;
+&lt;li&gt;Можно запустить экземпляр &lt;strong&gt;bash&lt;/strong&gt; и работать в командной строке сервера в браузере. Это может быть удобно, если вы по какой-то причине не можете использовать &lt;strong&gt;ssh&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;И простые команды, которые при выполнении дают какой-то вывод и завершаются, можно запустить с помощью этой утилиты. Это могут быть такие команды как: &lt;strong&gt;ls&lt;/strong&gt;, &lt;strong&gt;df&lt;/strong&gt;, &lt;strong&gt;du&lt;/strong&gt; и тому подобное. При этом, как только вы обновляете страничку, на сервере выполняется данная утилита и результат выводится в браузере.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
+&lt;p&gt;Данная утилита состоит из одного бинарника, который можно скачать:&lt;/p&gt;</description></item><item><title>Ядро Linux и модули ядра</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</link><pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</guid><description>&lt;h2 id="ядро-операционной-системы"&gt;Ядро операционной системы&lt;/h2&gt;
 &lt;p&gt;В операционной системе процессы работают в режиме ядра или пользовательском режиме. Режим ядра дает больше прав и в этом режиме работают: само ядро и некоторые подсистемы.&lt;/p&gt;
 &lt;p&gt;Ядро является самой главной частью операционной системы, выполняющая ключевые функции:&lt;/p&gt;
 &lt;ul&gt;
