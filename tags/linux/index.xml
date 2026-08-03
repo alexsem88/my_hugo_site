@@ -99,7 +99,54 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Фильтруем вывод с помощью awk</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</guid><description>&lt;h2 id="синтаксис"&gt;Синтаксис&lt;/h2&gt;
+&lt;p&gt;Если упростить синтаксис команды &lt;strong&gt;awk&lt;/strong&gt;, то получим что-то вроде этого:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;awk (опции) (условие) &amp;#39;{ команда }&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="команды"&gt;Команды&lt;/h2&gt;
+&lt;p&gt;В этой статье будет рассмотрена только одна команда &lt;code&gt;'{print}'&lt;/code&gt; — она позволяет что-то выводить на экран терминала. Например мы можем вывести на экран определённый столбец. Столбцы обозначаются с помощью:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;$0&lt;/strong&gt; — все столбцы;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$1&lt;/strong&gt; — первый столбец;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$2&lt;/strong&gt; — второй столбец;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;$NF&lt;/strong&gt; — последний столбец.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ cat test.txt
+123 234 345 456 567
+qwe wer ert rty tyu
+asd sdf dfg fgh ghj
+zxc xcv cvb vbn bnm
+
+$ cat test.txt | awk &amp;#39;{print $0}&amp;#39;
+123 234 345 456 567
+qwe wer ert rty tyu
+asd sdf dfg fgh ghj
+zxc xcv cvb vbn bnm
+
+$ cat test.txt | awk &amp;#39;{print $1}&amp;#39;
+123
+qwe
+asd
+zxc
+
+$ cat test.txt | awk &amp;#39;{print $NF}&amp;#39;
+567
+tyu
+ghj
+bnm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;К выводу можно добавить номер строки. Номер строки в &lt;strong&gt;awk&lt;/strong&gt; обозначается с помощью &lt;strong&gt;NR&lt;/strong&gt;, например:&lt;/p&gt;</description></item><item><title>Утилита jc</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/jc/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/jc/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Данная утилита представлена на &lt;a href="https://github.com/kellyjonbrazil/jc"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ github.com
+&lt;/a&gt;
+. Она может пригодиться при создании скриптов, когда вывод команд будет передаваться другим системам, которые умеют принимать и обрабатывать &lt;strong&gt;json&lt;/strong&gt;. Ниже, на практике покажу как это работает.&lt;/p&gt;
+&lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
+&lt;p&gt;Установить данный инструмент в &lt;strong&gt;Ubuntu&lt;/strong&gt; и &lt;strong&gt;Debian&lt;/strong&gt; можно с помощью &lt;strong&gt;apt&lt;/strong&gt; и стандартных репозиториев:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ apt install jc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Но в репозиториях находится достаточно старая версия.&lt;/p&gt;
+&lt;p&gt;Лучше установить с помощью &lt;strong&gt;pip&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ pip3 install jc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При установки с помощью &lt;strong&gt;pip&lt;/strong&gt; данная утилита будет располагаться в каталоге &lt;strong&gt;~/.local/bin/&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Данная утилита доступна на &lt;a href="https://github.com/tsl0922/ttyd"
  
  target="_blank" rel="noopener noreferrer"&gt;
