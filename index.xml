@@ -344,7 +344,40 @@ alex
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Фильтруем вывод с помощью awk</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</guid><description>&lt;h2 id="синтаксис"&gt;Синтаксис&lt;/h2&gt;
+&lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита Psping</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/psping/</link><pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/psping/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для того чтобы использовать эту утилиту, необходимо скачать пакет &lt;strong&gt;PsTools&lt;/strong&gt; &lt;a href="https://learn.microsoft.com/en-us/sysinternals/downloads/pstools"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ от сюда
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Когда вы пингуете какой-то узел, и используете при этом стандартную утилиту &lt;strong&gt;ping&lt;/strong&gt; на операционной системе Windows, то используется протокол &lt;strong&gt;ICMP&lt;/strong&gt;. Источник отправляет запрос вида &lt;strong&gt;ICMP echo request&lt;/strong&gt;. А получатель отвечает (если ему не запрещено) &lt;strong&gt;ICMP echo reply&lt;/strong&gt;. Время между отправкой запросом и поучением ответа считается временем пинга.&lt;/p&gt;
+&lt;p&gt;А разбираемая нами утилита &lt;strong&gt;PsPing&lt;/strong&gt; реализует пинг но для TCP порта. Например пропингуем хост &lt;strong&gt;yandex.ru&lt;/strong&gt; по &lt;strong&gt;443&lt;/strong&gt; порту:&lt;/p&gt;</description></item><item><title>Python 3. Параметры командной строки (argparse)</title><link>https://blog.sysadminium.ru/docs/programming/python3-argparse/</link><pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-argparse/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Модуль &lt;strong&gt;argparse&lt;/strong&gt; позволяем вашему приложению, написанному на &lt;strong&gt;Python 3&lt;/strong&gt;, обрабатывать переданные аргументы командной строки. При этом мы можем использовать позиционные параметры, именные параметры и флаги.&lt;/p&gt;
+&lt;h2 id="позиционные-параметры"&gt;Позиционные параметры&lt;/h2&gt;
+&lt;p&gt;Допустим нам нужно запускать приложение &lt;strong&gt;hello.py&lt;/strong&gt; таким образом: &lt;strong&gt;hello.py 3 5&lt;/strong&gt;. А в ответ будем получать: &lt;strong&gt;8&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Вот код такой программы, он достаточно откомментирован чтобы разобраться самостоятельно:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Импортируем модуль argparse
+import argparse
+
+# Создаём объект parser, который будет отвечать за аргументы командной строки
+parser = argparse.ArgumentParser()
+
+# Создаём два позиционных аргумента (то есть первый аргумент попадёт в &amp;#34;a&amp;#34;, а второй в &amp;#34;b&amp;#34;)
+# При создании аргументов можем указать тип данных (type), который хотим принять и подсказку (help)
+parser.add_argument(&amp;#34;a&amp;#34;, type=int, help=&amp;#34;Первый аргумент&amp;#34;)
+parser.add_argument(&amp;#34;b&amp;#34;, type=int, help=&amp;#34;Второй аргумент&amp;#34;)
+
+# Создаём объект args. Он будет содержать все принятые агрументы
+args = parser.parse_args()
+
+# Создаём функцию, которая складывает два переданных ей числа и выводит их сумму
+def f(a, b):
+ print(a + b)
+
+# Выполняем функцию. Передаём ей принятые из командной строки аргументы
+f(args.a, args.b)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Вот как работает наша программа:&lt;/p&gt;</description></item><item><title>Фильтруем вывод с помощью awk</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</guid><description>&lt;h2 id="синтаксис"&gt;Синтаксис&lt;/h2&gt;
 &lt;p&gt;Если упростить синтаксис команды &lt;strong&gt;awk&lt;/strong&gt;, то получим что-то вроде этого:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;awk (опции) (условие) &amp;#39;{ команда }&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="команды"&gt;Команды&lt;/h2&gt;

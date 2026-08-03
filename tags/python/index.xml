@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 08 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Многопроцессорность</title><link>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</link><pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</guid><description>&lt;h2 id="многопроцессорность-в-python-3"&gt;Многопроцессорность в Python 3&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Sysadminium</title><link>https://blog.sysadminium.ru/tags/python/</link><description>Recent content in Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 22 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Параметры командной строки (argparse)</title><link>https://blog.sysadminium.ru/docs/programming/python3-argparse/</link><pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-argparse/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Модуль &lt;strong&gt;argparse&lt;/strong&gt; позволяем вашему приложению, написанному на &lt;strong&gt;Python 3&lt;/strong&gt;, обрабатывать переданные аргументы командной строки. При этом мы можем использовать позиционные параметры, именные параметры и флаги.&lt;/p&gt;
+&lt;h2 id="позиционные-параметры"&gt;Позиционные параметры&lt;/h2&gt;
+&lt;p&gt;Допустим нам нужно запускать приложение &lt;strong&gt;hello.py&lt;/strong&gt; таким образом: &lt;strong&gt;hello.py 3 5&lt;/strong&gt;. А в ответ будем получать: &lt;strong&gt;8&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Вот код такой программы, он достаточно откомментирован чтобы разобраться самостоятельно:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Импортируем модуль argparse
+import argparse
+
+# Создаём объект parser, который будет отвечать за аргументы командной строки
+parser = argparse.ArgumentParser()
+
+# Создаём два позиционных аргумента (то есть первый аргумент попадёт в &amp;#34;a&amp;#34;, а второй в &amp;#34;b&amp;#34;)
+# При создании аргументов можем указать тип данных (type), который хотим принять и подсказку (help)
+parser.add_argument(&amp;#34;a&amp;#34;, type=int, help=&amp;#34;Первый аргумент&amp;#34;)
+parser.add_argument(&amp;#34;b&amp;#34;, type=int, help=&amp;#34;Второй аргумент&amp;#34;)
+
+# Создаём объект args. Он будет содержать все принятые агрументы
+args = parser.parse_args()
+
+# Создаём функцию, которая складывает два переданных ей числа и выводит их сумму
+def f(a, b):
+ print(a + b)
+
+# Выполняем функцию. Передаём ей принятые из командной строки аргументы
+f(args.a, args.b)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Вот как работает наша программа:&lt;/p&gt;</description></item><item><title>Python 3. Многопроцессорность</title><link>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</link><pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-multiprocessing/</guid><description>&lt;h2 id="многопроцессорность-в-python-3"&gt;Многопроцессорность в Python 3&lt;/h2&gt;
 &lt;p&gt;Процесс — это своеобразный контейнер в рамках которого выполняется код запущенной программы. Этот контейнер содержит какое-то количество оперативной памяти. В одном процессе должен работать как минимум один поток. Или потоков может быть несколько. Про многопоточность на Python 3 я писал:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/programming/python3-threading/"
