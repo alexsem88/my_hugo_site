@@ -284,7 +284,15 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;в словаре: &lt;strong&gt;слово → значение&lt;/strong&gt;,&lt;/li&gt;
 &lt;li&gt;в Python: &lt;strong&gt;ключ → значение&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Стоит запомнить что словарь — это &lt;strong&gt;не упорядоченное множество объектов&lt;/strong&gt;, то есть элементы словаря не индексируются и по индексу к ним не обратиться. Срезы словарей тоже не получится сделать. Хотя стоит упомянуть, что начиная с &lt;strong&gt;Python 3.7&lt;/strong&gt; словари сохраняют порядок добавления элементов. Однако при написании алгоритмов обычно не стоит полагаться на порядок словаря.&lt;/p&gt;</description></item><item><title>Монтирование SSHFS</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Стоит запомнить что словарь — это &lt;strong&gt;не упорядоченное множество объектов&lt;/strong&gt;, то есть элементы словаря не индексируются и по индексу к ним не обратиться. Срезы словарей тоже не получится сделать. Хотя стоит упомянуть, что начиная с &lt;strong&gt;Python 3.7&lt;/strong&gt; словари сохраняют порядок добавления элементов. Однако при написании алгоритмов обычно не стоит полагаться на порядок словаря.&lt;/p&gt;</description></item><item><title>Proxmox VE — Создание шаблона VM и использование Cloud-Init</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</guid><description>&lt;h2 id="что-такое-cloud-init"&gt;Что такое Cloud-init&lt;/h2&gt;
+&lt;p&gt;Для тех, кто не знаком с гипервизором &lt;strong&gt;Proxmox VE&lt;/strong&gt;, можете почитать статью: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cloud-Init&lt;/strong&gt; — это распространённый способ первоначальной настройки виртуальных машин. Часто используется в облаках, но &lt;strong&gt;Proxmox VE&lt;/strong&gt; тоже поддерживает этот способ, при чём «из коробки». &lt;strong&gt;Cloud-Init&lt;/strong&gt; — разработан &lt;strong&gt;Canonical&lt;/strong&gt; и написан на &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Эту систему можно сравнить с &lt;strong&gt;Terraform&lt;/strong&gt; или &lt;strong&gt;Ansible&lt;/strong&gt;, хотя эти системы разного назначения и часто используются вместе а не заменяют друг друга.&lt;/p&gt;</description></item><item><title>Монтирование SSHFS</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Получить доступ к файлам Linux по сети можно с помощью монтирования сетевых файловых систем. Есть следующие сетевые файловые системы: &lt;strong&gt;NFS&lt;/strong&gt;, &lt;strong&gt;SMB (CIFS)&lt;/strong&gt;, &lt;strong&gt;SSHFS&lt;/strong&gt;. В этой статье будем изучать монтирование &lt;strong&gt;SSHFS&lt;/strong&gt;. Из названия ясно что эта сетевая файловая система работает поверх &lt;strong&gt;SSH&lt;/strong&gt;. Как следствие, для монтирования можно использовать логин и пароль пользователя или ssh-ключи.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260730091600.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Монтирование ко всем перечисленным сетевым файловым системам можно выполнять по 3-ём разным сценариям:&lt;/p&gt;
@@ -294,7 +302,19 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;автоматическое монтирование с помощью &lt;code&gt;systemd&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="установка-sshfs"&gt;Установка SSHFS&lt;/h2&gt;
-&lt;p&gt;На той системе, от куда мы хотим выполнять монтирование, нужно установить пакет &lt;strong&gt;sshfs&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
+&lt;p&gt;На той системе, от куда мы хотим выполнять монтирование, нужно установить пакет &lt;strong&gt;sshfs&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Proxmox VE — настройка сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</guid><description>&lt;h2 id="как-выглядит-сеть-после-установки-proxmox-ve"&gt;Как выглядит сеть после установки Proxmox VE&lt;/h2&gt;
+&lt;p&gt;Если вы уже установили &lt;strong&gt;Proxmox VE&lt;/strong&gt; (напомню, процесс установки я описывал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+), при первом входе в веб-интерфейс вы увидите стандартную сетевую конфигурацию:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Физический интерфейс&lt;/strong&gt; &lt;code&gt;enp1s0&lt;/code&gt; — подключён к вашей локальной сети.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Виртуальный бридж&lt;/strong&gt; &lt;code&gt;vmbr0&lt;/code&gt; — связан с &lt;code&gt;enp1s0&lt;/code&gt; и используется для подключения виртуальных машин.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260805142743.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>Группы пользователей в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/groups_users_in_linux/</guid><description>&lt;h2 id="просмотр-списка-групп-в-системе"&gt;Просмотр списка групп в системе&lt;/h2&gt;
 &lt;p&gt;Группы объединяют пользователей в одну единицу для облегчения назначения прав доступа к файлам. Про пользователей я писал отдельную статью, если ещё не читали её, то рекомендую вначале изучить её: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -344,7 +364,39 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
+&lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ QEMU
+&lt;/a&gt;
+ + &lt;a href="https://ru.wikipedia.org/wiki/KVM"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ KVM
+&lt;/a&gt;
+) и контейнеры (&lt;a href="https://ru.wikipedia.org/wiki/LXC"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ LXC
+&lt;/a&gt;
+).&lt;/p&gt;
+&lt;p&gt;Помимо создания виртуальных машин и контейнеров Proxmox VE позволяет использовать различные локальные и сетевые хранилища, такие как:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM и ZFS;&lt;/li&gt;
+&lt;li&gt;NFS и CIFS;&lt;/li&gt;
+&lt;li&gt;GlasterFS;&lt;/li&gt;
+&lt;li&gt;iSCSI;&lt;/li&gt;
+&lt;li&gt;CephFS;&lt;/li&gt;
+&lt;li&gt;RBD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для настройки виртуальной сети вы можете использовать &lt;strong&gt;Linux Bridge&lt;/strong&gt; или &lt;strong&gt;OVS Bridge&lt;/strong&gt;. Также вы можете создавать бонды разных типов (объединение нескольких физических интерфейсов в один логический), использовать VLAN и многое другое. Про настройку сети я пиал в статье — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — настройка сети
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
 &lt;h2 id="примеры-приложений-с-интеграцией-ldap"&gt;Примеры приложений с интеграцией LDAP&lt;/h2&gt;
 &lt;p&gt;Многие корпоративные приложения умеют интегрироваться в AD с помощью синхронизации LDAP, например:&lt;/p&gt;</description></item><item><title>Обновление и даунгрейдинг RouterOS</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</link><pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</guid><description>&lt;h2 id="ветки-обновлений-routeros"&gt;Ветки обновлений RouterOS&lt;/h2&gt;
 &lt;p&gt;Для начала разберёмся с ветками обновлений операционной системы RouterOS, их 4 штуки:&lt;/p&gt;

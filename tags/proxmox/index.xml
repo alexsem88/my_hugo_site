@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox on Sysadminium</title><link>https://blog.sysadminium.ru/tags/proxmox/</link><description>Recent content in Proxmox on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/proxmox/index.xml" rel="self" type="application/rss+xml"/><item><title>SPICE в Proxmox VE</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</link><pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</guid><description>&lt;h2 id="что-такое-spice"&gt;Что такое SPICE&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox on Sysadminium</title><link>https://blog.sysadminium.ru/tags/proxmox/</link><description>Recent content in Proxmox on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/proxmox/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxmox VE — Создание шаблона VM и использование Cloud-Init</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</guid><description>&lt;h2 id="что-такое-cloud-init"&gt;Что такое Cloud-init&lt;/h2&gt;
+&lt;p&gt;Для тех, кто не знаком с гипервизором &lt;strong&gt;Proxmox VE&lt;/strong&gt;, можете почитать статью: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cloud-Init&lt;/strong&gt; — это распространённый способ первоначальной настройки виртуальных машин. Часто используется в облаках, но &lt;strong&gt;Proxmox VE&lt;/strong&gt; тоже поддерживает этот способ, при чём «из коробки». &lt;strong&gt;Cloud-Init&lt;/strong&gt; — разработан &lt;strong&gt;Canonical&lt;/strong&gt; и написан на &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Эту систему можно сравнить с &lt;strong&gt;Terraform&lt;/strong&gt; или &lt;strong&gt;Ansible&lt;/strong&gt;, хотя эти системы разного назначения и часто используются вместе а не заменяют друг друга.&lt;/p&gt;</description></item><item><title>Proxmox VE — настройка сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</guid><description>&lt;h2 id="как-выглядит-сеть-после-установки-proxmox-ve"&gt;Как выглядит сеть после установки Proxmox VE&lt;/h2&gt;
+&lt;p&gt;Если вы уже установили &lt;strong&gt;Proxmox VE&lt;/strong&gt; (напомню, процесс установки я описывал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+), при первом входе в веб-интерфейс вы увидите стандартную сетевую конфигурацию:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Физический интерфейс&lt;/strong&gt; &lt;code&gt;enp1s0&lt;/code&gt; — подключён к вашей локальной сети.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Виртуальный бридж&lt;/strong&gt; &lt;code&gt;vmbr0&lt;/code&gt; — связан с &lt;code&gt;enp1s0&lt;/code&gt; и используется для подключения виртуальных машин.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260805142743.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
+&lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ QEMU
+&lt;/a&gt;
+ + &lt;a href="https://ru.wikipedia.org/wiki/KVM"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ KVM
+&lt;/a&gt;
+) и контейнеры (&lt;a href="https://ru.wikipedia.org/wiki/LXC"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ LXC
+&lt;/a&gt;
+).&lt;/p&gt;
+&lt;p&gt;Помимо создания виртуальных машин и контейнеров Proxmox VE позволяет использовать различные локальные и сетевые хранилища, такие как:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM и ZFS;&lt;/li&gt;
+&lt;li&gt;NFS и CIFS;&lt;/li&gt;
+&lt;li&gt;GlasterFS;&lt;/li&gt;
+&lt;li&gt;iSCSI;&lt;/li&gt;
+&lt;li&gt;CephFS;&lt;/li&gt;
+&lt;li&gt;RBD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для настройки виртуальной сети вы можете использовать &lt;strong&gt;Linux Bridge&lt;/strong&gt; или &lt;strong&gt;OVS Bridge&lt;/strong&gt;. Также вы можете создавать бонды разных типов (объединение нескольких физических интерфейсов в один логический), использовать VLAN и многое другое. Про настройку сети я пиал в статье — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — настройка сети
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>SPICE в Proxmox VE</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</link><pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</guid><description>&lt;h2 id="что-такое-spice"&gt;Что такое SPICE&lt;/h2&gt;
 &lt;p&gt;Проект &lt;strong&gt;SPICE&lt;/strong&gt; это решение с открытым исходным кодом для удаленного доступа к виртуальным машинам простым способом, чтобы вы могли воспроизводить видео, записывать аудио, совместно использовать USB-устройства и папки без каких-либо сложностей.&lt;/p&gt;
 &lt;p&gt;SPICE можно разделить на 4 различных компонента:&lt;/p&gt;
 &lt;ul&gt;

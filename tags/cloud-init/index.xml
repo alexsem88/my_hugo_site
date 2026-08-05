@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud-Init on Sysadminium</title><link>https://blog.sysadminium.ru/tags/cloud-init/</link><description>Recent content in Cloud-Init on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/cloud-init/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxmox VE — Создание шаблона VM и использование Cloud-Init</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pve-template-and-cloud-init/</guid><description>&lt;h2 id="что-такое-cloud-init"&gt;Что такое Cloud-init&lt;/h2&gt;
+&lt;p&gt;Для тех, кто не знаком с гипервизором &lt;strong&gt;Proxmox VE&lt;/strong&gt;, можете почитать статью: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cloud-Init&lt;/strong&gt; — это распространённый способ первоначальной настройки виртуальных машин. Часто используется в облаках, но &lt;strong&gt;Proxmox VE&lt;/strong&gt; тоже поддерживает этот способ, при чём «из коробки». &lt;strong&gt;Cloud-Init&lt;/strong&gt; — разработан &lt;strong&gt;Canonical&lt;/strong&gt; и написан на &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Эту систему можно сравнить с &lt;strong&gt;Terraform&lt;/strong&gt; или &lt;strong&gt;Ansible&lt;/strong&gt;, хотя эти системы разного назначения и часто используются вместе а не заменяют друг друга.&lt;/p&gt;</description></item></channel></rss>

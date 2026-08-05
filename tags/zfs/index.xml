@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zfs on Sysadminium</title><link>https://blog.sysadminium.ru/tags/zfs/</link><description>Recent content in Zfs on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/zfs/index.xml" rel="self" type="application/rss+xml"/><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
+&lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ QEMU
+&lt;/a&gt;
+ + &lt;a href="https://ru.wikipedia.org/wiki/KVM"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ KVM
+&lt;/a&gt;
+) и контейнеры (&lt;a href="https://ru.wikipedia.org/wiki/LXC"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ LXC
+&lt;/a&gt;
+).&lt;/p&gt;
+&lt;p&gt;Помимо создания виртуальных машин и контейнеров Proxmox VE позволяет использовать различные локальные и сетевые хранилища, такие как:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LVM и ZFS;&lt;/li&gt;
+&lt;li&gt;NFS и CIFS;&lt;/li&gt;
+&lt;li&gt;GlasterFS;&lt;/li&gt;
+&lt;li&gt;iSCSI;&lt;/li&gt;
+&lt;li&gt;CephFS;&lt;/li&gt;
+&lt;li&gt;RBD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для настройки виртуальной сети вы можете использовать &lt;strong&gt;Linux Bridge&lt;/strong&gt; или &lt;strong&gt;OVS Bridge&lt;/strong&gt;. Также вы можете создавать бонды разных типов (объединение нескольких физических интерфейсов в один логический), использовать VLAN и многое другое. Про настройку сети я пиал в статье — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — настройка сети
+&lt;/a&gt;
+.&lt;/p&gt;</description></item></channel></rss>
