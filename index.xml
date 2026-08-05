@@ -262,7 +262,29 @@ xferlog_file=/var/log/vsftpd.log
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Монтирование SSHFS</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Openssl - проверка SSL сертификата сайта из консоли Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/check-ssl-certificate-from-linux/</link><pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/check-ssl-certificate-from-linux/</guid><description>&lt;h2 id="проверка-даты-окончания-сертификата"&gt;Проверка даты окончания сертификата&lt;/h2&gt;
+&lt;p&gt;Самое простое, что вы можете проверить, это дату окончания сертификата. Делается это с помощью утилиты &lt;strong&gt;openssl&lt;/strong&gt;. Вот так можно проверить дату окончания сертификата:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# echo | openssl s_client -connect example.com:443 \
+ -servername example.com 2&amp;gt;/dev/null | \
+ openssl x509 -noout -enddate
+
+notAfter=May 14 18:57:50 2026 GMT
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Сравните полученную дату с системным временем, иногда проблема кроется в неверном времени на сервере.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="проверка-сертификата-на-ошибки"&gt;Проверка сертификата на ошибки&lt;/h2&gt;
+&lt;p&gt;С помощью &lt;strong&gt;openssl&lt;/strong&gt; мы также можем проверить сертификат сайта на ошибки:&lt;/p&gt;</description></item><item><title>Python 3. Словари</title><link>https://blog.sysadminium.ru/docs/programming/python3-dictionaries/</link><pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-dictionaries/</guid><description>&lt;h2 id="свойства-словарей"&gt;Свойства словарей&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в &lt;strong&gt;Python 3&lt;/strong&gt;. &lt;strong&gt;Словарь&lt;/strong&gt; — это одно из множеств в Python, то есть словарь хранит множество значений. Словарь действительно похож на обычный словарь:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;в словаре: &lt;strong&gt;слово → значение&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;в Python: &lt;strong&gt;ключ → значение&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Стоит запомнить что словарь — это &lt;strong&gt;не упорядоченное множество объектов&lt;/strong&gt;, то есть элементы словаря не индексируются и по индексу к ним не обратиться. Срезы словарей тоже не получится сделать. Хотя стоит упомянуть, что начиная с &lt;strong&gt;Python 3.7&lt;/strong&gt; словари сохраняют порядок добавления элементов. Однако при написании алгоритмов обычно не стоит полагаться на порядок словаря.&lt;/p&gt;</description></item><item><title>Монтирование SSHFS</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/mount-sshfs/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Получить доступ к файлам Linux по сети можно с помощью монтирования сетевых файловых систем. Есть следующие сетевые файловые системы: &lt;strong&gt;NFS&lt;/strong&gt;, &lt;strong&gt;SMB (CIFS)&lt;/strong&gt;, &lt;strong&gt;SSHFS&lt;/strong&gt;. В этой статье будем изучать монтирование &lt;strong&gt;SSHFS&lt;/strong&gt;. Из названия ясно что эта сетевая файловая система работает поверх &lt;strong&gt;SSH&lt;/strong&gt;. Как следствие, для монтирования можно использовать логин и пароль пользователя или ssh-ключи.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260730091600.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Монтирование ко всем перечисленным сетевым файловым системам можно выполнять по 3-ём разным сценариям:&lt;/p&gt;
