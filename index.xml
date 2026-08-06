@@ -364,7 +364,21 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Proxmox VE — замена системного диска в зеркале ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/replace-disk-zfs-mirror-proxmox/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/replace-disk-zfs-mirror-proxmox/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью про установку сервера &lt;strong&gt;Proxmox VE&lt;/strong&gt; на зеркало &lt;strong&gt;ZFS&lt;/strong&gt; &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка Proxmox VE на ZFS
+&lt;/a&gt;
+, а в этой статье опишу как происходит замена диска, если это потребуется. После установки &lt;strong&gt;Proxmox VE&lt;/strong&gt; на зеркало &lt;strong&gt;ZFS&lt;/strong&gt;, в web-интерфейсе вы увидите такую схему разметки диска:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260806165637.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Оба диска: &lt;strong&gt;sda&lt;/strong&gt; и &lt;strong&gt;sdb&lt;/strong&gt; имеют по 3 раздела:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 Раздел (BIOS boot). Это раздел mbr для загрузки с BIOS Legacy.&lt;/li&gt;
+&lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
+&lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
 &lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
 &lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
  
@@ -396,7 +410,9 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
+.&lt;/p&gt;</description></item><item><title>Файловая система PVE pmxcfs</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</link><pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</guid><description>&lt;h2 id="особенности-pmxcfs"&gt;Особенности pmxcfs&lt;/h2&gt;
+&lt;p&gt;Файловая система кластера Proxmox — &lt;strong&gt;pmxcfs&lt;/strong&gt;. Эта файловая система управляется базой данных, и используется для хранения почти всех конфигурационных файлов Proxmox VE. Она реплицируется на все узлы кластера в режиме реального времени.&lt;/p&gt;
+&lt;p&gt;И хотя файловая система хранит все данные в базе данных на диске, её копия находится в оперативной памяти. Это накладывает некоторые ограничения на её максимальный размер, который в настоящее время составляет 128 МБ. Этого пока вполне достаточно, например это позволяет хранить несколько тысяч виртуальных машин в вашем кластере Proxmox VE.&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
 &lt;h2 id="примеры-приложений-с-интеграцией-ldap"&gt;Примеры приложений с интеграцией LDAP&lt;/h2&gt;
 &lt;p&gt;Многие корпоративные приложения умеют интегрироваться в AD с помощью синхронизации LDAP, например:&lt;/p&gt;</description></item><item><title>Обновление и даунгрейдинг RouterOS</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</link><pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</guid><description>&lt;h2 id="ветки-обновлений-routeros"&gt;Ветки обновлений RouterOS&lt;/h2&gt;
 &lt;p&gt;Для начала разберёмся с ветками обновлений операционной системы RouterOS, их 4 штуки:&lt;/p&gt;

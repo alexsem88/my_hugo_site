@@ -18,7 +18,21 @@
 &lt;li&gt;&lt;strong&gt;Виртуальный бридж&lt;/strong&gt; &lt;code&gt;vmbr0&lt;/code&gt; — связан с &lt;code&gt;enp1s0&lt;/code&gt; и используется для подключения виртуальных машин.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260805142743.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>Proxmox VE — замена системного диска в зеркале ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/replace-disk-zfs-mirror-proxmox/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/replace-disk-zfs-mirror-proxmox/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью про установку сервера &lt;strong&gt;Proxmox VE&lt;/strong&gt; на зеркало &lt;strong&gt;ZFS&lt;/strong&gt; &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка Proxmox VE на ZFS
+&lt;/a&gt;
+, а в этой статье опишу как происходит замена диска, если это потребуется. После установки &lt;strong&gt;Proxmox VE&lt;/strong&gt; на зеркало &lt;strong&gt;ZFS&lt;/strong&gt;, в web-интерфейсе вы увидите такую схему разметки диска:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260806165637.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Оба диска: &lt;strong&gt;sda&lt;/strong&gt; и &lt;strong&gt;sdb&lt;/strong&gt; имеют по 3 раздела:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 Раздел (BIOS boot). Это раздел mbr для загрузки с BIOS Legacy.&lt;/li&gt;
+&lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
+&lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
 &lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
 &lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
  
@@ -50,7 +64,9 @@
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>SPICE в Proxmox VE</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</link><pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</guid><description>&lt;h2 id="что-такое-spice"&gt;Что такое SPICE&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Файловая система PVE pmxcfs</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</link><pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</guid><description>&lt;h2 id="особенности-pmxcfs"&gt;Особенности pmxcfs&lt;/h2&gt;
+&lt;p&gt;Файловая система кластера Proxmox — &lt;strong&gt;pmxcfs&lt;/strong&gt;. Эта файловая система управляется базой данных, и используется для хранения почти всех конфигурационных файлов Proxmox VE. Она реплицируется на все узлы кластера в режиме реального времени.&lt;/p&gt;
+&lt;p&gt;И хотя файловая система хранит все данные в базе данных на диске, её копия находится в оперативной памяти. Это накладывает некоторые ограничения на её максимальный размер, который в настоящее время составляет 128 МБ. Этого пока вполне достаточно, например это позволяет хранить несколько тысяч виртуальных машин в вашем кластере Proxmox VE.&lt;/p&gt;</description></item><item><title>SPICE в Proxmox VE</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</link><pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</guid><description>&lt;h2 id="что-такое-spice"&gt;Что такое SPICE&lt;/h2&gt;
 &lt;p&gt;Проект &lt;strong&gt;SPICE&lt;/strong&gt; это решение с открытым исходным кодом для удаленного доступа к виртуальным машинам простым способом, чтобы вы могли воспроизводить видео, записывать аудио, совместно использовать USB-устройства и папки без каких-либо сложностей.&lt;/p&gt;
 &lt;p&gt;SPICE можно разделить на 4 различных компонента:&lt;/p&gt;
 &lt;ul&gt;
