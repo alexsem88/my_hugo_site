@@ -6,7 +6,35 @@
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Cloud-Init&lt;/strong&gt; — это распространённый способ первоначальной настройки виртуальных машин. Часто используется в облаках, но &lt;strong&gt;Proxmox VE&lt;/strong&gt; тоже поддерживает этот способ, при чём «из коробки». &lt;strong&gt;Cloud-Init&lt;/strong&gt; — разработан &lt;strong&gt;Canonical&lt;/strong&gt; и написан на &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Эту систему можно сравнить с &lt;strong&gt;Terraform&lt;/strong&gt; или &lt;strong&gt;Ansible&lt;/strong&gt;, хотя эти системы разного назначения и часто используются вместе а не заменяют друг друга.&lt;/p&gt;</description></item><item><title>Proxmox VE — настройка сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</guid><description>&lt;h2 id="как-выглядит-сеть-после-установки-proxmox-ve"&gt;Как выглядит сеть после установки Proxmox VE&lt;/h2&gt;
+&lt;p&gt;Эту систему можно сравнить с &lt;strong&gt;Terraform&lt;/strong&gt; или &lt;strong&gt;Ansible&lt;/strong&gt;, хотя эти системы разного назначения и часто используются вместе а не заменяют друг друга.&lt;/p&gt;</description></item><item><title>Расширение диска VM (Linux) на Proxmox VE 8</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</guid><description>&lt;h2 id="описание-задачи"&gt;Описание задачи&lt;/h2&gt;
+&lt;p&gt;Допустим нам не хватает места для хранения файлов в виртуальной машине. &lt;strong&gt;Proxmox VE 8 и 9&lt;/strong&gt; легко даёт расширить диск виртуальной машины, особенно если в качестве хранилища используется &lt;strong&gt;ZFS&lt;/strong&gt;. Но просто расширить диск виртуальной машины мало, нужно ещё внутри расширить файловую систему. О том как это делается читайте в этой статье.&lt;/p&gt;
+&lt;h2 id="расширение-ext4"&gt;Расширение Ext4&lt;/h2&gt;
+&lt;p&gt;В первом случае у нас система установлена на 1 раздел и использует файловую систему &lt;strong&gt;ext4&lt;/strong&gt;. Это самый простой случай для расширения дискового пространства.&lt;/p&gt;</description></item><item><title>Создание и управление виртуальной машиной Proxmox VE из консоли</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/create-and-manage-pve-virtual-machine-console/</link><pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/create-and-manage-pve-virtual-machine-console/</guid><description>&lt;h2 id="создание-и-удаление-виртуальной-машины"&gt;Создание и удаление виртуальной машины&lt;/h2&gt;
+&lt;p&gt;Если вы ещё не знакомы с системой виртуализации &lt;strong&gt;Proxmox VE&lt;/strong&gt;, то можете вначале прочесть другую мою статью — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+. А в этой статье я покажу как можно поработать с виртуальными машинами из консоли. Это может понадобиться при написании скриптов или для создания какой-либо другой автоматизации.&lt;/p&gt;
+&lt;p&gt;Для создания виртуальной машины используется команда &lt;code&gt;qm create &amp;lt;vmid&amp;gt;&lt;/code&gt;, после чего необходимо передать параметры виртуальной машины. Например, так:&lt;/p&gt;</description></item><item><title>Proxmox VE — создание VM для Windows 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-for-windows-11/</link><pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-for-windows-11/</guid><description>&lt;h2 id="скачивание-образов"&gt;Скачивание образов&lt;/h2&gt;
+&lt;p&gt;Кстати, процесс установки самого сервера &lt;strong&gt;Proxmox VE 9&lt;/strong&gt; я описывал в статье — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Proxmox VE — знакомство и установка на ZFS
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Скачать официальный ISO-образ &lt;strong&gt;Windows 11&lt;/strong&gt; с сайта &lt;strong&gt;Microsoft&lt;/strong&gt; из России пока невозможно. Однако можно воспользоваться ознакомительной версией, которую можно бесплатно использовать для тестирования &lt;strong&gt;в течение 90 дней&lt;/strong&gt;. Скачать её можно по ссылке — &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-11-enterprise"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-11-enterprise
+&lt;/a&gt;
+. Для загрузки вам придётся заполнить анкету.&lt;/p&gt;
+&lt;p&gt;Кроме этого нам понадобится ISO-образ с &lt;strong&gt;VirtIO драйверами&lt;/strong&gt; для Windows 11. Эти драйверы позволяют операционной системе корректно работать на виртуальной машине в &lt;strong&gt;Proxmox VE&lt;/strong&gt;. Подробнее о них можно прочитать здесь — &lt;a href="https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Windows VirtIO Drivers
+&lt;/a&gt;
+. Там же доступны для скачивания последняя стабильная и самая новая версия пакета. Драйверы обычно достаточно стабильны, поэтому можно смело пробовать использовать самую свежую версию.&lt;/p&gt;</description></item><item><title>Proxmox VE — настройка сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</link><pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-network/</guid><description>&lt;h2 id="как-выглядит-сеть-после-установки-proxmox-ve"&gt;Как выглядит сеть после установки Proxmox VE&lt;/h2&gt;
 &lt;p&gt;Если вы уже установили &lt;strong&gt;Proxmox VE&lt;/strong&gt; (напомню, процесс установки я описывал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
  
  target="_blank" rel="noopener noreferrer"&gt;
