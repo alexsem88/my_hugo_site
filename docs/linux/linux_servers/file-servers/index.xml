@@ -64,7 +64,44 @@ xferlog_file=/var/log/vsftpd.log
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>NextCloud — полнотекстовый поиск</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</guid><description>&lt;h2 id="установка-дополнительных-пакетов"&gt;Установка дополнительных пакетов&lt;/h2&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал про установку облачного файлового сервера &lt;strong&gt;NextCloud&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.  А &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-onlyoffice/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+ я писал про интеграцию с &lt;strong&gt;OnlyOffice&lt;/strong&gt;. &lt;strong&gt;Collabora&lt;/strong&gt; это тоже сервер документов, но он использует другой формат файлов в отличии от &lt;strong&gt;OnlyOffice&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OnlyOffice&lt;/strong&gt; — docx (документ), xlsx (таблица), pptx (презентация);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collabora&lt;/strong&gt; — odt (документ), ods (таблица), odp (презентация).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Официальная страница &lt;strong&gt;Collabora&lt;/strong&gt; — доступна &lt;a href="https://www.collaboraoffice.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Официальные инструкции:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.collaboraoffice.com/code/linux-packages/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://www.collaboraoffice.com/code/linux-packages/
+&lt;/a&gt;
+ — инструкция по установке на свой сервер;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/CollaboraOnline/online/blob/master/etc/nginx/coolwsd.conf"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/CollaboraOnline/online/blob/master/etc/nginx/coolwsd.conf
+&lt;/a&gt;
+ — конфиг для прокси сервера на &lt;strong&gt;nginx&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Collabora&lt;/strong&gt; считается предпочтительным и основным сервером документов для &lt;strong&gt;NextCloud&lt;/strong&gt;, так говорят сами разработчики &lt;strong&gt;NextCloud&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>NextCloud — полнотекстовый поиск</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</guid><description>&lt;h2 id="установка-дополнительных-пакетов"&gt;Установка дополнительных пакетов&lt;/h2&gt;
 &lt;p&gt;Для работы полнотекстового поиска необходимо использовать &lt;strong&gt;Elasticsearch&lt;/strong&gt;, а он в свою очередь использует &lt;strong&gt;Java&lt;/strong&gt;. Поэтому для начала установим Java:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install openjdk-11-jre
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как официальный репозиторий Elasticsearch не доступен на территории россии, то добавляем зеркало репозитория от Yandex. Я использую 7 версию Elasticsearch. Для установки выполним следующее:&lt;/p&gt;
