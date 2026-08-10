@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Usbredirector on Sysadminium</title><link>https://blog.sysadminium.ru/tags/usbredirector/</link><description>Recent content in Usbredirector on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/usbredirector/index.xml" rel="self" type="application/rss+xml"/><item><title>Usbredirector – сервер usb over ip</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/usb-over-ip/usbredirector/</link><pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/usb-over-ip/usbredirector/</guid><description>&lt;h2 id="что-такое-usbredirector"&gt;Что такое usbredirector&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Usbredirector&lt;/strong&gt; — это клиент-серверное ПО позволяющее передавать usb-устройства по сети. Чаще всего этим пользуются для передачи каких-нибудь usb ключей защиты. При этом передавать usb-устройства можно даже через интернет, например ваш локальный ключ защиты можно пробросить в виртуалку, в каком нибудь датацентре.&lt;/p&gt;
+&lt;p&gt;Разработчиком &lt;strong&gt;Usbredirector&lt;/strong&gt; является компания &lt;strong&gt;IncentivesPro&lt;/strong&gt;. Эта компания основана в 2007 году и базируется в США.&lt;/p&gt;
+&lt;p&gt;В настоящее время сайт компании &lt;a href="https://www.incentivespro.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://www.incentivespro.com/
+&lt;/a&gt;
+ заблокирован для доступа из России. Так что для скачивания придётся использовать некоторые дополнительные средства.&lt;/p&gt;</description></item></channel></rss>
