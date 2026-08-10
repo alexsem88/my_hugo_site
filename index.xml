@@ -440,7 +440,53 @@ alex
 &lt;/a&gt;
 .&lt;/p&gt;</description></item><item><title>Файловая система PVE pmxcfs</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</link><pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/pmxcfs/</guid><description>&lt;h2 id="особенности-pmxcfs"&gt;Особенности pmxcfs&lt;/h2&gt;
 &lt;p&gt;Файловая система кластера Proxmox — &lt;strong&gt;pmxcfs&lt;/strong&gt;. Эта файловая система управляется базой данных, и используется для хранения почти всех конфигурационных файлов Proxmox VE. Она реплицируется на все узлы кластера в режиме реального времени.&lt;/p&gt;
-&lt;p&gt;И хотя файловая система хранит все данные в базе данных на диске, её копия находится в оперативной памяти. Это накладывает некоторые ограничения на её максимальный размер, который в настоящее время составляет 128 МБ. Этого пока вполне достаточно, например это позволяет хранить несколько тысяч виртуальных машин в вашем кластере Proxmox VE.&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
+&lt;p&gt;И хотя файловая система хранит все данные в базе данных на диске, её копия находится в оперативной памяти. Это накладывает некоторые ограничения на её максимальный размер, который в настоящее время составляет 128 МБ. Этого пока вполне достаточно, например это позволяет хранить несколько тысяч виртуальных машин в вашем кластере Proxmox VE.&lt;/p&gt;</description></item><item><title>NextCloud — синхронизация LDAP (AD)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</guid><description>&lt;h2 id="о-синхронизации"&gt;О синхронизации&lt;/h2&gt;
+&lt;p&gt;Я уже писал про сервер NextCloud — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-and-installation/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Вы можете синхронизировать ваш сервер документов NextCloud с LDAP (AD). При этом можно:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;выбрать группу и пользователи только этой группы получат доступ на сервер NextCloud;&lt;/li&gt;
+&lt;li&gt;выбрать группы, которые будут доступны в NextCloud. Это позволит, например, сделать какую-то доменную группу в качестве админской для NextCloud;&lt;/li&gt;
+&lt;li&gt;синхронизировать вместе с пользователем дополнительную информацию о нём, например его email.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Вот официальная справочная информация по интеграции NextCloud с LDAP AD — &lt;a href="https://docs.nextcloud.com/server/stable/admin_manual/configuration_user/user_auth_ldap.html?highlight=ldap"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ссылка
+&lt;/a&gt;
+. Если что-то не получается по моей статье, то можете обратиться к этой справке.&lt;/p&gt;</description></item><item><title>NextCloud — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/</link><pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Nextcloud&lt;/strong&gt; может использоваться как файловый сервер с доступом к файлам через браузер. То есть его можно сравнить с &lt;strong&gt;Яндекс Диск&lt;/strong&gt; или &lt;strong&gt;Google Диск&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Основные ресурсы проекта:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nextcloud.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Официальная страница проекта
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nextcloud/server"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Репозиторий на github
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.nextcloud.com/server/stable/admin_manual/index.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Руководство администратора
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nextcloud&lt;/strong&gt; был создан в 2016 году &lt;a href="https://karlitschek.de/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Фрэнком Карлитчеком
+&lt;/a&gt;
+. Это немецкая компания, но поскольку это решение является опенсорсным то место базирования не имеет особого значения.&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
 &lt;h2 id="примеры-приложений-с-интеграцией-ldap"&gt;Примеры приложений с интеграцией LDAP&lt;/h2&gt;
 &lt;p&gt;Многие корпоративные приложения умеют интегрироваться в AD с помощью синхронизации LDAP, например:&lt;/p&gt;</description></item><item><title>Обновление и даунгрейдинг RouterOS</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</link><pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</guid><description>&lt;h2 id="ветки-обновлений-routeros"&gt;Ветки обновлений RouterOS&lt;/h2&gt;
 &lt;p&gt;Для начала разберёмся с ветками обновлений операционной системы RouterOS, их 4 штуки:&lt;/p&gt;
