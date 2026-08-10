@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nextcloud on Sysadminium</title><link>https://blog.sysadminium.ru/tags/nextcloud/</link><description>Recent content in Nextcloud on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/nextcloud/index.xml" rel="self" type="application/rss+xml"/><item><title>NextCloud — синхронизация LDAP (AD)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</guid><description>&lt;h2 id="о-синхронизации"&gt;О синхронизации&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nextcloud on Sysadminium</title><link>https://blog.sysadminium.ru/tags/nextcloud/</link><description>Recent content in Nextcloud on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/nextcloud/index.xml" rel="self" type="application/rss+xml"/><item><title>NextCloud — полнотекстовый поиск</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-full-text-search/</guid><description>&lt;h2 id="установка-дополнительных-пакетов"&gt;Установка дополнительных пакетов&lt;/h2&gt;
+&lt;p&gt;Для работы полнотекстового поиска необходимо использовать &lt;strong&gt;Elasticsearch&lt;/strong&gt;, а он в свою очередь использует &lt;strong&gt;Java&lt;/strong&gt;. Поэтому для начала установим Java:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# apt install openjdk-11-jre
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как официальный репозиторий Elasticsearch не доступен на территории россии, то добавляем зеркало репозитория от Yandex. Я использую 7 версию Elasticsearch. Для установки выполним следующее:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# nano /etc/apt/sources.list.d/elastic.list
+deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
+
+# apt install elasticsearch
+
+# systemctl daemon-reload
+# systemctl enable elasticsearch
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Перед запуском нужно ограничить elasticsearch в памяти, для этого отредактируем конфиг &lt;strong&gt;/etc/elasticsearch/jvm.options&lt;/strong&gt;. В этом примере я указал лимит в 2 GB:&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с OnlyOffice</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-onlyoffice/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-onlyoffice/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал про установку облачного файлового сервера &lt;strong&gt;NextCloud&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. В этой статье я покажу как установить на этот же сервер &lt;strong&gt;Onlyoffice&lt;/strong&gt; (сервер редактирования документов).&lt;/p&gt;
+&lt;p&gt;Официальный сайт Onlyoffice — доступен &lt;a href="https://www.onlyoffice.com/ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Официальные инструкции:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://helpcenter.onlyoffice.com/installation/docs-developer-install-centos.aspx"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка OnlyOffice документ сервера на CentOS, RHEL и производных
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://helpcenter.onlyoffice.com/installation/docs-developer-install-ubuntu.aspx"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка OnlyOffice документ сервера на Debian, Ubuntu и производных
+&lt;/a&gt;
+;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://helpcenter.onlyoffice.com/installation/docs-community-https-linux.aspx"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Переключение работы OnlyOffice на протокол HTTPS
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Перед чтением этой инструкции нужно понять некоторые вещи:&lt;/p&gt;</description></item><item><title>NextCloud — синхронизация LDAP (AD)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</link><pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-ldap-ad/</guid><description>&lt;h2 id="о-синхронизации"&gt;О синхронизации&lt;/h2&gt;
 &lt;p&gt;Я уже писал про сервер NextCloud — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-and-installation/"
  
  target="_blank" rel="noopener noreferrer"&gt;
