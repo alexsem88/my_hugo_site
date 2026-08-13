@@ -5,7 +5,19 @@
 &lt;li&gt;Лимиты, накладываемые подсистемой PAM - &lt;code&gt;limits.conf&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Лимиты, накладываемые системой инициализации SystemD - &lt;code&gt;system.conf&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Несмотря на похожее назначение, эти механизмы работают независимо друг от друга и применяются на разных этапах работы системы.&lt;/p&gt;</description></item><item><title>ZFS и пулы ZFS (Zpool)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</guid><description>&lt;h2 id="термины"&gt;Термины&lt;/h2&gt;
+&lt;p&gt;Несмотря на похожее назначение, эти механизмы работают независимо друг от друга и применяются на разных этапах работы системы.&lt;/p&gt;</description></item><item><title>ZFS датасеты (dataset)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-dataset/</link><pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-dataset/</guid><description>&lt;h2 id="основы"&gt;Основы&lt;/h2&gt;
+&lt;p&gt;Я уже писал про ZFS в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ ZFS и пулы ZFS (Zpool)
+&lt;/a&gt;
+. В той статье я описал основы ZFS и создание ZFS пулов. А в этой познакомимся поближе с датасетами.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ZFS датасеты&lt;/strong&gt; ещё называют &lt;strong&gt;разделами&lt;/strong&gt;, и это действительно разделы с файловой системой ZFS. Разбивать zpool на разделы можно по нескольким причинам:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Во-первых, каждый раздел можно настроить по своему, указав для раздела необходимые свойства (property). Ниже, в этой статье, разберём некоторые свойства датасетов.&lt;/li&gt;
+&lt;li&gt;Во-вторых, снапшоты создаются на раздел. Мы можем создать несколько разделов, что даст нам возможность снапшотить и откатывать их состояния по отдельности.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Если вы создали &lt;strong&gt;zpool&lt;/strong&gt;, то у вас вместе с ним создаётся &lt;strong&gt;корневой dataset&lt;/strong&gt;. Посмотреть созданные zpool можно с помощью команды &lt;strong&gt;zfs list&lt;/strong&gt;, а посмотреть созданные разделы можно с помощью команды &lt;strong&gt;zfs list&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>ZFS и пулы ZFS (Zpool)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</guid><description>&lt;h2 id="термины"&gt;Термины&lt;/h2&gt;
 &lt;p&gt;Перед тем как приступить к созданию пулов (массивов) ZFS, нужно изучить некоторые понятия. Пул ZFS (&lt;strong&gt;zpool&lt;/strong&gt;) состоит из виртуальных устройств (&lt;strong&gt;vdev&lt;/strong&gt;). Vdev-ом могут быть: одиночный диск или массив дисков (mirror, raidz, raidz2, raidz3). И Vdev могут быть разными типами:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Storage vdev&lt;/strong&gt; — служит для хранения данных, может быть одиночным диском или массивом.&lt;/li&gt;
