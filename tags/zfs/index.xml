@@ -44,4 +44,12 @@
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item></channel></rss>
+.&lt;/p&gt;</description></item><item><title>ZFS и пулы ZFS (Zpool)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</guid><description>&lt;h2 id="термины"&gt;Термины&lt;/h2&gt;
+&lt;p&gt;Перед тем как приступить к созданию пулов (массивов) ZFS, нужно изучить некоторые понятия. Пул ZFS (&lt;strong&gt;zpool&lt;/strong&gt;) состоит из виртуальных устройств (&lt;strong&gt;vdev&lt;/strong&gt;). Vdev-ом могут быть: одиночный диск или массив дисков (mirror, raidz, raidz2, raidz3). И Vdev могут быть разными типами:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storage vdev&lt;/strong&gt; — служит для хранения данных, может быть одиночным диском или массивом.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cache vdev&lt;/strong&gt; — служит для ускорения произвольного чтения. Если в вашем пуле медленные Storage vdev, то желательно добавить в него Cache vdev на базе быстрого диска. Cache vdev может быть только одиночным диском и не может быть массивом. Но вы можете сделать его из нескольких дисков, как stripe массив.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Log vdev (Zill)&lt;/strong&gt; — предоставляет возможность вести синхронную запись на отдельное устройство. ZFS синхронную запись ведёт через специальный журнал, который называется &lt;strong&gt;ZILL&lt;/strong&gt;. Вот этот ZILL можно вынести на отдельные диски. Если не создавать отдельный Vdev для ZILL, то синхронная запись будет вестись на Storage vdev но всё равно через &lt;strong&gt;ZILL&lt;/strong&gt;. То есть Log vdev немного облегчает работу &lt;strong&gt;Storage vdev&lt;/strong&gt;, снимая с него нагрузку ZILL.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Special vdev&lt;/strong&gt; — представляет возможность выделить отдельный Vdev, на базе быстрого диска. На этот Vdev будут сохраняться метаданные и маленькие файлы.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Например у вас 6 HDD и 6 SSD, тогда вы сможете собрать следующий Zpoll:&lt;/p&gt;</description></item></channel></rss>
