@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mikrotik on Sysadminium</title><link>https://blog.sysadminium.ru/tags/mikrotik/</link><description>Recent content in Mikrotik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>Обновление и даунгрейдинг RouterOS</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</link><pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</guid><description>&lt;h2 id="ветки-обновлений-routeros"&gt;Ветки обновлений RouterOS&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mikrotik on Sysadminium</title><link>https://blog.sysadminium.ru/tags/mikrotik/</link><description>Recent content in Mikrotik on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/mikrotik/index.xml" rel="self" type="application/rss+xml"/><item><title>SSTP на MikroTik для удаленных сотрудников</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/sstp-mikrotik-for-remote-users/</link><pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/sstp-mikrotik-for-remote-users/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже &lt;a href="https://blog.sysadminium.ru/docs/network/mikrotik/sstp-office-to-office/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ писал
+&lt;/a&gt;
+ про SSTP, но в прошлый раз я настраивал SSTP между двумя MikroTik, в этой статье я опишу процесс подключения удаленных сотрудников, с операционными системами Windows, к офисной сети.&lt;/p&gt;
+&lt;p&gt;Очень часто у сотрудников, которым нужно работать из дома, на домашнем компьютере стоит &lt;strong&gt;Windows&lt;/strong&gt;. Эта система, начиная с версии &lt;strong&gt;Vista&lt;/strong&gt;, поддерживает SSTP без установки дополнительных программ.&lt;/p&gt;
+&lt;p&gt;Дополнительные преимущества &lt;strong&gt;SSTP&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Удалённый сотрудник может иметь &lt;strong&gt;динамический IP&lt;/strong&gt; и работать &lt;strong&gt;за NAT-ом&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;SSTP по умолчанию использует &lt;strong&gt;443 порт&lt;/strong&gt;, а для установки соединения использует протокол &lt;strong&gt;HTTPS&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;SSTP может работать используя протоколы &lt;strong&gt;IPv4&lt;/strong&gt; и &lt;strong&gt;IPv6&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Роутеры &lt;strong&gt;MikroTik&lt;/strong&gt; поддерживают &lt;strong&gt;SSTP&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Вот хорошие статьи про &lt;strong&gt;SSTP&lt;/strong&gt; — &lt;a href="https://vc.ru/dev/119780-obzor-secure-socket-tunneling-protocol"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+ и &lt;a href="https://habr.com/ru/articles/196134/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Обновление и даунгрейдинг RouterOS</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</link><pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/routeros-upgrading-downgrading/</guid><description>&lt;h2 id="ветки-обновлений-routeros"&gt;Ветки обновлений RouterOS&lt;/h2&gt;
 &lt;p&gt;Для начала разберёмся с ветками обновлений операционной системы RouterOS, их 4 штуки:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Development&lt;/strong&gt;. В этой ветке релизы выпускается по мере необходимости. Релизы содержат непротестированные изменения. Эта ветка подойдёт только для тех, кто готов протестировать новые функции.&lt;/li&gt;
