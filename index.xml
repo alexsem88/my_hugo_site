@@ -449,6 +449,24 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL из исходников</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</guid><description>&lt;h2 id="причины-установки-postgresql-из-исходников"&gt;Причины установки PostgreSQL из исходников&lt;/h2&gt;
+&lt;p&gt;Проще установить PostgreSQL из репозиториев &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL 16 на Debian 12 из репозитория
+&lt;/a&gt;
+. Но иногда есть причины по которым вам может понадобится собирать PostgreSQL из исходников:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;для дистрибутива нет готового пакета;&lt;/li&gt;
+&lt;li&gt;можно собрать PostgreSQL с нестандартными параметрами.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="особенности-установки-по-этой-статье"&gt;Особенности установки по этой статье&lt;/h2&gt;
+&lt;p&gt;Будем производить сборку &lt;strong&gt;PostgreSQL версии 16.2&lt;/strong&gt; на дистрибутиве &lt;strong&gt;Debian 12 (bookworm)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Для выполнения команд, которым нужен административный доступ будем использовать утилиту &lt;strong&gt;sudo&lt;/strong&gt;, про неё я писал статью &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Использование sudo в Linux
+&lt;/a&gt;
 .&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Я уже писал про установку облачного файлового сервера &lt;strong&gt;NextCloud&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/"
  
