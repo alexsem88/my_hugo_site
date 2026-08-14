@@ -64,7 +64,25 @@ xferlog_file=/var/log/vsftpd.log
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Инструмент &lt;strong&gt;Unison&lt;/strong&gt; базируется на &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Rsync
+&lt;/a&gt;
+, и предназначен для синхронизации двух каталогов на одном компьютере, либо на разных компьютерах по сети. В отличии от &lt;strong&gt;Rsync&lt;/strong&gt; в &lt;strong&gt;Unison&lt;/strong&gt; двухсторонняя синхронизация, то есть вы исправляете файлы на разных компьютерах и это приводит к синхронизации.&lt;/p&gt;
+&lt;p&gt;Скачать пакет для &lt;strong&gt;Ubuntu&lt;/strong&gt; можно от сюда: &lt;a href="https://github.com/bcpierce00/unison/releases"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/bcpierce00/unison/releases
+&lt;/a&gt;
+. Он должен подойти и для &lt;strong&gt;Linux Mint&lt;/strong&gt; и для &lt;strong&gt;Debian&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Синхронизация возможна по сети, то-есть на одной машине запускается серверный процесс Unison, а на другой клиентский. Серверный процесс слушает определённый TCP порт, а клиентский к нему подключается. А также, можно настроить синхронизацию поверх SSH. Предварительно нужно настроить клиент, чтобы он мог подключаться по SSH к серверу без пароля, с использованием ssh ключей — об этом я писал &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh-keys-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. Мне кажется использовать ssh ключи предпочтительнее, так как здесь есть хоть какая-та авторизация.&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Я уже писал про установку облачного файлового сервера &lt;strong&gt;NextCloud&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/"
  
  target="_blank" rel="noopener noreferrer"&gt;

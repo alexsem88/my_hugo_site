@@ -449,7 +449,41 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Zabbix — узлы сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</guid><description>&lt;h2 id="установка-zabbix-агента"&gt;Установка Zabbix агента&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Инструмент &lt;strong&gt;Unison&lt;/strong&gt; базируется на &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Rsync
+&lt;/a&gt;
+, и предназначен для синхронизации двух каталогов на одном компьютере, либо на разных компьютерах по сети. В отличии от &lt;strong&gt;Rsync&lt;/strong&gt; в &lt;strong&gt;Unison&lt;/strong&gt; двухсторонняя синхронизация, то есть вы исправляете файлы на разных компьютерах и это приводит к синхронизации.&lt;/p&gt;
+&lt;p&gt;Скачать пакет для &lt;strong&gt;Ubuntu&lt;/strong&gt; можно от сюда: &lt;a href="https://github.com/bcpierce00/unison/releases"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/bcpierce00/unison/releases
+&lt;/a&gt;
+. Он должен подойти и для &lt;strong&gt;Linux Mint&lt;/strong&gt; и для &lt;strong&gt;Debian&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Синхронизация возможна по сети, то-есть на одной машине запускается серверный процесс Unison, а на другой клиентский. Серверный процесс слушает определённый TCP порт, а клиентский к нему подключается. А также, можно настроить синхронизацию поверх SSH. Предварительно нужно настроить клиент, чтобы он мог подключаться по SSH к серверу без пароля, с использованием ssh ключей — об этом я писал &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh-keys-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. Мне кажется использовать ssh ключи предпочтительнее, так как здесь есть хоть какая-та авторизация.&lt;/p&gt;</description></item><item><title>Zabbix — триггеры</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-triggers/</link><pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-triggers/</guid><description>&lt;h2 id="что-такое-триггеры"&gt;Что такое триггеры&lt;/h2&gt;
+&lt;p&gt;Zabbix позволяет собирать некоторые метрики с наблюдаемых хостов, эти метрики называются &lt;strong&gt;элементами данных&lt;/strong&gt;. &lt;strong&gt;Триггеры&lt;/strong&gt; нужны чтобы получить информацию о том, что какая-та метрика вышла за рамки.&lt;/p&gt;
+&lt;p&gt;Например, мы собираем данные о потребляемой памяти, а точнее, раз в 30 секунд получаем процент занятой памяти на сервере. Для этого мы в Zabbix добавили этот сервер как узел сети, и на этот узел добавили элемент данных.&lt;/p&gt;
+&lt;p&gt;Затем, мы хотим получать оповещение, если уже используется 80% всей памяти. Для этого мы на элемент данных вешаем &lt;strong&gt;триггер&lt;/strong&gt; — это такая функция, проверяющая значение элемента данных. И если это значение попадает в некий диапазон триггера, то триггер срабатывает.&lt;/p&gt;</description></item><item><title>Используем ssh ключи на Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh-keys-on-linux/</link><pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/ssh/ssh-keys-on-linux/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для того чтобы иметь возможность подключаться с одного Linux сервера на другой по ssh без пароля вы должны настроить аутентификацию по ssh ключам. Для этого на клиенте генерируется пара ключей: приватный и публичный. Затем публичный ключ передаётся на второй сервер. И пользователь с первого сервера, с помощью приватного ключа может подключиться ко второму серверу, где с помощью публичного ключа проверяется приватный ключ подключаемого.&lt;/p&gt;
+&lt;p&gt;Проделанные команды из этой статьи должны работать на &lt;strong&gt;Debian&lt;/strong&gt; или &lt;strong&gt;Ubuntu&lt;/strong&gt; от самых старых до последних версий.&lt;/p&gt;</description></item><item><title>Zabbix — элементы данных агента</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-item-keys/</link><pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-item-keys/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже рассказывал про то как установить Zabbix агента на Linux или Windows и как начать мониторинг за хостом — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. В этой статье я расскажу про некоторые элементы данных (метрики), которые предоставляет Zabbix агент. Всего таких метрик в 6 версии Zabbix более 80, их описание вы можете посмотреть в &lt;a href="https://www.zabbix.com/documentation/6.0/ru/manual/config/items/itemtypes/zabbix_agent"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ официальной документации
+&lt;/a&gt;
+. Здесь я покажу лишь некоторые из элементов, в качестве примеров. А дальше, используя документацию, вы сможете подключить те элементы, которые нужны именно вам.&lt;/p&gt;</description></item><item><title>Zabbix — узлы сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</guid><description>&lt;h2 id="установка-zabbix-агента"&gt;Установка Zabbix агента&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/"
  
  target="_blank" rel="noopener noreferrer"&gt;
