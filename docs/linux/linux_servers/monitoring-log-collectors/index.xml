@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 24 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Zabbix — узлы сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</guid><description>&lt;h2 id="установка-zabbix-агента"&gt;Установка Zabbix агента&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Здесь
+&lt;/a&gt;
+ я уже писал про установку сервера Zabbix на Debian 12. А в этой статье начнём понемногу работать с Zabbix. Прежде чем подключать узлы сети к серверу Zabbix, нужно на эти узлы установить Zabbix агент.&lt;/p&gt;
+&lt;h3 id="установка-на-linux"&gt;Установка на Linux&lt;/h3&gt;
+&lt;p&gt;Я покажу как установить Zabbix агент на примере Debian 12. Установим агент:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install -y zabbix-agent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Настроим его, указав адрес сервера Zabbix:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/zabbix/zabbix_agentd.conf
+Server=192.168.0.25
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
+&lt;p&gt;Сервер &lt;strong&gt;Zabbix&lt;/strong&gt; — это сервер мониторинга. Он умеет:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;собирать метрики с различных устройств (роутеры, телефоны, принтеры, компьютеры, сервера и подобное);&lt;/li&gt;
+&lt;li&gt;обнаруживать проблемы, проблемой считается превышение метрики каких-то порогов;&lt;/li&gt;
+&lt;li&gt;высылать уведомления если появляются проблемы на наблюдаемом устройстве;&lt;/li&gt;
+&lt;li&gt;визуализировать данные, то есть рисовать графики, составлять комплексные экраны.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Zabbix&lt;/strong&gt; — это веб приложение, оно написано на &lt;strong&gt;PHP&lt;/strong&gt; и ему нужен web-сервер и база данных. В качестве web-сервера вы можете использовать &lt;strong&gt;Apache&lt;/strong&gt; или &lt;strong&gt;Nginx&lt;/strong&gt;. А в качестве СУБД — &lt;strong&gt;MySQL&lt;/strong&gt; или &lt;strong&gt;PostgreSQL&lt;/strong&gt;. В этой статье я буду использовать &lt;strong&gt;Nginx&lt;/strong&gt; и &lt;strong&gt;MySQL&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;PGWatch2&lt;/strong&gt; — это специальная система мониторинга предназначенная исключительно для баз данных &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Она поддерживает мониторинг практически всех показателей для &lt;strong&gt;PostgreSQL&lt;/strong&gt;, начиная с версии &lt;strong&gt;с 9.0 и выше&lt;/strong&gt;. В основе решения лежит демон сборки метрик, написанный на Go.&lt;/p&gt;
 &lt;p&gt;Документацию по &lt;strong&gt;PGWatch2&lt;/strong&gt; можете найти &lt;a href="https://pgwatch2.readthedocs.io/en/latest/index.html"
  

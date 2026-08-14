@@ -449,7 +449,56 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL из исходников</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</guid><description>&lt;h2 id="причины-установки-postgresql-из-исходников"&gt;Причины установки PostgreSQL из исходников&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Zabbix — узлы сети</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</link><pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-hosts/</guid><description>&lt;h2 id="установка-zabbix-агента"&gt;Установка Zabbix агента&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Здесь
+&lt;/a&gt;
+ я уже писал про установку сервера Zabbix на Debian 12. А в этой статье начнём понемногу работать с Zabbix. Прежде чем подключать узлы сети к серверу Zabbix, нужно на эти узлы установить Zabbix агент.&lt;/p&gt;
+&lt;h3 id="установка-на-linux"&gt;Установка на Linux&lt;/h3&gt;
+&lt;p&gt;Я покажу как установить Zabbix агент на примере Debian 12. Установим агент:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install -y zabbix-agent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Настроим его, указав адрес сервера Zabbix:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/zabbix/zabbix_agentd.conf
+Server=192.168.0.25
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
+&lt;p&gt;Сервер &lt;strong&gt;Zabbix&lt;/strong&gt; — это сервер мониторинга. Он умеет:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;собирать метрики с различных устройств (роутеры, телефоны, принтеры, компьютеры, сервера и подобное);&lt;/li&gt;
+&lt;li&gt;обнаруживать проблемы, проблемой считается превышение метрики каких-то порогов;&lt;/li&gt;
+&lt;li&gt;высылать уведомления если появляются проблемы на наблюдаемом устройстве;&lt;/li&gt;
+&lt;li&gt;визуализировать данные, то есть рисовать графики, составлять комплексные экраны.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Zabbix&lt;/strong&gt; — это веб приложение, оно написано на &lt;strong&gt;PHP&lt;/strong&gt; и ему нужен web-сервер и база данных. В качестве web-сервера вы можете использовать &lt;strong&gt;Apache&lt;/strong&gt; или &lt;strong&gt;Nginx&lt;/strong&gt;. А в качестве СУБД — &lt;strong&gt;MySQL&lt;/strong&gt; или &lt;strong&gt;PostgreSQL&lt;/strong&gt;. В этой статье я буду использовать &lt;strong&gt;Nginx&lt;/strong&gt; и &lt;strong&gt;MySQL&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Просмотр событий Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-events/</link><pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-events/</guid><description>&lt;h2 id="открытие-оснастки-просмотр-событий"&gt;Открытие оснастки «Просмотр событий»&lt;/h2&gt;
+&lt;p&gt;Для просмотра логов в Windows, вы можете открыть оснастку &lt;strong&gt;«Просмотр событий»&lt;/strong&gt;. Она находится в меню &lt;strong&gt;«Пуск»&lt;/strong&gt; или может быть запущена с помощью команды &lt;code&gt;eventvwr&lt;/code&gt; в командной строке.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260814092144.png" alt=""&gt;&lt;/p&gt;
+&lt;h2 id="сводная-информация"&gt;Сводная информация&lt;/h2&gt;
+&lt;p&gt;После открытия оснастки, если вы нажмёте слева на пункт &lt;strong&gt;«Просмотр событий (Локальный)»&lt;/strong&gt;, то увидите сводную информацию.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260814092156.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Здесь вы можете посмотреть:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;общее количество событий по уровням важности;&lt;/li&gt;
+&lt;li&gt;недавно просмотренные узлы, то есть какие журналы вы недавно просматривали;&lt;/li&gt;
+&lt;li&gt;сводка журнала, то есть какие журналы включены а какие выключены.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="журналы-windows"&gt;Журналы Windows&lt;/h2&gt;
+&lt;p&gt;После открытия оснастки и разворачивания пункта &lt;strong&gt;«Журналы Windows»&lt;/strong&gt; вы увидите следующие журналы:&lt;/p&gt;</description></item><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL из исходников
+&lt;/a&gt;
+ я показывал установку PostgreSQL на сервер Debian из исходников. Но в большинстве случаев проще, быстрее и правильнее установить его с помощью пакетного менеджера из репозитория. У PostgreSQL есть свои &lt;a href="http://apt.postgresql.org/pub/repos/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ публичные репозитории
+&lt;/a&gt;
+ для разных пакетных менеджеров: &lt;strong&gt;apt&lt;/strong&gt;, &lt;strong&gt;yum&lt;/strong&gt; и &lt;strong&gt;zypp&lt;/strong&gt;. Именно его мы и будем использовать в этой статье. Также я покажу особенности PostgreSQL установленного из официального репозитория PostgreSQL.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Поехали&lt;/em&gt;🚀&lt;/p&gt;
+&lt;h2 id="установка-postgresql-из-репозитория"&gt;Установка PostgreSQL из репозитория&lt;/h2&gt;
+&lt;h3 id="добавление-репозитория"&gt;Добавление репозитория&lt;/h3&gt;
+&lt;p&gt;Добавим официальный репозиторий PostgreSQL в систему:&lt;/p&gt;</description></item><item><title>Установка PostgreSQL из исходников</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</link><pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/</guid><description>&lt;h2 id="причины-установки-postgresql-из-исходников"&gt;Причины установки PostgreSQL из исходников&lt;/h2&gt;
 &lt;p&gt;Проще установить PostgreSQL из репозиториев &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/"
  
  target="_blank" rel="noopener noreferrer"&gt;

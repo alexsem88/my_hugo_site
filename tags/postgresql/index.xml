@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL из исходников
+&lt;/a&gt;
+ я показывал установку PostgreSQL на сервер Debian из исходников. Но в большинстве случаев проще, быстрее и правильнее установить его с помощью пакетного менеджера из репозитория. У PostgreSQL есть свои &lt;a href="http://apt.postgresql.org/pub/repos/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ публичные репозитории
+&lt;/a&gt;
+ для разных пакетных менеджеров: &lt;strong&gt;apt&lt;/strong&gt;, &lt;strong&gt;yum&lt;/strong&gt; и &lt;strong&gt;zypp&lt;/strong&gt;. Именно его мы и будем использовать в этой статье. Также я покажу особенности PostgreSQL установленного из официального репозитория PostgreSQL.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Поехали&lt;/em&gt;🚀&lt;/p&gt;
+&lt;h2 id="установка-postgresql-из-репозитория"&gt;Установка PostgreSQL из репозитория&lt;/h2&gt;
+&lt;h3 id="добавление-репозитория"&gt;Добавление репозитория&lt;/h3&gt;
+&lt;p&gt;Добавим официальный репозиторий PostgreSQL в систему:&lt;/p&gt;</description></item><item><title>Установка PGWatch2 на Debian 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</link><pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/installing-pgwatch2/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;PGWatch2&lt;/strong&gt; — это специальная система мониторинга предназначенная исключительно для баз данных &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Она поддерживает мониторинг практически всех показателей для &lt;strong&gt;PostgreSQL&lt;/strong&gt;, начиная с версии &lt;strong&gt;с 9.0 и выше&lt;/strong&gt;. В основе решения лежит демон сборки метрик, написанный на Go.&lt;/p&gt;
 &lt;p&gt;Документацию по &lt;strong&gt;PGWatch2&lt;/strong&gt; можете найти &lt;a href="https://pgwatch2.readthedocs.io/en/latest/index.html"
  

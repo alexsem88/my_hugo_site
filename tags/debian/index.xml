@@ -3,7 +3,22 @@
 &lt;p&gt;Разработка &lt;strong&gt;Debian&lt;/strong&gt; началась в &lt;strong&gt;1993&lt;/strong&gt; году, когда &lt;strong&gt;Ян Мердок&lt;/strong&gt; заявил о намерении создать собственный дистрибутив. Название &lt;strong&gt;Debian&lt;/strong&gt; производное из имени будущей жены основателя дистрибутива &lt;strong&gt;Дебры&lt;/strong&gt; и имени самого &lt;strong&gt;Яна&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260425211707.png" alt=""&gt;
 &lt;em&gt;Ян Мердок&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Но уже через 3 года &lt;strong&gt;Мердок&lt;/strong&gt; объявил, что более не в состоянии участвовать в проекте, и покинул его. Его сменил &lt;strong&gt;Брюс Пиренс&lt;/strong&gt;, человек который дал кодовые имена дистрибутивам. Брюс 12 лет отработал в компании &lt;strong&gt;Pixar&lt;/strong&gt; и решил что имена дистрибутивов должны соответствовать именам героев мультфильма &lt;strong&gt;Toy Story&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Но уже через 3 года &lt;strong&gt;Мердок&lt;/strong&gt; объявил, что более не в состоянии участвовать в проекте, и покинул его. Его сменил &lt;strong&gt;Брюс Пиренс&lt;/strong&gt;, человек который дал кодовые имена дистрибутивам. Брюс 12 лет отработал в компании &lt;strong&gt;Pixar&lt;/strong&gt; и решил что имена дистрибутивов должны соответствовать именам героев мультфильма &lt;strong&gt;Toy Story&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL из исходников
+&lt;/a&gt;
+ я показывал установку PostgreSQL на сервер Debian из исходников. Но в большинстве случаев проще, быстрее и правильнее установить его с помощью пакетного менеджера из репозитория. У PostgreSQL есть свои &lt;a href="http://apt.postgresql.org/pub/repos/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ публичные репозитории
+&lt;/a&gt;
+ для разных пакетных менеджеров: &lt;strong&gt;apt&lt;/strong&gt;, &lt;strong&gt;yum&lt;/strong&gt; и &lt;strong&gt;zypp&lt;/strong&gt;. Именно его мы и будем использовать в этой статье. Также я покажу особенности PostgreSQL установленного из официального репозитория PostgreSQL.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Поехали&lt;/em&gt;🚀&lt;/p&gt;
+&lt;h2 id="установка-postgresql-из-репозитория"&gt;Установка PostgreSQL из репозитория&lt;/h2&gt;
+&lt;h3 id="добавление-репозитория"&gt;Добавление репозитория&lt;/h3&gt;
+&lt;p&gt;Добавим официальный репозиторий PostgreSQL в систему:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Официальные снапшоты репозиториев &lt;strong&gt;Debian&lt;/strong&gt; доступны по адресу: &lt;a href="https://snapshot.debian.org/"
  
  target="_blank" rel="noopener noreferrer"&gt;

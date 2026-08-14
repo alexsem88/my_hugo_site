@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Sysadminium</title><link>https://blog.sysadminium.ru/tags/windows/</link><description>Recent content in Windows on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Server 2019. Установка</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</guid><description>&lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Sysadminium</title><link>https://blog.sysadminium.ru/tags/windows/</link><description>Recent content in Windows on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Просмотр событий Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-events/</link><pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-events/</guid><description>&lt;h2 id="открытие-оснастки-просмотр-событий"&gt;Открытие оснастки «Просмотр событий»&lt;/h2&gt;
+&lt;p&gt;Для просмотра логов в Windows, вы можете открыть оснастку &lt;strong&gt;«Просмотр событий»&lt;/strong&gt;. Она находится в меню &lt;strong&gt;«Пуск»&lt;/strong&gt; или может быть запущена с помощью команды &lt;code&gt;eventvwr&lt;/code&gt; в командной строке.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260814092144.png" alt=""&gt;&lt;/p&gt;
+&lt;h2 id="сводная-информация"&gt;Сводная информация&lt;/h2&gt;
+&lt;p&gt;После открытия оснастки, если вы нажмёте слева на пункт &lt;strong&gt;«Просмотр событий (Локальный)»&lt;/strong&gt;, то увидите сводную информацию.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260814092156.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Здесь вы можете посмотреть:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;общее количество событий по уровням важности;&lt;/li&gt;
+&lt;li&gt;недавно просмотренные узлы, то есть какие журналы вы недавно просматривали;&lt;/li&gt;
+&lt;li&gt;сводка журнала, то есть какие журналы включены а какие выключены.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="журналы-windows"&gt;Журналы Windows&lt;/h2&gt;
+&lt;p&gt;После открытия оснастки и разворачивания пункта &lt;strong&gt;«Журналы Windows»&lt;/strong&gt; вы увидите следующие журналы:&lt;/p&gt;</description></item><item><title>Windows Server 2019. Установка</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/windows-server-install/</guid><description>&lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Windows Server 2019&lt;/strong&gt; — это платный продукт, поэтому его следует купить или использовать пробную версию, которую можно скачать перейдя по &lt;a href="https://www.microsoft.com/ru-ru/evalcenter/evaluate-windows-server-2019"
  
  target="_blank" rel="noopener noreferrer"&gt;
