@@ -64,7 +64,36 @@ xferlog_file=/var/log/vsftpd.log
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Unison — работа с профилями и службами SystemD</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</guid><description>&lt;h2 id="что-такое-профиль-для-unison"&gt;Что такое профиль для Unison&lt;/h2&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Ввод Samba в домен</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</link><pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для ввода сервера Samba в домен Active Directory мы будем использовать дистрибутив &lt;strong&gt;Debian 12&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;А вот и начальные данные:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;samba-test-ad&lt;/strong&gt; / &lt;strong&gt;192.168.0.8&lt;/strong&gt; — имя и ip-адрес samba сервера;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;srv-dc.test-domain.com&lt;/strong&gt; / &lt;strong&gt;192.168.0.18&lt;/strong&gt; — имя и ip-адрес контроллера домена;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;test-domain.com&lt;/strong&gt; — имя домена.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="настройка-сети"&gt;Настройка сети&lt;/h2&gt;
+&lt;p&gt;Для того чтобы настроить сеть, отредактируем файлы &lt;code&gt;/etc/network/interfaces&lt;/code&gt; и &lt;code&gt;/etc/resolv.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/network/interfaces
+source /etc/network/interfaces.d/*
+auto lo
+iface lo inet loopback
+allow-hotplug ens18
+iface ens18 inet static
+ address 192.168.0.8/24
+ gateway 192.168.0.1
+
+$ sudo nano /etc/resolv.conf
+domain test-domain.com
+search test-domain.com
+nameserver 192.168.0.18
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;В файле &lt;code&gt;/etc/network/interfaces&lt;/code&gt; мы настроили ip-адрес для сетевого интерфейса &lt;strong&gt;ens18&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;А в &lt;code&gt;/etc/resolv.conf&lt;/code&gt; указали ip-адрес dns-сервера (он же и контроллер домена). А также, здесь указали имя домена и имя поискового домена.&lt;/li&gt;
+&lt;li&gt;Поисковый домен указывает возможный суффикс для DNS адресов, то есть &lt;strong&gt;pc1&lt;/strong&gt; станет &lt;strong&gt;pc1.test-domain.com&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="проверка-настройки-dns"&gt;Проверка настройки DNS&lt;/h2&gt;
+&lt;p&gt;Во-первых, проверим резолв домена и контроллера домена:&lt;/p&gt;</description></item><item><title>Unison — работа с профилями и службами SystemD</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</guid><description>&lt;h2 id="что-такое-профиль-для-unison"&gt;Что такое профиль для Unison&lt;/h2&gt;
 &lt;p&gt;Я уже писал про сервер синхронизации файлов &lt;strong&gt;Unison&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/"
  
  target="_blank" rel="noopener noreferrer"&gt;
