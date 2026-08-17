@@ -449,7 +449,16 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Ввод Samba в домен</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</link><pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Zabbix — правила обнаружения</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-discovery-rules/</link><pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-discovery-rules/</guid><description>&lt;h2 id="ищем-сетевые-устройства"&gt;Ищем сетевые устройства&lt;/h2&gt;
+&lt;p&gt;Допустим мы хотим мониторить все сетевые интерфейсы на сервере, но мы не знаем сколько их и как они называются. Для такой задачи хорошо подходят &lt;strong&gt;правила обнаружения в Zabbix&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id="создаём-правило-обнаружения"&gt;Создаём правило обнаружения&lt;/h3&gt;
+&lt;p&gt;Чтобы создать такое правило обнаружения, перейдём по меню &lt;strong&gt;«Настройки / Узлы сети»&lt;/strong&gt;. Там находим необходимый узел и нажимаем на &lt;strong&gt;«Обнаружение»&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260410174637.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Дальше нажимаем на кнопку &lt;strong&gt;«Создать правило обнаружения»&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260410174701.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;В появившемся окне вводим информацию:&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260410174718.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Здесь стоит обратить внимание на ключ &lt;strong&gt;net.if.discovery&lt;/strong&gt;. Это ключ Zabbix агента, который обнаружит на сервере все сетевые интерфейсы. &lt;strong&gt;Интервал обновления&lt;/strong&gt; можем задать побольше, ведь у нас не часто будут появляться и пропадать новые интерфейсы. Также здесь нужно указать &lt;strong&gt;период сохранения потерянных ресурсов&lt;/strong&gt;, например интерфейса больше такого нет, сколько по нему нужно хранить информацию.&lt;/p&gt;</description></item><item><title>Ввод Samba в домен</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</link><pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/samba-into-a-domain/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Для ввода сервера Samba в домен Active Directory мы будем использовать дистрибутив &lt;strong&gt;Debian 12&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;А вот и начальные данные:&lt;/p&gt;
 &lt;ul&gt;
