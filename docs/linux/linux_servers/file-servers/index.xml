@@ -64,7 +64,13 @@ xferlog_file=/var/log/vsftpd.log
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Помимо автономного сервера &lt;strong&gt;Samba&lt;/strong&gt; может выполнять функции &lt;strong&gt;контроллера домена&lt;/strong&gt; или интегрироваться в существующий домен &lt;strong&gt;Active Directory&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;Для работы с &lt;strong&gt;Samba&lt;/strong&gt; на стороне клиента понадобятся:&lt;/p&gt;</description></item><item><title>Unison — работа с профилями и службами SystemD</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</guid><description>&lt;h2 id="что-такое-профиль-для-unison"&gt;Что такое профиль для Unison&lt;/h2&gt;
+&lt;p&gt;Я уже писал про сервер синхронизации файлов &lt;strong&gt;Unison&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. Там же я описал установку и примеры использования этого решения. А в этой статье я покажу как можно использовать профили. Вы можете подготовить несколько профилей и запускать синхронизацию то с одним, то с другим профилем. Например, в первом профиле у вас синхронизация идет с одним компьютером, а во втором — с другим. Или в один профиль предназначен для синхронизации одного каталога, а другой для другого каталога. То есть работа с профилями облегчает использование Unison.&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Инструмент &lt;strong&gt;Unison&lt;/strong&gt; базируется на &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/"
  
  target="_blank" rel="noopener noreferrer"&gt;

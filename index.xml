@@ -449,7 +449,37 @@ alex
  target="_blank" rel="noopener noreferrer"&gt;
  Proxmox VE — настройка сети
 &lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Характеристики мониторов</title><link>https://blog.sysadminium.ru/docs/hardware/monitor-specifications/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/hardware/monitor-specifications/</guid><description>&lt;h2 id="размер-экрана"&gt;Размер экрана&lt;/h2&gt;
+&lt;p&gt;Рассматривая характеристики мониторов, мы начнём с его размера. Размер экрана, или диагональ, измеряют в дюймах. Сейчас распространены следующие диагонали мониторов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;21 дюймовые&lt;/strong&gt;. Сейчас считаются маленькими, если вы подбираете небольшой монитор для офиса или дома, то лучше возьмите 24.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;24 дюймовые&lt;/strong&gt;. Отлично подходят для работы с офисными приложениями, также на нём можно смотреть фильмы и играть в игры. Это самый распространённый размер мониторов.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;27 дюймовые&lt;/strong&gt;. Такие мониторы чаще покупают домой а не в офис. А в офис берут только специалистам работающим с графикой. А вообще, такой монитор может хорошо подойти и для работы с офисными приложениями, и для работы с графикой и для просмотра медиаконтента.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;32 дюймовые&lt;/strong&gt;. А это уже очень большие мониторы. Они подходят для просмотра медиаконтента и для работы с графикой. Но для офисной работы с документами считаются излишне крупными.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260817154838.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Zabbix — конфигурация zabbix агента</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-agent-configuration/</link><pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-agent-configuration/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье я опишу общие параметры и параметры для пассивных проверок, которые можно настроить под свои потребности. Я не буду описывать параметры для активных проверок, кроме некоторых. А также здесь не будут описаны параметры связанные с шифрованием соединений между Zabbix агентами и Серверами, про это я напишу отдельную статью.&lt;/p&gt;
+&lt;p&gt;Как вы уже знаете, Zabbix агент настраивается с помощью конфигурационных файлов. Основной конфиг находится здесь:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/zabbix/zabbix_agentd.conf&lt;/code&gt; — для Linux.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C:\Program Files\Zabbix Agent\zabbix_agentd.conf&lt;/code&gt; — для Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Дополнительно вы можете свои конфиги класть в эти каталоги:&lt;/p&gt;</description></item><item><title>Zabbix — отправка уведомлений на email</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-sending-notifications-by-email/</link><pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-sending-notifications-by-email/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Сами по себе триггеры бесполезны, поэтому сервер Zabbix позволяет в момент срабатывания триггера выполнять какие-то действия. В этой статье мы разберём такое действие, как отправка уведомлений на email.&lt;/p&gt;
+&lt;p&gt;Чтобы настроить отправку уведомлений на email в случае срабатывания триггера, в Zabbix нужно сделать три вещи:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Настроить способ оповещения по email. То есть указать Zabbix, через какой почтовый сервер слать письма и как на нём авторизоваться. Дополнительно нужно создать шаблоны писем.&lt;/li&gt;
+&lt;li&gt;Указать вашему пользователю Zabbix email для оповещений. Именно туда будут приходить оповещения. Кроме этого для пользователя можно указать: о каких по важности событиях вас уведомлять, и в какие промежутки времени это делать.&lt;/li&gt;
+&lt;li&gt;Настроить действия триггеров. То есть, создать действие, которое будет происходить при срабатывании триггера. Здесь мы можем указать каким пользователям и с помощью какого канала связи посылать оповещения.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="настройка-способа-оповещения-email-html"&gt;Настройка способа оповещения Email (HTML)&lt;/h2&gt;
+&lt;p&gt;Для начала нужно настроить способ оповещения — &lt;strong&gt;Email (HTML)&lt;/strong&gt;. Для этого переходим по меню: &lt;strong&gt;«Администрирование / Способы оповещений / Email (HTML)»&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Unison — работа с профилями и службами SystemD</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</link><pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-with-systemd-and-profiles/</guid><description>&lt;h2 id="что-такое-профиль-для-unison"&gt;Что такое профиль для Unison&lt;/h2&gt;
+&lt;p&gt;Я уже писал про сервер синхронизации файлов &lt;strong&gt;Unison&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. Там же я описал установку и примеры использования этого решения. А в этой статье я покажу как можно использовать профили. Вы можете подготовить несколько профилей и запускать синхронизацию то с одним, то с другим профилем. Например, в первом профиле у вас синхронизация идет с одним компьютером, а во втором — с другим. Или в один профиль предназначен для синхронизации одного каталога, а другой для другого каталога. То есть работа с профилями облегчает использование Unison.&lt;/p&gt;</description></item><item><title>Unison — знакомство</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/unison-dating/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Инструмент &lt;strong&gt;Unison&lt;/strong&gt; базируется на &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/"
  
  target="_blank" rel="noopener noreferrer"&gt;
