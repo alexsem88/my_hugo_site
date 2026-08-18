@@ -417,7 +417,23 @@ alex
 &lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
 &lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Утилита MegaCLI для MegaRaid</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</guid><description>&lt;h2 id="посмотреть-версию-утилиты"&gt;Посмотреть версию утилиты&lt;/h2&gt;
+&lt;p&gt;Я сам не помню как устанавливал утилиту &lt;strong&gt;MegaCLI&lt;/strong&gt;, но &lt;a href="https://geeksinfo.ru/ustanovka-megacli-v-debian-ili-ubuntu"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ вот одна из инструкций
+&lt;/a&gt;
+, она мной не проверена, но выглядит рабочей. Версия моей утилиты MegaCLI — &lt;strong&gt;8.07.10&lt;/strong&gt;. Это довольно старая версия, но и контроллер такой-же старый. Посмотреть версию своей утилиты вы можете так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -v
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="посмотреть-информацию-об-адаптере"&gt;Посмотреть информацию об адаптере&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -AdpAllinfo -aALL
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта команда выводит информацию обо всех установленных в систему адаптерах. Вы увидите модель адаптера, версию прошивки, сколько портов поддерживается, сколько памяти содержится и какие RAID массивы можно создать. А также, сколько &lt;strong&gt;VD&lt;/strong&gt; (виртуальных устройств или массивов) уже есть, сколько из них сейчас в состоянии Degraded. И все возможности и ограничения вашего контроллера.&lt;/p&gt;</description></item><item><title>О дистрибутиве Devuan</title><link>https://blog.sysadminium.ru/docs/linux/distr/about-devuan/</link><pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about-devuan/</guid><description>&lt;h2 id="о-дистрибутиве"&gt;О дистрибутиве&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Devuan&lt;/strong&gt; появился как ответ на значительные изменения в &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/about_debian/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Debian
+&lt;/a&gt;
+, когда в 2014 году было принято решение по умолчанию использовать систему инициализации &lt;strong&gt;SystemD&lt;/strong&gt;. Эта инициатива вызвала раскол среди пользователей и разработчиков Debian, так как SystemD обладает глубокой интеграцией и меняет привычный порядок управления процессами и службами. Некоторые участники сообщества посчитали, что SystemD противоречит философии UNIX о простоте и модульности, так как он заменяет сразу несколько компонентов системы.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
 &lt;p&gt;Сервер СУБД PostgreSQL может использоваться кластером 1С в своей работе. Про то, как установить сервер 1С я писал в статье: &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;

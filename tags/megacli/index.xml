@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Megacli on Sysadminium</title><link>https://blog.sysadminium.ru/tags/megacli/</link><description>Recent content in Megacli on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/megacli/index.xml" rel="self" type="application/rss+xml"/><item><title>Утилита MegaCLI для MegaRaid</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</guid><description>&lt;h2 id="посмотреть-версию-утилиты"&gt;Посмотреть версию утилиты&lt;/h2&gt;
+&lt;p&gt;Я сам не помню как устанавливал утилиту &lt;strong&gt;MegaCLI&lt;/strong&gt;, но &lt;a href="https://geeksinfo.ru/ustanovka-megacli-v-debian-ili-ubuntu"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ вот одна из инструкций
+&lt;/a&gt;
+, она мной не проверена, но выглядит рабочей. Версия моей утилиты MegaCLI — &lt;strong&gt;8.07.10&lt;/strong&gt;. Это довольно старая версия, но и контроллер такой-же старый. Посмотреть версию своей утилиты вы можете так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -v
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="посмотреть-информацию-об-адаптере"&gt;Посмотреть информацию об адаптере&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -AdpAllinfo -aALL
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта команда выводит информацию обо всех установленных в систему адаптерах. Вы увидите модель адаптера, версию прошивки, сколько портов поддерживается, сколько памяти содержится и какие RAID массивы можно создать. А также, сколько &lt;strong&gt;VD&lt;/strong&gt; (виртуальных устройств или массивов) уже есть, сколько из них сейчас в состоянии Degraded. И все возможности и ограничения вашего контроллера.&lt;/p&gt;</description></item></channel></rss>

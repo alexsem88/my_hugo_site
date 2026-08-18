@@ -9,7 +9,17 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;Сравните полученную дату с системным временем, иногда проблема кроется в неверном времени на сервере.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="проверка-сертификата-на-ошибки"&gt;Проверка сертификата на ошибки&lt;/h2&gt;
-&lt;p&gt;С помощью &lt;strong&gt;openssl&lt;/strong&gt; мы также можем проверить сертификат сайта на ошибки:&lt;/p&gt;</description></item><item><title>Утилита Rsync</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;p&gt;С помощью &lt;strong&gt;openssl&lt;/strong&gt; мы также можем проверить сертификат сайта на ошибки:&lt;/p&gt;</description></item><item><title>Утилита MegaCLI для MegaRaid</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</guid><description>&lt;h2 id="посмотреть-версию-утилиты"&gt;Посмотреть версию утилиты&lt;/h2&gt;
+&lt;p&gt;Я сам не помню как устанавливал утилиту &lt;strong&gt;MegaCLI&lt;/strong&gt;, но &lt;a href="https://geeksinfo.ru/ustanovka-megacli-v-debian-ili-ubuntu"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ вот одна из инструкций
+&lt;/a&gt;
+, она мной не проверена, но выглядит рабочей. Версия моей утилиты MegaCLI — &lt;strong&gt;8.07.10&lt;/strong&gt;. Это довольно старая версия, но и контроллер такой-же старый. Посмотреть версию своей утилиты вы можете так:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -v
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="посмотреть-информацию-об-адаптере"&gt;Посмотреть информацию об адаптере&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -AdpAllinfo -aALL
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта команда выводит информацию обо всех установленных в систему адаптерах. Вы увидите модель адаптера, версию прошивки, сколько портов поддерживается, сколько памяти содержится и какие RAID массивы можно создать. А также, сколько &lt;strong&gt;VD&lt;/strong&gt; (виртуальных устройств или массивов) уже есть, сколько из них сейчас в состоянии Degraded. И все возможности и ограничения вашего контроллера.&lt;/p&gt;</description></item><item><title>Утилита Rsync</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/rsync/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Утилита rsync&lt;/strong&gt; — это утилита для быстрого копирования файлов с локального компьютера на удалённый или наоборот.&lt;/p&gt;
 &lt;p&gt;Установить её можете из стандартных репозиториев:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install rsync
