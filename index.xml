@@ -417,7 +417,20 @@ alex
 &lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
 &lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>MikroTik (RouterOS 7) — маркировка и балансировка</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</link><pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье я покажу как разделить трафик на 2 провайдера с использованием роутера &lt;strong&gt;MikroTik&lt;/strong&gt; и &lt;strong&gt;RouterOS 7&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Балансировка на роутерах &lt;strong&gt;MikroTik&lt;/strong&gt; заключается в маркировке некоторого траффика, который затем помещают в разные таблицы маршрутизации. А уже в разных таблицах маршрутизации создают разные дефолтные маршруты, через разных провайдеров.&lt;/p&gt;
+&lt;p&gt;Вся настройка роутера &lt;strong&gt;MikroTik&lt;/strong&gt;, в этой статье, делается с помощью команд, в которых используются шаблоны:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ip-isp&amp;gt;&lt;/code&gt; — ip-адрес из сети провайдера, который вы используете на роутере.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ip-local&amp;gt;&lt;/code&gt; — ip-адрес на роутере из локальной сети.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;local-net&amp;gt;&lt;/code&gt; — подсеть вашей локальной сети.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;net-isp&amp;gt;&lt;/code&gt; — выделенная вам подсеть провайдера. Если у вас 1 ip-адрес, то подсеть будет /30. А если 5, то /29.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;ip-gw-isp&amp;gt;&lt;/code&gt; — ip-адрес шлюза провайдера.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;local-ip-serv&amp;gt;&lt;/code&gt; — ip-адрес какого-нибудь сервера в локалке.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="адресация"&gt;Адресация&lt;/h2&gt;
+&lt;p&gt;Во-первых, если это ещё не сделано, настроим ip-адреса на роутере. Укажем 3 адреса: в локальной сети, в сети первого провайдера и в сети второго:&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
 &lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
 &lt;p&gt;Для начала я хотел бы вас познакомить с самим продуктом &lt;strong&gt;Proxmox VE&lt;/strong&gt; (&lt;em&gt;Virtual Environment&lt;/em&gt;). Это гипервизор (сервер виртуализации) с открытым исходным кодом, который позволяет создавать виртуальные машины (&lt;a href="https://ru.wikipedia.org/wiki/QEMU"
  
