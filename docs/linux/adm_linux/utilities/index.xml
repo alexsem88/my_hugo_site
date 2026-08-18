@@ -9,7 +9,14 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;Сравните полученную дату с системным временем, иногда проблема кроется в неверном времени на сервере.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="проверка-сертификата-на-ошибки"&gt;Проверка сертификата на ошибки&lt;/h2&gt;
-&lt;p&gt;С помощью &lt;strong&gt;openssl&lt;/strong&gt; мы также можем проверить сертификат сайта на ошибки:&lt;/p&gt;</description></item><item><title>Утилита MegaCLI для MegaRaid</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</guid><description>&lt;h2 id="посмотреть-версию-утилиты"&gt;Посмотреть версию утилиты&lt;/h2&gt;
+&lt;p&gt;С помощью &lt;strong&gt;openssl&lt;/strong&gt; мы также можем проверить сертификат сайта на ошибки:&lt;/p&gt;</description></item><item><title>Утилита dmidecode</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Получение информации о железе в Linux
+&lt;/a&gt;
+. А в текущей статье описывается специальная утилита &lt;strong&gt;dmidecode&lt;/strong&gt; для сбора информации о железе вашего сервера.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Desktop Management Interface (DMI)&lt;/strong&gt; — это стандарт, который описывает способ доступа к информации о системе. Этот стандарт используется для инвентаризации оборудования и управления системами на аппаратном уровне без необходимости прямого взаимодействия с устройствами. Вся информация хранится в специальной таблице &lt;strong&gt;(DMI Table)&lt;/strong&gt;, которая создаётся прошивкой BIOS или UEFI. Эта таблица содержит записи с данными о каждом аппаратном компоненте.&lt;/p&gt;</description></item><item><title>Утилита MegaCLI для MegaRaid</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/megacli-utility/</guid><description>&lt;h2 id="посмотреть-версию-утилиты"&gt;Посмотреть версию утилиты&lt;/h2&gt;
 &lt;p&gt;Я сам не помню как устанавливал утилиту &lt;strong&gt;MegaCLI&lt;/strong&gt;, но &lt;a href="https://geeksinfo.ru/ustanovka-megacli-v-debian-ili-ubuntu"
  
  target="_blank" rel="noopener noreferrer"&gt;

@@ -99,7 +99,14 @@ news:x:9:
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ echo $USER
 alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или с помощью команды &lt;strong&gt;whoami&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Утилита dmidecode</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Получение информации о железе в Linux
+&lt;/a&gt;
+. А в текущей статье описывается специальная утилита &lt;strong&gt;dmidecode&lt;/strong&gt; для сбора информации о железе вашего сервера.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Desktop Management Interface (DMI)&lt;/strong&gt; — это стандарт, который описывает способ доступа к информации о системе. Этот стандарт используется для инвентаризации оборудования и управления системами на аппаратном уровне без необходимости прямого взаимодействия с устройствами. Вся информация хранится в специальной таблице &lt;strong&gt;(DMI Table)&lt;/strong&gt;, которая создаётся прошивкой BIOS или UEFI. Эта таблица содержит записи с данными о каждом аппаратном компоненте.&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Когда требуется поправить какой-нибудь конфиг, мы можем сделать это с помощью какого-нибудь редактора, например &lt;strong&gt;nano&lt;/strong&gt;. Но иногда хочется чтобы конфиг менялся по команде, например из скрипта, или из подготовленной инструкции. Это возможно сделать с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sed&lt;/strong&gt; позволяет производить фильтрацию, поиск, замену, вставку и удаление строк или частей текста в файлах или потоках данных. Вот несколько примеров её работы.&lt;/p&gt;
 &lt;ul&gt;

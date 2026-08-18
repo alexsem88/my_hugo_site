@@ -417,7 +417,35 @@ alex
 &lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
 &lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>О дистрибутиве РЕД ОС</title><link>https://blog.sysadminium.ru/docs/linux/distr/red-os/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/red-os/</guid><description>&lt;h2 id="о-дистрибутиве"&gt;О дистрибутиве&lt;/h2&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Утилита dmidecode</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Получение информации о железе в Linux
+&lt;/a&gt;
+. А в текущей статье описывается специальная утилита &lt;strong&gt;dmidecode&lt;/strong&gt; для сбора информации о железе вашего сервера.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Desktop Management Interface (DMI)&lt;/strong&gt; — это стандарт, который описывает способ доступа к информации о системе. Этот стандарт используется для инвентаризации оборудования и управления системами на аппаратном уровне без необходимости прямого взаимодействия с устройствами. Вся информация хранится в специальной таблице &lt;strong&gt;(DMI Table)&lt;/strong&gt;, которая создаётся прошивкой BIOS или UEFI. Эта таблица содержит записи с данными о каждом аппаратном компоненте.&lt;/p&gt;</description></item><item><title>Установка Graylog 6.1 на Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/install-graylog-on-debian/</link><pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/install-graylog-on-debian/</guid><description>&lt;h2 id="о-решении-graylog"&gt;О решении Graylog&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Graylog&lt;/strong&gt; это сервер для сбора и анализа логов. Который позволяет собирать логи с других серверов или устройств (роутеров, принтеров) различными способами. Graylog может выполнять широкий спектр функций:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;централизированный сбор логов;&lt;/li&gt;
+&lt;li&gt;аналитика собранных данных;&lt;/li&gt;
+&lt;li&gt;мониторинг за событиями безопасности;&lt;/li&gt;
+&lt;li&gt;обнаружение инцидентов и оповещения.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Официальную документацию по этому решению вы найдёте &lt;a href="https://go2docs.graylog.org/current/what_is_graylog/what_is_graylog.htm"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Есть несколько версий данного решения:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Graylog Open&lt;/strong&gt;. Бесплатная версия с открытым исходным кодом, доступна для разворачивания на своих серверах;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graylog Enterprise&lt;/strong&gt;. Платное решение предлагающее работу на своём железе. Предоставляет все возможности &lt;strong&gt;Graylog Open&lt;/strong&gt;, а также дополнительные возможности и доступ к службе поддержки.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graylog Security&lt;/strong&gt;. Предоставляет все функции &lt;strong&gt;Graylog Enterprise&lt;/strong&gt;, а также набор инструментов для обнаружения, расследования и реагирования на угрозы (&lt;strong&gt;TDIR&lt;/strong&gt;). Ориентированный на обеспечение кибербезопасности.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graylog Cloud&lt;/strong&gt;. Облачный сервис, который сокращает издержки, обеспечивает быстрое развертывание и бесперебойное обновление.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Этот сервер работает на &lt;strong&gt;Java&lt;/strong&gt;. Для хранения сообщений журнала и метаданных используется NoSQL база данных &lt;strong&gt;MongoDB&lt;/strong&gt;. А в качестве поисковой системы можно использовать &lt;strong&gt;OpenSearch&lt;/strong&gt; или &lt;strong&gt;ElasticSearch&lt;/strong&gt;. Я же буду использовать &lt;strong&gt;DataNode&lt;/strong&gt; — это самоуправляемый &lt;strong&gt;OpenSearch&lt;/strong&gt; для &lt;strong&gt;Graylog&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>О дистрибутиве РЕД ОС</title><link>https://blog.sysadminium.ru/docs/linux/distr/red-os/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/red-os/</guid><description>&lt;h2 id="о-дистрибутиве"&gt;О дистрибутиве&lt;/h2&gt;
 &lt;p&gt;Создателем этого дистрибутива выступает компания &lt;a href="https://redos.red-soft.ru/about/"
  
  target="_blank" rel="noopener noreferrer"&gt;
