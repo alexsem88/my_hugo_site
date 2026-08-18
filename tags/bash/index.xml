@@ -9,7 +9,30 @@ EOF
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;EOF&lt;/strong&gt; &lt;em&gt;(End Of File)&lt;/em&gt; - это просто популярное имя метки, вместо &lt;code&gt;EOF&lt;/code&gt; можно использовать любые другие слова (END, BLOCK, SCRIPT и т.п.).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Bash скрипт получения числа открытых файлов пользователя</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Когда требуется поправить какой-нибудь конфиг, мы можем сделать это с помощью какого-нибудь редактора, например &lt;strong&gt;nano&lt;/strong&gt;. Но иногда хочется чтобы конфиг менялся по команде, например из скрипта, или из подготовленной инструкции. Это возможно сделать с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Утилита &lt;strong&gt;sed&lt;/strong&gt; позволяет производить фильтрацию, поиск, замену, вставку и удаление строк или частей текста в файлах или потоках данных. Вот несколько примеров её работы.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Редактирование строк с помощью регулярных выражений, но без редактирования самого файла. Замена производится с помощью команды &lt;code&gt;s&lt;/code&gt;, мы говорим что и на что меняем.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# sed &amp;#39;s/old/new/&amp;#39; file.txt 
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Предыдущая команда не редактирует файл. Внесение изменений непосредственно в файл производится с помощью опции &lt;code&gt;-i&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# sed -i &amp;#39;s/old/new/&amp;#39; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Поиск и удаление определённых строк, подпадающих под шаблон выполняется с помощью команды &lt;code&gt;d&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# sed &amp;#39;/pattern/d&amp;#39; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Добавление строки после строки, попадающей под шаблон (pattern) выполняется с помощью команды &lt;code&gt;a&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# sed &amp;#39;/pattern/a\New line&amp;#39; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Также есть возможность выполнять несколько команд через опцию &lt;code&gt;-e&lt;/code&gt;. Например заменим строки (&lt;code&gt;s&lt;/code&gt;) и удалим строки (&lt;code&gt;d&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sed -e &amp;#39;s/foo/bar/&amp;#39; -e &amp;#39;/baz/d&amp;#39; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Нашей задачей будет поиск и изменение строки в конфиге, то есть значения определённого параметра, с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;. Делается это примерно так:&lt;/p&gt;</description></item><item><title>Bash скрипт получения числа открытых файлов пользователя</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Узнать сколько открытых файлов у определённого пользователя бывает необходимо для отладки службы, работающей под определённым пользователем.&lt;/p&gt;
 &lt;p&gt;В качестве параметра скрипту необходимо передать &lt;strong&gt;имя&lt;/strong&gt; или &lt;strong&gt;uid&lt;/strong&gt; пользователя. Скрипт будем использовать следующими способами:&lt;/p&gt;
 &lt;ul&gt;
