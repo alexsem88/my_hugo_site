@@ -417,7 +417,43 @@ alex
 &lt;li&gt;2 Раздел (EFI). Это раздел для загрузки с EFI.&lt;/li&gt;
 &lt;li&gt;3 Раздел (ZFS). Этот раздел с файловой системой ZFS находится в ZFS пуле (в зеркале).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>MikroTik (RouterOS 7) — маркировка и балансировка</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</link><pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Давайте откроем терминал, и получим информацию по ZFS пулу, и разметкам дисков.&lt;/p&gt;</description></item><item><title>Отправка email из консоли linux через Yandex</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</guid><description>&lt;h2 id="создание-пароля-приложений-yandex"&gt;Создание пароля приложений Yandex&lt;/h2&gt;
+&lt;p&gt;Чтобы появилась возможность отправлять email из консоли linux через yandex-почту, вначале нужно создать пароль приложений. Для этого, переходим по ссылке — &lt;a href="https://id.yandex.ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://id.yandex.ru/
+&lt;/a&gt;
+, идём в пункт меню &lt;strong&gt;«Безопасность»&lt;/strong&gt;. И, в самом низу, находим пункт &lt;strong&gt;«Пароли приложений»&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260818095030.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Необходимо создать пароль для почты, то есть выбираем пункт &lt;strong&gt;«Почта (IMAP, POP3, SMTP)»&lt;/strong&gt;. При создании придумываем только название для пароля. Сам же пароль сгенерируется самостоятельно, и вы должны этот пароль куда-нибудь записать. В последующем вы не сможете здесь его посмотреть, а сможете лишь удалить его и сделать новый.&lt;/p&gt;</description></item><item><title>Работа автономного сервера 1С с файловой базой</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</link><pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</guid><description>&lt;h2 id="создание-базы"&gt;Создание базы&lt;/h2&gt;
+&lt;p&gt;Про автономный сервер я писал в &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-1c-server/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+, а здесь попрактикуемся в работе с ним на примере файловой базы. Инструкция по автономному серверу есть на &lt;a href="https://its.1c.ru/db/v8325doc#bookmark:adm:TI000000894"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ сайте ИТС
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Автономный сервер (&lt;strong&gt;ibsrv&lt;/strong&gt;) и утилита для управления им (&lt;strong&gt;ibcmd&lt;/strong&gt;) будут установлены вместе с сервером 1С. Про установку сервера 1С я писал &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ здесь
+&lt;/a&gt;
+. И так, если у вас уже установлен сервер 1С, то начинаем.&lt;/p&gt;
+&lt;p&gt;Создадим в своём домашнем каталоге следующие подкаталоги:&lt;/p&gt;</description></item><item><title>Установка сервера 1С 8.3.25 на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/</guid><description>&lt;h2 id="получение-дистрибутива"&gt;Получение дистрибутива&lt;/h2&gt;
+&lt;p&gt;Скачать дистрибутив платформы вы можете на сайте &lt;a href="https://releases.1c.ru/project/Platform83"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ releases.1c.ru
+&lt;/a&gt;
+. При написании этой статьи самой новой платформой была версия — &lt;strong&gt;8.3.25.1374&lt;/strong&gt;. В этой статье будет описана установка 64-разрядной версии платформы. Скачиваем — &lt;strong&gt;«Технологическая платформа 1С:Предприятия (64-bit) для Linux»&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260818091624.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;После загрузки, помещаем архив на сервер &lt;strong&gt;Debian 12&lt;/strong&gt; любым удобным для вас способом, я для этого использую &lt;strong&gt;sftp&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="установка-зависимостей"&gt;Установка зависимостей&lt;/h2&gt;
+&lt;p&gt;Для работы сервера 1С на Linux необходимо установить зависимости:&lt;/p&gt;</description></item><item><title>MikroTik (RouterOS 7) — маркировка и балансировка</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</link><pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-routeros-7-balancing/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;В этой статье я покажу как разделить трафик на 2 провайдера с использованием роутера &lt;strong&gt;MikroTik&lt;/strong&gt; и &lt;strong&gt;RouterOS 7&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Балансировка на роутерах &lt;strong&gt;MikroTik&lt;/strong&gt; заключается в маркировке некоторого траффика, который затем помещают в разные таблицы маршрутизации. А уже в разных таблицах маршрутизации создают разные дефолтные маршруты, через разных провайдеров.&lt;/p&gt;
 &lt;p&gt;Вся настройка роутера &lt;strong&gt;MikroTik&lt;/strong&gt;, в этой статье, делается с помощью команд, в которых используются шаблоны:&lt;/p&gt;

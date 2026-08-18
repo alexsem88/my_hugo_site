@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mail on Sysadminium</title><link>https://blog.sysadminium.ru/tags/mail/</link><description>Recent content in Mail on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/mail/index.xml" rel="self" type="application/rss+xml"/><item><title>Отправка email из консоли linux через Yandex</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</guid><description>&lt;h2 id="создание-пароля-приложений-yandex"&gt;Создание пароля приложений Yandex&lt;/h2&gt;
+&lt;p&gt;Чтобы появилась возможность отправлять email из консоли linux через yandex-почту, вначале нужно создать пароль приложений. Для этого, переходим по ссылке — &lt;a href="https://id.yandex.ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://id.yandex.ru/
+&lt;/a&gt;
+, идём в пункт меню &lt;strong&gt;«Безопасность»&lt;/strong&gt;. И, в самом низу, находим пункт &lt;strong&gt;«Пароли приложений»&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260818095030.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Необходимо создать пароль для почты, то есть выбираем пункт &lt;strong&gt;«Почта (IMAP, POP3, SMTP)»&lt;/strong&gt;. При создании придумываем только название для пароля. Сам же пароль сгенерируется самостоятельно, и вы должны этот пароль куда-нибудь записать. В последующем вы не сможете здесь его посмотреть, а сможете лишь удалить его и сделать новый.&lt;/p&gt;</description></item></channel></rss>

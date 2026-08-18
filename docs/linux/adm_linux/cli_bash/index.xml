@@ -9,7 +9,15 @@ EOF
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;EOF&lt;/strong&gt; &lt;em&gt;(End Of File)&lt;/em&gt; - это просто популярное имя метки, вместо &lt;code&gt;EOF&lt;/code&gt; можно использовать любые другие слова (END, BLOCK, SCRIPT и т.п.).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Получение информации о железе в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</guid><description>&lt;h2 id="информация-о-центральном-процессоре"&gt;Информация о центральном процессоре&lt;/h2&gt;
+&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Отправка email из консоли linux через Yandex</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/email-from-linux-console-via-yandex/</guid><description>&lt;h2 id="создание-пароля-приложений-yandex"&gt;Создание пароля приложений Yandex&lt;/h2&gt;
+&lt;p&gt;Чтобы появилась возможность отправлять email из консоли linux через yandex-почту, вначале нужно создать пароль приложений. Для этого, переходим по ссылке — &lt;a href="https://id.yandex.ru/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://id.yandex.ru/
+&lt;/a&gt;
+, идём в пункт меню &lt;strong&gt;«Безопасность»&lt;/strong&gt;. И, в самом низу, находим пункт &lt;strong&gt;«Пароли приложений»&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260818095030.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Необходимо создать пароль для почты, то есть выбираем пункт &lt;strong&gt;«Почта (IMAP, POP3, SMTP)»&lt;/strong&gt;. При создании придумываем только название для пароля. Сам же пароль сгенерируется самостоятельно, и вы должны этот пароль куда-нибудь записать. В последующем вы не сможете здесь его посмотреть, а сможете лишь удалить его и сделать новый.&lt;/p&gt;</description></item><item><title>Получение информации о железе в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/</guid><description>&lt;h2 id="информация-о-центральном-процессоре"&gt;Информация о центральном процессоре&lt;/h2&gt;
 &lt;h3 id="файл-proccpuinfo"&gt;Файл /proc/cpuinfo&lt;/h3&gt;
 &lt;p&gt;Посмотреть информацию о центральном процессоре можно в файле &lt;strong&gt;/proc/cpuinfo&lt;/strong&gt;, например:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# cat /proc/cpuinfo 
