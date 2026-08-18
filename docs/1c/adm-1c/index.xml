@@ -6,7 +6,34 @@
 &lt;li&gt;&lt;strong&gt;Толстый клиент&lt;/strong&gt; выполняет большую часть вычислений на клиентской стороне.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Тонкий клиент&lt;/strong&gt; большую часть вычислений выполняет на сервере, а клиенту в основном передаёт интерфейс и результаты обработки.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Тонкий клиент сохраняет на компьютере клиента некоторую информацию - кэш. Он нужен для ускорения работы и облегчения нагрузки на сеть.&lt;/p&gt;</description></item><item><title>Работа автономного сервера 1С с файловой базой</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</link><pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</guid><description>&lt;h2 id="создание-базы"&gt;Создание базы&lt;/h2&gt;
+&lt;p&gt;Тонкий клиент сохраняет на компьютере клиента некоторую информацию - кэш. Он нужен для ускорения работы и облегчения нагрузки на сеть.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
+&lt;p&gt;Сервер СУБД PostgreSQL может использоваться кластером 1С в своей работе. Про то, как установить сервер 1С я писал в статье: &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка сервера 1С 8.3.25 на Linux
+&lt;/a&gt;
+. В этой статье будет описана установка &lt;strong&gt;PostgreSQL&lt;/strong&gt; именно для &lt;strong&gt;1С&lt;/strong&gt;, поэтому скачивать все пакеты будем с сайта 1С. А доступ на скачивание у вас будет только при наличии платной подписки ИТС. Про установку обычного PostgreSQL я писал в другой статье: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL 16 на Debian 12 из репозитория
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Автономный сервер 1С и база на СУБД (Postgres)</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-postgresql/</link><pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал две статьи по Автономному серверу 1С:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-1c-server/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Автономный сервер 1С
+&lt;/a&gt;
+ — описывает функциональность и особенности этого решения.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%d1%81-file-base/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Работа автономного сервера 1С с файловой базой
+&lt;/a&gt;
+ — описывает практическую настройку и работу с автономным сервером на примере файловой базы. В этой статье очень много примеров использования утилиты &lt;strong&gt;ibcmd&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;А в текущей статье я расскажу, как подключить автономный сервер к базе данных, которая находится на сервере СУБД. В моём случае это будет сервер &lt;strong&gt;PostgreSQL&lt;/strong&gt;. Но автономный сервер 1С может работать со всеми серверами СУБД, с которыми работает обычный сервер 1С.&lt;/p&gt;</description></item><item><title>Работа автономного сервера 1С с файловой базой</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</link><pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-server-1%D1%81-file-base/</guid><description>&lt;h2 id="создание-базы"&gt;Создание базы&lt;/h2&gt;
 &lt;p&gt;Про автономный сервер я писал в &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-1c-server/"
  
  target="_blank" rel="noopener noreferrer"&gt;

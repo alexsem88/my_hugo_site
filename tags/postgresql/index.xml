@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 17 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
+&lt;p&gt;Сервер СУБД PostgreSQL может использоваться кластером 1С в своей работе. Про то, как установить сервер 1С я писал в статье: &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка сервера 1С 8.3.25 на Linux
+&lt;/a&gt;
+. В этой статье будет описана установка &lt;strong&gt;PostgreSQL&lt;/strong&gt; именно для &lt;strong&gt;1С&lt;/strong&gt;, поэтому скачивать все пакеты будем с сайта 1С. А доступ на скачивание у вас будет только при наличии платной подписки ИТС. Про установку обычного PostgreSQL я писал в другой статье: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL 16 на Debian 12 из репозитория
+&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;В этой статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
  
  target="_blank" rel="noopener noreferrer"&gt;
