@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Базы данных on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/</link><description>Recent content in Базы данных on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/index.xml" rel="self" type="application/rss+xml"/><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Базы данных on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/</link><description>Recent content in Базы данных on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/index.xml" rel="self" type="application/rss+xml"/><item><title>Утилита psql для работы с PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</guid><description>&lt;h2 id="подключение-к-серверу-баз-данных"&gt;Подключение к серверу баз данных&lt;/h2&gt;
+&lt;p&gt;Если у вас ещё не установлен сервер PostgreSQL, то вы можете установить его по одной из двух инструкций: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL из исходников
+&lt;/a&gt;
+ и &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка PostgreSQL 16 на Debian 12 из репозитория
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;Итак, утилита &lt;strong&gt;psql&lt;/strong&gt; позволяет вам управлять сервером баз данных &lt;strong&gt;PostgreSQL&lt;/strong&gt;, но вначале нужно подключиться к нему. Подключиться с помощью этой утилиты вы можете к локально установленному серверу, или удалённому используя сеть. Подключение выполняется таким способом:&lt;/p&gt;</description></item><item><title>Установка PostgreSQL 16 на Debian 12 из репозитория</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-debian-repository/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;В этой статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
  
  target="_blank" rel="noopener noreferrer"&gt;
