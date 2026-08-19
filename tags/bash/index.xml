@@ -9,7 +9,18 @@ EOF
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;EOF&lt;/strong&gt; &lt;em&gt;(End Of File)&lt;/em&gt; - это просто популярное имя метки, вместо &lt;code&gt;EOF&lt;/code&gt; можно использовать любые другие слова (END, BLOCK, SCRIPT и т.п.).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Скрипт блокировки сеанса в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/linux-session-lock-script/</link><pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/linux-session-lock-script/</guid><description>&lt;h2 id="скрипт"&gt;Скрипт&lt;/h2&gt;
+&lt;p&gt;Данный скрипт должен работать на всех системах Linux c системой инициализации &lt;strong&gt;SystemD&lt;/strong&gt;, так как для блокировки сеанса используется команда
+&lt;code&gt;loginctl lock-session&lt;/code&gt;. Также в скрипте используется команда &lt;code&gt;notify-send&lt;/code&gt;, она является частью пакета &lt;strong&gt;libnotify&lt;/strong&gt; и использует сервис уведомлений &lt;strong&gt;D-Bus&lt;/strong&gt;. Она работает в большинстве популярных окружений рабочего стола, таких как:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GNOME&lt;/li&gt;
+&lt;li&gt;KDE Plasma&lt;/li&gt;
+&lt;li&gt;XFCE&lt;/li&gt;
+&lt;li&gt;Cinnamon&lt;/li&gt;
+&lt;li&gt;MATE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Но не работает в небольших графических окружения (i3, Openbox, AwesomeWM).&lt;/p&gt;
+&lt;p&gt;Для начала представляю вам весь скрипт целиком. Он хорошо прокомментирован и, возможно, вы поймете его работу сразу. А для тех, кто только учится писать скрипты, ниже я опишу его подробнее.&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Когда требуется поправить какой-нибудь конфиг, мы можем сделать это с помощью какого-нибудь редактора, например &lt;strong&gt;nano&lt;/strong&gt;. Но иногда хочется чтобы конфиг менялся по команде, например из скрипта, или из подготовленной инструкции. Это возможно сделать с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sed&lt;/strong&gt; позволяет производить фильтрацию, поиск, замену, вставку и удаление строк или частей текста в файлах или потоках данных. Вот несколько примеров её работы.&lt;/p&gt;
 &lt;ul&gt;
