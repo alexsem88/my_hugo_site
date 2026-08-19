@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rsyslog on Sysadminium</title><link>https://blog.sysadminium.ru/tags/rsyslog/</link><description>Recent content in Rsyslog on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/rsyslog/index.xml" rel="self" type="application/rss+xml"/><item><title>Передаём логи в Graylog с помощью Rsyslog</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</link><pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Я уже писал про установку сервера хранения и сбора логов &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/install-graylog-on-debian/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Graylog на Debian 12
+&lt;/a&gt;
+. В этой статье научимся передавать логи на сервер &lt;strong&gt;Graylog&lt;/strong&gt; с помощью сервиса &lt;strong&gt;Rsyslog&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Вообще есть множество способов передачи логов на Graylog, но в основном это:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Передача логов с помощью Rsyslog.&lt;/strong&gt; Этим способом можно собирать логи с серверов Linux и роутеров Mikrotik (возможно не только Mikrotik).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Передача логов с помощью агентов.&lt;/strong&gt; Есть множество разных агентов (для Windows, для Linux) которые могут передавать логи на сервер Graylog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Использовать Rsyslog проще, он легче настраивается. Очень часто Rsyslog предустановлен в дистрибутиве Linux, а если и не предустановлен, то его легко установить. А на некоторые хосты вы ничего установить не можете, зато там есть Rsyslog, например роутеры MIkrotik. Также Rsyslog потребляет меньше ресурсов чем могут потреблять агенты. Rsyslog поддерживает и TCP и UDP.&lt;/p&gt;</description></item></channel></rss>
