@@ -353,7 +353,35 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;&lt;strong&gt;Виртуальный бридж&lt;/strong&gt; &lt;code&gt;vmbr0&lt;/code&gt; — связан с &lt;code&gt;enp1s0&lt;/code&gt; и используется для подключения виртуальных машин.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260805142743.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>Основы SQL на примере PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</guid><description>&lt;h2 id="создание-базы-данных"&gt;Создание базы данных&lt;/h2&gt;
+&lt;p&gt;Эта схема построена на &lt;strong&gt;Linux Bridge&lt;/strong&gt; — решении, которое подходит для большинства сценариев.&lt;/p&gt;</description></item><item><title>История Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</guid><description>&lt;h2 id="первые-windows"&gt;Первые Windows&lt;/h2&gt;
+&lt;p&gt;История Windows началась с 1985 года когда вышла &lt;strong&gt;Windows 1.0&lt;/strong&gt;. Она ещё не была полноценной системой, просто «графическая надстройка» над MS-DOS, которая позволяла управлять компьютером с помощью мышки. Да, раньше это было в новинку!&lt;/p&gt;
+&lt;p&gt;Затем появились &lt;strong&gt;Windows 2.0&lt;/strong&gt; и &lt;strong&gt;Windows 3.0&lt;/strong&gt; — уже поинтереснее. Всё ещё 16-битные, но графика стала лучше, работать стало удобнее.&lt;/p&gt;
+&lt;h2 id="два-пути-развития"&gt;Два пути развития&lt;/h2&gt;
+&lt;p&gt;Затем Windows пошла по двум разным направлениям:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Windows 9x&lt;/strong&gt; — более простые, для дома (например, Windows 95 и 98);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows NT&lt;/strong&gt; — более надёжные и «продвинутые», в основном для бизнеса (например, Windows NT 4.0, Windows 2000).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="windows-95--настоящий-прорыв"&gt;Windows 95 — настоящий прорыв&lt;/h2&gt;
+&lt;p&gt;В 1995 году вышла &lt;strong&gt;Windows 95&lt;/strong&gt; — первая с кнопкой «Пуск», панелью задач, иконками и «рабочим столом» как мы привыкли. Она уже умела работать в 32-битном режиме и запускать множество приложений одновременно.&lt;/p&gt;</description></item><item><title>Обработка строк на bash циклами while и for</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/processing-strings-with-while-and-for-loops/</link><pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/processing-strings-with-while-and-for-loops/</guid><description>&lt;h2 id="цикл-while"&gt;Цикл while&lt;/h2&gt;
+&lt;p&gt;Синтаксис:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&amp;lt;команда возвращающая строки&amp;gt; | while read line
+ do
+ &amp;lt;команда обрабатывающая строки&amp;gt; $line
+ done
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Пример 1. Получаем список пользователей в системе:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash
+cat /etc/passwd | cut -f 1 -d &amp;#34;:&amp;#34; | while read line
+ do
+ echo &amp;#34;В системе есть пользователь - $line&amp;#34;
+ done
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Пример 2. Выводим список процессов текущего пользователя:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash
+ps -u $USER -o pid | grep -v PID | while read line
+ do
+ ps -p $line -o pid,comm,rss -h
+ done
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Особенности:&lt;/p&gt;</description></item><item><title>Основы SQL на примере PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</guid><description>&lt;h2 id="создание-базы-данных"&gt;Создание базы данных&lt;/h2&gt;
 &lt;p&gt;В этой статье я использую &lt;strong&gt;PostgreSQL 16&lt;/strong&gt; установленный на &lt;strong&gt;Debian 12&lt;/strong&gt;. Для начала необходимо подключиться к консоли СУБД. Сделаем это с помощью утилиты &lt;strong&gt;psql&lt;/strong&gt;, о которой я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/"
  
  target="_blank" rel="noopener noreferrer"&gt;
