@@ -66,4 +66,40 @@
  cd vaultwarden &amp;amp;&amp;amp; \
  chmod 700 data &amp;amp;&amp;amp; \
  sudo chown root:root data/
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Создание собственных образов Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</link><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</guid><description>&lt;h2 id="хранилище-образов-docker-hub"&gt;Хранилище образов Docker Hub&lt;/h2&gt;
+&lt;p&gt;Я уже писал статью про основы Docker: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-getting-started-installation-concepts/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Первое знакомство с Docker — установка и базовые понятия
+&lt;/a&gt;
+. В ней я упомянул про хранилище образов — &lt;a href="https://hub.docker.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Docker Hub
+&lt;/a&gt;
+. Именно там, по умолчанию, &lt;strong&gt;Docker&lt;/strong&gt; ищет необходимые образы. Таким образом, если вы не указываете другой реестр, система автоматически обращается именно к &lt;strong&gt;Docker Hub&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Для поиска образов вручную можно использовать команду &lt;code&gt;docker search&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ docker search ubuntu
+NAME DESCRIPTION STARS OFFICIAL
+ubuntu Ubuntu is a Debian-based Linux operating sys… 17731 [OK]
+ubuntu/squid Squid is a caching proxy for the Web. Long-t… 121 
+ubuntu/nginx Nginx, a high-performance reverse proxy &amp;amp; we… 133 
+ubuntu/cortex Cortex provides storage for Prometheus. Long… 4 
+ubuntu/kafka Apache Kafka, a distributed event streaming … 57 
+ubuntu/bind9 BIND 9 is a very flexible, full-featured DNS… 117 
+(часть вывода я убрал)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В &lt;strong&gt;Docker Hub&lt;/strong&gt; образов много. Официальные образы (помечены &lt;code&gt;[ОК]&lt;/code&gt; в колонке &lt;strong&gt;OFFICIAL&lt;/strong&gt;, а &lt;strong&gt;STARS&lt;/strong&gt; — это количество лайков от пользователей. В &lt;strong&gt;Docker Hub&lt;/strong&gt; можно выкладывать свои образы, но для начала нужно научиться их создавать.&lt;/p&gt;</description></item><item><title>Первое знакомство с Docker — установка и базовые понятия</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-getting-started-installation-concepts/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-getting-started-installation-concepts/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Docker&lt;/strong&gt; — это инструмент для запуска приложений в изолированных контейнерах. Он делает разработку и развертывание проще, быстрее и безопаснее. Нужен он для: изоляции приложений и их переносимости.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Плюсы&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;простота развёртывания,&lt;/li&gt;
+&lt;li&gt;экономия ресурсов по сравнению с виртуальными машинами,&lt;/li&gt;
+&lt;li&gt;стандартизация окружения.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Минусы&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;не подходит для задач, требующих полной виртуализации;&lt;/li&gt;
+&lt;li&gt;не оптимален для GUI-приложений (да, запустить GUI в docker контейнере возможно, но нужно будет выполнять дополнительные действия, например пробрасывать X11-сокет в контейнер и т.п.);&lt;/li&gt;
+&lt;li&gt;требует грамотной настройки безопасности (следить за пробросом портов, запускать приложение в контейнере не от root пользователя, грамотно передавать пароли в контейнер).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Основной компонент Docker — это служба (daemon). Служба работает в фоне и управляет контейнерами, образами, сетями, томами и другими ресурсами. Также она слушает запросы от клиентов, и выполняет задания (например: запускает новый контейнер, показывает запущенные контейнеры и т.п.).&lt;/p&gt;</description></item></channel></rss>
