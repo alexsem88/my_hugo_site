@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aptly on Sysadminium</title><link>https://blog.sysadminium.ru/tags/aptly/</link><description>Recent content in Aptly on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 13 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/aptly/index.xml" rel="self" type="application/rss+xml"/><item><title>Создание локального зеркала репозиториев с помощью Aptly</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_repo_using_aptly/</link><pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_repo_using_aptly/</guid><description>&lt;h2 id="установка-aptly"&gt;Установка Aptly&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Aptly&lt;/strong&gt; — это инструмент, который позволяет создавать клоны известных Linux-репозиториев.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Официальный сайт: &lt;a href="https://www.aptly.info/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://www.aptly.info/
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;HigHub: &lt;a href="https://github.com/aptly-dev/aptly"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/aptly-dev/aptly
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;На &lt;strong&gt;Debian 12&lt;/strong&gt; его можно установить из стандартного репозитория, но лучше использовать официальный репозиторий Aptly для получения более новой версии:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt install aptly
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Будет установлена версия: 1.5.0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для подключения репозитория Aptly и установки более свежей версии выполните следующие команды:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo wget -O /etc/apt/keyrings/aptly.asc https://www.aptly.info/pubkey.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;echo &amp;#39;deb [signed-by=/etc/apt/keyrings/aptly.asc] http://repo.aptly.info/release bookworm main&amp;#39; \
+ | sudo tee /etc/apt/sources.list.d/aptly.list
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt install aptly
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Будет установлена версия: 1.6.2. Она была выпущена 9 июня 2025 года.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="подготовка-к-созданию-локальных-репозиториев"&gt;Подготовка к созданию локальных репозиториев&lt;/h2&gt;
+&lt;p&gt;Скачиваем ключи репозитория Proxmox:&lt;/p&gt;</description></item></channel></rss>

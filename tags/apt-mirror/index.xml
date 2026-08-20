@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apt-Mirror on Sysadminium</title><link>https://blog.sysadminium.ru/tags/apt-mirror/</link><description>Recent content in Apt-Mirror on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 08 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/apt-mirror/index.xml" rel="self" type="application/rss+xml"/><item><title>Локальное зеркало Linux репозитория (apt-mirror)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</link><pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Иногда бывает полезно сделать своё зеркало различных Linux репозиториев. Оно будет синхронизироваться с официальными репозиториями, а уже локальные сервера будут получать обновления с нашего сервера.&lt;/p&gt;
+&lt;p&gt;Например, это можно сделать, если у этих серверов нет возможности выйти в интернет, а обновлять их нужно.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260820150555.png" alt=""&gt;&lt;/p&gt;
+&lt;h2 id="создание-зеркала-репозиториев"&gt;Создание зеркала репозиториев&lt;/h2&gt;
+&lt;p&gt;Устанавливаем пакет:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# apt install apt-mirror
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Это решение написано на языке &lt;strong&gt;perl&lt;/strong&gt;. Посмотреть расположение самого скрипта можно с помощью следующей команды:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# which apt-mirror
+/bin/apt-mirror
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как проект давно заброшен, то в скрипте есть недоработки, например Файлы переводов (&lt;strong&gt;i18n/Translation&lt;/strong&gt;) раньше в репозиториях хранились в виде архива &lt;strong&gt;bz2&lt;/strong&gt;, а сейчас хранятся в виде архива &lt;strong&gt;xz&lt;/strong&gt;. Ещё одна проблема в том, что начиная с Ubuntu Focal (20.04), клиент APT ожидает, что репозиторий предоставят файлы метаданных (&lt;strong&gt;command-not-found — cnf&lt;/strong&gt;). Про эти файлы &lt;strong&gt;apt-mirror&lt;/strong&gt; тоже ничего не знает. Раньше был форк на GitHub от &lt;a href="https://github.com/Stifler6996"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Stifler6996
+&lt;/a&gt;
+, который предоставлял исправленную версию скрипта, но потом этот форк закрылся. Я загрузил исправленную версию скрипта в свой репозиторий, можете использовать его.&lt;/p&gt;</description></item></channel></rss>
