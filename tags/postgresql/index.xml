@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Утилита psql для работы с PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</guid><description>&lt;h2 id="подключение-к-серверу-баз-данных"&gt;Подключение к серверу баз данных&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postgresql on Sysadminium</title><link>https://blog.sysadminium.ru/tags/postgresql/</link><description>Recent content in Postgresql on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>Основы SQL на примере PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</link><pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sql-basics-with-postgresql/</guid><description>&lt;h2 id="создание-базы-данных"&gt;Создание базы данных&lt;/h2&gt;
+&lt;p&gt;В этой статье я использую &lt;strong&gt;PostgreSQL 16&lt;/strong&gt; установленный на &lt;strong&gt;Debian 12&lt;/strong&gt;. Для начала необходимо подключиться к консоли СУБД. Сделаем это с помощью утилиты &lt;strong&gt;psql&lt;/strong&gt;, о которой я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Утилита psql для работы с PostgreSQL
+&lt;/a&gt;
+.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo -u postgres psql
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы создать базу данных используется команда &lt;a href="https://postgrespro.ru/docs/postgresql/16/sql-createdatabase"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ CREATE DATABASE
+&lt;/a&gt;
+. Создадим базу данных &lt;strong&gt;it_outsourcing&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;CREATE DATABASE it_outsourcing;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Переключимся на эту базу данных. Для этого используем не SQL команду а встроенную команду утилиты &lt;strong&gt;psql&lt;/strong&gt; &lt;code&gt;\c&lt;/code&gt; (такие команды начинаются на обратный слеш и после команды не нужно использовать точку с запятой):&lt;/p&gt;</description></item><item><title>Способы конфигурирования PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</link><pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</guid><description>&lt;h2 id="конфигурационный-файл-postgresqlconf"&gt;Конфигурационный файл postgresql.conf&lt;/h2&gt;
+&lt;p&gt;Главный конфигурационный файл для кластера PostgreSQL — это &lt;strong&gt;postgresql.conf&lt;/strong&gt;, в разных системах он может находится в разных местах. Самый точный способ узнать расположение этого файла, посмотреть из терминала &lt;strong&gt;psql&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# SHOW config_file;
+ config_file
+-----------------------------------------
+ /etc/postgresql/16/main/postgresql.conf
+(1 строка)
+
+Время: 0,113 мс
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Сервер читает этот конфиг один раз, при запуске. Если параметр указан несколько раз, то применяется последний.&lt;/p&gt;
+&lt;p&gt;Если вы измените параметры в этом файле, его нужно перечитать. Первый способ — из командной оболочки операционной системы:&lt;/p&gt;</description></item><item><title>Утилита psql для работы с PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</guid><description>&lt;h2 id="подключение-к-серверу-баз-данных"&gt;Подключение к серверу баз данных&lt;/h2&gt;
 &lt;p&gt;Если у вас ещё не установлен сервер PostgreSQL, то вы можете установить его по одной из двух инструкций: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
  
  target="_blank" rel="noopener noreferrer"&gt;
