@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 27 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Передаём логи в Graylog с помощью Rsyslog</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</link><pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Sat, 08 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Передаём логи в Graylog с помощью агентов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-beats/</link><pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-beats/</guid><description>&lt;h2 id="подготовим-graylog-к-сбору-логов"&gt;Подготовим Graylog к сбору логов&lt;/h2&gt;
+&lt;p&gt;Я уже писал несколько статей по серверу &lt;strong&gt;Graylog&lt;/strong&gt;, если ещё не читали сделайте это обязательно:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/install-graylog-on-debian/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Установка Graylog 6.1 на Debian 12
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Передаём логи в Graylog с помощью Rsyslog
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Вам необходимо запустить &lt;strong&gt;Input&lt;/strong&gt; с типом &lt;strong&gt;Beats&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="Pasted_image_20260820090946.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;Сделайте этот Input &lt;strong&gt;глобальным&lt;/strong&gt;, и по умолчанию он запустится на &lt;strong&gt;5044 порту TCP&lt;/strong&gt;. Так вы заставите &lt;strong&gt;Graylog&lt;/strong&gt; принимать данные с агентов, которые называются &lt;strong&gt;Beats&lt;/strong&gt;, например &lt;strong&gt;FileBeat&lt;/strong&gt; или &lt;strong&gt;WinlogBeat&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Передаём логи в Graylog с помощью Rsyslog</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</link><pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-rsyslog/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Я уже писал про установку сервера хранения и сбора логов &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/install-graylog-on-debian/"
  
  target="_blank" rel="noopener noreferrer"&gt;
