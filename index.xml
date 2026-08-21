@@ -323,7 +323,28 @@ notAfter=May 14 18:57:50 2026 GMT
  Proxmox VE — знакомство и установка на ZFS
 &lt;/a&gt;
 . А в этой статье я покажу как можно поработать с виртуальными машинами из консоли. Это может понадобиться при написании скриптов или для создания какой-либо другой автоматизации.&lt;/p&gt;
-&lt;p&gt;Для создания виртуальной машины используется команда &lt;code&gt;qm create &amp;lt;vmid&amp;gt;&lt;/code&gt;, после чего необходимо передать параметры виртуальной машины. Например, так:&lt;/p&gt;</description></item><item><title>Docker - Оптимизация ваших образов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</guid><description>&lt;h2 id="кеширование-слоёв"&gt;Кеширование слоёв&lt;/h2&gt;
+&lt;p&gt;Для создания виртуальной машины используется команда &lt;code&gt;qm create &amp;lt;vmid&amp;gt;&lt;/code&gt;, после чего необходимо передать параметры виртуальной машины. Например, так:&lt;/p&gt;</description></item><item><title>Docker Compose - установка и базовое использование</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-compose-installation-and-usage/</link><pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-compose-installation-and-usage/</guid><description>&lt;h2 id="docker-compose"&gt;Docker Compose&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Docker Compose&lt;/strong&gt; - это инструмент для подготовки и запуска многоконтейнерных систем. Он позволяет с помощью &lt;strong&gt;одного файла&lt;/strong&gt; описать всю инфраструктуру приложения и затем &lt;strong&gt;запустить её одной командой&lt;/strong&gt;. Таким образом, вместо ручного запуска десятков контейнеров, вы получаете централизованное и управляемое описание всего стека.&lt;/p&gt;
+&lt;p&gt;С помощью &lt;strong&gt;Docker Compose&lt;/strong&gt; можно:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Во-первых&lt;/strong&gt;, описать все сервисы (контейнеры) в одном файле &lt;code&gt;docker-compose.yml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Во-вторых&lt;/strong&gt;, запустить весь стек одной командой: &lt;code&gt;docker compose up&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Кроме того&lt;/strong&gt;, Docker Compose автоматически создаёт сеть, тома и настраивает проброс портов.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;В результате&lt;/strong&gt;, становится легко масштабировать сервисы, пересобирать контейнеры и работать с логами.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Реальные приложения почти никогда не живут в одном контейнере. В реальной жизни приложения состоят из компонентов:&lt;/p&gt;</description></item><item><title>Сети в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/networks-in-docker/</link><pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/networks-in-docker/</guid><description>&lt;h2 id="основы"&gt;Основы&lt;/h2&gt;
+&lt;p&gt;По умолчанию &lt;strong&gt;docker&lt;/strong&gt; имеет 3 сети:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ docker network ls
+NETWORK ID NAME DRIVER SCOPE
+9b3a83f7ee29 bridge bridge local
+b0e4b775235f host host local
+3421a5ef3f9a none null local
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bridge&lt;/strong&gt; - это сеть по умолчанию, то есть когда мы при создании контейнера не указываем никакую другую сеть, контейнер создаётся в этой сети. Здесь контейнеры могут пинговать друг друга по ip-адресу, но с хоста контейнеры недоступны. Это самый часто используемый вариант для запуска одиночных контейнеров.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;host&lt;/strong&gt; - если контейнер находится в этой сети, то он использует сеть хоста. Например, если на хосте запущен &lt;strong&gt;nginx&lt;/strong&gt;, то из контейнера можно выполнить &lt;code&gt;curl http://localhost&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;none&lt;/strong&gt; - если контейнер находится в этой сети, то он полностью изолирован. У него как бы и нет сети.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Эти сети создаются Docker автоматически и доступны сразу после установки.&lt;/p&gt;</description></item><item><title>Docker - Оптимизация ваших образов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</guid><description>&lt;h2 id="кеширование-слоёв"&gt;Кеширование слоёв&lt;/h2&gt;
 &lt;p&gt;Некоторые инструкции &lt;strong&gt;Dockerfile&lt;/strong&gt; создают новые &lt;strong&gt;read-only&lt;/strong&gt; слои, а некоторые не создают.&lt;/p&gt;
 &lt;p&gt;Создают слои:&lt;/p&gt;
 &lt;ul&gt;
