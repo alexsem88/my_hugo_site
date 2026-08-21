@@ -313,7 +313,43 @@ notAfter=May 14 18:57:50 2026 GMT
 &lt;li&gt;автоматическое монтирование с помощью &lt;code&gt;systemd&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="установка-sshfs"&gt;Установка SSHFS&lt;/h2&gt;
-&lt;p&gt;На той системе, от куда мы хотим выполнять монтирование, нужно установить пакет &lt;strong&gt;sshfs&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Расширение диска VM (Linux) на Proxmox VE 8</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</guid><description>&lt;h2 id="описание-задачи"&gt;Описание задачи&lt;/h2&gt;
+&lt;p&gt;На той системе, от куда мы хотим выполнять монтирование, нужно установить пакет &lt;strong&gt;sshfs&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Управление ресурсами Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</guid><description>&lt;h2 id="подготовка-окружения"&gt;Подготовка окружения&lt;/h2&gt;
+&lt;p&gt;В этой статье я использую окружение оставшееся от предыдущих уроков по docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-compose-installation-and-usage/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Docker Compose - установка и базовое использование
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/advanced-dockerfile-instructions/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ Продвинутые инструкции в Dockerfile
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;А также, я для удобства выложил тестовый проект в репозиторий &lt;strong&gt;Git Hub&lt;/strong&gt;. Теперь развернуть его можно с помощью следующих команд:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ git clone https://github.com/alexsem88/docker-learning.git
+$ cd docker-learning/
+$ docker compose up --build -d
+
+$ docker compose ps
+SERVICE CREATED STATUS PORTS
+db 30 seconds ago Up 29 seconds (healthy) 5432/tcp
+redis 30 seconds ago Up 29 seconds (healthy) 6379/tcp
+web 30 seconds ago Up 24 seconds (healthy) 0.0.0.0:5000-&amp;gt;5000/tcp, [::]:5000-&amp;gt;5000/tcp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;А с помощью следующей команды посмотрим сколько ресурсов занимает каждый контейнер проекта:&lt;/p&gt;</description></item><item><title>Сканирование образов Docker и анализ уязвимостей</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-image-scanning/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-image-scanning/</guid><description>&lt;h2 id="docker-scan"&gt;docker scan&lt;/h2&gt;
+&lt;p&gt;Выявлять уязвимости в &lt;strong&gt;Docker-образах&lt;/strong&gt; можно с помощью команды &lt;code&gt;docker scan&lt;/code&gt;. Это инструмент от &lt;strong&gt;Docker&lt;/strong&gt;, который интегрирован с &lt;strong&gt;Snyk&lt;/strong&gt; (система анализа уязвимостей). Данная система:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Сканирует образ на наличие &lt;strong&gt;CVE&lt;/strong&gt; (уязвимостей);&lt;/li&gt;
+&lt;li&gt;Показывает уровень опасности;&lt;/li&gt;
+&lt;li&gt;Предлагает пути исправления;&lt;/li&gt;
+&lt;li&gt;Работает как с локальными образами, так и с образами из Docker Hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Устанавливается этот инструмент как дополнительный плагин Docker:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install docker-scan-plugin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Но для работы требует авторизацию в &lt;strong&gt;Docker Hub&lt;/strong&gt; и использование двух-факторной авторизации. Поэтому мы будем использовать другой инструмент.&lt;/p&gt;</description></item><item><title>Расширение диска VM (Linux) на Proxmox VE 8</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</link><pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/extend-disk-vm-linux-on-pve/</guid><description>&lt;h2 id="описание-задачи"&gt;Описание задачи&lt;/h2&gt;
 &lt;p&gt;Допустим нам не хватает места для хранения файлов в виртуальной машине. &lt;strong&gt;Proxmox VE 8 и 9&lt;/strong&gt; легко даёт расширить диск виртуальной машины, особенно если в качестве хранилища используется &lt;strong&gt;ZFS&lt;/strong&gt;. Но просто расширить диск виртуальной машины мало, нужно ещё внутри расширить файловую систему. О том как это делается читайте в этой статье.&lt;/p&gt;
 &lt;h2 id="расширение-ext4"&gt;Расширение Ext4&lt;/h2&gt;
 &lt;p&gt;В первом случае у нас система установлена на 1 раздел и использует файловую систему &lt;strong&gt;ext4&lt;/strong&gt;. Это самый простой случай для расширения дискового пространства.&lt;/p&gt;</description></item><item><title>Создание и управление виртуальной машиной Proxmox VE из консоли</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/create-and-manage-pve-virtual-machine-console/</link><pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/create-and-manage-pve-virtual-machine-console/</guid><description>&lt;h2 id="создание-и-удаление-виртуальной-машины"&gt;Создание и удаление виртуальной машины&lt;/h2&gt;
