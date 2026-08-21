@@ -323,7 +323,43 @@ notAfter=May 14 18:57:50 2026 GMT
  Proxmox VE — знакомство и установка на ZFS
 &lt;/a&gt;
 . А в этой статье я покажу как можно поработать с виртуальными машинами из консоли. Это может понадобиться при написании скриптов или для создания какой-либо другой автоматизации.&lt;/p&gt;
-&lt;p&gt;Для создания виртуальной машины используется команда &lt;code&gt;qm create &amp;lt;vmid&amp;gt;&lt;/code&gt;, после чего необходимо передать параметры виртуальной машины. Например, так:&lt;/p&gt;</description></item><item><title>Создание собственных образов Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</link><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</guid><description>&lt;h2 id="хранилище-образов-docker-hub"&gt;Хранилище образов Docker Hub&lt;/h2&gt;
+&lt;p&gt;Для создания виртуальной машины используется команда &lt;code&gt;qm create &amp;lt;vmid&amp;gt;&lt;/code&gt;, после чего необходимо передать параметры виртуальной машины. Например, так:&lt;/p&gt;</description></item><item><title>Docker - Оптимизация ваших образов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</guid><description>&lt;h2 id="кеширование-слоёв"&gt;Кеширование слоёв&lt;/h2&gt;
+&lt;p&gt;Некоторые инструкции &lt;strong&gt;Dockerfile&lt;/strong&gt; создают новые &lt;strong&gt;read-only&lt;/strong&gt; слои, а некоторые не создают.&lt;/p&gt;
+&lt;p&gt;Создают слои:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FROM&lt;/code&gt; - базовый слой&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RUN&lt;/code&gt; - запуск команды для подготовки образа&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;COPY&lt;/code&gt;, &lt;code&gt;ADD&lt;/code&gt; - копирование файлов в образ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Не создают слои:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;WORKDIR&lt;/code&gt; - установка рабочего каталога&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CMD&lt;/code&gt;, &lt;code&gt;ENTRYPOINT&lt;/code&gt; - команда при запуске контейнера&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ENV&lt;/code&gt; - переменные окружения&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EXPOSE&lt;/code&gt; - объявление о необходимости открыть порт&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;USER&lt;/code&gt; - смена пользователя&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Пример:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;# Слой 1: базовый образ.
+FROM python:3.11-slim
+
+# Установка рабочего каталога. Слой не создаётся.
+WORKDIR /app
+
+# Слой 2: копирование файла.
+COPY requirements.txt .
+
+# Слой 3: установка зависимостей.
+RUN pip install -r requirements.txt
+
+# Слой 4: копирование кода.
+COPY app.py .
+
+# Подготовка команды при запуске контейнера. Слой не создаётся.
+CMD [&amp;#34;python&amp;#34;, &amp;#34;app.py&amp;#34;] 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При сборке контейнера слои кешируются. А при пере-сборки часть слоёв, которые не изменились, берутся из кеша. Как только один слой изменился, все последующие слои пересобираются. Предыдущие слои берутся из кеша. Из этого следует правило -&amp;gt; &lt;em&gt;Всё что изменяется реже, нужно прописывать выше.&lt;/em&gt; Например, зависимости изменяются реже чем основной код, поэтому их установку нужно прописать выше чем копирование файла с кодом.&lt;/p&gt;</description></item><item><title>Проброс каталогов и томов в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</guid><description>&lt;h2 id="суть-проблемы"&gt;Суть проблемы&lt;/h2&gt;
+&lt;p&gt;К контейнерам &lt;strong&gt;DevOps&lt;/strong&gt; инженеры относятся как к чему-то одноразовому. То есть их запросто могут удалить и пересоздать, не заботясь о данных хранимых в них. Часто контейнеры вообще разворачиваются и пересоздаются автоматически с помощью CI/CD инструментов. А настраивать каждый контейнер с помощью &lt;code&gt;docker exec&lt;/code&gt; - это медленно и увеличивает риск ошибиться.&lt;/p&gt;
+&lt;p&gt;Именно поэтому все полезные данные (например, базы данных) хранятся вне контейнера. Для хранения таких данных можно использовать: примонтированный каталог, либо проброшенный том (&lt;strong&gt;volume&lt;/strong&gt;). Ни то, ни другое не удаляется при удалении контейнера.&lt;/p&gt;</description></item><item><title>Создание собственных образов Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</link><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/creating-docker-images/</guid><description>&lt;h2 id="хранилище-образов-docker-hub"&gt;Хранилище образов Docker Hub&lt;/h2&gt;
 &lt;p&gt;Я уже писал статью про основы Docker: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-getting-started-installation-concepts/"
  
  target="_blank" rel="noopener noreferrer"&gt;
