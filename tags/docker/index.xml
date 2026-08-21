@@ -66,7 +66,28 @@
  cd vaultwarden &amp;amp;&amp;amp; \
  chmod 700 data &amp;amp;&amp;amp; \
  sudo chown root:root data/
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Управление ресурсами Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</guid><description>&lt;h2 id="подготовка-окружения"&gt;Подготовка окружения&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item><item><title>Запуск простых сервисов в Docker контейнерах</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/simple-services-in-docker/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/simple-services-in-docker/</guid><description>&lt;h2 id="nginx"&gt;Nginx&lt;/h2&gt;
+&lt;p&gt;Создаём каталог nginx с необходимыми подкаталогами внутри:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;mkdir -p ./nginx/{html,conf,conf.d}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Копируем основные конфиги из контейнера на хост:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;docker run --rm nginx cat /etc/nginx/nginx.conf &amp;gt; ./nginx/conf/nginx.conf
+docker run --rm nginx cat /etc/nginx/conf.d/default.conf &amp;gt; ./nginx/conf.d/default.conf
+docker run --rm nginx cat /usr/share/nginx/html/index.html &amp;gt; ./nginx/html/index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Запускаем контейнер:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;docker run -d \
+ -p 8080:80 \
+ --name my-nginx \
+ -v ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
+ -v ./nginx/conf.d/:/etc/nginx/conf.d:ro \
+ -v ./nginx/html:/usr/share/nginx/html:ro \
+ nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Следующие файлы можно редактировать на хосте:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;nginx/conf/nginx.conf&lt;/code&gt; - основной конфиг&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nginx/conf.d/default.conf&lt;/code&gt; - конфиг сайта по умолчанию&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nginx/html/index.html&lt;/code&gt; - индексная страничка&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для проверки можете открыть в браузере: &lt;code&gt;http://&amp;lt;ip-host&amp;gt;:8080&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Управление ресурсами Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-resource-management/</guid><description>&lt;h2 id="подготовка-окружения"&gt;Подготовка окружения&lt;/h2&gt;
 &lt;p&gt;В этой статье я использую окружение оставшееся от предыдущих уроков по docker:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-compose-installation-and-usage/"
