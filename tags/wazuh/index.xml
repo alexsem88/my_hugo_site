@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wazuh on Sysadminium</title><link>https://blog.sysadminium.ru/tags/wazuh/</link><description>Recent content in Wazuh on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/wazuh/index.xml" rel="self" type="application/rss+xml"/><item><title>Wazuh - знакомство и установка SIEM системы</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</guid><description>&lt;h2 id="описание"&gt;Описание&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Wazuh&lt;/strong&gt; — это платформа с открытым исходным кодом, реализующая концепции &lt;strong&gt;XDR&lt;/strong&gt; (Extended Detection and Response) и &lt;strong&gt;SIEM&lt;/strong&gt; (Security Information and Event Management). Решение является бесплатным для развертывания на собственной инфраструктуре. Агенты поддерживают операционные системы Linux, Windows и macOS.&lt;/p&gt;
+&lt;p&gt;Разработчик — компания &lt;strong&gt;Wazuh Inc&lt;/strong&gt; (зарегистрирована в США), но имеет международную команду.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Основной сайт:&lt;/strong&gt; &lt;a href="https://wazuh.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://wazuh.com
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Документация:&lt;/strong&gt; &lt;a href="https://documentation.wazuh.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://documentation.wazuh.com
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href="https://github.com/wazuh/wazuh"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/wazuh/wazuh
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wazuh представляет собой комплексную систему, которая из коробки включает следующие функциональные модули:&lt;/p&gt;</description></item></channel></rss>

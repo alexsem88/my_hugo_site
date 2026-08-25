@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Обнаружение дисков в Zabbix и просмотр по ним температуры</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</link><pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</guid><description>&lt;h2 id="предварительная-настройка"&gt;Предварительная настройка&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Мониторинг и сборщики логов on Sysadminium</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/</link><description>Recent content in Мониторинг и сборщики логов on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Wazuh - знакомство и установка SIEM системы</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</guid><description>&lt;h2 id="описание"&gt;Описание&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Wazuh&lt;/strong&gt; — это платформа с открытым исходным кодом, реализующая концепции &lt;strong&gt;XDR&lt;/strong&gt; (Extended Detection and Response) и &lt;strong&gt;SIEM&lt;/strong&gt; (Security Information and Event Management). Решение является бесплатным для развертывания на собственной инфраструктуре. Агенты поддерживают операционные системы Linux, Windows и macOS.&lt;/p&gt;
+&lt;p&gt;Разработчик — компания &lt;strong&gt;Wazuh Inc&lt;/strong&gt; (зарегистрирована в США), но имеет международную команду.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Основной сайт:&lt;/strong&gt; &lt;a href="https://wazuh.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://wazuh.com
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Документация:&lt;/strong&gt; &lt;a href="https://documentation.wazuh.com/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://documentation.wazuh.com
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href="https://github.com/wazuh/wazuh"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ https://github.com/wazuh/wazuh
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wazuh представляет собой комплексную систему, которая из коробки включает следующие функциональные модули:&lt;/p&gt;</description></item><item><title>Обнаружение дисков в Zabbix и просмотр по ним температуры</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</link><pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</guid><description>&lt;h2 id="предварительная-настройка"&gt;Предварительная настройка&lt;/h2&gt;
 &lt;p&gt;Я всё проделываю на &lt;strong&gt;Debian 10&lt;/strong&gt;, на &lt;strong&gt;Debian 11&lt;/strong&gt; всё должно работать также, но сам не проверял. Сейчас на &lt;strong&gt;Debian 12&lt;/strong&gt; нет утилиты &lt;strong&gt;hddtemp&lt;/strong&gt;, поэтому придётся изменить скрипты, но если вы поймёте метод, то сможете сделать это самостоятельно. Получать температуру с дисков будем с помощью утилит &lt;strong&gt;hddtemp&lt;/strong&gt; и &lt;strong&gt;nvme&lt;/strong&gt;, также нам понадобится утилита &lt;strong&gt;sudo&lt;/strong&gt;, установим эти пакеты:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install -y hddtemp nvme-cli sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Дадим возможность &lt;strong&gt;пользователю zabbix&lt;/strong&gt; использовать эти утилиты под &lt;strong&gt;sudo&lt;/strong&gt; без запроса пароля:&lt;/p&gt;</description></item><item><title>Передаём логи в Graylog с помощью агентов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-beats/</link><pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/transfer-logs-to-graylog-using-beats/</guid><description>&lt;h2 id="подготовим-graylog-к-сбору-логов"&gt;Подготовим Graylog к сбору логов&lt;/h2&gt;
