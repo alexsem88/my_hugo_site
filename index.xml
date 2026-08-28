@@ -140,26 +140,7 @@ v
 &lt;li&gt;&lt;strong&gt;Function&lt;/strong&gt; — функции написаны на &lt;strong&gt;PowerShell&lt;/strong&gt;, есть встроенные функции, но вы можете создавать и свои.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cmdlet&lt;/strong&gt; — встроенные команды &lt;strong&gt;PowerShell&lt;/strong&gt;, обычно реализованные на &lt;strong&gt;.NET&lt;/strong&gt; (чаще всего на &lt;strong&gt;C#&lt;/strong&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Получить список команд можно с помощью командлета &lt;code&gt;Get-Command&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>О системе Ubuntu</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_ubuntu/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
-&lt;p&gt;Основателем этой системы является &lt;a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%82%D1%82%D0%BB%D0%B2%D0%BE%D1%80%D1%82,_%D0%9C%D0%B0%D1%80%D0%BA"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Марк Шаттлворт
-&lt;/a&gt;
-. Он был фанатом проекта &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/about_debian/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Debian
-&lt;/a&gt;
-, но некоторые вещи ему всё же не нравились. Он даже пытался стать лидером Debian, но все же решил создать свою систему. В итоге, в 2004 году, он собрал команду программистов и начал создавать &lt;strong&gt;Ubuntu&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260427110310.png" alt=""&gt;
-&lt;em&gt;Марк Шаттлворт&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Название &lt;strong&gt;&amp;ldquo;Ubuntu&amp;rdquo;&lt;/strong&gt; — переводится с некоторых южноафриканских языков, как &lt;strong&gt;&amp;ldquo;человечность по отношению к другим&amp;rdquo;&lt;/strong&gt; или &lt;strong&gt;&amp;ldquo;я есть, потому-что мы есть&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>О системе Debian</title><link>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</link><pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about_debian/</guid><description>&lt;h2 id="история-системы"&gt;История системы&lt;/h2&gt;
-&lt;p&gt;В &lt;strong&gt;1991&lt;/strong&gt; году появился &lt;strong&gt;Linux&lt;/strong&gt; — это было ядро операционной системы. А уже к февралю 1992 году &lt;strong&gt;Овен Бланк&lt;/strong&gt; написал для Linux ряд утилит и подобие установщика. Можно считать это первым дистрибутивом Linux.&lt;/p&gt;
-&lt;p&gt;Разработка &lt;strong&gt;Debian&lt;/strong&gt; началась в &lt;strong&gt;1993&lt;/strong&gt; году, когда &lt;strong&gt;Ян Мердок&lt;/strong&gt; заявил о намерении создать собственный дистрибутив. Название &lt;strong&gt;Debian&lt;/strong&gt; производное из имени будущей жены основателя дистрибутива &lt;strong&gt;Дебры&lt;/strong&gt; и имени самого &lt;strong&gt;Яна&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260425211707.png" alt=""&gt;
-&lt;em&gt;Ян Мердок&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Но уже через 3 года &lt;strong&gt;Мердок&lt;/strong&gt; объявил, что более не в состоянии участвовать в проекте, и покинул его. Его сменил &lt;strong&gt;Брюс Пиренс&lt;/strong&gt;, человек который дал кодовые имена дистрибутивам. Брюс 12 лет отработал в компании &lt;strong&gt;Pixar&lt;/strong&gt; и решил что имена дистрибутивов должны соответствовать именам героев мультфильма &lt;strong&gt;Toy Story&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Первое знакомство с n8n</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</guid><description>&lt;h2 id="что-такое-n8n"&gt;Что такое n8n&lt;/h2&gt;
+&lt;p&gt;Получить список команд можно с помощью командлета &lt;code&gt;Get-Command&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Первое знакомство с n8n</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</guid><description>&lt;h2 id="что-такое-n8n"&gt;Что такое n8n&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;n8n&lt;/strong&gt; — это инструмент для автоматизации рабочих процессов (workflow automation). Представлен как визуальный конструктор, доступный через веб-интерфейс.&lt;/p&gt;
 &lt;p&gt;Вы можете использовать n8n как облачный сервис, или развернуть на своём сервере бесплатно (по лицензии fair-code) — ниже покажу, как.&lt;/p&gt;
 &lt;p&gt;Полезные сылки:&lt;/p&gt;
@@ -812,16 +793,7 @@ cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &a
 &lt;li&gt;&lt;strong&gt;Graylog Security&lt;/strong&gt;. Предоставляет все функции &lt;strong&gt;Graylog Enterprise&lt;/strong&gt;, а также набор инструментов для обнаружения, расследования и реагирования на угрозы (&lt;strong&gt;TDIR&lt;/strong&gt;). Ориентированный на обеспечение кибербезопасности.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Graylog Cloud&lt;/strong&gt;. Облачный сервис, который сокращает издержки, обеспечивает быстрое развертывание и бесперебойное обновление.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Этот сервер работает на &lt;strong&gt;Java&lt;/strong&gt;. Для хранения сообщений журнала и метаданных используется NoSQL база данных &lt;strong&gt;MongoDB&lt;/strong&gt;. А в качестве поисковой системы можно использовать &lt;strong&gt;OpenSearch&lt;/strong&gt; или &lt;strong&gt;ElasticSearch&lt;/strong&gt;. Я же буду использовать &lt;strong&gt;DataNode&lt;/strong&gt; — это самоуправляемый &lt;strong&gt;OpenSearch&lt;/strong&gt; для &lt;strong&gt;Graylog&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>О дистрибутиве РЕД ОС</title><link>https://blog.sysadminium.ru/docs/linux/distr/red-os/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/red-os/</guid><description>&lt;h2 id="о-дистрибутиве"&gt;О дистрибутиве&lt;/h2&gt;
-&lt;p&gt;Создателем этого дистрибутива выступает компания &lt;a href="https://redos.red-soft.ru/about/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- РЕД СОФТ
-&lt;/a&gt;
- — российский разработчик ПО. Генеральным директором компании является &lt;strong&gt;Максим Анисимов&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260818160953.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;РЕД ОС&lt;/strong&gt; основан на базе &lt;strong&gt;Red Hat Linux&lt;/strong&gt;, как и множество других дистрибутивов, например: &lt;strong&gt;CentOS Stream&lt;/strong&gt;, &lt;strong&gt;Oracle Linux&lt;/strong&gt;, &lt;strong&gt;Rocky Linux&lt;/strong&gt;, &lt;strong&gt;AlmaLinux&lt;/strong&gt;. Это российский дистрибутив Linux. И основной целью создания дистрибутива является импортозамещение программного обеспечения.&lt;/p&gt;
-&lt;p&gt;Этот дистрибутив предоставляется бесплатно только для некоммерческого использования физическими лицами. А юридическим лицам необходимо приобретать лицензию на платной основе.&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Этот сервер работает на &lt;strong&gt;Java&lt;/strong&gt;. Для хранения сообщений журнала и метаданных используется NoSQL база данных &lt;strong&gt;MongoDB&lt;/strong&gt;. А в качестве поисковой системы можно использовать &lt;strong&gt;OpenSearch&lt;/strong&gt; или &lt;strong&gt;ElasticSearch&lt;/strong&gt;. Я же буду использовать &lt;strong&gt;DataNode&lt;/strong&gt; — это самоуправляемый &lt;strong&gt;OpenSearch&lt;/strong&gt; для &lt;strong&gt;Graylog&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Когда требуется поправить какой-нибудь конфиг, мы можем сделать это с помощью какого-нибудь редактора, например &lt;strong&gt;nano&lt;/strong&gt;. Но иногда хочется чтобы конфиг менялся по команде, например из скрипта, или из подготовленной инструкции. Это возможно сделать с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sed&lt;/strong&gt; позволяет производить фильтрацию, поиск, замену, вставку и удаление строк или частей текста в файлах или потоках данных. Вот несколько примеров её работы.&lt;/p&gt;
 &lt;ul&gt;
@@ -854,13 +826,7 @@ cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &a
 &lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -v
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="посмотреть-информацию-об-адаптере"&gt;Посмотреть информацию об адаптере&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# megacli -AdpAllinfo -aALL
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта команда выводит информацию обо всех установленных в систему адаптерах. Вы увидите модель адаптера, версию прошивки, сколько портов поддерживается, сколько памяти содержится и какие RAID массивы можно создать. А также, сколько &lt;strong&gt;VD&lt;/strong&gt; (виртуальных устройств или массивов) уже есть, сколько из них сейчас в состоянии Degraded. И все возможности и ограничения вашего контроллера.&lt;/p&gt;</description></item><item><title>О дистрибутиве Devuan</title><link>https://blog.sysadminium.ru/docs/linux/distr/about-devuan/</link><pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/about-devuan/</guid><description>&lt;h2 id="о-дистрибутиве"&gt;О дистрибутиве&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Devuan&lt;/strong&gt; появился как ответ на значительные изменения в &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/about_debian/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Debian
-&lt;/a&gt;
-, когда в 2014 году было принято решение по умолчанию использовать систему инициализации &lt;strong&gt;SystemD&lt;/strong&gt;. Эта инициатива вызвала раскол среди пользователей и разработчиков Debian, так как SystemD обладает глубокой интеграцией и меняет привычный порядок управления процессами и службами. Некоторые участники сообщества посчитали, что SystemD противоречит философии UNIX о простоте и модульности, так как он заменяет сразу несколько компонентов системы.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта команда выводит информацию обо всех установленных в систему адаптерах. Вы увидите модель адаптера, версию прошивки, сколько портов поддерживается, сколько памяти содержится и какие RAID массивы можно создать. А также, сколько &lt;strong&gt;VD&lt;/strong&gt; (виртуальных устройств или массивов) уже есть, сколько из них сейчас в состоянии Degraded. И все возможности и ограничения вашего контроллера.&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
 &lt;p&gt;Сервер СУБД PostgreSQL может использоваться кластером 1С в своей работе. Про то, как установить сервер 1С я писал в статье: &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -3043,28 +3009,7 @@ postgres@postgres=# \l
 /home/alex
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из вывода ясно что вы находитесь в каталоге &lt;strong&gt;/home/alex&lt;/strong&gt;, это домашний каталог пользователя &lt;strong&gt;alex&lt;/strong&gt;. Тот каталог в котором вы находитесь называют текущим или рабочим каталогом.&lt;/p&gt;
 &lt;h2 id="перемещение-по-каталогам"&gt;Перемещение по каталогам&lt;/h2&gt;
-&lt;p&gt;Перемещаться по каталогам в Linux не сложно, и для этого используют команду — &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Процесс установки Devuan</title><link>https://blog.sysadminium.ru/docs/linux/distr/devuan_install/</link><pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/devuan_install/</guid><description>&lt;h2 id="получение-установочного-образа-devuan"&gt;Получение установочного образа Devuan&lt;/h2&gt;
-&lt;p&gt;Вы можете получить установочный iso образ с &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- этого сайта
-&lt;/a&gt;
-. Я покажу в этой статье установку серверной версии &lt;strong&gt;Devuan 4 chimaera&lt;/strong&gt;, без графического окружения, для этого я скачиваю &lt;a href="https://files.devuan.org/devuan_chimaera/installer-iso/devuan_chimaera_4.0.0_amd64_server.iso"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- devuan_chimaera_4.0.0_amd64_server.iso
-&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;Установка Devuan 4 chimaera очень похожа на &lt;a href="https://blog.sysadminium.ru/docs/linux/distr/debian_install/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- установку Debian
-&lt;/a&gt;
-, хотя по сути установщик то один и тот же!&lt;/p&gt;
-&lt;h2 id="процесс-установки"&gt;Процесс установки&lt;/h2&gt;
-&lt;p&gt;После загрузки с установочного образа мы видим следующее окно:&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260429153421.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Нажимаем кнопку &lt;strong&gt;Install&lt;/strong&gt; для установки!&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
+&lt;p&gt;Перемещаться по каталогам в Linux не сложно, и для этого используют команду — &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
 &lt;p&gt;В дистрибутивах Linux нет привычных для пользователя Windows дисков, например диск &lt;code&gt;C:\&lt;/code&gt; или &lt;code&gt;D:\&lt;/code&gt;. Вместо этого в Linux существует единое дерево каталогов с корневым каталогом &lt;code&gt;/&lt;/code&gt;, который называют &amp;ldquo;root (&lt;em&gt;корень&lt;/em&gt;)&amp;rdquo;. Получается примерно такая древовидная структура каталогов:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/
 /каталог_1
@@ -3089,43 +3034,7 @@ postgres@postgres=# \l
 Status: install ok installed
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если у вас он не установлен, то установите его:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install openssh-server
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Проверим что служба сервера запущена:&lt;/p&gt;</description></item><item><title>Процесс установки Ubuntu 24.04 LTS</title><link>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</link><pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/ubuntu_install/</guid><description>&lt;h2 id="получение-установочных-образов-ubuntu"&gt;Получение установочных образов Ubuntu&lt;/h2&gt;
-&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://ubuntu.com/download/server"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- отсюда
-&lt;/a&gt;
-. В отличии от Debian можно скачать только тяжеловесные образы для:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Desktop&lt;/strong&gt; — система с графической средой Gnome.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt; — система без графической среды, которую предпочтительнее использовать для сервера.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260427164619.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Дополнительно стоит отметить, что Ubuntu вы сможете установить только на архитектуру AMD64.&lt;/p&gt;
-&lt;p&gt;После скачивания установочного образа (ubuntu-24.04.1-live-server-amd64), записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- rufus
-&lt;/a&gt;
- или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Процесс установки Debian 12</title><link>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</link><pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/distr/debian_install/</guid><description>&lt;h2 id="получение-установочных-образов-debian"&gt;Получение установочных образов Debian&lt;/h2&gt;
-&lt;p&gt;Итак, скачать установочный образ вы можете &lt;a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- отсюда
-&lt;/a&gt;
-. Вам нужно скачать файл &lt;strong&gt;«debian-12.8.0-amd64-netinst.iso»&lt;/strong&gt;, это самый лёгкий установочный образ, который во время установки всё скачает из интернета.&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260427161412.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Так как на рисунке выше вы видите и другие образы для установки дистрибутива, давайте расскажу про них:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Debian-edu&lt;/strong&gt; — используется для организации компьютерных классов на базе бездисковых рабочих станций и тонких клиентов, потому здесь есть много предустановленных программ для образования.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Debian-mac&lt;/strong&gt; — это специальная версия образа, предназначенная только для старых 64-разрядных компьютеров Intel Macintosh.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;После скачивания установочного образа, записываем его на флешку, например используя программу &lt;a href="https://rufus.ie/ru/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- rufus
-&lt;/a&gt;
- или другое ПО. И загружаемся с подготовленной флешки.&lt;/p&gt;</description></item><item><title>Сервер hasplm для клиентских ключей 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/hasp_lm-usb_redirector-ubuntu/</link><pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/hasp_lm-usb_redirector-ubuntu/</guid><description>&lt;p&gt;Чтобы 1С увидела ваш многопользовательский usb ключ в одной сети с вами должен находится сервер лицензирования hasplm.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Проверим что служба сервера запущена:&lt;/p&gt;</description></item><item><title>Сервер hasplm для клиентских ключей 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/hasp_lm-usb_redirector-ubuntu/</link><pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/hasp_lm-usb_redirector-ubuntu/</guid><description>&lt;p&gt;Чтобы 1С увидела ваш многопользовательский usb ключ в одной сети с вами должен находится сервер лицензирования hasplm.&lt;/p&gt;
 &lt;p&gt;Зачем может понадобится пробрасывать usb ключ по сети? Ну допустим у вас сервер 1С или сервер лицензирования в датацентре, а ключ в датацентр вы везти не хотите. Или, например, у вас несколько виртуальных серверов лицензирования, которые могут перемещаться по разным хостам в рамках одного кластера виртуализации и нужно обеспечить перемещение ключей 1С вслед за виртуальными машинами.&lt;/p&gt;</description></item><item><title>Bash скрипт получения числа открытых файлов пользователя</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</link><pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-script-openfiles/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Узнать сколько открытых файлов у определённого пользователя бывает необходимо для отладки службы, работающей под определённым пользователем.&lt;/p&gt;
 &lt;p&gt;В качестве параметра скрипту необходимо передать &lt;strong&gt;имя&lt;/strong&gt; или &lt;strong&gt;uid&lt;/strong&gt; пользователя. Скрипт будем использовать следующими способами:&lt;/p&gt;
