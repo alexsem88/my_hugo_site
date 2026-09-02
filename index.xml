@@ -5,15 +5,14 @@
  ВКонтакте
 &lt;/a&gt;
  и начал делиться своими заметками там. Но формат социальной сети оказался не самым удобным для такой информации: статьи сложно структурировать, а искать их со временем становится всё труднее. Поэтому я решил создать отдельный сайт и перенести все материалы сюда, чтобы получилась удобная база знаний.&lt;/p&gt;</description></item><item><title>Политика конфиденциальности</title><link>https://blog.sysadminium.ru/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/privacy/</guid><description>&lt;p&gt;Привет! Рад, что вы заглянули на мой сайт. Хочу коротко и честно рассказать о том, как здесь всё устроено с приватностью.&lt;/p&gt;
-&lt;h2 id="-что-я-о-вас-собираю"&gt;📦 Что я о вас собираю&lt;/h2&gt;
-&lt;p&gt;Ничего, совсем. 🙅‍&lt;/p&gt;
-&lt;p&gt;Этот сайт — просто набор статических страничкек. Здесь нет:&lt;/p&gt;
+&lt;h2 id="-какие-данные-я-собираю"&gt;📦 Какие данные я собираю&lt;/h2&gt;
+&lt;p&gt;Этот сайт — просто набор статических страничек. Здесь нет:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;форм, куда можно что-то ввести и отправить, в том числе и комментариев;&lt;/li&gt;
-&lt;li&gt;систем аналитики (ни Яндекс.Метрики, ни Google Analytics);&lt;/li&gt;
-&lt;li&gt;cookie-файлов, которые «запоминают» ваши действия.&lt;/li&gt;
+&lt;li&gt;форм, куда можно что-то ввести и отправить, в том числе комментариев;&lt;/li&gt;
+&lt;li&gt;регистрации и личных кабинетов;&lt;/li&gt;
+&lt;li&gt;собственной базы данных с информацией о посетителях.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Вы можете просто читать, кликать и уходить — без цифрового следа.&lt;/p&gt;</description></item><item><title>Wazuh - знакомство и установка SIEM системы</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</guid><description>&lt;h2 id="описание"&gt;Описание&lt;/h2&gt;
+&lt;p&gt;Однако на сайте используется &lt;strong&gt;Яндекс Метрика&lt;/strong&gt;. Она нужна мне для того, чтобы понимать, сколько людей посещает сайт, какие материалы читают и насколько удобно пользоваться сайтом.&lt;/p&gt;</description></item><item><title>Wazuh - знакомство и установка SIEM системы</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</link><pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-introduction-installation/</guid><description>&lt;h2 id="описание"&gt;Описание&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Wazuh&lt;/strong&gt; — это платформа с открытым исходным кодом, реализующая концепции &lt;strong&gt;XDR&lt;/strong&gt; (Extended Detection and Response) и &lt;strong&gt;SIEM&lt;/strong&gt; (Security Information and Event Management). Решение является бесплатным для развертывания на собственной инфраструктуре. Агенты поддерживают операционные системы Linux, Windows и macOS.&lt;/p&gt;
 &lt;p&gt;Разработчик — компания &lt;strong&gt;Wazuh Inc&lt;/strong&gt; (зарегистрирована в США), но имеет международную команду.&lt;/p&gt;
 &lt;ul&gt;
