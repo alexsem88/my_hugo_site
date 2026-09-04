@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Syslog on Sysadminium</title><link>https://blog.sysadminium.ru/tags/syslog/</link><description>Recent content in Syslog on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/syslog/index.xml" rel="self" type="application/rss+xml"/><item><title>Wazuh - подключение хостов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-connecting-hosts/</link><pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/wazuh-connecting-hosts/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;В этой статье в качестве Linux используется дистрибутив &lt;strong&gt;Debian 13&lt;/strong&gt;, а в качестве Windows - &lt;strong&gt;Windows 10 22H2&lt;/strong&gt;. На других системах установка и настройка может немного отличаться.&lt;/p&gt;
+&lt;p&gt;На &lt;strong&gt;Linux&lt;/strong&gt; в статье показаны 2 возможных сценария:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Отправка логов по протоколу &lt;strong&gt;syslog&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Использование агента&lt;/strong&gt;, который не просто пересылает логи, а также собирает и отправляет на сервер некоторую телеметрию для анализа.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для &lt;strong&gt;Windows&lt;/strong&gt; показан только вариант с &lt;strong&gt;использованием агента&lt;/strong&gt;, хотя отправлять логи по syslog технически тоже можно.&lt;/p&gt;</description></item></channel></rss>
