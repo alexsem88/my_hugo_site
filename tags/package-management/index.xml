@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Package-Management on Sysadminium</title><link>https://blog.sysadminium.ru/tags/package-management/</link><description>Recent content in Package-Management on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 18 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/package-management/index.xml" rel="self" type="application/rss+xml"/><item><title>Пакетный менеджер dpkg</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</link><pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/linux-dpkg/</guid><description>&lt;h2 id="что-умеет-dpkg"&gt;Что умеет dpkg&lt;/h2&gt;
+&lt;p&gt;В дистрибутивах Linux приложения устанавливаются с помощью специальных пакетов.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;В &lt;strong&gt;deb-based&lt;/strong&gt; Linux-системах (Debian/Ubuntu/Mint) — это deb-пакеты (&lt;code&gt;.deb&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;В &lt;strong&gt;rpm-based&lt;/strong&gt; Linux-системах (RHEL/Fedora/Rocky Linux) — это rpm-пакеты (&lt;code&gt;.rpm&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В этой статье разбираемся с пакетным менеджером &lt;strong&gt;dpkg&lt;/strong&gt;, который работает с &lt;strong&gt;deb-пакетами&lt;/strong&gt;. Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/package-managers-apt-get/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ apt / apt-get
+&lt;/a&gt;
+ — умный пакетный менеджер в &lt;strong&gt;deb-based&lt;/strong&gt; Linux-системах. А вот &lt;strong&gt;dpkg&lt;/strong&gt; не такой умный, он не работает с репозиториями и не может скачать оттуда зависимости, но это низкоуровневый инструментом и используется тем же &lt;strong&gt;apt&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
