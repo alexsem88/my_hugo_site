@@ -13,7 +13,7 @@
 &lt;p&gt;&lt;em&gt;Поехали&lt;/em&gt;🚀&lt;/p&gt;
 &lt;h2 id="установка-postgresql-из-репозитория"&gt;Установка PostgreSQL из репозитория&lt;/h2&gt;
 &lt;h3 id="добавление-репозитория"&gt;Добавление репозитория&lt;/h3&gt;
-&lt;p&gt;Добавим официальный репозиторий PostgreSQL в систему:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/install-software/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Добавим официальный репозиторий PostgreSQL в систему:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Официальные снапшоты репозиториев &lt;strong&gt;Debian&lt;/strong&gt; доступны по адресу: &lt;a href="https://snapshot.debian.org/"
  
  target="_blank" rel="noopener noreferrer"&gt;
