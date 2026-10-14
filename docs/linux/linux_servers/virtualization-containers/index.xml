@@ -175,6 +175,20 @@ ubuntu/bind9 BIND 9 is a very flexible, full-featured DNS… 117
 &lt;li&gt;не оптимален для GUI-приложений (да, запустить GUI в docker контейнере возможно, но нужно будет выполнять дополнительные действия, например пробрасывать X11-сокет в контейнер и т.п.);&lt;/li&gt;
 &lt;li&gt;требует грамотной настройки безопасности (следить за пробросом портов, запускать приложение в контейнере не от root пользователя, грамотно передавать пароли в контейнер).&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Основной компонент Docker — это служба (daemon). Служба работает в фоне и управляет контейнерами, образами, сетями, томами и другими ресурсами. Также она слушает запросы от клиентов, и выполняет задания (например: запускает новый контейнер, показывает запущенные контейнеры и т.п.).&lt;/p&gt;</description></item><item><title>Первое знакомство с Docker — установка и базовые понятия</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/git-basics/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/git-basics/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Docker&lt;/strong&gt; — это инструмент для запуска приложений в изолированных контейнерах. Он делает разработку и развертывание проще, быстрее и безопаснее. Нужен он для: изоляции приложений и их переносимости.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Плюсы&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;простота развёртывания,&lt;/li&gt;
+&lt;li&gt;экономия ресурсов по сравнению с виртуальными машинами,&lt;/li&gt;
+&lt;li&gt;стандартизация окружения.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Минусы&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;не подходит для задач, требующих полной виртуализации;&lt;/li&gt;
+&lt;li&gt;не оптимален для GUI-приложений (да, запустить GUI в docker контейнере возможно, но нужно будет выполнять дополнительные действия, например пробрасывать X11-сокет в контейнер и т.п.);&lt;/li&gt;
+&lt;li&gt;требует грамотной настройки безопасности (следить за пробросом портов, запускать приложение в контейнере не от root пользователя, грамотно передавать пароли в контейнер).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Основной компонент Docker — это служба (daemon). Служба работает в фоне и управляет контейнерами, образами, сетями, томами и другими ресурсами. Также она слушает запросы от клиентов, и выполняет задания (например: запускает новый контейнер, показывает запущенные контейнеры и т.п.).&lt;/p&gt;</description></item><item><title>Proxmox VE — создание VM для Windows 11</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-for-windows-11/</link><pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-ve-for-windows-11/</guid><description>&lt;h2 id="скачивание-образов"&gt;Скачивание образов&lt;/h2&gt;
 &lt;p&gt;Кстати, процесс установки самого сервера &lt;strong&gt;Proxmox VE 9&lt;/strong&gt; я описывал в статье — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/"
  

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Sysadminium</title><link>https://blog.sysadminium.ru/tags/git/</link><description>Recent content in Git on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Основы Git — от первого коммита до GitHub и исправления ошибок</title><link>https://blog.sysadminium.ru/docs/git/git-basics/</link><pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/git/git-basics/</guid><description>&lt;h2 id="основные-понятия-git"&gt;Основные понятия Git&lt;/h2&gt;
+&lt;p&gt;Представим, что мы правим конфиг сервера и сохраняем копии «на всякий случай»:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.bak
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.old
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.new_final
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.new_final2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Через неделю уже непонятно, какая версия рабочая, чем они отличаются и когда что менялось. А если над файлом работают двое, всё становится ещё хуже.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; — это программа, которая решает эту проблему. Она:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;помнит все версии файлов и может вернуться к любой;&lt;/li&gt;
+&lt;li&gt;показывает, что, когда и кем было изменено;&lt;/li&gt;
+&lt;li&gt;позволяет нескольким людям работать над одним проектом и потом объединять результат.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Такие программы называются системами контроля версий, а &lt;strong&gt;Git&lt;/strong&gt; — самая популярная из них.&lt;/p&gt;</description></item></channel></rss>
