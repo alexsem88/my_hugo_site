@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Последовательности и множества</title><link>https://blog.sysadminium.ru/docs/programming/sequences-sets/</link><pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/sequences-sets/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Список&lt;/strong&gt; (&lt;code&gt;list&lt;/code&gt;) — это &lt;strong&gt;изменяемая упорядоченная последовательность объектов&lt;/strong&gt;. Давайте разберём это определение по частям:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;изменяемая&lt;/strong&gt; — после создания список можно менять: добавлять, удалять и заменять элементы;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;упорядоченная&lt;/strong&gt; — элементы хранятся в том порядке, в котором мы их добавили, и у каждого есть свой номер (индекс);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;последовательность объектов&lt;/strong&gt; — в списке можно хранить объекты любых типов, причём в одном списке могут лежать объекты разных типов.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Списки в Python 3 записываются в квадратных скобках, элементы разделяются запятыми. Пустой список можно создать двумя способами: квадратными скобками или функцией &lt;code&gt;list()&lt;/code&gt;. Функция &lt;code&gt;list()&lt;/code&gt; ещё умеет превращать другие последовательности в список.&lt;/p&gt;</description></item><item><title>Python 3. Строки</title><link>https://blog.sysadminium.ru/docs/programming/python3-strings/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-strings/</guid><description>&lt;h2 id="свойства-строк"&gt;Свойства строк&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Строка&lt;/strong&gt; — это &lt;strong&gt;неизменяемая последовательность символов&lt;/strong&gt;, которая используется для хранения текстовой информации.&lt;/p&gt;
+&lt;p&gt;Строки в Python 3 записываются в одинарных или двойных кавычках. Строка объект класса &lt;strong&gt;str&lt;/strong&gt;, и у этого объекта есть идентификатор (&lt;strong&gt;id&lt;/strong&gt;). Ещё одним свойством строки является её длина.&lt;/p&gt;
+&lt;p&gt;Код:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;my_str &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Привет, мир!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(type(my_str))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(id(my_str))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(len(my_str))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Исполнение:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;class &amp;#39;str&amp;#39;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;1817049462416
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;12
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Функция &lt;strong&gt;type&lt;/strong&gt; возвращает тип объекта, &lt;strong&gt;id&lt;/strong&gt; — его идентификатор (в CPython это адрес объекта в памяти), а &lt;strong&gt;len&lt;/strong&gt; — количество символов в строке. Число, которое выведет &lt;code&gt;id&lt;/code&gt;, у вас будет другим, оно меняется при каждом запуске программы.&lt;/p&gt;</description></item><item><title>Python 3. Последовательности и множества</title><link>https://blog.sysadminium.ru/docs/programming/sequences-sets/</link><pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/sequences-sets/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Обычно в переменной мы храним одно значение: число или строку. Но очень часто нужно хранить сразу много значений: список серверов, набор пользователей, настройки программы. Для этого в Python 3 есть типы данных, которые умеют хранить в себе несколько объектов.&lt;/p&gt;
 &lt;p&gt;В этой статье поговорим о пяти таких типах:&lt;/p&gt;
 &lt;ul&gt;
@@ -199,23 +228,4 @@ print(my_set)
  в Python 3. &lt;strong&gt;Кортеж&lt;/strong&gt; — это неизменяемый список, то есть это последовательность объектов, которую нельзя изменить (можно лишь создать новый кортеж).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;my_tuple = (1, 2, &amp;#39;три&amp;#39;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, ‘три’)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа и строки.&lt;/p&gt;</description></item><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
-&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- последовательности и множества
-&lt;/a&gt;
- в Python 3. &lt;strong&gt;Список&lt;/strong&gt; — это &lt;strong&gt;изменяемая последовательность объектов&lt;/strong&gt;, причём в одном списке можно хранить объекты разных типов.&lt;/p&gt;
-&lt;p&gt;Списки в Python 3 записываются в квадратных скобках, например так:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;my_list = [1, 2, 3, 4, &amp;#39;пять&amp;#39;]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали список &lt;code&gt;[1, 2, 3, 4, 'пять']&lt;/code&gt; и связали его с переменной &lt;strong&gt;my_list&lt;/strong&gt;. Как видите, наш список хранит и числа и строки. Но Python определяет тип объектов во время выполнения, а не при их объявлении в коде. Поэтому, если например, мы захотим из каждого элемента списка отнять 1, а там окажется строка, то ошибка появится во время выполнения, а не во время компиляции.&lt;/p&gt;</description></item><item><title>Python 3. Строки</title><link>https://blog.sysadminium.ru/docs/programming/python3-strings/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-strings/</guid><description>&lt;h2 id="свойства-строк"&gt;Свойства строк&lt;/h2&gt;
-&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- последовательности и множества
-&lt;/a&gt;
- в Python 3. &lt;strong&gt;Строка&lt;/strong&gt; — это &lt;strong&gt;неизменяемая последовательность символов&lt;/strong&gt;, которая используется для хранения текстовой информации.&lt;/p&gt;
-&lt;p&gt;Строки в Python 3 записываются в одинарных или двойных кавычках, например так:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;my_str = &amp;#39;Привет Мир!&amp;#39;
-my_str = &amp;#34;Привет Мир!&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше, мы создали переменную &lt;strong&gt;my_str&lt;/strong&gt; и привязали её к объекту &lt;strong&gt;‘Привет Мир!’&lt;/strong&gt;. Это объект класса &lt;strong&gt;‘str’&lt;/strong&gt;, и у этого объекта есть идентификатор (&lt;strong&gt;id&lt;/strong&gt;). Ещё одним свойством строки является её длина.&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, ‘три’)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа и строки.&lt;/p&gt;</description></item></channel></rss>
