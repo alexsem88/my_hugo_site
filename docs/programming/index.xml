@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Программирование на Python on Sysadminium</title><link>https://blog.sysadminium.ru/docs/programming/</link><description>Recent content in Программирование на Python on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/docs/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Кортеж&lt;/strong&gt; (&lt;code&gt;tuple&lt;/code&gt;) — это упорядоченная неизменяемая последовательность объектов. Простыми словами, это почти то же самое, что &lt;a href="https://blog.sysadminium.ru/docs/programming/python3-lists/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ список
+&lt;/a&gt;
+, только после создания его нельзя изменить: нельзя добавить, удалить или заменить элемент. Если нужен другой набор значений, создаётся новый кортеж.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;
+&lt;p&gt;Код:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;my_tuple &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#39;три&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, &amp;lsquo;три&amp;rsquo;)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа, и строки. Элементы в кортеже могут быть любого типа, в том числе разных.&lt;/p&gt;</description></item><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
+&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ последовательности и множества
+&lt;/a&gt;
+ в Python 3. &lt;strong&gt;Множество&lt;/strong&gt; (&lt;code&gt;set&lt;/code&gt;) — это неупорядоченная совокупность уникальных объектов. Это значит, что:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;в множестве не может быть дубликатов;&lt;/li&gt;
+&lt;li&gt;у элементов нет порядка и индексов;&lt;/li&gt;
+&lt;li&gt;множество можно изменять: добавлять в него объекты и удалять их.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Создать множество можно с помощью фигурных скобок. От словаря оно отличается тем, что внутри перечисляются только значения, без ключей. Ниже показано, как создать множество и получить его тип и длину:&lt;/p&gt;</description></item><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -201,31 +228,4 @@ print(type(c)) # &amp;lt;class &amp;#39;complex&amp;#39;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="арифметические-операции"&gt;Арифметические операции&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; поддерживает следующие операции:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Файлы&lt;/strong&gt; — это основной тип данных в Python 3, так же как и строки, списки, числа и так далее. Создать &lt;strong&gt;объект файл&lt;/strong&gt; можно с помощью функци &lt;code&gt;open()&lt;/code&gt;. Файлы предоставляют &lt;strong&gt;методы&lt;/strong&gt; для решения распределённых задач, в основном это &lt;strong&gt;ввод&lt;/strong&gt; в файл, или &lt;strong&gt;вывод&lt;/strong&gt; из него.&lt;/p&gt;
-&lt;p&gt;Файл содержит строки. Файлы буферизируются и поддерживают позиционирование. Метод &lt;code&gt;close()&lt;/code&gt;, который закрывает файл, часто необязателен, файл автоматически закрывается при сборке мусора.&lt;/p&gt;</description></item><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
-&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- последовательности и множества
-&lt;/a&gt;
- в Python 3. &lt;strong&gt;Множество&lt;/strong&gt; — это неупорядоченная совокупность объектов, в которой не может быть дубликатов. Множество можно изменять, добавляя и удаляя из него объекты.&lt;/p&gt;
-&lt;p&gt;Объявить множество можно с помощью фигурных скобок, но в отличии от словарей не нужно указывать ключи. Создание множества и получение некоторых свойств множества показаны ниже:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;### Код
-my_set = {1, 2, 3, 4, 5} # создание множества
-print(type(my_set)) # тип
-print(len(my_set)) # длина
-print(my_set)
-
-### Исполнение
-&amp;lt;class &amp;#39;set&amp;#39;&amp;gt;
-5
-{1, 2, 3, 4, 5}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как множество не упорядочены, то: обращение по индексу, срезы, конкатенация и повторение — здесь не работают.&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
-&lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- последовательности и множества
-&lt;/a&gt;
- в Python 3. &lt;strong&gt;Кортеж&lt;/strong&gt; — это неизменяемый список, то есть это последовательность объектов, которую нельзя изменить (можно лишь создать новый кортеж).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;my_tuple = (1, 2, &amp;#39;три&amp;#39;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, ‘три’)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа и строки.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Файл содержит строки. Файлы буферизируются и поддерживают позиционирование. Метод &lt;code&gt;close()&lt;/code&gt;, который закрывает файл, часто необязателен, файл автоматически закрывается при сборке мусора.&lt;/p&gt;</description></item></channel></rss>
