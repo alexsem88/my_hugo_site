@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>О блоге</title><link>https://blog.sysadminium.ru/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/about/</guid><description>&lt;p&gt;&lt;strong&gt;Привет! Меня зовут Александр&lt;/strong&gt;. Я практикующий системный администратор с опытом более 10 лет (начал карьеру в 2013 году). А с 2014 года я плотно работаю с Linux, MikroTik и 1С.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sysadminium</title><link>https://blog.sysadminium.ru/</link><description>Recent content on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>О блоге</title><link>https://blog.sysadminium.ru/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/about/</guid><description>&lt;p&gt;&lt;strong&gt;Привет! Меня зовут Александр&lt;/strong&gt;. Я практикующий системный администратор с опытом более 10 лет (начал карьеру в 2013 году). А с 2014 года я плотно работаю с Linux, MikroTik и 1С.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Как появился этот блог?&lt;/strong&gt; Всё началось с личных заметок. Чтобы не забыть полезные команды, настройки и решения задач, я начал всё записывать. Позже я создал канал во &lt;a href="https://vk.com/linux_windows_net"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -12,7 +12,21 @@
 &lt;li&gt;регистрации и личных кабинетов;&lt;/li&gt;
 &lt;li&gt;собственной базы данных с информацией о посетителях.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Однако на сайте используется &lt;strong&gt;Яндекс Метрика&lt;/strong&gt;. Она нужна мне для того, чтобы понимать, сколько людей посещает сайт, какие материалы читают и насколько удобно пользоваться сайтом.&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
+&lt;p&gt;Однако на сайте используется &lt;strong&gt;Яндекс Метрика&lt;/strong&gt;. Она нужна мне для того, чтобы понимать, сколько людей посещает сайт, какие материалы читают и насколько удобно пользоваться сайтом.&lt;/p&gt;</description></item><item><title>Python 3. Арифметические операции</title><link>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</guid><description>&lt;h2 id="числовые-типы-данных"&gt;Числовые типы данных&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; позволяет создавать три разных типа числовых объектов:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;int&lt;/strong&gt; — целое, положительное или отрицательное число. В Python нет ограничений на размер целых чисел, то есть они могут быть очень большими (ограничена только память компьютера). Пример целого числа — 5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;float&lt;/strong&gt; — число с плавающей точкой (дробное число). Оно занимает в памяти фиксированный размер, поэтому у него есть ограничения: по максимальному значению и по точности. Пример такого числа — 1.5.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;complex&lt;/strong&gt; — комплексное число. Про них можете почитать отдельно, например в &lt;a href="http://www.mathprofi.ru/kompleksnye_chisla_dlya_chainikov.html"
+ 
+ target="_blank" rel="noopener noreferrer"&gt;
+ этой статье
+&lt;/a&gt;
+. Пример комплексного числа — 2 + 2j.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Чтобы узнать тип объекта, используется функция &lt;code&gt;type()&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
+&lt;p&gt;В Python &lt;strong&gt;файл&lt;/strong&gt; — это объект, через который программа читает данные с диска или записывает их на диск. Строки, списки, числа и словари живут в оперативной памяти и пропадают после завершения программы. Чтобы данные сохранились, их нужно записать в файл.&lt;/p&gt;
+&lt;p&gt;Создать &lt;strong&gt;объект файла&lt;/strong&gt; можно с помощью встроенной функции &lt;code&gt;open()&lt;/code&gt;. У этого объекта есть &lt;strong&gt;методы&lt;/strong&gt; для работы с содержимым: одни &lt;strong&gt;записывают&lt;/strong&gt; данные в файл, другие &lt;strong&gt;читают&lt;/strong&gt; их из него.&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -1779,28 +1793,7 @@ ZeroDivisionError: division by zero
  UDP
 &lt;/a&gt;
 .&lt;/p&gt;
-&lt;p&gt;Это &lt;strong&gt;клиент-серверный&lt;/strong&gt; протокол. При этом клиент использует &lt;strong&gt;UDP порт 68&lt;/strong&gt;, а сервер слушает &lt;strong&gt;UDP порт&lt;/strong&gt; &lt;strong&gt;67&lt;/strong&gt;. В процессе обмена информацией клиент получает от сервера IP адрес, а также может запросить некоторую другую информацию для настройки сети.&lt;/p&gt;</description></item><item><title>Python 3. Арифметические операции</title><link>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</link><pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</guid><description>&lt;h2 id="числовые-типы-данных"&gt;Числовые типы данных&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; — позволяет создавать три разных типа числовых объектов:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;int&lt;/strong&gt; — целое, положительное или отрицательное число. В Python нет ограничений на длину целых чисел, то есть целые числа могут быть очень большими. Пример целого числа — 5.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;float&lt;/strong&gt; — число с плавающей точкой. Это число уже имеет ограничение оно не может быть больше чем 2 в степени 1024. Пример такого числа — 1.5.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;complex&lt;/strong&gt; — комплексное число. Про них можете почитать отдельно, например в &lt;a href="http://www.mathprofi.ru/kompleksnye_chisla_dlya_chainikov.html"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- этой статье
-&lt;/a&gt;
-. Пример комплексного числа 2 + 2j.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;a = 5
-b = 1.5
-c = 2 + 2j
-print(type(a)) # &amp;lt;class &amp;#39;int&amp;#39;&amp;gt;
-print(type(b)) # &amp;lt;class &amp;#39;float&amp;#39;&amp;gt;
-print(type(c)) # &amp;lt;class &amp;#39;complex&amp;#39;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="арифметические-операции"&gt;Арифметические операции&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; поддерживает следующие операции:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Файлы&lt;/strong&gt; — это основной тип данных в Python 3, так же как и строки, списки, числа и так далее. Создать &lt;strong&gt;объект файл&lt;/strong&gt; можно с помощью функци &lt;code&gt;open()&lt;/code&gt;. Файлы предоставляют &lt;strong&gt;методы&lt;/strong&gt; для решения распределённых задач, в основном это &lt;strong&gt;ввод&lt;/strong&gt; в файл, или &lt;strong&gt;вывод&lt;/strong&gt; из него.&lt;/p&gt;
-&lt;p&gt;Файл содержит строки. Файлы буферизируются и поддерживают позиционирование. Метод &lt;code&gt;close()&lt;/code&gt;, который закрывает файл, часто необязателен, файл автоматически закрывается при сборке мусора.&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
+&lt;p&gt;Это &lt;strong&gt;клиент-серверный&lt;/strong&gt; протокол. При этом клиент использует &lt;strong&gt;UDP порт 68&lt;/strong&gt;, а сервер слушает &lt;strong&gt;UDP порт&lt;/strong&gt; &lt;strong&gt;67&lt;/strong&gt;. В процессе обмена информацией клиент получает от сервера IP адрес, а также может запросить некоторую другую информацию для настройки сети.&lt;/p&gt;</description></item><item><title>Бесплатные утилиты для Windows</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</link><pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/free-utilities-windows/</guid><description>&lt;h2 id="анализ-ошибок"&gt;Анализ ошибок&lt;/h2&gt;
 &lt;h3 id="bluescreenview"&gt;BlueScreenView&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;BlueScreenView&lt;/strong&gt; — это бесплатная утилита от NirSoft. Показывает список всех файлов дампа памяти, созданных при BSOD. Предоставляет информацию о коде ошибки, драйверах или модулях, которые могли вызвать сбой.&lt;/p&gt;
 &lt;p&gt;Внешний вид:&lt;/p&gt;
