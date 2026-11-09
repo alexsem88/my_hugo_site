@@ -4,6 +4,17 @@
 &lt;p&gt;&lt;strong&gt;Линейное выполнение кода&lt;/strong&gt; — это когда интерпретатор выполняет код последовательно, строчка за строчкой. Но программируя, можно задавать некоторые условия, и в зависимости от этих условий интерпретатор начнёт выполнять одни или другие строчки кода.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260727145326.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;В примере выше, при нелинейном выполнении кода, если условие выполняется, то мы выполняем &lt;strong&gt;шаг 3&lt;/strong&gt;, а если не выполняется, то &lt;strong&gt;шаг 2&lt;/strong&gt;. А затем, в любом случае выполняем &lt;strong&gt;шаг 4&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h3 id="использование-условного-оператора-if"&gt;Использование условного оператора if&lt;/h3&gt;
 &lt;p&gt;Для того, чтобы использовать условия в коде &lt;strong&gt;Python&lt;/strong&gt;, существует условный оператор — &lt;code&gt;if&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Python 3. Арифметические операции</title><link>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-arithmetic-operations/</guid><description>&lt;h2 id="числовые-типы-данных"&gt;Числовые типы данных&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Python 3&lt;/strong&gt; позволяет создавать три разных типа числовых объектов:&lt;/p&gt;
