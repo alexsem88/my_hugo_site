@@ -44,6 +44,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;/a&gt;
 . Пример комплексного числа — 2 + 2j.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Чтобы узнать тип объекта, используется функция &lt;code&gt;type()&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Python 3. Работа с файлами</title><link>https://blog.sysadminium.ru/docs/programming/python-3-files/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-3-files/</guid><description>&lt;h2 id="что-такое-файлы-в-python"&gt;Что такое файлы в Python&lt;/h2&gt;
 &lt;p&gt;В Python &lt;strong&gt;файл&lt;/strong&gt; — это объект, через который программа читает данные с диска или записывает их на диск. Строки, списки, числа и словари живут в оперативной памяти и пропадают после завершения программы. Чтобы данные сохранились, их нужно записать в файл.&lt;/p&gt;
 &lt;p&gt;Создать &lt;strong&gt;объект файла&lt;/strong&gt; можно с помощью встроенной функции &lt;code&gt;open()&lt;/code&gt;. У этого объекта есть &lt;strong&gt;методы&lt;/strong&gt; для работы с содержимым: одни &lt;strong&gt;записывают&lt;/strong&gt; данные в файл, другие &lt;strong&gt;читают&lt;/strong&gt; их из него.&lt;/p&gt;</description></item><item><title>Python 3. Кортежи</title><link>https://blog.sysadminium.ru/docs/programming/python3-tuples/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-tuples/</guid><description>&lt;h2 id="свойства-индексация-и-срезы"&gt;Свойства, индексация и срезы&lt;/h2&gt;
@@ -58,10 +69,18 @@ window.yaContextCb.push(() =&gt; {
  список
 &lt;/a&gt;
 , только после создания его нельзя изменить: нельзя добавить, удалить или заменить элемент. Если нужен другой набор значений, создаётся новый кортеж.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;
-&lt;p&gt;Код:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;my_tuple &lt;span style="color:#f92672"&gt;=&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#39;три&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;В коде выше мы создали кортеж &lt;strong&gt;(1, 2, &amp;lsquo;три&amp;rsquo;)&lt;/strong&gt; и связали его с переменной &lt;strong&gt;my_tuple&lt;/strong&gt;. Как видите, наш кортеж хранит и числа, и строки. Элементы в кортеже могут быть любого типа, в том числе разных.&lt;/p&gt;</description></item><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Кортежи&lt;/strong&gt; в Python 3 записываются в круглых скобках, например так:&lt;/p&gt;</description></item><item><title>Python 3. Множества</title><link>https://blog.sysadminium.ru/docs/programming/python3-set/</link><pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-set/</guid><description>&lt;h2 id="свойства-множеств"&gt;Свойства множеств&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
  target="_blank" rel="noopener noreferrer"&gt;
