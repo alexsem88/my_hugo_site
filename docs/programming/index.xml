@@ -82,6 +82,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;у элементов нет порядка и индексов;&lt;/li&gt;
 &lt;li&gt;множество можно изменять: добавлять в него объекты и удалять их.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Создать множество можно с помощью фигурных скобок. От словаря оно отличается тем, что внутри перечисляются только значения, без ключей. Ниже показано, как создать множество и получить его тип и длину:&lt;/p&gt;</description></item><item><title>Python 3. Списки</title><link>https://blog.sysadminium.ru/docs/programming/python3-lists/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-lists/</guid><description>&lt;h2 id="свойства-индексация-и-срезы-списков"&gt;Свойства, индексация и срезы списков&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
@@ -94,6 +105,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;strong&gt;упорядоченная&lt;/strong&gt; — элементы хранятся в том порядке, в котором мы их добавили, и у каждого есть свой номер (индекс);&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;последовательность объектов&lt;/strong&gt; — в списке можно хранить объекты любых типов, причём в одном списке могут лежать объекты разных типов.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Списки в Python 3 записываются в квадратных скобках, элементы разделяются запятыми. Пустой список можно создать двумя способами: квадратными скобками или функцией &lt;code&gt;list()&lt;/code&gt;. Функция &lt;code&gt;list()&lt;/code&gt; ещё умеет превращать другие последовательности в список.&lt;/p&gt;</description></item><item><title>Python 3. Строки</title><link>https://blog.sysadminium.ru/docs/programming/python3-strings/</link><pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-strings/</guid><description>&lt;h2 id="свойства-строк"&gt;Свойства строк&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
@@ -101,18 +123,36 @@ window.yaContextCb.push(() =&gt; {
  последовательности и множества
 &lt;/a&gt;
  в Python 3. &lt;strong&gt;Строка&lt;/strong&gt; — это &lt;strong&gt;неизменяемая последовательность символов&lt;/strong&gt;, которая используется для хранения текстовой информации.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Строки в Python 3 записываются в одинарных или двойных кавычках. Строка объект класса &lt;strong&gt;str&lt;/strong&gt;, и у этого объекта есть идентификатор (&lt;strong&gt;id&lt;/strong&gt;). Ещё одним свойством строки является её длина.&lt;/p&gt;
 &lt;p&gt;Код:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;my_str &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Привет, мир!&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(type(my_str))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(id(my_str))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(len(my_str))
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Исполнение:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;class &amp;#39;str&amp;#39;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;1817049462416
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;12
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Функция &lt;strong&gt;type&lt;/strong&gt; возвращает тип объекта, &lt;strong&gt;id&lt;/strong&gt; — его идентификатор (в CPython это адрес объекта в памяти), а &lt;strong&gt;len&lt;/strong&gt; — количество символов в строке. Число, которое выведет &lt;code&gt;id&lt;/code&gt;, у вас будет другим, оно меняется при каждом запуске программы.&lt;/p&gt;</description></item><item><title>Python 3. Последовательности и множества</title><link>https://blog.sysadminium.ru/docs/programming/sequences-sets/</link><pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/sequences-sets/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Исполнение:&lt;/p&gt;</description></item><item><title>Python 3. Последовательности и множества</title><link>https://blog.sysadminium.ru/docs/programming/sequences-sets/</link><pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/sequences-sets/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Обычно в переменной мы храним одно значение: число или строку. Но очень часто нужно хранить сразу много значений: список серверов, набор пользователей, настройки программы. Для этого в Python 3 есть типы данных, которые умеют хранить в себе несколько объектов.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;В этой статье поговорим о пяти таких типах:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Строки&lt;/strong&gt; (&lt;code&gt;str&lt;/code&gt;) — неизменяемые последовательности символов. Изменить строку нельзя, можно только создать новую. Символы в строке пронумерованы слева направо, нумерация начинается с нуля. Обычно строки используют для хранения текста.&lt;/li&gt;
@@ -136,6 +176,17 @@ window.yaContextCb.push(() =&gt; {
  интерпретатор Python
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;А в Windows его нужно скачать и установить. Скачать установщик можно на &lt;a href="https://www.python.org/downloads/"
  
  target="_blank" rel="noopener noreferrer"&gt;
