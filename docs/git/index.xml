@@ -6,6 +6,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.new_final
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx.conf.new_final2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Через неделю уже непонятно, какая версия рабочая, чем они отличаются и когда что менялось. А если над файлом работают двое, всё становится ещё хуже.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; — это программа, которая решает эту проблему. Она:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;помнит все версии файлов и может вернуться к любой;&lt;/li&gt;

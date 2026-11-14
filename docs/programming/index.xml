@@ -200,6 +200,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(&lt;span style="color:#e6db74"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Функция &lt;strong&gt;print()&lt;/strong&gt; — это встроенная функция, то есть она заранее определена в самом языке и её не нужно подключать. В &lt;strong&gt;Python 3&lt;/strong&gt; вы можете создавать и собственные функции, но об этом поговорим в отдельной статье.&lt;/p&gt;</description></item><item><title>Интерпретатор Python</title><link>https://blog.sysadminium.ru/docs/programming/python-interpreter/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python-interpreter/</guid><description>&lt;h2 id="компилируемые-и-интерпретируемые-языки-программирования"&gt;Компилируемые и интерпретируемые языки программирования&lt;/h2&gt;
 &lt;p&gt;Языки программирования высокого уровня ближе к человеческому языку, чем к машинному. А процессор понимает только &lt;strong&gt;машинный код&lt;/strong&gt;. Поэтому программу, написанную на таком языке, нужно перевести в машинный код. Такими переводчиками стали &lt;strong&gt;компиляторы&lt;/strong&gt; и &lt;strong&gt;интерпретаторы&lt;/strong&gt;. Исторически все высокоуровневые языки делят на &lt;strong&gt;компилируемые&lt;/strong&gt; и &lt;strong&gt;интерпретируемые&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Если язык &lt;strong&gt;компилируемый&lt;/strong&gt;, например &lt;strong&gt;C&lt;/strong&gt;, то написав код программы, вы вначале &lt;strong&gt;компилируете&lt;/strong&gt; его, то есть целиком переводите в машинный код. В результате получается бинарный файл, который можно выполнять. Такие файлы &lt;strong&gt;платформозависимы&lt;/strong&gt;: для другой операционной системы или другого типа процессора код нужно компилировать заново. Зато работают они очень быстро, ведь в них уже записан машинный код, который процессор выполняет напрямую.&lt;/p&gt;</description></item><item><title>Python 3. Словари</title><link>https://blog.sysadminium.ru/docs/programming/python3-dictionaries/</link><pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-dictionaries/</guid><description>&lt;h2 id="свойства-словарей"&gt;Свойства словарей&lt;/h2&gt;
 &lt;p&gt;Я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/sequences-sets/"
  
