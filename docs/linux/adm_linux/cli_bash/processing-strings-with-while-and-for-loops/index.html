@@ -8,7 +8,7 @@ cat /etc/passwd | cut -f 1 -d &#34;:&#34; | while read line
   do
     echo &#34;В системе есть пользователь - $line&#34;
   done
-</code></pre><p>Пример 2. Выводим список процессов текущего пользователя:</p><pre tabindex=0><code>#!/bin/bash
+</code></pre><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Пример 2. Выводим список процессов текущего пользователя:</p><pre tabindex=0><code>#!/bin/bash
 ps -u $USER -o pid | grep -v PID | while read line
   do
     ps -p $line -o pid,comm,rss -h

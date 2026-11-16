@@ -29,7 +29,7 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 36 bits physical, 48 bits virtual
 power management:
-</code></pre><ul><li>Видим информацию по каждому ядру - у меня их 8, отсчет начинается с нуля, последнее (<code>processor : 7</code>).</li><li>Модель процессора (<code>model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz</code>).</li></ul><h3 id=утилита-lscpu>Утилита lscpu</h3><p>Также вы можете использовать утилиту <strong>lscpu</strong>, которая получает информацию из уже рассмотренного файла <code>/proc/cpuinfo</code> и файловой системы <strong>sysfs</strong>. Эта команда выводит информацию об архитектуре ЦП, например:</p><pre tabindex=0><code># lscpu 
+</code></pre><ul><li>Видим информацию по каждому ядру - у меня их 8, отсчет начинается с нуля, последнее (<code>processor : 7</code>).</li><li>Модель процессора (<code>model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz</code>).</li></ul><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><h3 id=утилита-lscpu>Утилита lscpu</h3><p>Также вы можете использовать утилиту <strong>lscpu</strong>, которая получает информацию из уже рассмотренного файла <code>/proc/cpuinfo</code> и файловой системы <strong>sysfs</strong>. Эта команда выводит информацию об архитектуре ЦП, например:</p><pre tabindex=0><code># lscpu 
 Architecture:        x86_64
 CPU op-mode(s):      32-bit, 64-bit
 Byte Order:          Little Endian

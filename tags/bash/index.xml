@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on Sysadminium</title><link>https://blog.sysadminium.ru/tags/bash/</link><description>Recent content in Bash on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Шаблоны файлов и скриптов в Bash - метод heredoc</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-heredoc/</link><pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-heredoc/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Heredoc&lt;/strong&gt; &lt;em&gt;(Here Documents)&lt;/em&gt; - это встроенный механизм командных оболочек (bash, sh, zsh), позволяющий передавать команде многострочный текст прямо из терминала, не создавая для этого временный файл. Проще говоря, это способ сказать оболочке: &amp;ldquo;Всё, что я напишу до слова-метки, воспринимай как единый стандартный ввод &lt;strong&gt;(stdin)&lt;/strong&gt; для программы&amp;rdquo;. Метка должна быть написана на последней строчке с начала строки.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Базовый синтаксис:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;команда &amp;lt;&amp;lt; EOF
 строка 1
@@ -21,7 +32,18 @@ cat /etc/passwd | cut -f 1 -d &amp;#34;:&amp;#34; | while read line
  do
  echo &amp;#34;В системе есть пользователь - $line&amp;#34;
  done
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Пример 2. Выводим список процессов текущего пользователя:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Пример 2. Выводим список процессов текущего пользователя:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash
 ps -u $USER -o pid | grep -v PID | while read line
  do
@@ -38,6 +60,17 @@ ps -u $USER -o pid | grep -v PID | while read line
 &lt;li&gt;MATE&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Но не работает в небольших графических окружения (i3, Openbox, AwesomeWM).&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Для начала представляю вам весь скрипт целиком. Он хорошо прокомментирован и, возможно, вы поймете его работу сразу. А для тех, кто только учится писать скрипты, ниже я опишу его подробнее.&lt;/p&gt;</description></item><item><title>Изменение строки в конфиге с помощью sed</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/changing-line-in-config-using-sed/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Когда требуется поправить какой-нибудь конфиг, мы можем сделать это с помощью какого-нибудь редактора, например &lt;strong&gt;nano&lt;/strong&gt;. Но иногда хочется чтобы конфиг менялся по команде, например из скрипта, или из подготовленной инструкции. Это возможно сделать с помощью утилиты &lt;strong&gt;sed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sed&lt;/strong&gt; позволяет производить фильтрацию, поиск, замену, вставку и удаление строк или частей текста в файлах или потоках данных. Вот несколько примеров её работы.&lt;/p&gt;
@@ -45,7 +78,18 @@ ps -u $USER -o pid | grep -v PID | while read line
 &lt;li&gt;Редактирование строк с помощью регулярных выражений, но без редактирования самого файла. Замена производится с помощью команды &lt;code&gt;s&lt;/code&gt;, мы говорим что и на что меняем.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# sed &amp;#39;s/old/new/&amp;#39; file.txt 
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Предыдущая команда не редактирует файл. Внесение изменений непосредственно в файл производится с помощью опции &lt;code&gt;-i&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# sed -i &amp;#39;s/old/new/&amp;#39; file.txt
@@ -68,6 +112,17 @@ ps -u $USER -o pid | grep -v PID | while read line
 &lt;li&gt;&lt;code&gt;./openfiles.sh -h&lt;/code&gt; — показать справку;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;./openfiles.sh &amp;lt;имя_или_uid&amp;gt;&lt;/code&gt; — показать число открытых файлов linux.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="текст-скрипта"&gt;Текст скрипта&lt;/h2&gt;
 &lt;p&gt;Вот сам скрипт:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash

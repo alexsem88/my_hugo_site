@@ -24,6 +24,17 @@
 &lt;li&gt;&lt;code&gt;loginctl&lt;/code&gt; — управляет сессиями и пользователями,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;journalctl&lt;/code&gt; — позволяет просматривать системный жунрал.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="команда-systemctl"&gt;Команда systemctl&lt;/h2&gt;
 &lt;p&gt;Напомню основные подкоманды для &lt;code&gt;systemctl&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
 &lt;p&gt;Итак, мы уже познакомились с юнитами SystemD — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"

@@ -19,6 +19,17 @@
 &lt;/a&gt;
  — умный пакетный менеджер в &lt;strong&gt;deb-based&lt;/strong&gt; Linux-системах. А вот &lt;strong&gt;dpkg&lt;/strong&gt; не такой умный, он не работает с репозиториями и не может скачать оттуда зависимости, но это низкоуровневый инструментом и используется тем же &lt;strong&gt;apt&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Шаблоны файлов и скриптов в Bash - метод heredoc</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-heredoc/</link><pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/bash-heredoc/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Heredoc&lt;/strong&gt; &lt;em&gt;(Here Documents)&lt;/em&gt; - это встроенный механизм командных оболочек (bash, sh, zsh), позволяющий передавать команде многострочный текст прямо из терминала, не создавая для этого временный файл. Проще говоря, это способ сказать оболочке: &amp;ldquo;Всё, что я напишу до слова-метки, воспринимай как единый стандартный ввод &lt;strong&gt;(stdin)&lt;/strong&gt; для программы&amp;rdquo;. Метка должна быть написана на последней строчке с начала строки.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Базовый синтаксис:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;команда &amp;lt;&amp;lt; EOF
 строка 1
@@ -131,6 +142,17 @@ alex
 &lt;li&gt;MATE&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Но не работает в небольших графических окружения (i3, Openbox, AwesomeWM).&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Для начала представляю вам весь скрипт целиком. Он хорошо прокомментирован и, возможно, вы поймете его работу сразу. А для тех, кто только учится писать скрипты, ниже я опишу его подробнее.&lt;/p&gt;</description></item><item><title>Утилита dmidecode</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</link><pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/dmidecode-utility/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Я уже писал статью — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/information-about-hardware/"
  
@@ -152,7 +174,18 @@ alex
 &lt;li&gt;Редактирование строк с помощью регулярных выражений, но без редактирования самого файла. Замена производится с помощью команды &lt;code&gt;s&lt;/code&gt;, мы говорим что и на что меняем.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# sed &amp;#39;s/old/new/&amp;#39; file.txt 
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Предыдущая команда не редактирует файл. Внесение изменений непосредственно в файл производится с помощью опции &lt;code&gt;-i&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# sed -i &amp;#39;s/old/new/&amp;#39; file.txt
@@ -317,6 +350,17 @@ power management:
 &lt;li&gt;Видим информацию по каждому ядру - у меня их 8, отсчет начинается с нуля, последнее (&lt;code&gt;processor : 7&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Модель процессора (&lt;code&gt;model name : Intel(R) Xeon(R) CPU E3-1245 V2 @ 3.40GHz&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h3 id="утилита-lscpu"&gt;Утилита lscpu&lt;/h3&gt;
 &lt;p&gt;Также вы можете использовать утилиту &lt;strong&gt;lscpu&lt;/strong&gt;, которая получает информацию из уже рассмотренного файла &lt;code&gt;/proc/cpuinfo&lt;/code&gt; и файловой системы &lt;strong&gt;sysfs&lt;/strong&gt;. Эта команда выводит информацию об архитектуре ЦП, например:&lt;/p&gt;</description></item><item><title>Лимиты на inotify</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/inotify-limits/</link><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/inotify-limits/</guid><description>&lt;h2 id="подсистемаinotify"&gt;Подсистема inotify&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Подсистема inotify&lt;/strong&gt; — позволяет получать уведомления о событиях, связанных с файлами и каталогами файловой системы. То есть, если нам нужно следить за изменениями в каком-то каталоге, мы создаем &lt;strong&gt;экземпляр (instances)&lt;/strong&gt; &lt;strong&gt;inotify&lt;/strong&gt; в ядре и начинаем следить за каталог. В случае если какой-нибудь файл в этом каталоге изменится или удалится, то мы получим уведомление.&lt;/p&gt;
@@ -433,17 +477,34 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  этой статье
 &lt;/a&gt;
 .&lt;/p&gt;
-&lt;p&gt;Но при выполнении команды происходит кое-что ещё. Когда команда выполняется то результат её выполнения записывается в особую переменную — &lt;code&gt;?&lt;/code&gt;. Результат выполнения может быть:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Успешным&lt;/strong&gt;. Тогда в переменную запишется &lt;code&gt;0&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Не успешным&lt;/strong&gt;, то есть при выполнении были ошибки. Тогда в переменную запишется не ноль, а какое-нибудь другое число. Это число зависит от ошибки.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Посмотреть значение этой переменной можно с помощью команды &lt;code&gt;echo&lt;/code&gt;. Символ &lt;code&gt;$&lt;/code&gt; перед именем переменной означает то что нам нужно вывести значение переменной, а не её имя:&lt;/p&gt;</description></item><item><title>Перенаправление потоков ввода вывода</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</link><pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</guid><description>&lt;h2 id="стандартные-потоки"&gt;Стандартные потоки&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Но при выполнении команды происходит кое-что ещё. Когда команда выполняется то результат её выполнения записывается в особую переменную — &lt;code&gt;?&lt;/code&gt;. Результат выполнения может быть:&lt;/p&gt;</description></item><item><title>Перенаправление потоков ввода вывода</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</link><pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/redirecting-io-streams/</guid><description>&lt;h2 id="стандартные-потоки"&gt;Стандартные потоки&lt;/h2&gt;
 &lt;p&gt;Когда вы выполняете какую-нибудь команду и это действие выводит что-то на экран терминала. То этот вывод может идти по разным потокам:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;вывод информации &lt;strong&gt;(stdout)&lt;/strong&gt;;&lt;/li&gt;
 &lt;li&gt;вывод ошибок &lt;strong&gt;(stderr)&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Оба эти потока, по умолчанию, привязаны к терминалу, поэтому весь вывод вы видите на экране терминала. Например, попробуем найти что-нибудь в каталоге &lt;strong&gt;/home&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ find /home/ -name alex
 find: ‘/home/dima’: Отказано в доступе
@@ -478,6 +539,17 @@ find: ‘/home/lena’: Отказано в доступе
 &lt;li&gt;&lt;code&gt;loginctl&lt;/code&gt; — управляет сессиями и пользователями,&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;journalctl&lt;/code&gt; — позволяет просматривать системный жунрал.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="команда-systemctl"&gt;Команда systemctl&lt;/h2&gt;
 &lt;p&gt;Напомню основные подкоманды для &lt;code&gt;systemctl&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>SystemD - Таймеры (timer)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</link><pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-timer/</guid><description>&lt;h2 id="юниты-systemd-типа-timer"&gt;Юниты SystemD типа timer&lt;/h2&gt;
 &lt;p&gt;Итак, мы уже познакомились с юнитами SystemD — &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
@@ -512,10 +584,18 @@ find: ‘/home/lena’: Отказано в доступе
 . Теперь узнаем про другой тип юнитов SystemD — про &lt;strong&gt;target&lt;/strong&gt;. Таргеты позволяют объединить различные юниты в группу. Например, можно создать &lt;strong&gt;target&lt;/strong&gt; который будет запускать сразу несколько служб.&lt;/p&gt;
 &lt;p&gt;В отличие от сервисов, этот тип юнитов имеют только 2 блока — &lt;code&gt;[Unit]&lt;/code&gt; и &lt;code&gt;[Install]&lt;/code&gt;. Отдельного блока &lt;code&gt;[target]&lt;/code&gt; не существует.&lt;/p&gt;</description></item><item><title>Генерация пароля в терминале Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</link><pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/generate-password-linux-terminal/</guid><description>&lt;h2 id="используем-devurandom"&gt;Используем /dev/urandom&lt;/h2&gt;
 &lt;p&gt;При чтении устройство &lt;strong&gt;/dev/urandom&lt;/strong&gt; возвращает бесконечный набор случайных байтов. Этот вывод можно отфильтровать с помощью утилиты &lt;strong&gt;tr&lt;/strong&gt;. Затем, вывод передать команде &lt;strong&gt;xargs&lt;/strong&gt; которая, по умолчанию выполняет команду &lt;strong&gt;echo&lt;/strong&gt; и ей передается всё, что было прочитано из стандартного ввода. А с помощью утилиты &lt;strong&gt;head&lt;/strong&gt; можно указать необходимое количество символов в пароле.&lt;/p&gt;
-&lt;p&gt;То есть сгенерировать пароль в Linux поможет следующая команда:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;$ tr -dc A-Za-z0-9_ &amp;lt; /dev/urandom | head -c 10 | xargs
-AurTdatFbw
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Вы можете сделать bash функцию и записать её в ваш &lt;strong&gt;.bashrc&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;То есть сгенерировать пароль в Linux поможет следующая команда:&lt;/p&gt;</description></item><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
 &lt;p&gt;В &lt;strong&gt;SystemD&lt;/strong&gt; все сервисы которые можно запускать или останавливать описываются в специальных юнитах &lt;strong&gt;service&lt;/strong&gt;. Это значит, что в таких юнитах описывается вся информация, которая поможет запустить сервис (службу).&lt;/p&gt;
 &lt;p&gt;Наверно юниты SystemD следовало изучать после изучения процессов. И скорее всего в будущем я поменяю очерёдность в оглавлении. Но сейчас я постарался описать службы (юниты типа service) с минимальным объяснением процессов.&lt;/p&gt;
 &lt;p&gt;Как вам известно, юниты — это обычные файлы. В юнитах типа &lt;strong&gt;service&lt;/strong&gt; описывается способ запуска исполняемых файлов (бинарных или скриптов).&lt;/p&gt;</description></item><item><title>Система инициализации systemd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</guid><description>&lt;h2 id="что-такое-система-инициализации"&gt;Что такое система инициализации&lt;/h2&gt;
@@ -536,6 +616,17 @@ AurTdatFbw
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ date
 Ср 13 июл 2022 13:40:27 UTC
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В выводе мы видим не только дату и время, но также и часовой пояс. Сейчас вместо часового пояса используется UTC.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Также можно использовать другую команду — &lt;strong&gt;timedatectl&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ timedatectl
  Local time: Ср 2022-07-20 07:56:41 UTC
@@ -557,6 +648,17 @@ System clock synchronized: yes
 &lt;li&gt;справочной информации;&lt;/li&gt;
 &lt;li&gt;вывода консольных утилит.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Но &lt;strong&gt;locale&lt;/strong&gt; влияет не только на язык. Дополнительно это влияет на формат чисел, даты и времени, денежной валюты и другого.&lt;/p&gt;
 &lt;h2 id="определение-текущей-locale-в-системе"&gt;Определение текущей locale в системе&lt;/h2&gt;
 &lt;p&gt;Во-первых давайте определим с какими региональными настройками вы работаете в данный момент. Другими словами, какая locale сейчас используется в вашей linux системе. Для этого нужно выполнить команду &lt;strong&gt;locale&lt;/strong&gt; без дополнительных параметров:&lt;/p&gt;</description></item><item><title>Снапшоты репозиториев debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/debian-repository-snapshots/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/debian-repository-snapshots/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
@@ -709,12 +811,20 @@ drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir2
 -rw-r--r-- 1 alex alex 0 дек 21 12:55 file1.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если нужно сделать некий путь из каталогов, то есть создать каталог, в нем еще один каталог и так далее, то для команды &lt;code&gt;mkdir&lt;/code&gt; нужно использовать опцию &lt;code&gt;-p&lt;/code&gt;, например:&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
 &lt;p&gt;Все примеры я буду показывать на Debian 11, так как на Ubuntu 22.04 все выполняется аналогично. Вообще в Linux работа в терминале на любых системах практически одинакова. Поэтому создание, редактирование и чтение файлов можно продемонстрировать на любой системе.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Для создания текстового файла служит команда &lt;code&gt;touch&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ touch file.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;С помощью команды &lt;code&gt;ls&lt;/code&gt; можно посмотреть какие файлы есть в каталоге:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;$ ls
-file.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;У команды &lt;code&gt;ls&lt;/code&gt; есть дополнительные опции:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;С помощью команды &lt;code&gt;ls&lt;/code&gt; можно посмотреть какие файлы есть в каталоге:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Multi boot&lt;/strong&gt; (множественная загрузка) — это когда вы можете на одном компьютере загружать разные операционные системы. Чаще всего это Windows и различные Linux системы. &lt;strong&gt;Dual boot&lt;/strong&gt; (двойная загрузка) — это вариант &lt;strong&gt;Multi boot&lt;/strong&gt;, если используется всего 2 системы.&lt;/p&gt;
 &lt;p&gt;Причины использования dual boot:&lt;/p&gt;
 &lt;ul&gt;
@@ -750,12 +860,21 @@ file.txt
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Метаданные&lt;/strong&gt; — это данные о данных, например файл содержит какие-то данные, а метаданные это:&lt;/p&gt;</description></item><item><title>Перемещение по каталогам linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/peremeshchenie_po_katalogam_linux/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/peremeshchenie_po_katalogam_linux/</guid><description>&lt;h2 id="текущий-или-рабочий-каталога"&gt;Текущий или рабочий каталога&lt;/h2&gt;
 &lt;p&gt;Все команды на этом уроке можно выполнять и на Ubuntu 22.04 и на Debian 11, при этом поведение будем одинаковым!&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Первым делом нужно понять в каком каталоге вы находитесь, для этого есть команда &lt;code&gt;pwd&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;alex@deb:~$ pwd
 /home/alex
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из вывода ясно что вы находитесь в каталоге &lt;strong&gt;/home/alex&lt;/strong&gt;, это домашний каталог пользователя &lt;strong&gt;alex&lt;/strong&gt;. Тот каталог в котором вы находитесь называют текущим или рабочим каталогом.&lt;/p&gt;
-&lt;h2 id="перемещение-по-каталогам"&gt;Перемещение по каталогам&lt;/h2&gt;
-&lt;p&gt;Перемещаться по каталогам в Linux не сложно, и для этого используют команду — &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из вывода ясно что вы находитесь в каталоге &lt;strong&gt;/home/alex&lt;/strong&gt;, это домашний каталог пользователя &lt;strong&gt;alex&lt;/strong&gt;. Тот каталог в котором вы находитесь называют текущим или рабочим каталогом.&lt;/p&gt;</description></item><item><title>Единое дерево каталогов (стандарт FHS)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</link><pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/linux-filesystem-hierarchy/</guid><description>&lt;h2 id="единое-дерево-каталогов"&gt;Единое дерево каталогов&lt;/h2&gt;
 &lt;p&gt;В дистрибутивах Linux нет привычных для пользователя Windows дисков, например диск &lt;code&gt;C:\&lt;/code&gt; или &lt;code&gt;D:\&lt;/code&gt;. Вместо этого в Linux существует единое дерево каталогов с корневым каталогом &lt;code&gt;/&lt;/code&gt;, который называют &amp;ldquo;root (&lt;em&gt;корень&lt;/em&gt;)&amp;rdquo;. Получается примерно такая древовидная структура каталогов:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/
 /каталог_1
