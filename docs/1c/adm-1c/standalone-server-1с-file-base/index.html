@@ -5,7 +5,7 @@
 сайте ИТС
 </a>.</p><p>Автономный сервер (<strong>ibsrv</strong>) и утилита для управления им (<strong>ibcmd</strong>) будут установлены вместе с сервером 1С. Про установку сервера 1С я писал <a href=https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/ target=_blank rel="noopener noreferrer">
 здесь
-</a>. И так, если у вас уже установлен сервер 1С, то начинаем.</p><p>Создадим в своём домашнем каталоге следующие подкаталоги:</p><ul><li><code>base1/data</code> — для хранения служебных файлов базы;</li><li><code>base1/db</code> — для хранения файловой базы.</li></ul><pre tabindex=0><code>$ mkdir -p base1/{data,db}
+</a>. И так, если у вас уже установлен сервер 1С, то начинаем.</p><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Создадим в своём домашнем каталоге следующие подкаталоги:</p><ul><li><code>base1/data</code> — для хранения служебных файлов базы;</li><li><code>base1/db</code> — для хранения файловой базы.</li></ul><pre tabindex=0><code>$ mkdir -p base1/{data,db}
 </code></pre><p>Перейдем в каталог установленной платформы:</p><pre tabindex=0><code>$ cd /opt/1cv8/x86_64/8.3.25.1374/
 </code></pre><p>И с помощью утилиты <strong>ibcmd</strong> создадим конфиг для базы, который назовём <strong>conf.yml</strong>:</p><pre tabindex=0><code>$ ./ibcmd server config init \
   --name=base1 \

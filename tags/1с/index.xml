@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1с on Sysadminium</title><link>https://blog.sysadminium.ru/tags/1%D1%81/</link><description>Recent content in 1с on Sysadminium</description><generator>Hugo</generator><language>ru-ru</language><lastBuildDate>Mon, 07 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sysadminium.ru/tags/1%D1%81/index.xml" rel="self" type="application/rss+xml"/><item><title>Частые ошибки 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</guid><description>&lt;h2 id="вступление"&gt;Вступление&lt;/h2&gt;
 &lt;p&gt;В работе с 1С пользователи и администраторы регулярно сталкиваются с типовыми ошибками. Многие из них решаются довольно быстро, если понимать причину проблемы. В этой статье рассмотрим несколько распространённых ошибок 1С и способы их устранения.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="очистка-клиентского-кэша-1с"&gt;Очистка клиентского кэша 1С&lt;/h2&gt;
 &lt;p&gt;Когда вы работаете с базой 1С в клиент-серверном варианте, то можете использовать толстый или тонкий клиент.&lt;/p&gt;
 &lt;ul&gt;
@@ -8,10 +19,18 @@
 &lt;/ul&gt;
 &lt;p&gt;Тонкий клиент сохраняет на компьютере клиента некоторую информацию - кэш. Он нужен для ускорения работы и облегчения нагрузки на сеть.&lt;/p&gt;</description></item><item><title>Запуск консоли сервера 1С без прав администратора</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/launch-1c-console-without-admin-rights/</link><pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/launch-1c-console-without-admin-rights/</guid><description>&lt;h2 id="решение-проблемы"&gt;Решение проблемы&lt;/h2&gt;
 &lt;p&gt;Консоль администрирования серверов 1С легко запускается если у вас есть административные права в операционной системе. Но что делать если их нет. Например вы программист, вам разрешили заходить в консоль, но не дали административные права. В этом случае просто создайте текстовый файл с расширением &lt;strong&gt;.cmd&lt;/strong&gt;, например &lt;strong&gt;Run1CAdmin.cmd&lt;/strong&gt; и расположите его на рабочем столе.&lt;/p&gt;
-&lt;p&gt;Затем запишите в него следующие строки для 64-разрядной оснастки:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;Set ApplicationPath=&amp;#34;C:\Program Files\1cv8\common\1CV8 Servers (x86-64).msc&amp;#34;
-cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &amp;#34;&amp;#34; %ApplicationPath%&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Или для 32-разрядной (нужно явно указать 32-разрядную MMC — &lt;code&gt;C:\Windows\SysWOW64\mmc.exe&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Затем запишите в него следующие строки для 64-разрядной оснастки:&lt;/p&gt;</description></item><item><title>Установка PostgreSQL для 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</link><pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-postgresql-1c-on-linux/</guid><description>&lt;h2 id="получение-дистрибутивов"&gt;Получение дистрибутивов&lt;/h2&gt;
 &lt;p&gt;Сервер СУБД PostgreSQL может использоваться кластером 1С в своей работе. Про то, как установить сервер 1С я писал в статье: &lt;a href="https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -56,6 +75,17 @@ cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &a
  здесь
 &lt;/a&gt;
 . И так, если у вас уже установлен сервер 1С, то начинаем.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Создадим в своём домашнем каталоге следующие подкаталоги:&lt;/p&gt;</description></item><item><title>Установка сервера 1С 8.3.25 на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/installing-server-1c-8-3-25-on-linux/</guid><description>&lt;h2 id="получение-дистрибутива"&gt;Получение дистрибутива&lt;/h2&gt;
 &lt;p&gt;Скачать дистрибутив платформы вы можете на сайте &lt;a href="https://releases.1c.ru/project/Platform83"
  
@@ -65,6 +95,17 @@ cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &a
 . При написании этой статьи самой новой платформой была версия — &lt;strong&gt;8.3.25.1374&lt;/strong&gt;. В этой статье будет описана установка 64-разрядной версии платформы. Скачиваем — &lt;strong&gt;«Технологическая платформа 1С:Предприятия (64-bit) для Linux»&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260818091624.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;После загрузки, помещаем архив на сервер &lt;strong&gt;Debian 12&lt;/strong&gt; любым удобным для вас способом, я для этого использую &lt;strong&gt;sftp&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="установка-зависимостей"&gt;Установка зависимостей&lt;/h2&gt;
 &lt;p&gt;Для работы сервера 1С на Linux необходимо установить зависимости:&lt;/p&gt;</description></item><item><title>Автономный сервер 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-1c-server/</link><pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/standalone-1c-server/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Автономный сервер&lt;/strong&gt; — это решение от 1С появившееся в платформе &lt;strong&gt;8.3.14&lt;/strong&gt;. Это решение постоянно развивается. И с версии &lt;strong&gt;8.3.23&lt;/strong&gt; автономный сервер вышел из статуса бета-версии. Также, с версии 8.3.23, к базе работающей под управлением автономного сервера, стало возможно подключаться конфигуратором. На момент написания этой статьи актуальная версия платформы &lt;strong&gt;8.3.25&lt;/strong&gt;, то есть описаны ограничения и функции этой версии автономного сервера.&lt;/p&gt;
@@ -98,6 +139,17 @@ cmd /min /C &amp;#34;set __COMPAT_LAYER=RUNASINVOKER &amp;amp;&amp;amp; start &a
 , если у вас есть туда доступ.&lt;/p&gt;
 &lt;p&gt;У удалённых сотрудников обычно нет доступа со своего рабочего мета к этой сетевой папке. И можно использовать два варианта решения этой проблемы:&lt;/p&gt;</description></item><item><title>Обновление конфигурации базы 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/obnovlenie_konfiguracii_bazy_1c/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/obnovlenie_konfiguracii_bazy_1c/</guid><description>&lt;h2 id="обновление-конфигурации-1с"&gt;Обновление конфигурации 1С&lt;/h2&gt;
 &lt;p&gt;Во-первых нужно открыть конфигурацию. Для этого перейдите по пунктам меню «&lt;strong&gt;Конфигурация&lt;/strong&gt;» / «&lt;strong&gt;Открыть конфигурацию&lt;/strong&gt;«.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Для того чтобы начать обновление, перейдите по пунктам меню: &lt;strong&gt;&amp;ldquo;Конфигурация / Поддержка / Обновить конфигурацию&amp;rdquo;&lt;/strong&gt;. В открывшемся окне выберите пункт &lt;strong&gt;&amp;ldquo;Поиск доступных обновлений&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260410143948.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Выберите каталог, в который вы установили дистрибутив обновления. У меня такой путь к каталогу — &lt;strong&gt;C:\1c&lt;/strong&gt;:&lt;/p&gt;
