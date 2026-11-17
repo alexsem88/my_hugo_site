@@ -101,7 +101,18 @@ disk:x:6:
 lp:x:7:
 mail:x:8:
 news:x:9:
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
 &lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -122,10 +133,19 @@ news:x:9:
 .&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sudo&lt;/strong&gt; — важнейшая утилита Linux, позволяющая выполнять команды с правами администратора. По умолчанию она установлена не во всех дистрибутивах. И если она не установлена, то установить её можно из стандартных репозиториев, например:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;
-&lt;p&gt;По умолчанию использовать &lt;code&gt;sudo&lt;/code&gt; могут пользователи linux, которые есть в &lt;strong&gt;группе sudo&lt;/strong&gt;. Вот так вы можете добавить своего пользователя в эту группу (в &lt;strong&gt;Ubuntu&lt;/strong&gt; или &lt;strong&gt;Debian&lt;/strong&gt;):&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;# adduser alex sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В других дистрибутивах может не оказаться утилиты &lt;code&gt;adduser&lt;/code&gt;, тогда добавить своего пользователя в группу &lt;strong&gt;sudo&lt;/strong&gt; можете с помощью такой команды:&lt;/p&gt;</description></item><item><title>Пользователи в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</guid><description>&lt;h2 id="определяем-своего-пользователя"&gt;Определяем своего пользователя&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;
+&lt;p&gt;По умолчанию использовать &lt;code&gt;sudo&lt;/code&gt; могут пользователи linux, которые есть в &lt;strong&gt;группе sudo&lt;/strong&gt;. Вот так вы можете добавить своего пользователя в эту группу (в &lt;strong&gt;Ubuntu&lt;/strong&gt; или &lt;strong&gt;Debian&lt;/strong&gt;):&lt;/p&gt;</description></item><item><title>Пользователи в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</guid><description>&lt;h2 id="определяем-своего-пользователя"&gt;Определяем своего пользователя&lt;/h2&gt;
 &lt;p&gt;Итак, вы подключились к серверу Linux по ssh и скорее всего знаете под каким пользователем, так как использовали это имя для подключения. Если же не знаете, то, скорее всего имя пользователя будет в приглашении командной строки, его ещё называют промтом.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260417112729.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
@@ -222,8 +242,18 @@ window.yaContextCb.push(() =&gt; {
 &lt;/a&gt;
 , или выполнив команду:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# man rsync
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В качестве транспорта может использовать протокол &lt;strong&gt;SSH&lt;/strong&gt;. И, настроив подключение с одного сервера на другой по ssh-ключам, вы можете использовать rsync в скриптах которые выполняются по расписанию.&lt;/p&gt;
-&lt;p&gt;Синтаксис команды:&lt;/p&gt;</description></item><item><title>Утилита Tmux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tmux/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tmux/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;В качестве транспорта может использовать протокол &lt;strong&gt;SSH&lt;/strong&gt;. И, настроив подключение с одного сервера на другой по ssh-ключам, вы можете использовать rsync в скриптах которые выполняются по расписанию.&lt;/p&gt;</description></item><item><title>Утилита Tmux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tmux/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tmux/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;tmux&lt;/strong&gt; позволяет создавать несколько сессий с виртуальными терминалами, получать к ним доступ и управлять с одного экрана. Вы можете отключиться от сессии с виртуальными терминалами, а сессия с запущенными там процессами продолжит работать в фоновом режиме. Затем, вы можете, снова, подключиться к этой сессии. Дополнительно терминал может быть разделён на несколько частей. И к одному сеансу tmux может быть подключено несколько пользователей.&lt;/p&gt;
 &lt;p&gt;Если вы ни разу не пользовались tmux, то вам наверное не стало яснее что такое tmux. Поэтому разберём всё на практике. Устанавливается утилита из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Минимальные права для интеграции с LDAP</title><link>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/adm_windows/ldap-minimal-permission/</guid><description>&lt;p&gt;Долго думал в какую рубрику положить данную статью. Вроде все приложения, которые я интегрировал с AD были на Linux. И контроллер домена чаще всего у меня это Linux (Zentyal). Но всё-же контроллер домена для большинства это Windows. Ну и так как описанное действие нужно выполнять из под Windows (создание групповых политик), то поместил данную статью в раздел — Windows.&lt;/p&gt;
 &lt;h2 id="примеры-приложений-с-интеграцией-ldap"&gt;Примеры приложений с интеграцией LDAP&lt;/h2&gt;
@@ -238,6 +268,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;выполнять трассировку по определённым портам;&lt;/li&gt;
 &lt;li&gt;использовать для изучения TCI/IP.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Утилита устанавливается из стандартных репозиториев:&lt;/p&gt;</description></item><item><title>Утилита smbstatus</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/smbstatus/</link><pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/smbstatus/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;smbstatus&lt;/strong&gt; является частью пакета &lt;strong&gt;Samba&lt;/strong&gt;. Это означает, если вы устанавливаете и настраиваете сервер Samba, то это утилита у вас уже есть и дополнительно ничего устанавливать не нужно.&lt;/p&gt;
 &lt;p&gt;Это очень простая программа для вывода списка текущих подключений &lt;strong&gt;Samba&lt;/strong&gt;. Её часто используют чтобы посмотреть кто какой файл заблокировал на сервере, или кто какую версию протокола для подключения использует. Или кто с каких компьютеров подключен.&lt;/p&gt;
@@ -248,7 +289,18 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Если мы копируем файл на удалённую систему, нужно чтобы у пользователя (под которым мы подключаемся к удалённой системе) были права на запись в каталог (в который мы производим копирование.)&lt;/p&gt;</description></item><item><title>Фильтруем вывод с помощью awk</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</link><pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/filtering-awk/</guid><description>&lt;h2 id="синтаксис"&gt;Синтаксис&lt;/h2&gt;
 &lt;p&gt;Если упростить синтаксис команды &lt;strong&gt;awk&lt;/strong&gt;, то получим что-то вроде этого:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;awk (опции) (условие) &amp;#39;{ команда }&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="команды"&gt;Команды&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;h2 id="команды"&gt;Команды&lt;/h2&gt;
 &lt;p&gt;В этой статье будет рассмотрена только одна команда &lt;code&gt;'{print}'&lt;/code&gt; — она позволяет что-то выводить на экран терминала. Например мы можем вывести на экран определённый столбец. Столбцы обозначаются с помощью:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;$0&lt;/strong&gt; — все столбцы;&lt;/li&gt;
@@ -292,7 +344,18 @@ bnm
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Но в репозиториях находится достаточно старая версия.&lt;/p&gt;
 &lt;p&gt;Лучше установить с помощью &lt;strong&gt;pip&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ pip3 install jc
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При установки с помощью &lt;strong&gt;pip&lt;/strong&gt; данная утилита будет располагаться в каталоге &lt;strong&gt;~/.local/bin/&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;При установки с помощью &lt;strong&gt;pip&lt;/strong&gt; данная утилита будет располагаться в каталоге &lt;strong&gt;~/.local/bin/&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Утилита ttyd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ttyd/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Данная утилита доступна на &lt;a href="https://github.com/tsl0922/ttyd"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -305,6 +368,17 @@ bnm
 &lt;li&gt;Можно запустить экземпляр &lt;strong&gt;bash&lt;/strong&gt; и работать в командной строке сервера в браузере. Это может быть удобно, если вы по какой-то причине не можете использовать &lt;strong&gt;ssh&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;И простые команды, которые при выполнении дают какой-то вывод и завершаются, можно запустить с помощью этой утилиты. Это могут быть такие команды как: &lt;strong&gt;ls&lt;/strong&gt;, &lt;strong&gt;df&lt;/strong&gt;, &lt;strong&gt;du&lt;/strong&gt; и тому подобное. При этом, как только вы обновляете страничку, на сервере выполняется данная утилита и результат выводится в браузере.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
 &lt;p&gt;Данная утилита состоит из одного бинарника, который можно скачать:&lt;/p&gt;</description></item><item><title>Ядро Linux и модули ядра</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</link><pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/kernel-modules/</guid><description>&lt;h2 id="ядро-операционной-системы"&gt;Ядро операционной системы&lt;/h2&gt;
 &lt;p&gt;В операционной системе процессы работают в режиме ядра или пользовательском режиме. Режим ядра дает больше прав и в этом режиме работают: само ядро и некоторые подсистемы.&lt;/p&gt;
@@ -389,7 +463,18 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 &lt;/a&gt;
  используется для мониторинга нагрузки на дисковую подсистему. Она создает отчеты, первый отчет генерируется статистикой с момента загрузки системы и до выполнения команды. Каждый последующий отчет охватывает время с момента предыдущего отчета. Отчет состоит из статистики по CPU, и статистики для каждого диска или раздела. Эта утилита входит в пакет &lt;strong&gt;sysstat&lt;/strong&gt;, который вначале нужно установить:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install sysstat
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="работа-с-iostat"&gt;Работа с iostat&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;h2 id="работа-с-iostat"&gt;Работа с iostat&lt;/h2&gt;
 &lt;p&gt;Если выполнить эту команду без дополнительных опций, то вы увидите 1 отчет:&lt;/p&gt;</description></item><item><title>Утилита iotop и ionice</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/iotop-ionice/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Мы уже разбирали некоторые утилиты для мониторинга за процессами. Например, рассмотрели утилиты: &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/top-utility/"
  
@@ -404,9 +489,31 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 . Утилита &lt;strong&gt;htop&lt;/strong&gt;, кстати, тоже умеет определять нагрузку на диск определённым процессом. Но рассматриваемая здесь утилита &lt;strong&gt;iotop&lt;/strong&gt;, была написана специально для этой задачи.&lt;/p&gt;
 &lt;p&gt;Она не предустановлена в системах &lt;strong&gt;Debian&lt;/strong&gt; и &lt;strong&gt;Ubuntu&lt;/strong&gt;. Поэтому вначале её нужно установить:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install iotop
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="работа-с-iotop"&gt;Работа с iotop&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;h2 id="работа-с-iotop"&gt;Работа с iotop&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;code&gt;iotop&lt;/code&gt; запускается только с админскими правами, поэтому для её запуска я использую &lt;code&gt;sudo&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Утилиты df, du и ncdu</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/df-du-ncdu/</link><pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/df-du-ncdu/</guid><description>&lt;h2 id="за-что-отвечают-эти-команды"&gt;За что отвечают эти команды&lt;/h2&gt;
 &lt;p&gt;Команда &lt;code&gt;df&lt;/code&gt; позволяет определить занятое место на диске. С помощью команды &lt;code&gt;du&lt;/code&gt; можно посмотреть размер файлов. А утилита &lt;code&gt;ncdu&lt;/code&gt; позволяет быстро определить, что занимает больше всего места на диске. Так как все эти команды используются для определения занимаемого места на диске, то я решил их объединить в одну статью.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="команда-df"&gt;Команда df&lt;/h2&gt;
 &lt;p&gt;Первая команда, которой нужно воспользоваться, чтобы быстро получить информацию о занятом месте на диске — это команда &lt;code&gt;df&lt;/code&gt;. Её удобно использовать с опцией &lt;code&gt;-h&lt;/code&gt;, чтобы смотреть информацию в удобном для человека виде:&lt;/p&gt;</description></item><item><title>Утилита ss</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ss/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ss/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Эта утилита используется для вывода информации о сетевых подключениях. Она может отображать информацию, аналогичную &lt;code&gt;netstat&lt;/code&gt;, которую мы рассмотрели в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/"
@@ -416,6 +523,17 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 &lt;/a&gt;
 . Но &lt;code&gt;ss&lt;/code&gt; может показать больше информации чем другие инструменты.&lt;/p&gt;
 &lt;p&gt;Ещё одним преимуществом этой утилиты, является то, что она уже предустановлена и в &lt;strong&gt;Debian&lt;/strong&gt; и в &lt;strong&gt;Ubuntu&lt;/strong&gt;. И вам не нужно ставить пакет с устаревшими инструментами (это я про &lt;code&gt;net-tools&lt;/code&gt;).&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Если мы выполним &lt;code&gt;ss&lt;/code&gt; без дополнительных опций, то увидим только активные соединения (TCP и сокеты).&lt;/p&gt;</description></item><item><title>Утилита netstat</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</link><pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/netstat/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Эта утилита используется для вывода информации о сетевых подключениях. Также она может показать таблицы маршрутизации, статистику по интерфейсам и другое. Эта утилита считается устаревшей и была заменена на утилиту &lt;code&gt;ss&lt;/code&gt;, которую я рассмотрю в следующей статье. Получить справку об этой утилите можно &lt;a href="https://man7.org/linux/man-pages/man8/netstat.8.html"
  
@@ -459,6 +577,17 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 &lt;li&gt;&lt;strong&gt;Сверху&lt;/strong&gt; — общая информация о системе.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Снизу&lt;/strong&gt; — информация по каждому процессу.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="общая-информация-о-системе"&gt;Общая информация о системе&lt;/h2&gt;
 &lt;p&gt;На первой строке показаны: текущее время, uptime, количество активных пользователей, load average.&lt;/p&gt;</description></item><item><title>Команда ps</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ps-utility/</link><pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/ps-utility/</guid><description>&lt;h2 id="команда-ps"&gt;Команда ps&lt;/h2&gt;
 &lt;p&gt;Команда &lt;code&gt;ps&lt;/code&gt; используется для получения списка процессов в системе Linux со всеми их метриками и свойствами. Она показывает срез информации на данный момент времени. То есть некоторые свойства процесса могут изменяться со временем. Например, используемая оперативная память может вырасти или уменьшится. А команда &lt;code&gt;ps&lt;/code&gt; покажет занимаемую память процессом в данный момент.&lt;/p&gt;
@@ -467,7 +596,18 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  PID TTY TIME CMD
  19104 pts/0 00:00:00 bash
  19113 pts/0 00:00:00 ps
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы посмотреть все процессы в системе используют опции &lt;code&gt;ax&lt;/code&gt;, я добавил &lt;code&gt;head&lt;/code&gt; чтобы вывести первые 10 процессов, так как их много:&lt;/p&gt;</description></item><item><title>Процессы в системе Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</link><pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</guid><description>&lt;h2 id="что-такое-процесс"&gt;Что такое процесс&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Чтобы посмотреть все процессы в системе используют опции &lt;code&gt;ax&lt;/code&gt;, я добавил &lt;code&gt;head&lt;/code&gt; чтобы вывести первые 10 процессов, так как их много:&lt;/p&gt;</description></item><item><title>Процессы в системе Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</link><pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/processes-linux/processes-linux/</guid><description>&lt;h2 id="что-такое-процесс"&gt;Что такое процесс&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Процесс&lt;/strong&gt; — это среда выполнения для работы экземпляра программы. Например, есть какая-то программа и при её запуске, для неё создается процесс. Этот процесс наделяется некоторыми свойствами, ему выделяется часть оперативной памяти и присваивается уникальный идентификатор. Программа работает в рамках этого процесса.&lt;/p&gt;
 &lt;p&gt;Процессор обрабатывает эти процессы не одновременно. Он очень быстро переключается с одного процесса на другой, за счет чего возникает ощущение многозадачности.&lt;/p&gt;
 &lt;p&gt;С процессом связан целый ряд атрибутов, которые расширяют или ограничивают его возможности. В течение жизни процесс может находится в разных состояниях.&lt;/p&gt;</description></item><item><title>Объединение команд в одной строке</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</link><pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/combining-commands-one-line/</guid><description>&lt;h2 id="результат-выполнения-команды"&gt;Результат выполнения команды&lt;/h2&gt;
@@ -563,6 +703,17 @@ window.yaContextCb.push(() =&gt; {
  target
 &lt;/a&gt;
 . Сейчас познакомимся с ещё одним типом юнитов — с таймерами (&lt;strong&gt;timer&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Таймеры позволяют по расписанию запускать службы. Это можно использовать как замену &lt;strong&gt;cron&lt;/strong&gt;. Чтобы лучше понять, как работают таймеры проделаем следующее:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Создадим скрипт;&lt;/li&gt;
@@ -598,6 +749,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;То есть сгенерировать пароль в Linux поможет следующая команда:&lt;/p&gt;</description></item><item><title>SystemD — Службы (service)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</link><pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/</guid><description>&lt;h2 id="юниты-systemd-типа-service"&gt;Юниты SystemD типа service&lt;/h2&gt;
 &lt;p&gt;В &lt;strong&gt;SystemD&lt;/strong&gt; все сервисы которые можно запускать или останавливать описываются в специальных юнитах &lt;strong&gt;service&lt;/strong&gt;. Это значит, что в таких юнитах описывается вся информация, которая поможет запустить сервис (службу).&lt;/p&gt;
 &lt;p&gt;Наверно юниты SystemD следовало изучать после изучения процессов. И скорее всего в будущем я поменяю очерёдность в оглавлении. Но сейчас я постарался описать службы (юниты типа service) с минимальным объяснением процессов.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Как вам известно, юниты — это обычные файлы. В юнитах типа &lt;strong&gt;service&lt;/strong&gt; описывается способ запуска исполняемых файлов (бинарных или скриптов).&lt;/p&gt;</description></item><item><title>Система инициализации systemd</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-init-system/</guid><description>&lt;h2 id="что-такое-система-инициализации"&gt;Что такое система инициализации&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Система инициализации&lt;/strong&gt; — это система в Linux, которая подготавливает к работе операционную систему. Система инициализации запускается ядром как первый процесс в операционной системе. И уже затем, этот первый процесс, запускает все остальные процессы. Также при выключении система инициализации занимается остановкой всех процессов.&lt;/p&gt;
 &lt;p&gt;Алгоритм загрузки операционной системы я описывал в &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/linux-boot-algorithm/"
@@ -606,6 +768,17 @@ window.yaContextCb.push(() =&gt; {
  этой статье
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Систем инициализации много, первой такой системой была &lt;strong&gt;SysV&lt;/strong&gt;, потом для &lt;strong&gt;Ubuntu&lt;/strong&gt; написали &lt;strong&gt;Upstart&lt;/strong&gt;. Но сейчас система инициализации &lt;a href="https://github.com/systemd/systemd"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -706,6 +879,17 @@ window.yaContextCb.push(() =&gt; {
  Здесь
 &lt;/a&gt;
  я писал про настройку сети на &lt;strong&gt;Debian 11&lt;/strong&gt;, а в этой статье разберём всё тоже самое но для &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Посмотреть на доступные сетевые интерфейсы мы точно также можем с помощью утилиты &lt;code&gt;lshw&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
  *-network:0
@@ -750,31 +934,20 @@ window.yaContextCb.push(() =&gt; {
  configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 link=yes multicast=yes
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В этом примере у меня два сетевых интерфейса: &lt;strong&gt;ens18&lt;/strong&gt; (02:6e:f0:fb:d4:71) и &lt;strong&gt;ens19&lt;/strong&gt; (82:dd:88:27:00:a5). При этом ip адрес назначен только на &lt;strong&gt;ens18&lt;/strong&gt; (172.28.90.34).&lt;/p&gt;</description></item><item><title>Настройка сети на Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-debian/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;
 &lt;p&gt;В этой статье будем использовать утилиту sudo для административных действий.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Определить какие интерфейсы есть у вашего сервера поможет утилита &lt;strong&gt;lshw&lt;/strong&gt;. Но её предварительно нужно установить:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo apt install lshw
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта утилита предназначена для определения железа вашего сервера. Например, с её помощью можно посмотреть какой на сервере процессор или оперативная память. Сейчас нам нужно получить информацию по сетевым интерфейсам, для этого используя параметр &lt;code&gt;-С network&lt;/code&gt; :&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
- *-network
- description: Ethernet controller
- product: Virtio network device
- vendor: Red Hat, Inc.
- physical id: 12
- bus info: pci@0000:00:12.0
- version: 00
- width: 64 bits
- clock: 33MHz
- capabilities: msix bus_master cap_list rom
- configuration: driver=virtio-pci latency=0
- resources: irq:11 ioport:e0a0(size=32) memory:fea52000-fea52fff memory:fe408000-fe40bfff memory:fea00000-fea3ffff
- *-virtio2
- description: Ethernet interface
- physical id: 0
- bus info: virtio@2
- logical name: ens18
- serial: 2a:75:9e:4d:1d:fa
- capabilities: ethernet physical
- configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=192.168.0.30 link=yes multicast=yes
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Из этого вывода вы можете получить следующую информацию:&lt;/p&gt;</description></item><item><title>Ссылки в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</link><pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта утилита предназначена для определения железа вашего сервера. Например, с её помощью можно посмотреть какой на сервере процессор или оперативная память. Сейчас нам нужно получить информацию по сетевым интерфейсам, для этого используя параметр &lt;code&gt;-С network&lt;/code&gt; :&lt;/p&gt;</description></item><item><title>Ссылки в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</link><pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/links-in-linux/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;Для начала вспомним про хранение файлов. Файлы и каталоги на жестком диске хранятся в виде набора блоков. Информация о файле (метаданные), например время создания файла, хранится в индексном дескрипторе — &lt;strong&gt;inode&lt;/strong&gt;. &lt;strong&gt;Номер inode&lt;/strong&gt; является уникальным на файловой системе и связывается с определенным набором блоков. А &lt;strong&gt;имя файла&lt;/strong&gt; это всего лишь понятное для человека наименование которое относится к определенному &lt;strong&gt;inode&lt;/strong&gt;. А &lt;strong&gt;каталог&lt;/strong&gt; — это тоже файл, но особого типа, в котором содержится список имен файлов или других каталогов и указатели на &lt;strong&gt;inode&lt;/strong&gt; для этих файлов. Об этом подробнее я писал - &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/file-types-linux/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -798,6 +971,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;/li&gt;
 &lt;li&gt;физическое расположение блоков данных на диске.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Чтобы увидеть номера индексных дескрипторов к команде &lt;code&gt;ls&lt;/code&gt; добавляют опцию &lt;code&gt;-i&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Перемещение копирование и удаление файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/moving-copying-deleting-files/</link><pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/moving-copying-deleting-files/</guid><description>&lt;h2 id="создание-файлов-и-каталогов"&gt;Создание файлов и каталогов&lt;/h2&gt;
 &lt;p&gt;Создадим 1 файл, и 2 каталога. Для создания файла используем уже знакомую команду &lt;code&gt;touch&lt;/code&gt;, для создания каталога нужно использовать команду &lt;code&gt;mkdir&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ mkdir dir1
@@ -832,6 +1016,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;Для одних операция вы используете Linux, а для других Windows, например - для работы Linux, для игр Windows.&lt;/li&gt;
 &lt;li&gt;У вас дома один компьютер. Вы предпочитаете работать в Linux, а другие члены вашей семьи используют Windows.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Минусы двойной загрузки:&lt;/p&gt;</description></item><item><title>Загрузчик GRUB 2</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2/</guid><description>&lt;h2 id="grub-2"&gt;GRUB 2&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;GRUB 2&lt;/strong&gt; (GRand Unified Bootloader / большой единый загрузчик) — это кроссплатформенный загрузчик операционных систем.&lt;/p&gt;
 &lt;p&gt;При старте системы, когда запускается &lt;strong&gt;GRUB 2&lt;/strong&gt; вы видите следующее меню:&lt;/p&gt;
@@ -843,6 +1038,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;strong&gt;«e»&lt;/strong&gt; — редактирование выбранного пункта;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;«c»&lt;/strong&gt; — запуск командной строки.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="настройка-grub-2"&gt;Настройка GRUB 2&lt;/h2&gt;
 &lt;p&gt;При загрузки &lt;strong&gt;GRUB 2&lt;/strong&gt; читает конфигурационный файл &lt;code&gt;/boot/grub/grub.cfg&lt;/code&gt;, но редактировать вручную его не нужно, об этом даже предупреждают в начале этого файла (на английском):&lt;/p&gt;</description></item><item><title>Алгоритм загрузки linux (BIOS и UEFI)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/linux-boot-algorithm/</link><pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/linux-boot-algorithm/</guid><description>&lt;h2 id="алгоритм-загрузки-linux-bios"&gt;Алгоритм загрузки linux (BIOS)&lt;/h2&gt;
 &lt;h3 id="bios"&gt;BIOS&lt;/h3&gt;
@@ -858,6 +1064,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;какие метаданные будут использоваться;&lt;/li&gt;
 &lt;li&gt;как обезопасить файлы от порчи (например при некорректном выключении компьютера);&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;Метаданные&lt;/strong&gt; — это данные о данных, например файл содержит какие-то данные, а метаданные это:&lt;/p&gt;</description></item><item><title>Перемещение по каталогам linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/peremeshchenie_po_katalogam_linux/</link><pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/peremeshchenie_po_katalogam_linux/</guid><description>&lt;h2 id="текущий-или-рабочий-каталога"&gt;Текущий или рабочий каталога&lt;/h2&gt;
 &lt;p&gt;Все команды на этом уроке можно выполнять и на Ubuntu 22.04 и на Debian 11, при этом поведение будем одинаковым!&lt;/p&gt;
 
@@ -891,7 +1108,18 @@ window.yaContextCb.push(() =&gt; {
 /каталог_3/подкаталог_1
 /каталог_3/подкаталог_2
 /каталог_3/подкаталог_3
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При этом могут использоваться разные физические диски или разделы на дисках. Схематически это можно представить таким образом:&lt;/p&gt;</description></item><item><title>Утилита tcpdump для анализа сети</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tcpdump/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tcpdump/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;При этом могут использоваться разные физические диски или разделы на дисках. Схематически это можно представить таким образом:&lt;/p&gt;</description></item><item><title>Утилита tcpdump для анализа сети</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tcpdump/</link><pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/tcpdump/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;tcpdump&lt;/strong&gt; — это консольная утилита для захвата и анализа сетевого трафика. Она позволяет просматривать пакеты, проходящие через сетевой интерфейс, и фильтровать их по различным критериям (IP-адрес, порт, протокол и др.). Используется для диагностики сетевых проблем, мониторинга и отладки сетевых приложений.&lt;/p&gt;
 &lt;h2 id="установка-и-начало-использования"&gt;Установка и начало использования&lt;/h2&gt;
 &lt;p&gt;Установить эту утилиту в &lt;strong&gt;debian&lt;/strong&gt; или &lt;strong&gt;ubuntu&lt;/strong&gt; можно из стандартных репозиториев, например так:&lt;/p&gt;

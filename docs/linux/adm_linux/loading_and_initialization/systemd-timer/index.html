@@ -3,7 +3,7 @@
 service
 </a> и <a href=https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-target/ target=_blank rel="noopener noreferrer">
 target
-</a>. Сейчас познакомимся с ещё одним типом юнитов — с таймерами (<strong>timer</strong>).</p><p>Таймеры позволяют по расписанию запускать службы. Это можно использовать как замену <strong>cron</strong>. Чтобы лучше понять, как работают таймеры проделаем следующее:</p><ul><li>Создадим скрипт;</li><li>Создадим сервис, который будет запускать этот скрипт;</li><li>Создадим таймер, который будет запускать сервис по определённому расписанию.</li></ul><h3 id=создаём-скрипт>Создаём скрипт</h3><p>Скрипт, который я создаю (timer.sh), просто записывает текущее время в файл (date.log):</p><pre tabindex=0><code>$ nano timer.sh
+</a>. Сейчас познакомимся с ещё одним типом юнитов — с таймерами (<strong>timer</strong>).</p><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Таймеры позволяют по расписанию запускать службы. Это можно использовать как замену <strong>cron</strong>. Чтобы лучше понять, как работают таймеры проделаем следующее:</p><ul><li>Создадим скрипт;</li><li>Создадим сервис, который будет запускать этот скрипт;</li><li>Создадим таймер, который будет запускать сервис по определённому расписанию.</li></ul><h3 id=создаём-скрипт>Создаём скрипт</h3><p>Скрипт, который я создаю (timer.sh), просто записывает текущее время в файл (date.log):</p><pre tabindex=0><code>$ nano timer.sh
 
 #!/bin/bash
 date &gt;&gt; ~/date.log

@@ -56,6 +56,17 @@
 &lt;li&gt;Во-первых, каждый раздел можно настроить по своему, указав для раздела необходимые свойства (property). Ниже, в этой статье, разберём некоторые свойства датасетов.&lt;/li&gt;
 &lt;li&gt;Во-вторых, снапшоты создаются на раздел. Мы можем создать несколько разделов, что даст нам возможность снапшотить и откатывать их состояния по отдельности.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Если вы создали &lt;strong&gt;zpool&lt;/strong&gt;, то у вас вместе с ним создаётся &lt;strong&gt;корневой dataset&lt;/strong&gt;. Посмотреть созданные zpool можно с помощью команды &lt;strong&gt;zfs list&lt;/strong&gt;, а посмотреть созданные разделы можно с помощью команды &lt;strong&gt;zfs list&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>ZFS и пулы ZFS (Zpool)</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/file_systems/zfs-zpool/</guid><description>&lt;h2 id="термины"&gt;Термины&lt;/h2&gt;
 &lt;p&gt;Перед тем как приступить к созданию пулов (массивов) ZFS, нужно изучить некоторые понятия. Пул ZFS (&lt;strong&gt;zpool&lt;/strong&gt;) состоит из виртуальных устройств (&lt;strong&gt;vdev&lt;/strong&gt;). Vdev-ом могут быть: одиночный диск или массив дисков (mirror, raidz, raidz2, raidz3). И Vdev могут быть разными типами:&lt;/p&gt;
 &lt;ul&gt;

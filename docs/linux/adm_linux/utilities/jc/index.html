@@ -3,7 +3,7 @@
 github.com
 </a>. Она может пригодиться при создании скриптов, когда вывод команд будет передаваться другим системам, которые умеют принимать и обрабатывать <strong>json</strong>. Ниже, на практике покажу как это работает.</p><h2 id=практика>Практика</h2><p>Установить данный инструмент в <strong>Ubuntu</strong> и <strong>Debian</strong> можно с помощью <strong>apt</strong> и стандартных репозиториев:</p><pre tabindex=0><code>$ apt install jc
 </code></pre><p>Но в репозиториях находится достаточно старая версия.</p><p>Лучше установить с помощью <strong>pip</strong>:</p><pre tabindex=0><code>$ pip3 install jc
-</code></pre><p>При установки с помощью <strong>pip</strong> данная утилита будет располагаться в каталоге <strong>~/.local/bin/</strong>:</p><pre tabindex=0><code>$ ls -l /home/alex/.local/bin/jc
+</code></pre><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>При установки с помощью <strong>pip</strong> данная утилита будет располагаться в каталоге <strong>~/.local/bin/</strong>:</p><pre tabindex=0><code>$ ls -l /home/alex/.local/bin/jc
 -rwxr-xr-x 1 alex alex 205 сен 11 10:10 /home/alex/.local/bin/jc
 </code></pre><p>Я данный каталог поместил в переменную <strong>PATH</strong> для своего пользователя:</p><pre tabindex=0><code>$ nano ~/.profile
 

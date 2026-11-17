@@ -5,6 +5,17 @@
  Здесь
 &lt;/a&gt;
  я писал про настройку сети на &lt;strong&gt;Debian 11&lt;/strong&gt;, а в этой статье разберём всё тоже самое но для &lt;strong&gt;Ubuntu 22.04&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Посмотреть на доступные сетевые интерфейсы мы точно также можем с помощью утилиты &lt;code&gt;lshw&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo lshw -C network
  *-network:0

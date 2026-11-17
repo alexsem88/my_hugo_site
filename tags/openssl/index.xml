@@ -5,7 +5,18 @@
  openssl x509 -noout -enddate
 
 notAfter=May 14 18:57:50 2026 GMT
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;ul&gt;
 &lt;li&gt;Сравните полученную дату с системным временем, иногда проблема кроется в неверном времени на сервере.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="проверка-сертификата-на-ошибки"&gt;Проверка сертификата на ошибки&lt;/h2&gt;

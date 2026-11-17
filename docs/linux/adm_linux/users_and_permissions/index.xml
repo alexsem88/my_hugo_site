@@ -18,7 +18,18 @@ disk:x:6:
 lp:x:7:
 mail:x:8:
 news:x:9:
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;А в этом примере я использую &lt;code&gt;grep&lt;/code&gt; чтобы определить группы своего пользователя:&lt;/p&gt;</description></item><item><title>Права ACL в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</link><pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/acl_file_permissions_in_linux/</guid><description>&lt;h2 id="о-системе-прав-acl-в-linux"&gt;О системе прав ACL в Linux&lt;/h2&gt;
 &lt;p&gt;В простых случаях хватает простых прав, про это я писал в статье &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/standard_linux_file_permissions/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -39,10 +50,19 @@ news:x:9:
 .&lt;/p&gt;</description></item><item><title>Использование sudo в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</link><pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/</guid><description>&lt;h2 id="установка"&gt;Установка&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;sudo&lt;/strong&gt; — важнейшая утилита Linux, позволяющая выполнять команды с правами администратора. По умолчанию она установлена не во всех дистрибутивах. И если она не установлена, то установить её можно из стандартных репозиториев, например:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;
-&lt;p&gt;По умолчанию использовать &lt;code&gt;sudo&lt;/code&gt; могут пользователи linux, которые есть в &lt;strong&gt;группе sudo&lt;/strong&gt;. Вот так вы можете добавить своего пользователя в эту группу (в &lt;strong&gt;Ubuntu&lt;/strong&gt; или &lt;strong&gt;Debian&lt;/strong&gt;):&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;# adduser alex sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В других дистрибутивах может не оказаться утилиты &lt;code&gt;adduser&lt;/code&gt;, тогда добавить своего пользователя в группу &lt;strong&gt;sudo&lt;/strong&gt; можете с помощью такой команды:&lt;/p&gt;</description></item><item><title>Пользователи в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</guid><description>&lt;h2 id="определяем-своего-пользователя"&gt;Определяем своего пользователя&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;h2 id="использование"&gt;Использование&lt;/h2&gt;
+&lt;p&gt;По умолчанию использовать &lt;code&gt;sudo&lt;/code&gt; могут пользователи linux, которые есть в &lt;strong&gt;группе sudo&lt;/strong&gt;. Вот так вы можете добавить своего пользователя в эту группу (в &lt;strong&gt;Ubuntu&lt;/strong&gt; или &lt;strong&gt;Debian&lt;/strong&gt;):&lt;/p&gt;</description></item><item><title>Пользователи в Linux</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/users-in-linux/</guid><description>&lt;h2 id="определяем-своего-пользователя"&gt;Определяем своего пользователя&lt;/h2&gt;
 &lt;p&gt;Итак, вы подключились к серверу Linux по ssh и скорее всего знаете под каким пользователем, так как использовали это имя для подключения. Если же не знаете, то, скорее всего имя пользователя будет в приглашении командной строки, его ещё называют промтом.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260417112729.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Если у вас приглашение командной строки не содержит имя пользователя, то узнать его можно из системной переменной &lt;strong&gt;USER&lt;/strong&gt;:&lt;/p&gt;
