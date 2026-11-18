@@ -8,4 +8,15 @@
 &lt;li&gt;Из базы достаются статьи, настройки, комментарии.&lt;/li&gt;
 &lt;li&gt;Сервер собирает HTML-страницу и отдаёт её браузеру.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;У статического сайта подход другой. Страницы заранее собираются в готовые HTML-файлы. Когда пользователь открывает сайт, сервер просто отдаёт уже готовый файл. То есть:&lt;/p&gt;</description></item></channel></rss>

@@ -2,6 +2,17 @@
 &lt;p&gt;В этой статье я покажу процесс подготовки FTPS сервера на Linux, при этом каждый пользователь будет видеть только свой каталог.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260728105358.png" alt=""&gt;&lt;/p&gt;
 &lt;h2 id="установка-и-настройка-ftp-сервера"&gt;Установка и настройка FTP сервера&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Я буду использовать &lt;strong&gt;Very&lt;/strong&gt; &lt;strong&gt;Secure&lt;/strong&gt; &lt;strong&gt;FTP&lt;/strong&gt; &lt;strong&gt;Daemon&lt;/strong&gt; (&lt;strong&gt;vsftpd&lt;/strong&gt;), устанавливаем пакет:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; \
  sudo apt install vsftpd

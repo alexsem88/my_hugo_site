@@ -10,7 +10,7 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
 </code></pre><p>Перед запуском нужно ограничить elasticsearch в памяти, для этого отредактируем конфиг <strong>/etc/elasticsearch/jvm.options</strong>. В этом примере я указал лимит в 2 GB:</p><pre tabindex=0><code># nano /etc/elasticsearch/jvm.options
 -Xms2g
 -Xmx2g
-</code></pre><p>Теперь можем и включить <strong>elasticsearch</strong>, не боясь что его прибьёт OOM Killer:</p><pre tabindex=0><code># systemctl start elasticsearch
+</code></pre><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Теперь можем и включить <strong>elasticsearch</strong>, не боясь что его прибьёт OOM Killer:</p><pre tabindex=0><code># systemctl start elasticsearch
 
 # systemctl status elasticsearch
 ● elasticsearch.service - Elasticsearch

@@ -14,6 +14,17 @@
 &lt;li&gt;&lt;strong&gt;srv-dc.test-domain.com&lt;/strong&gt; / &lt;strong&gt;192.168.0.18&lt;/strong&gt; — имя и ip-адрес контроллера домена;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;test-domain.com&lt;/strong&gt; — имя домена.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="настройка-сети"&gt;Настройка сети&lt;/h2&gt;
 &lt;p&gt;Для того чтобы настроить сеть, отредактируем файлы &lt;code&gt;/etc/network/interfaces&lt;/code&gt; и &lt;code&gt;/etc/resolv.conf&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/network/interfaces

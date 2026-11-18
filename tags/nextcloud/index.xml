@@ -59,6 +59,17 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
  здесь
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Официальные инструкции:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://helpcenter.onlyoffice.com/installation/docs-developer-install-centos.aspx"
@@ -93,6 +104,17 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
 &lt;li&gt;выбрать группы, которые будут доступны в NextCloud. Это позволит, например, сделать какую-то доменную группу в качестве админской для NextCloud;&lt;/li&gt;
 &lt;li&gt;синхронизировать вместе с пользователем дополнительную информацию о нём, например его email.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Вот официальная справочная информация по интеграции NextCloud с LDAP AD — &lt;a href="https://docs.nextcloud.com/server/stable/admin_manual/configuration_user/user_auth_ldap.html?highlight=ldap"
  
  target="_blank" rel="noopener noreferrer"&gt;

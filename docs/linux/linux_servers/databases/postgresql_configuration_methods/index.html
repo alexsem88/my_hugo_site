@@ -6,7 +6,7 @@
 (1 строка)
 
 Время: 0,113 мс
-</code></pre><p>Сервер читает этот конфиг один раз, при запуске. Если параметр указан несколько раз, то применяется последний.</p><p>Если вы измените параметры в этом файле, его нужно перечитать. Первый способ — из командной оболочки операционной системы:</p><pre tabindex=0><code>$ sudo systemctl reload postgresql@16-main.service
+</code></pre><p>Сервер читает этот конфиг один раз, при запуске. Если параметр указан несколько раз, то применяется последний.</p><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Если вы измените параметры в этом файле, его нужно перечитать. Первый способ — из командной оболочки операционной системы:</p><pre tabindex=0><code>$ sudo systemctl reload postgresql@16-main.service
 </code></pre><p>Второй способ — из терминала <strong>psql</strong>:</p><pre tabindex=0><code># SELECT pg_reload_conf();
  pg_reload_conf
 ----------------

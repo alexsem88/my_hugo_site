@@ -5,7 +5,7 @@
 </code></pre><p>Чтобы создать базу данных используется команда <a href=https://postgrespro.ru/docs/postgresql/16/sql-createdatabase target=_blank rel="noopener noreferrer">
 CREATE DATABASE
 </a>. Создадим базу данных <strong>it_outsourcing</strong>:</p><pre tabindex=0><code>CREATE DATABASE it_outsourcing;
-</code></pre><p>Переключимся на эту базу данных. Для этого используем не SQL команду а встроенную команду утилиты <strong>psql</strong> <code>\c</code> (такие команды начинаются на обратный слеш и после команды не нужно использовать точку с запятой):</p><pre tabindex=0><code>\c it_outsourcing 
+</code></pre><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Переключимся на эту базу данных. Для этого используем не SQL команду а встроенную команду утилиты <strong>psql</strong> <code>\c</code> (такие команды начинаются на обратный слеш и после команды не нужно использовать точку с запятой):</p><pre tabindex=0><code>\c it_outsourcing 
 </code></pre><h2 id=работа-с-таблицами>Работа с таблицами</h2><h3 id=создание-таблицы>Создание таблицы</h3><p>Основной элемент из которых состоит реляционная база данных — это <strong>таблицы</strong>. Для создания таблицы используется команда <a href=https://postgrespro.ru/docs/postgresql/16/sql-createtable target=_blank rel="noopener noreferrer">
 CREATE TABLE
 </a>. Например создадим таблицу <strong>users</strong> для хранения списка пользователей, которых мы обслуживаем. В эту таблицу будем заносить ФИО пользователя, название его компании, его номер телефона и электронную почту. Вот как это делается:</p><pre tabindex=0><code>CREATE TABLE users

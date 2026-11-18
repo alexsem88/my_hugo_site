@@ -6,7 +6,7 @@
 </a> для разных пакетных менеджеров: <strong>apt</strong>, <strong>yum</strong> и <strong>zypp</strong>. Именно его мы и будем использовать в этой статье. Также я покажу особенности PostgreSQL установленного из официального репозитория PostgreSQL.</p><p><em>Поехали</em>🚀</p><h2 id=установка-postgresql-из-репозитория>Установка PostgreSQL из репозитория</h2><h3 id=добавление-репозитория>Добавление репозитория</h3><p>Добавим официальный репозиторий PostgreSQL в систему:</p><pre tabindex=0><code>$ sudo tee /etc/apt/sources.list.d/pgdg.list &gt; /dev/null &lt;&lt; EOF
 deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main
 EOF
-</code></pre><p>Также импортируем ключ репозитория, для этого нам понадобятся утилиты <strong>curl</strong> и <strong>gpg</strong> и обновим кеш пакетов:</p><pre tabindex=0><code>$ sudo apt install -y curl gpg
+</code></pre><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><p>Также импортируем ключ репозитория, для этого нам понадобятся утилиты <strong>curl</strong> и <strong>gpg</strong> и обновим кеш пакетов:</p><pre tabindex=0><code>$ sudo apt install -y curl gpg
 
 $ curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc \
   | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg

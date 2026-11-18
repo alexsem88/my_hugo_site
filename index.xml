@@ -286,6 +286,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;Из базы достаются статьи, настройки, комментарии.&lt;/li&gt;
 &lt;li&gt;Сервер собирает HTML-страницу и отдаёт её браузеру.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;У статического сайта подход другой. Страницы заранее собираются в готовые HTML-файлы. Когда пользователь открывает сайт, сервер просто отдаёт уже готовый файл. То есть:&lt;/p&gt;</description></item><item><title>Частые ошибки 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</link><pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-errors/</guid><description>&lt;h2 id="вступление"&gt;Вступление&lt;/h2&gt;
 &lt;p&gt;В работе с 1С пользователи и администраторы регулярно сталкиваются с типовыми ошибками. Многие из них решаются довольно быстро, если понимать причину проблемы. В этой статье рассмотрим несколько распространённых ошибок 1С и способы их устранения.&lt;/p&gt;
 
@@ -523,6 +534,17 @@ v
 &lt;p&gt;В этой статье я покажу процесс подготовки FTPS сервера на Linux, при этом каждый пользователь будет видеть только свой каталог.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260728105358.png" alt=""&gt;&lt;/p&gt;
 &lt;h2 id="установка-и-настройка-ftp-сервера"&gt;Установка и настройка FTP сервера&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Я буду использовать &lt;strong&gt;Very&lt;/strong&gt; &lt;strong&gt;Secure&lt;/strong&gt; &lt;strong&gt;FTP&lt;/strong&gt; &lt;strong&gt;Daemon&lt;/strong&gt; (&lt;strong&gt;vsftpd&lt;/strong&gt;), устанавливаем пакет:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; \
  sudo apt install vsftpd
@@ -886,36 +908,41 @@ ubuntu/bind9 BIND 9 is a very flexible, full-featured DNS… 117
 &lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;На &lt;strong&gt;Debian 12&lt;/strong&gt; его можно установить из стандартного репозитория, но лучше использовать официальный репозиторий Aptly для получения более новой версии:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt install aptly
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;Будет установлена версия: 1.5.0.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Для подключения репозитория Aptly и установки более свежей версии выполните следующие команды:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;sudo wget -O /etc/apt/keyrings/aptly.asc https://www.aptly.info/pubkey.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;echo &amp;#39;deb [signed-by=/etc/apt/keyrings/aptly.asc] http://repo.aptly.info/release bookworm main&amp;#39; \
- | sudo tee /etc/apt/sources.list.d/aptly.list
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt install aptly
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;Будет установлена версия: 1.6.2. Она была выпущена 9 июня 2025 года.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="подготовка-к-созданию-локальных-репозиториев"&gt;Подготовка к созданию локальных репозиториев&lt;/h2&gt;
-&lt;p&gt;Скачиваем ключи репозитория Proxmox:&lt;/p&gt;</description></item><item><title>Локальное зеркало Linux репозитория (apt-mirror)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</link><pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Для подключения репозитория Aptly и установки более свежей версии выполните следующие команды:&lt;/p&gt;</description></item><item><title>Локальное зеркало Linux репозитория (apt-mirror)</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</link><pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/local-repositories/local_mirror_linux_repository-apt_mirror/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Иногда бывает полезно сделать своё зеркало различных Linux репозиториев. Оно будет синхронизироваться с официальными репозиториями, а уже локальные сервера будут получать обновления с нашего сервера.&lt;/p&gt;
 &lt;p&gt;Например, это можно сделать, если у этих серверов нет возможности выйти в интернет, а обновлять их нужно.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260820150555.png" alt=""&gt;&lt;/p&gt;
 &lt;h2 id="создание-зеркала-репозиториев"&gt;Создание зеркала репозиториев&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Устанавливаем пакет:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install apt-mirror
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Это решение написано на языке &lt;strong&gt;perl&lt;/strong&gt;. Посмотреть расположение самого скрипта можно с помощью следующей команды:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;# which apt-mirror
-/bin/apt-mirror
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Так как проект давно заброшен, то в скрипте есть недоработки, например Файлы переводов (&lt;strong&gt;i18n/Translation&lt;/strong&gt;) раньше в репозиториях хранились в виде архива &lt;strong&gt;bz2&lt;/strong&gt;, а сейчас хранятся в виде архива &lt;strong&gt;xz&lt;/strong&gt;. Ещё одна проблема в том, что начиная с Ubuntu Focal (20.04), клиент APT ожидает, что репозиторий предоставят файлы метаданных (&lt;strong&gt;command-not-found — cnf&lt;/strong&gt;). Про эти файлы &lt;strong&gt;apt-mirror&lt;/strong&gt; тоже ничего не знает. Раньше был форк на GitHub от &lt;a href="https://github.com/Stifler6996"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Stifler6996
-&lt;/a&gt;
-, который предоставлял исправленную версию скрипта, но потом этот форк закрылся. Я загрузил исправленную версию скрипта в свой репозиторий, можете использовать его.&lt;/p&gt;</description></item><item><title>История Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</guid><description>&lt;h2 id="первые-windows"&gt;Первые Windows&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Это решение написано на языке &lt;strong&gt;perl&lt;/strong&gt;. Посмотреть расположение самого скрипта можно с помощью следующей команды:&lt;/p&gt;</description></item><item><title>История Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/history-windows/</guid><description>&lt;h2 id="первые-windows"&gt;Первые Windows&lt;/h2&gt;
 &lt;p&gt;История Windows началась с 1985 года когда вышла &lt;strong&gt;Windows 1.0&lt;/strong&gt;. Она ещё не была полноценной системой, просто «графическая надстройка» над MS-DOS, которая позволяла управлять компьютером с помощью мышки. Да, раньше это было в новинку!&lt;/p&gt;
 &lt;p&gt;Затем появились &lt;strong&gt;Windows 2.0&lt;/strong&gt; и &lt;strong&gt;Windows 3.0&lt;/strong&gt; — уже поинтереснее. Всё ещё 16-битные, но графика стала лучше, работать стало удобнее.&lt;/p&gt;
 &lt;h2 id="два-пути-развития"&gt;Два пути развития&lt;/h2&gt;
@@ -969,7 +996,18 @@ ps -u $USER -o pid | grep -v PID | while read line
 &lt;/a&gt;
 . Создадим базу данных &lt;strong&gt;it_outsourcing&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;CREATE DATABASE it_outsourcing;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Переключимся на эту базу данных. Для этого используем не SQL команду а встроенную команду утилиты &lt;strong&gt;psql&lt;/strong&gt; &lt;code&gt;\c&lt;/code&gt; (такие команды начинаются на обратный слеш и после команды не нужно использовать точку с запятой):&lt;/p&gt;</description></item><item><title>Способы конфигурирования PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</link><pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</guid><description>&lt;h2 id="конфигурационный-файл-postgresqlconf"&gt;Конфигурационный файл postgresql.conf&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Переключимся на эту базу данных. Для этого используем не SQL команду а встроенную команду утилиты &lt;strong&gt;psql&lt;/strong&gt; &lt;code&gt;\c&lt;/code&gt; (такие команды начинаются на обратный слеш и после команды не нужно использовать точку с запятой):&lt;/p&gt;</description></item><item><title>Способы конфигурирования PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</link><pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql_configuration_methods/</guid><description>&lt;h2 id="конфигурационный-файл-postgresqlconf"&gt;Конфигурационный файл postgresql.conf&lt;/h2&gt;
 &lt;p&gt;Главный конфигурационный файл для кластера PostgreSQL — это &lt;strong&gt;postgresql.conf&lt;/strong&gt;, в разных системах он может находится в разных местах. Самый точный способ узнать расположение этого файла, посмотреть из терминала &lt;strong&gt;psql&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# SHOW config_file;
  config_file
@@ -979,6 +1017,17 @@ ps -u $USER -o pid | grep -v PID | while read line
 
 Время: 0,113 мс
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Сервер читает этот конфиг один раз, при запуске. Если параметр указан несколько раз, то применяется последний.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Если вы измените параметры в этом файле, его нужно перечитать. Первый способ — из командной оболочки операционной системы:&lt;/p&gt;</description></item><item><title>Утилита psql для работы с PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/postgresql-psql/</guid><description>&lt;h2 id="подключение-к-серверу-баз-данных"&gt;Подключение к серверу баз данных&lt;/h2&gt;
 &lt;p&gt;Если у вас ещё не установлен сервер PostgreSQL, то вы можете установить его по одной из двух инструкций: &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/databases/installing-postgresql-from-source/"
  
@@ -1382,6 +1431,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;strong&gt;srv-dc.test-domain.com&lt;/strong&gt; / &lt;strong&gt;192.168.0.18&lt;/strong&gt; — имя и ip-адрес контроллера домена;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;test-domain.com&lt;/strong&gt; — имя домена.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="настройка-сети"&gt;Настройка сети&lt;/h2&gt;
 &lt;p&gt;Для того чтобы настроить сеть, отредактируем файлы &lt;code&gt;/etc/network/interfaces&lt;/code&gt; и &lt;code&gt;/etc/resolv.conf&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/network/interfaces
@@ -1527,14 +1587,19 @@ Server=192.168.0.25
 &lt;li&gt;для дистрибутива нет готового пакета;&lt;/li&gt;
 &lt;li&gt;можно собрать PostgreSQL с нестандартными параметрами.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="особенности-установки-по-этой-статье"&gt;Особенности установки по этой статье&lt;/h2&gt;
-&lt;p&gt;Будем производить сборку &lt;strong&gt;PostgreSQL версии 16.2&lt;/strong&gt; на дистрибутиве &lt;strong&gt;Debian 12 (bookworm)&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Для выполнения команд, которым нужен административный доступ будем использовать утилиту &lt;strong&gt;sudo&lt;/strong&gt;, про неё я писал статью &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/users_and_permissions/sudo_utility_in_linux/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Использование sudo в Linux
-&lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Будем производить сборку &lt;strong&gt;PostgreSQL версии 16.2&lt;/strong&gt; на дистрибутиве &lt;strong&gt;Debian 12 (bookworm)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>NextCloud — интеграция с Collabora</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</link><pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-integration-with-collabora/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Я уже писал про установку облачного файлового сервера &lt;strong&gt;NextCloud&lt;/strong&gt; — &lt;a href="https://blog.sysadminium.ru/docs/linux/linux_servers/file-servers/nextcloud-description-installation/"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -1702,6 +1767,17 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
  здесь
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Официальные инструкции:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://helpcenter.onlyoffice.com/installation/docs-developer-install-centos.aspx"
@@ -1758,6 +1834,17 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
 &lt;li&gt;выбрать группы, которые будут доступны в NextCloud. Это позволит, например, сделать какую-то доменную группу в качестве админской для NextCloud;&lt;/li&gt;
 &lt;li&gt;синхронизировать вместе с пользователем дополнительную информацию о нём, например его email.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Вот официальная справочная информация по интеграции NextCloud с LDAP AD — &lt;a href="https://docs.nextcloud.com/server/stable/admin_manual/configuration_user/user_auth_ldap.html?highlight=ldap"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -1803,6 +1890,17 @@ deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main
 &lt;/ul&gt;
 &lt;p&gt;Теперь разберём как версии RouterOS выпускаются и переходят с ветки на ветку. Допустим выпустили они Stable версию 6.48. И продолжают её улучшать, добавляя функциональность и исправляя ошибки. Так появляются версии 6.48.1, 6.48.2, 6.48.3, 6.48.4. И тут они решают что 6.48.4 уже достаточно стабильный релиз и создают версию 6.48.5 но уже в ветке Long term.&lt;/p&gt;</description></item><item><title>Ошибка Zentyal 6. Failed to save changes in module dns</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/domain-controllers/zentyal-failed-to-save-changes-in-module-dns/</link><pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/domain-controllers/zentyal-failed-to-save-changes-in-module-dns/</guid><description>&lt;h2 id="суть-проблемы"&gt;Суть проблемы&lt;/h2&gt;
 &lt;p&gt;Когда я пытался добавить dns записи через веб-интерфейс самого Zentyal, я получал ошибку. В ошибке было сказано, что за подробностями следует обратиться к логам сервера. И нужно было сразу посмотреть эти логи, но я решил вначале проверить работоспособность dns сервера. Поэтому я подключился к нему из Windows. Оказалось что dns сервер работал без проблем. Я мог добавлять dns записи, из оснастки Windows, без каких либо проблем.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Дальше я пошёл смотреть логи (&lt;strong&gt;/var/log/zentyal/zentyal.log&lt;/strong&gt;). И там, при попытке сохранить dns записи из веб интерфейса, появлялась следующая ошибка:&lt;/p&gt;</description></item><item><title>SPICE в Proxmox VE</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</link><pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/proxmox-spice/</guid><description>&lt;h2 id="что-такое-spice"&gt;Что такое SPICE&lt;/h2&gt;
 &lt;p&gt;Проект &lt;strong&gt;SPICE&lt;/strong&gt; это решение с открытым исходным кодом для удаленного доступа к виртуальным машинам простым способом, чтобы вы могли воспроизводить видео, записывать аудио, совместно использовать USB-устройства и папки без каких-либо сложностей.&lt;/p&gt;
 &lt;p&gt;SPICE можно разделить на 4 различных компонента:&lt;/p&gt;
@@ -2411,6 +2509,17 @@ find: ‘/home/lena’: Отказано в доступе
 &lt;li&gt;&lt;strong&gt;При работе с тестовыми веб-серверами.&lt;/strong&gt; Когда вам требуется протокол https. Удобно иметь свой центр сертификации и для каждого тестового сайта выпускать сертификаты.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;При работе с внутренними web-серверами.&lt;/strong&gt; Например у компании есть внутренний сайт, доступный только из внутренней сети. Здесь также необходимо использовать https. Так как доступ к сайту есть у ограниченного числа сотрудников, то на их устройства можно добавить свой корневой ssl-сертификат. И эти устройства начнут доверять внутреннему сайту компании.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;На этом скриншоте, браузер не доверяет сайту, но если нажать на кнопку &lt;strong&gt;Дополнительные&lt;/strong&gt;, то вы всё равно сможете перейти на сайт:&lt;/p&gt;</description></item><item><title>Команды SystemD</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</link><pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/commands-systemd/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;В прошлых статьях по &lt;strong&gt;SystemD&lt;/strong&gt; я рассказывал про юниты разных типов, а именно &lt;a href="https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/systemd-services/"
  
@@ -3315,6 +3424,17 @@ d----- 13.10.2020 11:16 Boot
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="физическая-репликация-postgresql"&gt;Физическая репликация PostgreSQL&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Алгоритм создания такой репликации следующий:&lt;/p&gt;</description></item><item><title>Резервирование PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/rezervirovanie_postgresql/</link><pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/rezervirovanie_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Существует &lt;strong&gt;логическое&lt;/strong&gt; и &lt;strong&gt;физическое&lt;/strong&gt; резервирование PostgreSQL. Первый тип сохраняет SQL команды выполнив которые можно восстановить объекты, например создать базу данных, наполнить её таблицами, заполнить таблицы данными и тому подобное. А второй тип резервирует сами данные, то есть сохраняет каталог PGDATA.&lt;/p&gt;
 &lt;h2 id="логическое-резервирование-postgresql"&gt;Логическое резервирование PostgreSQL&lt;/h2&gt;
@@ -3350,18 +3470,23 @@ d----- 13.10.2020 11:16 Boot
 &lt;li&gt;&lt;strong&gt;TRUNCATE&lt;/strong&gt; — очистка таблицы;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;TRIGGER&lt;/strong&gt; — создание триггеров.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Представления имеют всего две привилегии:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;SELECT&lt;/strong&gt; — право читать представление;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;TRIGGER&lt;/strong&gt; — право создавать триггеры.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Последовательности:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SELECT&lt;/strong&gt; — право читать последовательность;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; — право изменять последовательность;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;USAGE&lt;/strong&gt; — право использовать последовательность.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Табличные пространства:&lt;/p&gt;</description></item><item><title>Роли и атрибуты в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/roli_postgresql/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/roli_postgresql/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
+&lt;p&gt;Последовательности:&lt;/p&gt;</description></item><item><title>Роли и атрибуты в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/roli_postgresql/</link><pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/roli_postgresql/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;Псевдороль &lt;strong&gt;public&lt;/strong&gt; неявно включает в себя все остальные роли. Её нельзя найти в списке ролей, но она существует.&lt;/p&gt;
 &lt;p&gt;У ролей есть несколько атрибутов. Эти атрибуты указываются при создании роли:&lt;/p&gt;
 &lt;ul&gt;
@@ -3423,6 +3548,17 @@ postgres@postgres=# CREATE EXTENSION pgstattuple;
 CREATE EXTENSION
 Time: 45,688 ms
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="проводим-тестирование"&gt;Проводим тестирование&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Создадим табличку &lt;code&gt;bloat&lt;/code&gt; и наполним её данными. После чего сделаем для этой таблицы индекс:&lt;/p&gt;</description></item><item><title>Журнал PostgreSQL. Настройка и анализ</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/log_postgresql/</link><pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/log_postgresql/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;При запуске &lt;strong&gt;PostgreSQL&lt;/strong&gt;, мы можем указать файл журнала: &lt;code&gt;pg_ctl start -l /home/postgres/logfile&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;В этот журнал PostgreSQL записывает некоторые из своих действий. Настраивая журналирование мы можем задать:&lt;/p&gt;
@@ -3484,6 +3620,17 @@ Time: 45,688 ms
 &lt;li&gt;&lt;strong&gt;Карта свободного пространства (fsm)&lt;/strong&gt; — хранит информацию о том, где внутри файлов есть свободное пространство.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Карта видимости (vm)&lt;/strong&gt; — отмечает страницы, в которых все версии строк видны. Другими словами VACUUM уже их почистил от неактуальных версий строк. Такой слой существует только для таблиц. Он нужен для оптимизации, чтобы VACUUM знал, какие страницы чистить уже не нужно.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="работа-с-большими-строками-toast"&gt;Работа с большими строками (TOAST)&lt;/h2&gt;
 &lt;p&gt;В PostgreSQL &lt;strong&gt;одна строка&lt;/strong&gt; &lt;strong&gt;должна&lt;/strong&gt; помещаться в одну страницу, то есть &lt;strong&gt;не быть больше 8 КБ&lt;/strong&gt;. Чтобы поместить большую строку у PostgreSQL есть следующие стратегии:&lt;/p&gt;</description></item><item><title>Табличные пространства в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/tablichnye_prostranstva_postgresql/</link><pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/tablichnye_prostranstva_postgresql/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;Вы можете почитать про табличные пространства в &lt;a href="https://postgrespro.ru/docs/postgresql/13/manage-ag-tablespaces"
@@ -3498,8 +3645,18 @@ Time: 45,688 ms
 &lt;li&gt;&lt;code&gt;pg_global&lt;/code&gt; — пространство для общих объектов системного каталога, &lt;code&gt;$PGDATA/global&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;PostgreSQL позволяет создать свои табличные пространства и использовать их для каких-либо объектов. Например для баз данных, таблиц и других объектов.&lt;/p&gt;
-&lt;p&gt;Каталог &lt;code&gt;$PGDATA/base&lt;/code&gt; разбит на подкаталоги по идентификаторам баз данных.&lt;/p&gt;
-&lt;p&gt;Когда мы создаём своё табличное пространство, мы сами указываем нужный каталог. При этом PostgreSQL создает символическую ссылку &lt;code&gt;$PGDATA/pg_tblspc/&amp;lt;TS_OID&amp;gt;&lt;/code&gt; на указанный каталог (&lt;code&gt;/путь/ver/dboid&lt;/code&gt;).&lt;/p&gt;</description></item><item><title>Системный каталог в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sistemnyj_katalog_postgresql/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sistemnyj_katalog_postgresql/</guid><description>&lt;h2 id="системный-каталог-postgresql"&gt;Системный каталог PostgreSQL&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Каталог &lt;code&gt;$PGDATA/base&lt;/code&gt; разбит на подкаталоги по идентификаторам баз данных.&lt;/p&gt;</description></item><item><title>Системный каталог в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sistemnyj_katalog_postgresql/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/sistemnyj_katalog_postgresql/</guid><description>&lt;h2 id="системный-каталог-postgresql"&gt;Системный каталог PostgreSQL&lt;/h2&gt;
 &lt;p&gt;В системном каталоге хранится информация об объектах в кластере баз данных. По стандарту SQL всегда должен присутствовать системный каталог, но в стандарте он называется &lt;strong&gt;информационной схемой&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;В системном каталоге есть информация о базах данных, таблицах, индексах, представлениях, функциях и других объектах.&lt;/p&gt;
 &lt;p&gt;То есть, если мы создадим новую базу данных, то её описание можно будет получить из системного каталога. Если мы в базе данных создадим таблицу, то её описание будет в системном каталоге.&lt;/p&gt;</description></item><item><title>Схемы и шаблоны в СУБД PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/shemy_i_shablony_postgresql/</link><pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/shemy_i_shablony_postgresql/</guid><description>&lt;h2 id="базы-данных-и-шаблоны"&gt;Базы данных и шаблоны&lt;/h2&gt;

@@ -3,7 +3,7 @@
 Samba – отдельный файловый сервер
 </a>, интеграции с <strong>Active Directory</strong> <a href=https://sysadminium.ru/samba-into-a-domain/ target=_blank rel="noopener noreferrer">
 Ввод Samba в домен
-</a> и сценариев, где требуется тонкая настройка доступа через конфигурацию шары.</p><h2 id=подготавливаем-сервер>Подготавливаем сервер</h2><p>Устанавливаем необходимые пакеты:</p><pre tabindex=0><code>sudo apt update &amp;&amp; \
+</a> и сценариев, где требуется тонкая настройка доступа через конфигурацию шары.</p><div id=yandex_rtb_R-A-19820658-1></div><script>window.yaContextCb.push(()=>{Ya.Context.AdvManager.render({blockId:"R-A-19820658-1",renderTo:"yandex_rtb_R-A-19820658-1"})})</script><h2 id=подготавливаем-сервер>Подготавливаем сервер</h2><p>Устанавливаем необходимые пакеты:</p><pre tabindex=0><code>sudo apt update &amp;&amp; \
   sudo apt install nfs-kernel-server
 </code></pre><p>Создаём каталог для шары:</p><pre tabindex=0><code>sudo mkdir /srv/nfs
 </code></pre><p>Настраиваем шару:</p><pre tabindex=0><code>sudo nano /etc/exports
