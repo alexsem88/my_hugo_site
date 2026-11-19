@@ -19,4 +19,15 @@
  cd vaultwarden &amp;amp;&amp;amp; \
  chmod 700 data &amp;amp;&amp;amp; \
  sudo chown root:root data/
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;В нём создадим файл с переменными окружениями &lt;code&gt;.env&lt;/code&gt;. Он будет использоваться для настройки контейнеров. Вот его содержимое:&lt;/p&gt;</description></item></channel></rss>

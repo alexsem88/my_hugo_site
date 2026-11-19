@@ -28,6 +28,17 @@
 &lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Wazuh представляет собой комплексную систему, которая из коробки включает следующие функциональные модули:&lt;/p&gt;</description></item><item><title>Обнаружение дисков в Zabbix и просмотр по ним температуры</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</link><pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-detecting-disks-viewing-temperatures/</guid><description>&lt;h2 id="предварительная-настройка"&gt;Предварительная настройка&lt;/h2&gt;
 &lt;p&gt;Я всё проделываю на &lt;strong&gt;Debian 10&lt;/strong&gt;, на &lt;strong&gt;Debian 11&lt;/strong&gt; всё должно работать также, но сам не проверял. Сейчас на &lt;strong&gt;Debian 12&lt;/strong&gt; нет утилиты &lt;strong&gt;hddtemp&lt;/strong&gt;, поэтому придётся изменить скрипты, но если вы поймёте метод, то сможете сделать это самостоятельно. Получать температуру с дисков будем с помощью утилит &lt;strong&gt;hddtemp&lt;/strong&gt; и &lt;strong&gt;nvme&lt;/strong&gt;, также нам понадобится утилита &lt;strong&gt;sudo&lt;/strong&gt;, установим эти пакеты:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# apt install -y hddtemp nvme-cli sudo
@@ -75,6 +86,17 @@
  здесь
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Есть несколько версий данного решения:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Graylog Open&lt;/strong&gt;. Бесплатная версия с открытым исходным кодом, доступна для разворачивания на своих серверах;&lt;/li&gt;
@@ -136,7 +158,18 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Настроим его, указав адрес сервера Zabbix:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/zabbix/zabbix_agentd.conf
 Server=192.168.0.25
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
 &lt;p&gt;Сервер &lt;strong&gt;Zabbix&lt;/strong&gt; — это сервер мониторинга. Он умеет:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;собирать метрики с различных устройств (роутеры, телефоны, принтеры, компьютеры, сервера и подобное);&lt;/li&gt;
@@ -162,6 +195,17 @@ Server=192.168.0.25
 &lt;li&gt;&lt;strong&gt;push&lt;/strong&gt; — сборщик метрик ставиться на сервер с PostgreSQL, базы которого мы хотим мониторить. Этот сборщик собирает метрики и передаёт их в базу хранения метрик, которая может находиться на этом же или на отдельном сервере.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; — сборщик метрик устанавливается на сервере мониторинга. В этом случае сборщик метрик подключается по сети к наблюдаемым базам и забирает метрики к себе в локальную базу хранения метрик.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;В этой статье мы будем настраивать &lt;strong&gt;PGWatch2&lt;/strong&gt; по методу &lt;strong&gt;pull&lt;/strong&gt; на операционную систему &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Мониторинг MikroTik с помощью Zabbix</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/monitoring-mikrotik-zabbix/</link><pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/monitoring-mikrotik-zabbix/</guid><description>&lt;h2 id="настройка-mikrotik"&gt;Настройка MikroTik&lt;/h2&gt;
 &lt;h3 id="настройка-snmp"&gt;Настройка SNMP&lt;/h3&gt;
 &lt;p&gt;Открываем &lt;strong&gt;IP / SNMP&lt;/strong&gt; и включаем его. Записываем контактную информацию в поля: &lt;strong&gt;Сontact info&lt;/strong&gt; и &lt;strong&gt;Location&lt;/strong&gt; (это просто текст, здесь вы может написать произвольную информацию). Затем изменяем &lt;strong&gt;Trap Version&lt;/strong&gt; на &lt;strong&gt;2&lt;/strong&gt;. Удаляем &lt;strong&gt;Trap Generator&lt;/strong&gt; (поле должно быть пустым, для этого нужно нажать на стрелочку вверх).&lt;/p&gt;

@@ -21,4 +21,15 @@
 &lt;/a&gt;
 .&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;После настройки сервера вы сможете:&lt;/p&gt;</description></item></channel></rss>

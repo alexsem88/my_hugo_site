@@ -55,7 +55,18 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Настроим его, указав адрес сервера Zabbix:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo nano /etc/zabbix/zabbix_agentd.conf
 Server=192.168.0.25
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;И перезапустим службу агента:&lt;/p&gt;</description></item><item><title>Zabbix — описание и установка</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/monitoring-log-collectors/zabbix-description-and-installation/</guid><description>&lt;h2 id="о-приложении"&gt;О приложении&lt;/h2&gt;
 &lt;p&gt;Сервер &lt;strong&gt;Zabbix&lt;/strong&gt; — это сервер мониторинга. Он умеет:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;собирать метрики с различных устройств (роутеры, телефоны, принтеры, компьютеры, сервера и подобное);&lt;/li&gt;

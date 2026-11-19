@@ -16,4 +16,15 @@
 &lt;li&gt;&lt;strong&gt;push&lt;/strong&gt; — сборщик метрик ставиться на сервер с PostgreSQL, базы которого мы хотим мониторить. Этот сборщик собирает метрики и передаёт их в базу хранения метрик, которая может находиться на этом же или на отдельном сервере.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;pull&lt;/strong&gt; — сборщик метрик устанавливается на сервере мониторинга. В этом случае сборщик метрик подключается по сети к наблюдаемым базам и забирает метрики к себе в локальную базу хранения метрик.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;В этой статье мы будем настраивать &lt;strong&gt;PGWatch2&lt;/strong&gt; по методу &lt;strong&gt;pull&lt;/strong&gt; на операционную систему &lt;strong&gt;Debian 11&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>

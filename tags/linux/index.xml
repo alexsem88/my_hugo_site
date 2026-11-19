@@ -869,7 +869,18 @@ window.yaContextCb.push(() =&gt; {
  Memory: 1.4M
  CGroup: /system.slice/systemd-timesyncd.service
  └─60424 /lib/systemd/systemd-timesyncd
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта служба использует конфиг &lt;strong&gt;/etc/systemd/timesyncd.conf&lt;/strong&gt;, именно в нём прописаны NTP сервера с которыми сервер синхронизирует своё время.&lt;/p&gt;</description></item><item><title>Настройка фаервола — Nftables</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-firewall-nftables/</link><pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-firewall-nftables/</guid><description>&lt;h2 id="netfilter"&gt;Netfilter&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Эта служба использует конфиг &lt;strong&gt;/etc/systemd/timesyncd.conf&lt;/strong&gt;, именно в нём прописаны NTP сервера с которыми сервер синхронизирует своё время.&lt;/p&gt;</description></item><item><title>Настройка фаервола — Nftables</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-firewall-nftables/</link><pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-firewall-nftables/</guid><description>&lt;h2 id="netfilter"&gt;Netfilter&lt;/h2&gt;
 &lt;p&gt;В Linux брандмауэр встроен в ядро и называется он &lt;strong&gt;Netfilter&lt;/strong&gt;. А для управления им могут использоваться различные утилиты. В Debian и Ubuntu более старших версий использовалась утилита &lt;strong&gt;iptables&lt;/strong&gt;. А в Debian 11 и Ubuntu 22.04 начали использовать — &lt;strong&gt;nftables&lt;/strong&gt;. Именно с этой утилитой я вас и познакомлю. Но вначале узнаем как вообще работает &lt;strong&gt;Netfilter&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Фаервол &lt;strong&gt;Netfilter&lt;/strong&gt; делит весь трафик на цепочки (&lt;strong&gt;chain&lt;/strong&gt;) и обрабатывает каждую цепочку по отдельности.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260625175359.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Настройка сети на Ubuntu</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-ubuntu/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/security/setting-up-a-network-on-ubuntu/</guid><description>&lt;h2 id="получение-информации-о-сетевых-интерфейсах"&gt;Получение информации о сетевых интерфейсах&lt;/h2&gt;

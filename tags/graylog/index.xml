@@ -42,6 +42,17 @@
  здесь
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Есть несколько версий данного решения:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Graylog Open&lt;/strong&gt;. Бесплатная версия с открытым исходным кодом, доступна для разворачивания на своих серверах;&lt;/li&gt;

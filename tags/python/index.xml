@@ -236,6 +236,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;strong&gt;Кроме того&lt;/strong&gt;, Docker Compose автоматически создаёт сеть, тома и настраивает проброс портов.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;В результате&lt;/strong&gt;, становится легко масштабировать сервисы, пересобирать контейнеры и работать с логами.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Реальные приложения почти никогда не живут в одном контейнере. В реальной жизни приложения состоят из компонентов:&lt;/p&gt;</description></item><item><title>Docker - Оптимизация ваших образов</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</link><pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/docker-optimize-images/</guid><description>&lt;h2 id="кеширование-слоёв"&gt;Кеширование слоёв&lt;/h2&gt;
 &lt;p&gt;Некоторые инструкции &lt;strong&gt;Dockerfile&lt;/strong&gt; создают новые &lt;strong&gt;read-only&lt;/strong&gt; слои, а некоторые не создают.&lt;/p&gt;
 &lt;p&gt;Создают слои:&lt;/p&gt;
@@ -252,25 +263,18 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;code&gt;EXPOSE&lt;/code&gt; - объявление о необходимости открыть порт&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;USER&lt;/code&gt; - смена пользователя&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Пример:&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;# Слой 1: базовый образ.
-FROM python:3.11-slim
 
-# Установка рабочего каталога. Слой не создаётся.
-WORKDIR /app
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
 
-# Слой 2: копирование файла.
-COPY requirements.txt .
-
-# Слой 3: установка зависимостей.
-RUN pip install -r requirements.txt
-
-# Слой 4: копирование кода.
-COPY app.py .
-
-# Подготовка команды при запуске контейнера. Слой не создаётся.
-CMD [&amp;#34;python&amp;#34;, &amp;#34;app.py&amp;#34;] 
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;При сборке контейнера слои кешируются. А при пере-сборки часть слоёв, которые не изменились, берутся из кеша. Как только один слой изменился, все последующие слои пересобираются. Предыдущие слои берутся из кеша. Из этого следует правило -&amp;gt; &lt;em&gt;Всё что изменяется реже, нужно прописывать выше.&lt;/em&gt; Например, зависимости изменяются реже чем основной код, поэтому их установку нужно прописать выше чем копирование файла с кодом.&lt;/p&gt;</description></item><item><title>Проброс каталогов и томов в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</guid><description>&lt;h2 id="суть-проблемы"&gt;Суть проблемы&lt;/h2&gt;
+&lt;p&gt;Пример:&lt;/p&gt;</description></item><item><title>Проброс каталогов и томов в Docker</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/mounts-and-volumes-in-docker/</guid><description>&lt;h2 id="суть-проблемы"&gt;Суть проблемы&lt;/h2&gt;
 &lt;p&gt;К контейнерам &lt;strong&gt;DevOps&lt;/strong&gt; инженеры относятся как к чему-то одноразовому. То есть их запросто могут удалить и пересоздать, не заботясь о данных хранимых в них. Часто контейнеры вообще разворачиваются и пересоздаются автоматически с помощью CI/CD инструментов. А настраивать каждый контейнер с помощью &lt;code&gt;docker exec&lt;/code&gt; - это медленно и увеличивает риск ошибиться.&lt;/p&gt;
 &lt;p&gt;Именно поэтому все полезные данные (например, базы данных) хранятся вне контейнера. Для хранения таких данных можно использовать: примонтированный каталог, либо проброшенный том (&lt;strong&gt;volume&lt;/strong&gt;). Ни то, ни другое не удаляется при удалении контейнера.&lt;/p&gt;</description></item><item><title>Установка разных версий Python 3 на Linux</title><link>https://blog.sysadminium.ru/docs/programming/installing-different-versions-python-3-linux/</link><pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/installing-different-versions-python-3-linux/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Бывает так, что приходится поддерживать старый проект, например написанный на какой-нибудь из старых версий Python 3. При этом хочется использовать современную операционную систему. На Windows довольно легко установить несколько разных версий Python 3, но дистрибутивы Linux обычно в своих репозиториях хранят одну версию Python 3. Например, репозитории для Debian:&lt;/p&gt;

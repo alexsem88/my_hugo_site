@@ -11,4 +11,15 @@
  Memory: 1.4M
  CGroup: /system.slice/systemd-timesyncd.service
  └─60424 /lib/systemd/systemd-timesyncd
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Эта служба использует конфиг &lt;strong&gt;/etc/systemd/timesyncd.conf&lt;/strong&gt;, именно в нём прописаны NTP сервера с которыми сервер синхронизирует своё время.&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Эта служба использует конфиг &lt;strong&gt;/etc/systemd/timesyncd.conf&lt;/strong&gt;, именно в нём прописаны NTP сервера с которыми сервер синхронизирует своё время.&lt;/p&gt;</description></item></channel></rss>
