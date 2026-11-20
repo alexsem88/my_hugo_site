@@ -191,13 +191,7 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Узнать версию Python 3 на Linux можно так:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ python3 --version
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Python 3.13.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Кстати, я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/python-interpreter/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- интерпретатор Python
-&lt;/a&gt;
-.&lt;/p&gt;
-
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
 &lt;script&gt;
 window.yaContextCb.push(() =&gt; {
@@ -208,12 +202,12 @@ window.yaContextCb.push(() =&gt; {
 })
 &lt;/script&gt;
 
-&lt;p&gt;А в Windows его нужно скачать и установить. Скачать установщик можно на &lt;a href="https://www.python.org/downloads/"
+&lt;p&gt;Кстати, я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/python-interpreter/"
  
  target="_blank" rel="noopener noreferrer"&gt;
- официальном сайте
+ интерпретатор Python
 &lt;/a&gt;
-. Берём последнюю версию, на момент написания статьи это &lt;strong&gt;3.15.0&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Вывод текста на консоль - функция print()</title><link>https://blog.sysadminium.ru/docs/programming/python_3-print/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python_3-print/</guid><description>&lt;h2 id="первая-программа"&gt;Первая программа&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Вывод текста на консоль - функция print()</title><link>https://blog.sysadminium.ru/docs/programming/python_3-print/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python_3-print/</guid><description>&lt;h2 id="первая-программа"&gt;Первая программа&lt;/h2&gt;
 &lt;p&gt;Я выполнял примеры на &lt;strong&gt;Linux Mint 22.3&lt;/strong&gt;, но этот код работает и на Windows. Примеры проверены на &lt;strong&gt;Python 3.11&lt;/strong&gt;, &lt;strong&gt;3.12&lt;/strong&gt;, &lt;strong&gt;3.14&lt;/strong&gt; и должны работать на любой современной версии &lt;strong&gt;Python 3&lt;/strong&gt;. Проверить свою версию Python можно так:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python3 --version &lt;span style="color:#75715e"&gt;# на Linux&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;py --version &lt;span style="color:#75715e"&gt;# на Windows&lt;/span&gt;
@@ -470,6 +464,17 @@ v
 &lt;li&gt;&lt;strong&gt;Function&lt;/strong&gt; — функции написаны на &lt;strong&gt;PowerShell&lt;/strong&gt;, есть встроенные функции, но вы можете создавать и свои.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cmdlet&lt;/strong&gt; — встроенные команды &lt;strong&gt;PowerShell&lt;/strong&gt;, обычно реализованные на &lt;strong&gt;.NET&lt;/strong&gt; (чаще всего на &lt;strong&gt;C#&lt;/strong&gt;).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Получить список команд можно с помощью командлета &lt;code&gt;Get-Command&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Первое знакомство с n8n</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</link><pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/automation-integration/first_encounter_with_n8n/</guid><description>&lt;h2 id="что-такое-n8n"&gt;Что такое n8n&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;n8n&lt;/strong&gt; — это инструмент для автоматизации рабочих процессов (workflow automation). Представлен как визуальный конструктор, доступный через веб-интерфейс.&lt;/p&gt;
 &lt;p&gt;Вы можете использовать n8n как облачный сервис, или развернуть на своём сервере бесплатно (по лицензии fair-code) — ниже покажу, как.&lt;/p&gt;
@@ -1023,6 +1028,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;strong&gt;Windows 9x&lt;/strong&gt; — более простые, для дома (например, Windows 95 и 98);&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Windows NT&lt;/strong&gt; — более надёжные и «продвинутые», в основном для бизнеса (например, Windows NT 4.0, Windows 2000).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="windows-95--настоящий-прорыв"&gt;Windows 95 — настоящий прорыв&lt;/h2&gt;
 &lt;p&gt;В 1995 году вышла &lt;strong&gt;Windows 95&lt;/strong&gt; — первая с кнопкой «Пуск», панелью задач, иконками и «рабочим столом» как мы привыкли. Она уже умела работать в 32-битном режиме и запускать множество приложений одновременно.&lt;/p&gt;</description></item><item><title>Обработка строк на bash циклами while и for</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/processing-strings-with-while-and-for-loops/</link><pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/processing-strings-with-while-and-for-loops/</guid><description>&lt;h2 id="цикл-while"&gt;Цикл while&lt;/h2&gt;
 &lt;p&gt;Синтаксис:&lt;/p&gt;
@@ -1462,6 +1478,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;code&gt;&amp;lt;ip-gw-isp&amp;gt;&lt;/code&gt; — ip-адрес шлюза провайдера.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;local-ip-serv&amp;gt;&lt;/code&gt; — ip-адрес какого-нибудь сервера в локалке.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="адресация"&gt;Адресация&lt;/h2&gt;
 &lt;p&gt;Во-первых, если это ещё не сделано, настроим ip-адреса на роутере. Укажем 3 адреса: в локальной сети, в сети первого провайдера и в сети второго:&lt;/p&gt;</description></item><item><title>Proxmox VE - знакомство и установка на ZFS</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</link><pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/virtualization-containers/installing-proxmox-ve-zfs/</guid><description>&lt;h2 id="знакомство-с-продуктом"&gt;Знакомство с продуктом&lt;/h2&gt;
 &lt;h3 id="что-такое-proxmox-ve"&gt;Что такое Proxmox VE&lt;/h3&gt;
@@ -1646,6 +1673,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Для просмотра логов в Windows, вы можете открыть оснастку &lt;strong&gt;«Просмотр событий»&lt;/strong&gt;. Она находится в меню &lt;strong&gt;«Пуск»&lt;/strong&gt; или может быть запущена с помощью команды &lt;code&gt;eventvwr&lt;/code&gt; в командной строке.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260814092144.png" alt=""&gt;&lt;/p&gt;
 &lt;h2 id="сводная-информация"&gt;Сводная информация&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;После открытия оснастки, если вы нажмёте слева на пункт &lt;strong&gt;«Просмотр событий (Локальный)»&lt;/strong&gt;, то увидите сводную информацию.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260814092156.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Здесь вы можете посмотреть:&lt;/p&gt;
@@ -2015,6 +2053,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;&lt;img src="Pasted_image_20260429174127.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Следующим шагом нажимаем кнопку &lt;strong&gt;&amp;ldquo;Установить&amp;rdquo;&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260429174147.png" alt=""&gt;&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Дальше нужно выбрать архитектуру сервера и уровень вашей лицензии. Если, как у мена, вы видите пункты с возможностями рабочего стола то без этих возможностей — это версия без графического окружения:&lt;/p&gt;</description></item><item><title>Утилита hping3</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/hping3/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/utilities/hping3/</guid><description>&lt;h2 id="об-утилите"&gt;Об утилите&lt;/h2&gt;
 &lt;p&gt;Утилита &lt;strong&gt;hping3&lt;/strong&gt; — это сетевой инструмент, способный отправлять пакеты TCP/IP и отображать целевые ответы, как это делает программа ping с ICMP.&lt;/p&gt;
 &lt;p&gt;Эта утилита умеет обрабатывать фрагментацию, отправлять пакеты с произвольными данными и флагами, менять размеры пакетов, и даже может использоваться для передачи файлов. С помощью этой утилиты вы можете выполнять, например, следующие действия:&lt;/p&gt;
@@ -2085,10 +2134,32 @@ window.yaContextCb.push(() =&gt; {
 &lt;/a&gt;
 .&lt;/p&gt;
 &lt;p&gt;Когда вы пингуете какой-то узел, и используете при этом стандартную утилиту &lt;strong&gt;ping&lt;/strong&gt; на операционной системе Windows, то используется протокол &lt;strong&gt;ICMP&lt;/strong&gt;. Источник отправляет запрос вида &lt;strong&gt;ICMP echo request&lt;/strong&gt;. А получатель отвечает (если ему не запрещено) &lt;strong&gt;ICMP echo reply&lt;/strong&gt;. Время между отправкой запросом и поучением ответа считается временем пинга.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;А разбираемая нами утилита &lt;strong&gt;PsPing&lt;/strong&gt; реализует пинг но для TCP порта. Например пропингуем хост &lt;strong&gt;yandex.ru&lt;/strong&gt; по &lt;strong&gt;443&lt;/strong&gt; порту:&lt;/p&gt;</description></item><item><title>Python 3. Параметры командной строки (argparse)</title><link>https://blog.sysadminium.ru/docs/programming/python3-argparse/</link><pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python3-argparse/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Модуль &lt;strong&gt;argparse&lt;/strong&gt; позволяем вашему приложению, написанному на &lt;strong&gt;Python 3&lt;/strong&gt;, обрабатывать переданные аргументы командной строки. При этом мы можем использовать позиционные параметры, именные параметры и флаги.&lt;/p&gt;
 &lt;h2 id="позиционные-параметры"&gt;Позиционные параметры&lt;/h2&gt;
 &lt;p&gt;Допустим нам нужно запускать приложение &lt;strong&gt;hello.py&lt;/strong&gt; таким образом: &lt;strong&gt;hello.py 3 5&lt;/strong&gt;. А в ответ будем получать: &lt;strong&gt;8&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Вот код такой программы, он достаточно откомментирован чтобы разобраться самостоятельно:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# Импортируем модуль argparse
 import argparse
@@ -2289,12 +2360,21 @@ window.yaContextCb.push(() =&gt; {
  nirsoft.net
 &lt;/a&gt;
 .&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="исследование-работы-сети"&gt;Исследование работы сети&lt;/h2&gt;
 &lt;h3 id="advanced-ip-scanner"&gt;Advanced IP Scanner &lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Advanced IP Scanner&lt;/strong&gt; – это простая в использовании утилита для анализа локальных сетей.&lt;/p&gt;
-&lt;p&gt;Внешний вид:&lt;/p&gt;
-&lt;p&gt;&lt;img src="Pasted_image_20260710130817.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Сканируя сеть эта утилита собирает информацию об IP и MAC адресах. По mac адресу пытается определить производителя. Также утилита может определить некоторые сервисы запущенные на хостах:&lt;/p&gt;</description></item><item><title>Сетевые модели OSI И TCP/IP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</link><pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</guid><description>&lt;h2 id="модель-osi"&gt;Модель OSI&lt;/h2&gt;
+&lt;p&gt;Внешний вид:&lt;/p&gt;</description></item><item><title>Сетевые модели OSI И TCP/IP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</link><pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/osi-and-tcp-ip-network-models/</guid><description>&lt;h2 id="модель-osi"&gt;Модель OSI&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;OSI&lt;/strong&gt; (&lt;em&gt;Open System Interconnection&lt;/em&gt;) — это эталонная модель сетевых взаимодействий. Эта модель весь процесс передачи данных делит на 7 частей, другими словами на 7 уровней. Каждый уровень отвечает за определённые задачи, но не говорит, как эти задачи решать. Это позволяет разработчикам создавать новые протоколы или технологии, которые работают на определённом уровне (решают определённые задачи) и не задумываться о других задачах. Другие задачи решаются на других уровнях, на которых работают другие протоколы и технологии.&lt;/p&gt;</description></item><item><title>Защита Wi-Fi (WEP, WPA, WPA2, WPA3)</title><link>https://blog.sysadminium.ru/docs/network/network-theory/wifi-protection/</link><pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/wifi-protection/</guid><description>&lt;h2 id="введение"&gt;Введение&lt;/h2&gt;
 &lt;p&gt;Wi-Fi это беспроводная сеть, в которой данные передаются с помощью радиоволн. Радиоволны вместе с данными могут быть легко перехвачены и прочитаны. Поэтому с самого возникновения Wi-Fi сетей данные по радиоволнам передавались в зашифрованном виде. Шифрование использовали симметричное, так как оно быстрее и требует меньших вычислительных ресурсов чем ассиметричное.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260710120347.png" alt=""&gt;&lt;/p&gt;
@@ -2815,6 +2895,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260629112654.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Конечно это не всё, но для разбора темы про маршрутизацию достаточно.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Маршрут &lt;code&gt;0.0.0.0/0 &amp;gt; 91.204.125.33&lt;/code&gt; — означает что все неизвестные сети (0.0.0.0/0) должны идти на ip адрес 91.204.125.33. А известными сетями для роутера будут 91.204.125.35/29 — её обслуживает интерфейс ether1, и 192.168.0.1/24 — она находится за ether2.&lt;/p&gt;</description></item><item><title>Сервер хранилища конфигураций 1С на Linux</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</link><pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/1c-conf-storage-server-linux/</guid><description>&lt;h2 id="общая-информация"&gt;Общая информация&lt;/h2&gt;
 &lt;p&gt;1С позволяет работать с одной конфигурацией группе разработчиков используя, так называемое, &lt;strong&gt;хранилище конфигураций&lt;/strong&gt;. В качестве такого хранилища может выступать обычная сетевая папка, доступная каждому программисту. Именно конфигуратор подключается к хранилищу, и он должен иметь туда файловый доступ.&lt;/p&gt;
 &lt;p&gt;Про работу с хранилищем конфигураций вы можете почитать на &lt;a href="https://its.1c.ru/db/v8320doc#bookmark:dev:TI000001091"
@@ -3053,6 +3144,17 @@ drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir2
 .&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Всё остальное&lt;/strong&gt; тоже нужно учесть и поместить в отдельную очередь. Сюда, например, будет попадать torrent.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h3 id="особенности-queue-tree"&gt;Особенности Queue Tree&lt;/h3&gt;
 &lt;p&gt;В &lt;strong&gt;Queue Tree&lt;/strong&gt; в отличии от &lt;strong&gt;Simple Queues&lt;/strong&gt; нельзя задать направление трафика, и для помещения трафика в очередь можно использовать только маркировку. Поэтому для разных направлений (Download и Upload) нужно создать разные ветви очередей, притом указывать направление нужно при маркировке трафика.&lt;/p&gt;</description></item><item><title>MikroTik. Пример создания простых очередей</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-example-simple-queues/</link><pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-example-simple-queues/</guid><description>&lt;h2 id="пример-простых-очередей"&gt;Пример простых очередей&lt;/h2&gt;
 &lt;p&gt;Для того чтобы работали простые очереди или деревья очередей нужно чтобы ваши лимиты были меньше чем лимиты выданные вам провайдером. Например, провайдер выдаёт мне 100 Мбит/с. Я с помощью сервиса &lt;a href="https://www.speedtest.net/ru"
@@ -3065,6 +3167,17 @@ drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir2
 &lt;p&gt;Для создания очередей и помещения трафика в них на маршрутизаторах &lt;strong&gt;MikroTik&lt;/strong&gt; есть различные инструменты. Чтобы их увидеть нажмите на пункт меню &lt;strong&gt;Queues&lt;/strong&gt;. После чего откроется окно &lt;strong&gt;Queue List&lt;/strong&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260618104300.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;С вкладкой &lt;strong&gt;Queue Types&lt;/strong&gt; мы познакомились в прошлой статье. Напомню что здесь создаются типы очередей на основе известных алгоритмов обслуживания очередей и их настроек.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h3 id="вкладка-simple-queues"&gt;Вкладка Simple Queues&lt;/h3&gt;
 &lt;p&gt;На вкладке &lt;strong&gt;Simple Queues&lt;/strong&gt; вы можете создавать простые очереди. Их отличительные черты следующие:&lt;/p&gt;</description></item><item><title>MikroTik. Алгоритмы обслуживания очередей</title><link>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-queueing-algorithms/</link><pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/mikrotik/mikrotik-queueing-algorithms/</guid><description>&lt;h2 id="алгоритмы-работы-очередей"&gt;Алгоритмы работы очередей&lt;/h2&gt;
 &lt;p&gt;Очереди из ip пакетов в сетях могут обрабатываться по разному. Для обслуживания очередей придумали разные алгоритмы, которые мы рассмотрим в этой статье.&lt;/p&gt;
@@ -3081,6 +3194,17 @@ drwxr-xr-x 2 alex alex 4096 дек 21 12:55 dir2
 &lt;li&gt;А на третьем в онлайн кинотеатре смотрят фильм. Файл фильма также делится на пакеты и эти пакеты через маршрутизатор попадают на компьютер.&lt;/li&gt;
 &lt;li&gt;Ещё к роутеру подключен IP телефон, который через интернет подключается к серверу телефонии.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Ко всем компьютерам и к телефону летят IP пакеты из интернета, тоже самое происходит и в обратном направлении (от компьютеров и телефона в интернет). И все эти пакеты попадая на роутер встают в очередь и уже по очереди обрабатываются. Очереди в сетях имеют фиксированную длину, поэтому если трафика становится слишком много и очередь переполняется, то некоторые пакеты не могут попасть в очередь и отбрасываются.&lt;/p&gt;</description></item><item><title>Создание редактирование и чтение файлов</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</link><pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/cli_bash/creating-editing-reading-files/</guid><description>&lt;h2 id="создание-файлов-и-просмотр-их-в-каталоге"&gt;Создание файлов и просмотр их в каталоге&lt;/h2&gt;
 &lt;p&gt;Все примеры я буду показывать на Debian 11, так как на Ubuntu 22.04 все выполняется аналогично. Вообще в Linux работа в терминале на любых системах практически одинакова. Поэтому создание, редактирование и чтение файлов можно продемонстрировать на любой системе.&lt;/p&gt;
 
@@ -3100,6 +3224,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Для подключения из одного MikroTik к другому можно использовать протокол ssh. Делается это с помощью встроенного ssh клиента «&lt;strong&gt;/system ssh»&lt;/strong&gt;. Вот пример:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/system ssh user=admin address=172.21.0.12
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;После выполнения этой команды, у вас будет запрошен пароль от пользователя admin на удаленном роутере. И после ввода пароля вы подключитесь к нему.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Чтобы отключиться от удаленного роутера используйте команду:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;:quit
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="выполнение-команд-и-скриптов"&gt;Выполнение команд и скриптов&lt;/h2&gt;
@@ -3125,11 +3260,21 @@ window.yaContextCb.push(() =&gt; {
 &lt;/a&gt;
 .&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="хранилище-скриптов"&gt;Хранилище скриптов&lt;/h2&gt;
 &lt;p&gt;В RouterOS есть специальное хранилище для скриптов — &lt;strong&gt;/system/script&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260616111751.png" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;Хоть и возможно писать скрипты в окошке &lt;strong&gt;Source&lt;/strong&gt;, но это совсем не удобно. А удобно для редактирования скриптов использовать терминал.&lt;/p&gt;
-&lt;p&gt;Для создания скрипта используется вот такая команда:&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
+&lt;p&gt;Хоть и возможно писать скрипты в окошке &lt;strong&gt;Source&lt;/strong&gt;, но это совсем не удобно. А удобно для редактирования скриптов использовать терминал.&lt;/p&gt;</description></item><item><title>GRUB 2 - Dual boot Ubuntu и Debian</title><link>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</link><pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/adm_linux/loading_and_initialization/grub-2-dual-boot-ubuntu-and-debian/</guid><description>&lt;h2 id="что-такое-dual-boot-или-multi-boot"&gt;Что такое dual boot или multi boot&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Multi boot&lt;/strong&gt; (множественная загрузка) — это когда вы можете на одном компьютере загружать разные операционные системы. Чаще всего это Windows и различные Linux системы. &lt;strong&gt;Dual boot&lt;/strong&gt; (двойная загрузка) — это вариант &lt;strong&gt;Multi boot&lt;/strong&gt;, если используется всего 2 системы.&lt;/p&gt;
 &lt;p&gt;Причины использования dual boot:&lt;/p&gt;
 &lt;ul&gt;
@@ -3182,6 +3327,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;блокировать запуск приложений;&lt;/li&gt;
 &lt;li&gt;работать в режиме аудита, при этом приложения будут запускаться но в журнале будут появляться записи.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;AppLocker&lt;/strong&gt; позволяет блокировать запуск следующих типов файлов:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;исполняемые&lt;/strong&gt; (.exe, .com);&lt;/li&gt;
@@ -3198,6 +3354,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;После чего появятся правила связанные с данной технологией:&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260610133059.png" alt=""&gt;&lt;/p&gt;
 &lt;h3 id="правила-связанные-с-srp"&gt;Правила связанные с SRP&lt;/h3&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Выше у нас появились три правила:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Применение&lt;/strong&gt; (Enforcement) — настраивает применение политик к программам или библиотекам и определяет применение политик только к пользователям или к администраторам в том числе:&lt;/li&gt;
@@ -3233,14 +3400,18 @@ window.yaContextCb.push(() =&gt; {
  привилегии
 &lt;/a&gt;
 . Обычные же процессы, работающие в сеансе администратора, не имеют таких привилегий, если система UAC не отключена.&lt;/p&gt;
-&lt;p&gt;Запрос о повышении привилегий может происходить при:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;установке программы;&lt;/li&gt;
-&lt;li&gt;запуске программы у которой в манифесте указано запускаться только с правами администратора, например редактора реестра (&lt;code&gt;regedit.exe&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;принудительном запуске программы от имени администратора;&lt;/li&gt;
-&lt;li&gt;настройке операционной системы, например брандмауэра.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Если обычный пользователь пытается выполнить административное действие, то помимо согласия потребуется ввести логин и пароль администратора:&lt;/p&gt;</description></item><item><title>AppContainer</title><link>https://blog.sysadminium.ru/docs/windows/basics/appcontainer/</link><pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/appcontainer/</guid><description>&lt;h2 id="процессы-appcontainers"&gt;Процессы AppContainers&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Запрос о повышении привилегий может происходить при:&lt;/p&gt;</description></item><item><title>AppContainer</title><link>https://blog.sysadminium.ru/docs/windows/basics/appcontainer/</link><pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/appcontainer/</guid><description>&lt;h2 id="процессы-appcontainers"&gt;Процессы AppContainers&lt;/h2&gt;
 &lt;p&gt;Мобильные приложения обычно распространяются из магазина приложений. Например, для системы &lt;strong&gt;Android&lt;/strong&gt; есть магазин &lt;strong&gt;Play Маркет&lt;/strong&gt;. Обычно после того, как пользователь выбирает и устанавливает какое-нибудь приложение, то ему показывают разрешения которые требуются этому приложению. Примерно тоже самое сделали в &lt;strong&gt;Windows&lt;/strong&gt;, так появились &lt;strong&gt;UWP-приложения&lt;/strong&gt; из магазина «&lt;strong&gt;Microsoft Store&lt;/strong&gt;».&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260609093412.png" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;Это не обычные приложения, процессы которые они запускают отличаются от обычных процессов. И называются такие процессы &lt;strong&gt;AppContainers&lt;/strong&gt;. А отличаются они от обычных процессов следующим:&lt;/p&gt;</description></item><item><title>Аудит безопасности Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-audit/</link><pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-audit/</guid><description>&lt;h2 id="привилегии-связанные-с-аудитом"&gt;Привилегии связанные с аудитом&lt;/h2&gt;
@@ -3249,6 +3420,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;&lt;code&gt;SeSecurityPrivilege&lt;/code&gt; — необходима для управления журналом событий безопасности и для просмотра или настройки &lt;strong&gt;SACL&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;SeAuditPrivilege&lt;/code&gt; — позволяет процессам, вызывать системные службы аудита для успешного генерирования записей аудита.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="настройка-политики-аудита"&gt;Настройка политики аудита&lt;/h2&gt;
 &lt;p&gt;Настройка политики аудита осуществляется из оснастки «&lt;strong&gt;Локальная политика безопасности&lt;/strong&gt;» (&lt;code&gt;secpol.msc&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;img src="Pasted_image_20260608095840.png" alt=""&gt;&lt;/p&gt;
@@ -3283,6 +3465,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;li&gt;несколько чисел подчиненных полномочий;&lt;/li&gt;
 &lt;li&gt;значения &lt;strong&gt;RID&lt;/strong&gt;, которое гарантирует уникальность.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;&lt;strong&gt;SID&lt;/strong&gt; всегда начинается с &lt;strong&gt;&amp;ldquo;S&amp;rdquo;&lt;/strong&gt;, например: &lt;code&gt;S-1-5-21-1463437245-1224812800-863842198-1128&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Маркеры доступа</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-access-token/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-access-token/</guid><description>&lt;h2 id="теория"&gt;Теория&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Маркер доступа&lt;/strong&gt; — это специальный объект, который описывает, какими правами обладает процесс или поток. Маркер доступа включает в себя идентификатор пользователя и его привилегии, связанные с процессом или потоком. Когда пользователь входит в систему, система аутентифицирует его, например запрашивает пароль. Если пароль верный, то система создает маркер доступа. Вследствие чего, каждый процесс, выполняемый от имени этого пользователя, имеет копию этого маркера доступа.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Маркеры доступа&lt;/strong&gt; затем используются монитором безопасности &lt;strong&gt;SRM&lt;/strong&gt; (про него было &lt;a href="https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/"
@@ -3331,24 +3524,20 @@ window.yaContextCb.push(() =&gt; {
  &lt;td&gt;Защищенный (Protected)&lt;/td&gt;
  &lt;td&gt;В настоящее время этот уровень не используется. Может устанавливаться только из режима ядра.&lt;/td&gt;
  &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Распространяется уровень целостности в соответствии со следующими правилами:&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;Процесс обычно наследует уровень целостности своего родителя.&lt;/li&gt;
-&lt;li&gt;Если исполняемый файл имеет один уровень целостности, и какой-то процесс запускает этот файл, то создается новый процесс с наименьшим уровнем целостности или файла, или родительского процесса. То есть родительский процесс может создать дочерний процесс с меньшим уровнем целостности.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="практика"&gt;Практика&lt;/h2&gt;
-&lt;p&gt;Посмотреть уровни целостности на которых работают процессы можно используя &lt;a href="https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- Process Explorer
-&lt;/a&gt;
-. Например, запустите &lt;strong&gt;Microsoft Edge&lt;/strong&gt; и &lt;strong&gt;Calc.exe&lt;/strong&gt; (в Windows 10) — это приложения UWP. Затем откройте окно командной строки от имени администратора и откройте в обычном режиме программу Блокнот (notepad.exe).&lt;/p&gt;</description></item><item><title>Системные компоненты безопасности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</guid><description>&lt;h2 id="монитор-безопасности-srm"&gt;Монитор безопасности (SRM)&lt;/h2&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Распространяется уровень целостности в соответствии со следующими правилами:&lt;/p&gt;</description></item><item><title>Системные компоненты безопасности</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-security-components/</guid><description>&lt;h2 id="монитор-безопасности-srm"&gt;Монитор безопасности (SRM)&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-security-reference-monitor"
  
  target="_blank" rel="noopener noreferrer"&gt;
@@ -3396,6 +3585,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Этот процесс служит для учета времени бездействия процессора. Другими словами, пока процессор бездействует, он обслуживает потоки этого процесса.&lt;/p&gt;
 &lt;p&gt;Процесс &lt;strong&gt;Idle&lt;/strong&gt; всегда имеет идентификатор 0. Он содержит по одному потоку на каждое ядро. При этом каждый поток работает на отдельном ядре.&lt;/p&gt;
 &lt;p&gt;Так как этот процесс имеет наименьший приоритет в системе, то выполняться его потоки на процессоре будут только тогда, когда другие потоки будут бездействовать.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h3 id="system"&gt;System&lt;/h3&gt;
 &lt;p&gt;Этот процесс содержит много потоков, которые работают в режиме ядра. Он не является полноценным процессом Windows, так как для него нет исполняемого файла. Потоки в этом процессе создаются самим ядром или драйверами при запуске системы.&lt;/p&gt;</description></item><item><title>Основные системные файлы</title><link>https://blog.sysadminium.ru/docs/windows/basics/windows-system-files/</link><pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/windows-system-files/</guid><description>&lt;h2 id="системные-файлы"&gt;Системные файлы&lt;/h2&gt;
 &lt;p&gt;Весь код операционной системы располагается в нескольких бинарных файлов, которые мы рассмотрим в этой статье. Все системные файлы находятся в каталоге &lt;code&gt;%systemroot%\System32&lt;/code&gt;. Это очень важные файлы, а это значит, что без них система не сможет выполнять свои функции.&lt;/p&gt;
@@ -3428,6 +3628,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;/a&gt;
 &lt;/strong&gt; (Process Explorer, Process Monitor) устанавливают, а затем используют такие модули.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Еще можно разделить их на работающие в &lt;strong&gt;пользовательском режиме&lt;/strong&gt; и в &lt;strong&gt;режиме ядра&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Обновление конфигурации базы 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/obnovlenie_konfiguracii_bazy_1c/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/obnovlenie_konfiguracii_bazy_1c/</guid><description>&lt;h2 id="обновление-конфигурации-1с"&gt;Обновление конфигурации 1С&lt;/h2&gt;
 &lt;p&gt;Во-первых нужно открыть конфигурацию. Для этого перейдите по пунктам меню «&lt;strong&gt;Конфигурация&lt;/strong&gt;» / «&lt;strong&gt;Открыть конфигурацию&lt;/strong&gt;«.&lt;/p&gt;
 
@@ -3469,6 +3680,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;sfq&lt;/strong&gt; — похож на &lt;strong&gt;pcq&lt;/strong&gt;, но задать подсеть или порт как основание для деления трафика нельзя. Весь трафик делится на максимум 1024 под-очереди. Делится он по 4 параметрам: &lt;strong&gt;адрес источника&lt;/strong&gt;, &lt;strong&gt;порт источника&lt;/strong&gt;, &lt;strong&gt;адрес назначения&lt;/strong&gt; и &lt;strong&gt;порт назначения&lt;/strong&gt;. Пакеты уходят из каждой под-очереди по порядку, первый пакет из первой очереди, второй из второй и так далее. Затем снова переходим к первой очереди и так по кругу.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Итак, настроим на &lt;strong&gt;Mikrotik&lt;/strong&gt; очередь &lt;strong&gt;simple queue&lt;/strong&gt; с алгоритмом &lt;strong&gt;pcq&lt;/strong&gt;!&lt;/p&gt;</description></item><item><title>Регламентные и фоновые задания в 1С</title><link>https://blog.sysadminium.ru/docs/1c/adm-1c/reglamentnye_zadaniya_1c/</link><pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/1c/adm-1c/reglamentnye_zadaniya_1c/</guid><description>&lt;h2 id="регламентные-задания"&gt;Регламентные задания&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Регламентные задания&lt;/strong&gt; – это некоторые действия в базе 1С, которые выполняются по расписанию и создают &lt;strong&gt;фоновые задания&lt;/strong&gt;, которые выполняются в базе без участия пользователя, то есть в фоне.&lt;/p&gt;
 &lt;p&gt;Если у вас есть доступ к ИТС, то почитать про этот механизм можно &lt;a href="https://its.1c.ru/db/v8319doc#bookmark:dev:TI000000794"
@@ -3504,7 +3726,18 @@ d-r--- 15.04.2021 21:05 assembly
 d----- 11.06.2021 17:52 bcastdvr
 d----- 13.10.2020 11:16 Boot
 ***сократил вывод***
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Процессы, потоки и задания Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</guid><description>&lt;h2 id="процессы"&gt;Процессы&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Процессы, потоки и задания Windows</title><link>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</link><pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/basics/processy_windows/</guid><description>&lt;h2 id="процессы"&gt;Процессы&lt;/h2&gt;
 &lt;p&gt;Процесс стоит воспринимать как контейнер с набором ресурсов для выполнения программы. То есть запускаем мы программу, для неё выделяется часть ресурсов компьютера и эта программа работает с этими ресурсами.&lt;/p&gt;
 &lt;p&gt;Процессы нужны операционной системе для многозадачности, так как программы работают в своих процессах и не мешают друг другу, при этом по очереди обрабатываются процессором.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Windows процессы состоят из следующего&lt;/strong&gt;:&lt;/p&gt;
@@ -3516,6 +3749,17 @@ d----- 13.10.2020 11:16 Boot
 &lt;li&gt;Идентификатор процесса, то есть его уникальный номер.&lt;/li&gt;
 &lt;li&gt;Программный поток (как минимум один или несколько). Чтобы процесс хоть что-то делал, в нем должен существовать программный поток. Если потока нет, значит что-то пошло не так, возможно процесс не смог корректно завершиться, или стартовать.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;У процессов есть еще очень много свойств которые вы можете посмотреть в «&lt;strong&gt;Диспетчере задач&lt;/strong&gt;» или «&lt;strong&gt;Process Explorer&lt;/strong&gt;«.&lt;/p&gt;</description></item><item><title>Репликация в PostgreSQL</title><link>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/replikaciya_postgresql/</link><pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/linux/linux_servers/databases/replikaciya_postgresql/</guid><description>&lt;h2 id="задачи-и-виды-репликации"&gt;Задачи и виды репликации&lt;/h2&gt;
 &lt;p&gt;Репликация PostgreSQL решает две задачи:&lt;/p&gt;
 &lt;ul&gt;
@@ -3957,6 +4201,17 @@ esac
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Если скрипт получит параметр &lt;code&gt;-h&lt;/code&gt;, то с помощью &lt;code&gt;echo&lt;/code&gt; просто выведет справку.&lt;/p&gt;</description></item><item><title>Транспортный протокол UDP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/udp/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/udp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации. Информация передаётся маленькими частями — сетевыми пакетами. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
 &lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="особенности-udp"&gt;Особенности UDP&lt;/h2&gt;
 &lt;p&gt;Протокол &lt;strong&gt;UDP&lt;/strong&gt; находится на 4 уровне &lt;a href="https://sysadminium.ru/osi-and-tcp-ip-network-models/"
  

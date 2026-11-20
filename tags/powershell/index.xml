@@ -10,6 +10,17 @@
 &lt;li&gt;&lt;strong&gt;Function&lt;/strong&gt; — функции написаны на &lt;strong&gt;PowerShell&lt;/strong&gt;, есть встроенные функции, но вы можете создавать и свои.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cmdlet&lt;/strong&gt; — встроенные команды &lt;strong&gt;PowerShell&lt;/strong&gt;, обычно реализованные на &lt;strong&gt;.NET&lt;/strong&gt; (чаще всего на &lt;strong&gt;C#&lt;/strong&gt;).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Получить список команд можно с помощью командлета &lt;code&gt;Get-Command&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>PowerShell переменные</title><link>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_peremennye/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/windows/cmd_powershell/powershell_peremennye/</guid><description>&lt;h2 id="powershell-переменные-и-их-особенности"&gt;PowerShell переменные и их особенности&lt;/h2&gt;
 &lt;p&gt;Переменные в &lt;strong&gt;PowerSHell&lt;/strong&gt;, как и всё остальное — это объекты. Эту особенность тоже разберём в этой статье, но чуть ниже. Другой особенностью переменных &lt;strong&gt;PowerShell&lt;/strong&gt; является то, что тип переменной зависит от её значения, например:&lt;/p&gt;
 &lt;ul&gt;
@@ -32,4 +43,15 @@ d-r--- 15.04.2021 21:05 assembly
 d----- 11.06.2021 17:52 bcastdvr
 d----- 13.10.2020 11:16 Boot
 ***сократил вывод***
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
+&lt;p&gt;Чтобы вывести что-нибудь в терминал используем &lt;code&gt;echo&lt;/code&gt;:&lt;/p&gt;</description></item></channel></rss>

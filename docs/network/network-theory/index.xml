@@ -26,6 +26,17 @@
 &lt;p&gt;Для защиты сети Wi-Fi поочерёдно были разработаны следующие технологии: &lt;strong&gt;WEP&lt;/strong&gt;, &lt;strong&gt;WPA&lt;/strong&gt;, &lt;strong&gt;WPA2&lt;/strong&gt; и &lt;strong&gt;WPA3&lt;/strong&gt;. В основном они отличаются алгоритмом шифрования и способом аутентификации.&lt;/p&gt;</description></item><item><title>Транспортный протокол UDP</title><link>https://blog.sysadminium.ru/docs/network/network-theory/udp/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/network/network-theory/udp/</guid><description>&lt;h2 id="что-такое-транспортные-протоколы"&gt;Что такое транспортные протоколы&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Транспортные протоколы&lt;/strong&gt; (&lt;strong&gt;TCP&lt;/strong&gt; и &lt;strong&gt;UDP&lt;/strong&gt;) используются для передачи информации. Информация передаётся маленькими частями — сетевыми пакетами. То есть поток информации разбивается на много маленьких пакетов.&lt;/p&gt;
 &lt;p&gt;Каждый пакет состоит из заголовка и самих данных. Заголовок содержит служебную информацию, например порт источника и назначения.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;h2 id="особенности-udp"&gt;Особенности UDP&lt;/h2&gt;
 &lt;p&gt;Протокол &lt;strong&gt;UDP&lt;/strong&gt; находится на 4 уровне &lt;a href="https://sysadminium.ru/osi-and-tcp-ip-network-models/"
  

@@ -175,13 +175,7 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Узнать версию Python 3 на Linux можно так:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ python3 --version
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Python 3.13.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Кстати, я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/python-interpreter/"
- 
- target="_blank" rel="noopener noreferrer"&gt;
- интерпретатор Python
-&lt;/a&gt;
-.&lt;/p&gt;
-
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
 &lt;script&gt;
 window.yaContextCb.push(() =&gt; {
@@ -192,12 +186,12 @@ window.yaContextCb.push(() =&gt; {
 })
 &lt;/script&gt;
 
-&lt;p&gt;А в Windows его нужно скачать и установить. Скачать установщик можно на &lt;a href="https://www.python.org/downloads/"
+&lt;p&gt;Кстати, я уже писал про &lt;a href="https://blog.sysadminium.ru/docs/programming/python-interpreter/"
  
  target="_blank" rel="noopener noreferrer"&gt;
- официальном сайте
+ интерпретатор Python
 &lt;/a&gt;
-. Берём последнюю версию, на момент написания статьи это &lt;strong&gt;3.15.0&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Вывод текста на консоль - функция print()</title><link>https://blog.sysadminium.ru/docs/programming/python_3-print/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python_3-print/</guid><description>&lt;h2 id="первая-программа"&gt;Первая программа&lt;/h2&gt;
+.&lt;/p&gt;</description></item><item><title>Вывод текста на консоль - функция print()</title><link>https://blog.sysadminium.ru/docs/programming/python_3-print/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.sysadminium.ru/docs/programming/python_3-print/</guid><description>&lt;h2 id="первая-программа"&gt;Первая программа&lt;/h2&gt;
 &lt;p&gt;Я выполнял примеры на &lt;strong&gt;Linux Mint 22.3&lt;/strong&gt;, но этот код работает и на Windows. Примеры проверены на &lt;strong&gt;Python 3.11&lt;/strong&gt;, &lt;strong&gt;3.12&lt;/strong&gt;, &lt;strong&gt;3.14&lt;/strong&gt; и должны работать на любой современной версии &lt;strong&gt;Python 3&lt;/strong&gt;. Проверить свою версию Python можно так:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python3 --version &lt;span style="color:#75715e"&gt;# на Linux&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;py --version &lt;span style="color:#75715e"&gt;# на Windows&lt;/span&gt;
@@ -239,6 +233,17 @@ window.yaContextCb.push(() =&gt; {
 &lt;p&gt;Модуль &lt;strong&gt;argparse&lt;/strong&gt; позволяем вашему приложению, написанному на &lt;strong&gt;Python 3&lt;/strong&gt;, обрабатывать переданные аргументы командной строки. При этом мы можем использовать позиционные параметры, именные параметры и флаги.&lt;/p&gt;
 &lt;h2 id="позиционные-параметры"&gt;Позиционные параметры&lt;/h2&gt;
 &lt;p&gt;Допустим нам нужно запускать приложение &lt;strong&gt;hello.py&lt;/strong&gt; таким образом: &lt;strong&gt;hello.py 3 5&lt;/strong&gt;. А в ответ будем получать: &lt;strong&gt;8&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div id="yandex_rtb_R-A-19820658-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+window.yaContextCb.push(() =&gt; {
+ Ya.Context.AdvManager.render({
+ "blockId": "R-A-19820658-1",
+ "renderTo": "yandex_rtb_R-A-19820658-1"
+ })
+})
+&lt;/script&gt;
+
 &lt;p&gt;Вот код такой программы, он достаточно откомментирован чтобы разобраться самостоятельно:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;# Импортируем модуль argparse
 import argparse
